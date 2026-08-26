@@ -374,6 +374,48 @@ const pagerIndexMemo = {
   })),
 }
 
+const floppyDiskMemoPad = {
+  id: 'PM-010',
+  collection: 'stationery',
+  name: 'Floppy Disk Memo Pad',
+  nameKo: '플로피디스크 메모패드',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-010-floppy-disk-memo-pad/01-hero-three-quarter.webp`,
+  accent: '#b53a28',
+  href: '/objects/pm-010',
+  alt: '네이비 플로피디스크의 하단 라벨 영역 전체에 교체형 종이 메모 스택을 결합한 문구 렌더',
+  category: 'Stationery',
+  variant: 'Refillable Paper Memo',
+  intro: 'A refillable memo pad that turns the familiar label window of a floppy disk into a place for one small thought.',
+  introKo: '플로피디스크의 하단 라벨 영역 전체를 한 장씩 쓰고 떼어내는 교체형 메모패드로 바꾼 문구 콘셉트입니다.',
+  statement: ['Save a thought,', 'one sheet at a time.'],
+  story: [
+    'Floppy Disk Memo Pad brings back the shape of a saved file as a place to save one thought. The memo stack fills the complete lower label window, so the paper feels built into the object rather than attached afterward.',
+    'A hinged lower frame opens to accept a square refill while the metal shutter and molded rear hub preserve the familiar disk construction. Paper release, writing stability, hinge life, and refill tolerance still need a physical sample.',
+  ],
+  notes: [
+    ['Label becomes paper', 'The complete lower label recess holds a warm off-white memo stack, keeping the floppy silhouette readable at a glance.'],
+    ['One-sheet interaction', 'The exposed top sheet stays flat for writing and lifts cleanly from one corner without pulling the remaining stack out.'],
+    ['Refillable frame', 'A concealed hinge opens the lower bezel so lined, grid, or colored paper blocks can share the same reusable shell.'],
+    ['Next test', 'A prototype should verify paper release, writing pressure, hinge durability, latch tolerance, and refill thickness.'],
+  ],
+  gallery: [
+    ['hero-three-quarter', '01-hero-three-quarter.webp', '네이비 플로피디스크 하단 라벨 영역에 메모 스택이 들어간 사선 제품 렌더', 'Hero view'],
+    ['peel-sheet', '02-peel-sheet.webp', '플로피디스크 라벨 영역에서 메모지 한 장의 모서리를 들어 떼어내는 모습', 'Peel one sheet'],
+    ['refill-mechanism', '03-refill-mechanism.webp', '하단 라벨 프레임을 열고 교체형 정사각 메모 리필을 넣는 구조 렌더', 'Refill mechanism'],
+    ['rear-construction', '04-rear-construction.webp', '원형 허브와 고무 받침, 하단 리필 잠금 장치가 있는 후면 구조 렌더', 'Rear construction'],
+    ['variant-lineup', '05-color-lineup.webp', '네이비, 그래파이트, 아이보리, 올리브 플로피디스크 메모패드 네 가지 컬러 렌더', 'Color lineup'],
+    ['worn-lifestyle', '06-everyday-use.webp', '나무 책상에서 플로피디스크 메모패드에 펜으로 기록하고 떼어낸 메모를 노트에 꽂은 사용 장면', 'Everyday use'],
+    ['packaging', '07-packaging.webp', '플로피디스크 메모패드 본체와 세 가지 종이 리필, 설명서, 종이 상자로 구성한 패키지 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-010-floppy-disk-memo-pad/${file}`,
+    alt,
+    label,
+  })),
+}
+
 export const objects = [
   toastPowerBank,
   toastTshirt,
@@ -384,6 +426,7 @@ export const objects = [
   toastPouch,
   toastPhoneGrip,
   pagerIndexMemo,
+  floppyDiskMemoPad,
 ]
 
 export const hiddenObjects = [

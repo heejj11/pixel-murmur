@@ -45,6 +45,9 @@ const galleryLabelKo = {
   'PET material': 'PET 소재',
   'Notebook use': '노트 사용',
   'Color lineup': '컬러 구성',
+  'Peel one sheet': '메모 한 장 떼기',
+  'Refill mechanism': '리필 구조',
+  'Rear construction': '후면 구조',
 }
 
 function BilingualGalleryLabel({ label }) {

@@ -1,0 +1,45 @@
+{
+  "id": "PM-010",
+  "slug": "floppy-disk-memo-pad",
+  "name": "Floppy Disk Memo Pad",
+  "nameKo": "플로피디스크 메모패드",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "gallery": [
+    {
+      "role": "hero-three-quarter",
+      "src": "01-hero-three-quarter.webp",
+      "alt": "네이비 플로피디스크 하단 라벨 영역에 메모 스택이 들어간 사선 제품 렌더"
+    },
+    {
+      "role": "peel-sheet",
+      "src": "02-peel-sheet.webp",
+      "alt": "플로피디스크 라벨 영역에서 메모지 한 장의 모서리를 들어 떼어내는 모습"
+    },
+    {
+      "role": "refill-mechanism",
+      "src": "03-refill-mechanism.webp",
+      "alt": "하단 라벨 프레임을 열고 교체형 정사각 메모 리필을 넣는 구조 렌더"
+    },
+    {
+      "role": "rear-construction",
+      "src": "04-rear-construction.webp",
+      "alt": "원형 허브와 고무 받침, 하단 리필 잠금 장치가 있는 후면 구조 렌더"
+    },
+    {
+      "role": "variant-lineup",
+      "src": "05-color-lineup.webp",
+      "alt": "네이비, 그래파이트, 아이보리, 올리브 플로피디스크 메모패드 네 가지 컬러 렌더"
+    },
+    {
+      "role": "worn-lifestyle",
+      "src": "06-everyday-use.webp",
+      "alt": "나무 책상에서 플로피디스크 메모패드에 펜으로 기록하고 떼어낸 메모를 노트에 꽂은 사용 장면"
+    },
+    {
+      "role": "packaging",
+      "src": "07-packaging.webp",
+      "alt": "플로피디스크 메모패드 본체와 세 가지 종이 리필, 설명서, 종이 상자로 구성한 패키지 렌더"
+    }
+  ]
+}
