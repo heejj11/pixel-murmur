@@ -37,7 +37,8 @@ Visitors browse a homepage with a featured object, explore an archive of additio
 - A `REALITY` value can communicate the concept's path from pixels toward a physical object: 0% concept only, 20% sourcing or estimates, 50% prototype, 80% production preparation, and 100% released. These values are editorial status language, not engineering claims.
 - Website copy is primarily English, with optional restrained Korean support.
 - The site must feel like a real website, not a presentation board, device mockup, poster, moodboard, Behance sheet, or collage.
-- Contact details, commercial claims, and production readiness are not confirmed and must not be invented.
+- The public inquiry address is `hello@pixelmurmur.com`; it currently forwards incoming mail to the studio's private inbox.
+- Commercial claims and production readiness are not confirmed and must not be invented.
 
 ## Brand Commitments
 
@@ -59,7 +60,7 @@ Visitors browse a homepage with a featured object, explore an archive of additio
 ## Evidence on Hand
 
 - The user supplied the complete homepage content and visual brief in `pasted-text.txt` outside the project workspace.
-- No existing logo files, product renders, photographs, testimonials, customers, metrics, licensing terms, or confirmed email address are available.
+- No existing logo files, photographs, testimonials, customers, metrics, or licensing terms are available. The public inquiry address is confirmed as `hello@pixelmurmur.com`.
 - Product imagery for this concept site may be authored as clearly illustrative design renders, but no commercial or production claims should be inferred from them.
 
 ## Product Principles

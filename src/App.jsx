@@ -291,16 +291,17 @@ function Contact() {
     <section className="contact" id="contact" aria-labelledby="contact-title">
       <div>
         <h2 id="contact-title">Can you make this?</h2>
-        <p>For production, collaboration, or licensing, open a proposal.</p>
+        <p>For production, collaboration, or licensing, send us a note.</p>
+        <a className="contact-email" href="mailto:hello@pixelmurmur.com">
+          hello@pixelmurmur.com
+        </a>
         <p className="contact-korean" lang="ko">픽셀을 물건으로 바꿀 수 있다면, 이야기해 주세요.</p>
       </div>
       <a
         className="primary-button"
-        href="https://github.com/heejj11/pixel-murmur/issues/new"
-        target="_blank"
-        rel="noreferrer"
+        href="mailto:hello@pixelmurmur.com?subject=PixelMurmur%20inquiry"
       >
-        Open a proposal
+        Send an inquiry
         <ArrowUpRight size={19} weight="bold" aria-hidden="true" />
       </a>
     </section>
@@ -315,6 +316,7 @@ function Footer() {
         <span>Unmade Objects</span>
       </div>
       <div className="footer-links">
+        <a href="mailto:hello@pixelmurmur.com">hello@pixelmurmur.com</a>
         <a href="https://github.com/heejj11/pixel-murmur" target="_blank" rel="noreferrer">
           <GithubLogo size={18} weight="fill" aria-hidden="true" />
           GitHub

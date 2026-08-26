@@ -644,9 +644,26 @@ img {
 }
 
 .contact .contact-korean {
-  margin-top: 9px;
+  margin-top: 16px;
   color: #625c54;
   font-size: 14px;
+}
+
+.contact-email {
+  display: inline-block;
+  margin-top: 28px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration-line: underline;
+  text-decoration-color: var(--line);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.4em;
+  transition: text-decoration-color 180ms ease;
+}
+
+.contact-email:hover {
+  text-decoration-color: currentColor;
 }
 
 .primary-button {
@@ -706,6 +723,7 @@ img {
 .footer-links {
   display: flex;
   gap: 28px;
+  align-items: center;
 }
 
 .footer-links a {
@@ -948,6 +966,11 @@ img {
   .site-footer {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 14px 24px;
   }
 
   .site-footer > div:first-child {
