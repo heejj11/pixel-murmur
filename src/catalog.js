@@ -275,6 +275,47 @@ const toastPouch = {
   })),
 }
 
+const toastPhoneGrip = {
+  id: 'PM-008',
+  name: 'Toast Phone Grip',
+  nameKo: '토스트 폰그립',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-008-toast-phone-grip/01-hero-three-quarter.webp`,
+  accent: '#d49a1f',
+  href: '/objects/pm-008',
+  alt: '버터가 올라간 작은 토스트 장식과 접이식 원형 구조를 갖춘 토스트 폰그립 사선 렌더',
+  category: 'Accessory',
+  variant: 'Butter',
+  intro: 'A compact collapsible phone grip that turns a secure one-handed hold into a tiny buttered slice.',
+  introKo: '작은 버터 토스트 장식과 접이식 아코디언 구조를 결합해 한 손 사용을 돕는 폰그립 콘셉트입니다.',
+  statement: ['A small grip,', 'ready in hand.'],
+  story: [
+    'Toast Phone Grip turns the back of a phone into a small tactile object. The butter top is decorative, while the collapsible base provides a steadier one-handed hold.',
+    'Six molded topping variants share one mechanism. Adhesive strength, repeated folding, surface wear, and wireless charging compatibility remain to be tested.',
+  ],
+  notes: [
+    ['Grip mechanism', 'A two-stage flexible neck expands for a secure hold and folds back into a compact circular base.'],
+    ['Collapsed profile', 'The toast top sits close to the phone when compressed so it remains practical inside a pocket or bag.'],
+    ['Flavor series', 'Butter, strawberry, red bean, blueberry, peanut butter, and chocolate share one molded toast platform.'],
+    ['Next test', 'A working sample should verify adhesive strength, repeated folding, finger comfort, and charging compatibility.'],
+  ],
+  gallery: [
+    ['hero-three-quarter', '01-hero-three-quarter.webp', '버터 토스트 장식과 펼쳐진 아코디언 구조, 부착 원판을 보여주는 폰그립 사선 렌더', 'Hero view'],
+    ['front', '02-front-collapsed.webp', '접이식 구조를 눌러 토스트 장식만 정면으로 보이는 폰그립 렌더', 'Collapsed front'],
+    ['side-profile', '03-side-extended.webp', '토스트 상판과 두 단계 아코디언 목, 원형 부착판을 보여주는 폰그립 측면 렌더', 'Extended profile'],
+    ['attached-device', '04-attached-phone.webp', '회색 스마트폰 후면 정중앙에 부착되어 펼쳐진 버터 토스트 폰그립 렌더', 'Attached view'],
+    ['variant-lineup', '05-flavor-lineup.webp', '버터, 딸기잼, 팥앙금, 블루베리잼, 땅콩버터, 초콜릿 토핑을 적용한 폰그립 여섯 가지 렌더', 'Flavor series'],
+    ['worn-lifestyle', '06-lifestyle.webp', '스마트폰 후면 정중앙의 토스트 폰그립을 손가락 사이에 끼워 잡은 라이프스타일 렌더', 'In hand'],
+    ['packaging', '07-packaging.webp', '버터 토스트 폰그립과 접착 보호 라이너를 종이 트레이에 담은 패키지 콘셉트 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-008-toast-phone-grip/${file}`,
+    alt,
+    label,
+  })),
+}
+
 export const objects = [
   toastPowerBank,
   toastTshirt,
@@ -283,6 +324,7 @@ export const objects = [
   toastAirpodsCase,
   toastCardWallet,
   toastPouch,
+  toastPhoneGrip,
 ]
 
 export const hiddenObjects = [
