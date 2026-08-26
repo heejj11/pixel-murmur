@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { ArrowRight, ArrowUpRight } from '@phosphor-icons/react'
 import { featuredObject, findObjectByPath, objects } from './catalog'
 import ProductDetail from './ProductDetail'
@@ -8,6 +9,12 @@ import {
   ProductImage,
   StatusGlyph,
 } from './SiteChrome'
+
+const archiveCollections = [
+  { id: 'all', label: 'All Objects', labelKo: '전체' },
+  { id: 'toast', label: 'Toast Series', labelKo: '토스트 시리즈' },
+  { id: 'stationery', label: 'Retro Stationery', labelKo: '레트로 문구' },
+]
 
 function Hero() {
   const object = featuredObject
@@ -99,14 +106,51 @@ function ObjectCard({ object }) {
 }
 
 function Archive() {
+  const [activeCollection, setActiveCollection] = useState('all')
+  const visibleObjects = activeCollection === 'all'
+    ? objects
+    : objects.filter((object) => object.collection === activeCollection)
+
   return (
     <section className="archive" id="objects" aria-labelledby="archive-title">
       <div className="section-heading archive-heading">
         <h2 id="archive-title">Unmade Objects <span lang="ko">아직 없는 물건들</span></h2>
         <a href="/#about">About the archive <ArrowRight size={16} weight="bold" /></a>
       </div>
-      <div className="object-grid">
-        {objects.map((object) => <ObjectCard key={object.id} object={object} />)}
+      <div className="collection-filter" role="group" aria-label="작품 컬렉션 필터">
+        {archiveCollections.map((collection) => {
+          const count = collection.id === 'all'
+            ? objects.length
+            : objects.filter((object) => object.collection === collection.id).length
+
+          return (
+            <button
+              key={collection.id}
+              type="button"
+              aria-controls="object-grid"
+              aria-pressed={activeCollection === collection.id}
+              onClick={() => setActiveCollection(collection.id)}
+            >
+              <span className="collection-filter__name">
+                <span>{collection.label}</span>
+                <span lang="ko">{collection.labelKo}</span>
+              </span>
+              <span className="collection-filter__count" aria-hidden="true">
+                {String(count).padStart(2, '0')}
+              </span>
+            </button>
+          )
+        })}
+      </div>
+      <p className="visually-hidden" aria-live="polite">
+        {visibleObjects.length}개의 작품을 표시합니다.
+      </p>
+      <div className="object-grid" id="object-grid">
+        {visibleObjects.length > 0 ? (
+          visibleObjects.map((object) => <ObjectCard key={object.id} object={object} />)
+        ) : (
+          <p className="archive-empty" lang="ko">이 컬렉션에는 아직 공개된 작품이 없습니다.</p>
+        )}
       </div>
     </section>
   )

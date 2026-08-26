@@ -2,6 +2,7 @@ const imageRoot = '/images/objects'
 
 const toastPowerBank = {
   id: 'PM-001',
+  collection: 'toast',
   name: 'Toast Charging Station',
   nameKo: '토스트 충전 스테이션',
   status: 'Just a Pixel',
@@ -44,6 +45,7 @@ const toastPowerBank = {
 
 const toastTshirt = {
   id: 'PM-002',
+  collection: 'toast',
   name: 'Toast T-Shirt',
   nameKo: '토스트 티셔츠',
   status: 'Just a Pixel',
@@ -85,6 +87,7 @@ const toastTshirt = {
 
 const toastEcoBag = {
   id: 'PM-003',
+  collection: 'toast',
   name: 'Toast Eco Bag',
   nameKo: '토스트 에코백',
   status: 'Just a Pixel',
@@ -125,6 +128,7 @@ const toastEcoBag = {
 
 const toastPhoneCase = {
   id: 'PM-004',
+  collection: 'toast',
   name: 'Toast Phone Case',
   nameKo: '토스트 폰케이스',
   status: 'Just a Pixel',
@@ -165,6 +169,7 @@ const toastPhoneCase = {
 
 const toastAirpodsCase = {
   id: 'PM-005',
+  collection: 'toast',
   name: 'Toast AirPods Case',
   nameKo: '토스트 에어팟 케이스',
   status: 'Just a Pixel',
@@ -205,6 +210,7 @@ const toastAirpodsCase = {
 
 const toastCardWallet = {
   id: 'PM-006',
+  collection: 'toast',
   name: 'Toast Card Wallet',
   nameKo: '토스트 카드지갑',
   status: 'Just a Pixel',
@@ -245,6 +251,7 @@ const toastCardWallet = {
 
 const toastPouch = {
   id: 'PM-007',
+  collection: 'toast',
   name: 'Toast Pouch',
   nameKo: '토스트 파우치',
   status: 'Just a Pixel',
@@ -285,6 +292,7 @@ const toastPouch = {
 
 const toastPhoneGrip = {
   id: 'PM-008',
+  collection: 'toast',
   name: 'Toast Phone Grip',
   nameKo: '토스트 폰그립',
   status: 'Just a Pixel',
@@ -326,6 +334,7 @@ const toastPhoneGrip = {
 
 const pagerIndexMemo = {
   id: 'PM-009',
+  collection: 'stationery',
   name: 'Pager Index Memo',
   nameKo: '삐삐 인덱스 메모',
   status: 'Just a Pixel',
