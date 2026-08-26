@@ -459,28 +459,12 @@ img {
 
 .object-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(12px, 1.5vw, 24px);
 }
 
 .object-card {
   min-width: 0;
-}
-
-.object-card:first-child {
-  grid-column: span 2;
-}
-
-.object-card:nth-child(n + 4) {
-  grid-column: span 2;
-}
-
-.object-card:nth-child(n + 4) .product-image {
-  aspect-ratio: 1.55 / 1;
-}
-
-.object-card:nth-child(n + 4) .product-image img {
-  object-fit: contain;
 }
 
 .object-card__link {
@@ -495,14 +479,6 @@ img {
   background: #ebe5dc;
 }
 
-.object-card:first-child .product-image {
-  aspect-ratio: 1.55 / 1;
-}
-
-.object-card:first-child .product-image img {
-  object-fit: contain;
-}
-
 .object-card .product-image img {
   transition: opacity 420ms ease, transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -512,7 +488,7 @@ img {
 }
 
 .object-card__title {
-  min-height: 96px;
+  min-height: 90px;
 }
 
 .object-card__title span,
@@ -530,11 +506,12 @@ img {
 }
 
 .object-card__title h3 {
-  max-width: 12ch;
+  max-width: none;
   margin: 0;
   font-size: 15px;
   font-weight: 600;
-  line-height: 1.02;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
   text-transform: uppercase;
 }
 
@@ -1258,14 +1235,6 @@ img {
     row-gap: 46px;
   }
 
-  .object-card:nth-child(n + 4) {
-    grid-column: auto;
-  }
-
-  .object-card:nth-child(n + 4) .product-image {
-    aspect-ratio: 1 / 1.03;
-  }
-
   .about {
     grid-template-columns: 1.2fr 0.8fr;
   }
@@ -1544,7 +1513,7 @@ img {
   }
 
   .object-card__title {
-    min-height: 88px;
+    min-height: 90px;
   }
 
   .object-card__title h3 {
@@ -1639,20 +1608,13 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .object-card:first-child {
-    grid-column: auto;
-  }
-
-  .object-card:nth-child(n + 4) {
-    grid-column: auto;
-  }
-
-  .object-card:nth-child(n + 4) .product-image {
-    aspect-ratio: 1.1 / 1;
-  }
-
   .object-card .product-image {
     aspect-ratio: 1.1 / 1;
+  }
+
+  .object-card__title {
+    min-height: auto;
+    padding-bottom: 22px;
   }
 
   .detail-figure figcaption {

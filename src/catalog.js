@@ -43,7 +43,6 @@ const toastTshirt = {
   image: `${imageRoot}/pm-002-toast-tshirt/01-hero-front.webp`,
   accent: '#9a541d',
   href: '/objects/pm-002',
-  legacyPaths: ['/objects/pm-006'],
   alt: '버터 장식과 구운 식빵 가장자리 표현이 들어간 크림색 오버사이즈 티셔츠 정면 렌더',
   category: 'Wearable',
   variant: 'Butter',
@@ -85,7 +84,6 @@ const toastEcoBag = {
   image: `${imageRoot}/pm-003-toast-eco-bag/01-hero-front.webp`,
   accent: '#8c4e1e',
   href: '/objects/pm-003',
-  legacyPaths: ['/objects/pm-007'],
   alt: '식빵 모양의 크림색 캔버스 몸체와 긴 손잡이가 있는 토스트 에코백 정면 렌더',
   category: 'Carry Goods',
   intro: 'A practical canvas tote shaped like one generous slice of toast, complete with browned seams and a quiet stitched mark.',
@@ -197,7 +195,54 @@ const toastAirpodsCase = {
   })),
 }
 
-export const objects = [toastPowerBank, toastTshirt, toastEcoBag, toastPhoneCase, toastAirpodsCase]
+const toastCardWallet = {
+  id: 'PM-006',
+  name: 'Toast Card Wallet',
+  nameKo: '토스트 카드지갑',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-006-toast-card-wallet/01-hero-three-quarter.webp`,
+  accent: '#8a4b1b',
+  href: '/objects/pm-006',
+  alt: '식빵 모양의 크림색 몸체와 갈색 테두리, 지퍼를 갖춘 토스트 카드지갑 사선 렌더',
+  category: 'Carry Goods',
+  intro: 'A compact zip-around wallet that carries cards and folded notes inside one neatly toasted slice.',
+  introKo: '식빵의 폭신한 속살과 구운 테두리를 카드 수납, 지폐 공간, 지퍼 구조로 옮긴 카드지갑 콘셉트입니다.',
+  statement: ['Keep a slice', 'close at hand.'],
+  story: [
+    'Toast Card Wallet turns a small everyday essential into an object that is easy to spot and satisfying to hold. The bread surface stays soft while the browned edge gives the shape structure.',
+    'A full zipper, slim gusset, divided card sleeves, and a folded-note compartment make the concept practical. Thickness and edge wear still need a physical sample.',
+  ],
+  notes: [
+    ['Shape and size', 'The rounded toast top creates a clear silhouette while the compact square body stays easy to carry.'],
+    ['Zipper', 'A fine tan zipper follows the crust edge with a small leather pull that remains comfortable in a pocket.'],
+    ['Inside', 'Card sleeves and one folded-note space separate daily essentials without turning the wallet into a bulky pouch.'],
+    ['Next test', 'A stitched sample should verify zipper travel, card access, edge stiffness, and long-term surface wear.'],
+  ],
+  gallery: [
+    ['hero-three-quarter', '01-hero-three-quarter.webp', '토스트 카드지갑의 식빵 질감과 지퍼 구조를 보여주는 사선 정면 렌더', 'Hero view'],
+    ['front', '02-front.webp', '두 장의 카드가 살짝 보이는 토스트 카드지갑 정면 렌더', 'Front'],
+    ['open', '03-open-interior.webp', '카드 수납칸과 접은 지폐 공간을 보여주는 열린 토스트 카드지갑 내부 렌더', 'Open interior'],
+    ['side-profile', '04-side-profile.webp', '토스트 카드지갑의 얇은 옆폭과 지퍼, 가죽 손잡이를 보여주는 측면 렌더', 'Side profile'],
+    ['crust-zipper-detail', '05-detail-crust-zipper.webp', '식빵 속살 질감과 갈색 봉제 테두리, 지퍼를 확대한 카드지갑 디테일 렌더', 'Crust and zipper'],
+    ['worn-lifestyle', '06-lifestyle.webp', '크림색 캔버스 가방 안쪽 포켓에서 토스트 카드지갑을 꺼내는 라이프스타일 렌더', 'Everyday carry'],
+    ['packaging', '07-packaging.webp', '투명 식빵 봉투와 종이 트레이에 담긴 토스트 카드지갑 패키지 콘셉트 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-006-toast-card-wallet/${file}`,
+    alt,
+    label,
+  })),
+}
+
+export const objects = [
+  toastPowerBank,
+  toastTshirt,
+  toastEcoBag,
+  toastPhoneCase,
+  toastAirpodsCase,
+  toastCardWallet,
+]
 
 export const hiddenObjects = [
   {
