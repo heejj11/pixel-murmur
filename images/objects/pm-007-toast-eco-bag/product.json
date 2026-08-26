@@ -1,0 +1,44 @@
+{
+  "id": "PM-007",
+  "slug": "toast-eco-bag",
+  "name": "Toast Eco Bag",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "gallery": [
+    {
+      "role": "hero-front",
+      "src": "01-hero-front.webp",
+      "alt": "식빵 모양의 크림색 캔버스 몸체와 긴 손잡이가 있는 토스트 에코백 정면 렌더"
+    },
+    {
+      "role": "back",
+      "src": "02-back.webp",
+      "alt": "구운 식빵 테두리 표현과 손잡이 보강 박음질을 보여주는 토스트 에코백 후면 렌더"
+    },
+    {
+      "role": "side-profile",
+      "src": "03-side-profile.webp",
+      "alt": "에코백의 옆폭과 입구, 두 개의 긴 손잡이를 보여주는 측면 렌더"
+    },
+    {
+      "role": "crust-logo-detail",
+      "src": "04-detail-crust-logo.webp",
+      "alt": "캔버스 원단과 갈색 테두리 봉제, TOAST 인쇄를 확대한 에코백 디테일 렌더"
+    },
+    {
+      "role": "interior-pocket-detail",
+      "src": "05-detail-interior-pocket.webp",
+      "alt": "자석 여밈과 내부 포켓, 손잡이 보강 박음질을 보여주는 에코백 내부 렌더"
+    },
+    {
+      "role": "worn-lifestyle",
+      "src": "06-worn-lifestyle.webp",
+      "alt": "밝은 상의를 입은 사람이 토스트 에코백을 어깨에 멘 라이프스타일 렌더"
+    },
+    {
+      "role": "packaging",
+      "src": "07-packaging.webp",
+      "alt": "접은 토스트 에코백을 투명 포장과 식빵 아이콘 띠지로 감싼 패키지 렌더"
+    }
+  ]
+}
