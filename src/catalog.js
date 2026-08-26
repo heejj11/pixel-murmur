@@ -117,7 +117,47 @@ const toastEcoBag = {
   })),
 }
 
-export const objects = [toastPowerBank, toastTshirt, toastEcoBag]
+const toastPhoneCase = {
+  id: 'PM-004',
+  name: 'Toast Phone Case',
+  nameKo: '토스트 폰케이스',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-004-toast-phone-case/01-hero-three-quarter.webp`,
+  accent: '#934f1c',
+  href: '/objects/pm-004',
+  alt: '식빵 속살 질감과 구운 갈색 테두리를 입체적으로 구현한 토스트 폰케이스의 사선 후면 렌더',
+  category: 'Accessory',
+  intro: 'A protective phone case that turns one familiar rectangle into a slice of toast, down to the crumb, crust, and molded edge.',
+  introKo: '식빵의 폭신한 속살과 바삭하게 구운 테두리를 정교한 보호 구조로 옮긴 폰케이스 콘셉트입니다.',
+  statement: ['A familiar shape,', 'freshly toasted.'],
+  story: [
+    'A phone and a slice of bread begin with almost the same rectangle. Toast Phone Case makes that resemblance tactile through a soft crumb surface and a browned protective rim.',
+    'The humor only works if the object still feels precise. Camera protection, button response, port access, grip, and wireless charging all remain part of the physical test.',
+  ],
+  notes: [
+    ['Crust edge', 'A raised caramel rim frames the soft bread texture while protecting the screen and camera from direct contact.'],
+    ['Surface', 'The porous crumb pattern is imagined as a shallow molded texture that stays tactile without trapping dust.'],
+    ['Precise fit', 'Button covers, speaker holes, and the charging opening follow the phone closely so the novelty never interrupts use.'],
+    ['Next test', 'A first TPU and rigid-shell sample should verify grip, wireless charging, heat, and everyday pocket wear.'],
+  ],
+  gallery: [
+    ['hero-three-quarter', '01-hero-three-quarter.webp', '토스트 폰케이스의 식빵 질감과 카메라 보호 테두리를 보여주는 사선 후면 렌더', 'Hero view'],
+    ['back', '02-back.webp', '식빵 속살 질감과 구운 갈색 테두리를 정면에서 보여주는 토스트 폰케이스 후면 렌더', 'Back'],
+    ['side-profile', '03-side-profile.webp', '토스트 폰케이스의 두께와 볼륨 버튼 마감을 보여주는 측면 렌더', 'Side profile'],
+    ['camera-crust-detail', '04-detail-camera-crust.webp', '카메라 보호 립과 식빵 속살, 크러스트 전환을 확대한 토스트 폰케이스 디테일 렌더', 'Camera and crust'],
+    ['buttons-ports-detail', '05-detail-buttons-ports.webp', '토스트 폰케이스의 충전 포트와 스피커 홀, 버튼 마감을 확대한 디테일 렌더', 'Buttons and ports'],
+    ['worn-lifestyle', '06-lifestyle.webp', '체크 패브릭 위에 놓인 토스트 폰케이스의 아침 테이블 라이프스타일 렌더', 'Everyday setting'],
+    ['packaging', '07-packaging.webp', '투명 식빵 봉투와 종이 트레이에 담긴 토스트 폰케이스 패키지 콘셉트 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-004-toast-phone-case/${file}`,
+    alt,
+    label,
+  })),
+}
+
+export const objects = [toastPowerBank, toastTshirt, toastEcoBag, toastPhoneCase]
 
 export const hiddenObjects = [
   {

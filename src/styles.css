@@ -471,6 +471,18 @@ img {
   grid-column: span 2;
 }
 
+.object-card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.object-card:nth-child(4) .product-image {
+  aspect-ratio: 1.55 / 1;
+}
+
+.object-card:nth-child(4) .product-image img {
+  object-fit: contain;
+}
+
 .object-card__link {
   display: block;
   color: inherit;
@@ -1246,6 +1258,10 @@ img {
     row-gap: 46px;
   }
 
+  .object-card:nth-child(4) {
+    grid-column: span 2;
+  }
+
   .about {
     grid-template-columns: 1.2fr 0.8fr;
   }
@@ -1621,6 +1637,14 @@ img {
 
   .object-card:first-child {
     grid-column: auto;
+  }
+
+  .object-card:nth-child(4) {
+    grid-column: auto;
+  }
+
+  .object-card:nth-child(4) .product-image {
+    aspect-ratio: 1.1 / 1;
   }
 
   .object-card .product-image {
