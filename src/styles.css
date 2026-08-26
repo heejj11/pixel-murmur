@@ -447,6 +447,16 @@ img {
   text-transform: uppercase;
 }
 
+.archive-heading h2 [lang='ko'] {
+  margin-left: 8px;
+  color: var(--muted);
+  font-family: 'IBM Plex Sans Variable', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  word-break: keep-all;
+}
+
 .section-heading a {
   display: inline-flex;
   gap: 10px;

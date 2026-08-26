@@ -1,0 +1,44 @@
+{
+  "id": "PM-009",
+  "slug": "pager-index-memo",
+  "name": "Pager Index Memo",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "gallery": [
+    {
+      "role": "hero-three-quarter",
+      "src": "01-hero-three-quarter.webp",
+      "alt": "길고 낮은 화면 전체에 노란 PET 인덱스 필름이 들어간 스모크 블랙 삐삐 메모 홀더 사선 렌더"
+    },
+    {
+      "role": "peel-front",
+      "src": "02-peel-front.webp",
+      "alt": "삐삐 화면 전체 크기의 길쭉한 PET 인덱스 필름 한 장을 정면에서 떼어내는 모습"
+    },
+    {
+      "role": "refill-structure",
+      "src": "03-refill-structure.webp",
+      "alt": "전면 베젤과 다섯 가지 색상의 긴 PET 인덱스 리필 묶음을 분리한 구조 렌더"
+    },
+    {
+      "role": "material-detail",
+      "src": "04-material-detail.webp",
+      "alt": "노트 위에 펼친 다섯 가지 색상의 반투명 PET 인덱스 필름"
+    },
+    {
+      "role": "lifestyle-notebook",
+      "src": "05-lifestyle-notebook.webp",
+      "alt": "삐삐 홀더에서 꺼낸 긴 PET 인덱스 필름을 노트 페이지에 붙이는 사용 장면"
+    },
+    {
+      "role": "variant-lineup",
+      "src": "06-color-lineup.webp",
+      "alt": "블랙, 아이보리, 네이비, 올리브 컬러의 삐삐 인덱스 메모 홀더 네 가지 렌더"
+    },
+    {
+      "role": "packaging",
+      "src": "07-packaging.webp",
+      "alt": "삐삐 홀더와 긴 PET 인덱스 리필을 담은 블리스터 패키지 렌더"
+    }
+  ]
+}

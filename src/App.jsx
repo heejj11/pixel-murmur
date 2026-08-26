@@ -102,7 +102,7 @@ function Archive() {
   return (
     <section className="archive" id="objects" aria-labelledby="archive-title">
       <div className="section-heading archive-heading">
-        <h2 id="archive-title">Toast Objects</h2>
+        <h2 id="archive-title">Unmade Objects <span lang="ko">아직 없는 물건들</span></h2>
         <a href="/#about">About the archive <ArrowRight size={16} weight="bold" /></a>
       </div>
       <div className="object-grid">

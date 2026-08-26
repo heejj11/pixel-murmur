@@ -324,6 +324,47 @@ const toastPhoneGrip = {
   })),
 }
 
+const pagerIndexMemo = {
+  id: 'PM-009',
+  name: 'Pager Index Memo',
+  nameKo: '삐삐 인덱스 메모',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-009-pager-index-memo/01-hero-three-quarter.webp`,
+  accent: '#2f9da8',
+  href: '/objects/pm-009',
+  alt: '길고 낮은 화면 전체에 반투명 PET 인덱스 필름이 들어간 스모크 블랙 삐삐 메모 홀더 렌더',
+  category: 'Stationery',
+  variant: 'PET Index Film',
+  intro: 'A pager-shaped holder that turns its long display into one peelable strip of writable PET index film.',
+  introKo: '삐삐의 길고 낮은 화면 전체를 한 장의 반투명 PET 인덱스 필름으로 사용하는 문구 콘셉트입니다.',
+  statement: ['The screen is', 'the memo.'],
+  story: [
+    'Pager Index Memo replaces the electronic display with one long strip of writable PET film. Peel it from the front and use it as a durable marker for books, notes, and planners.',
+    'Each refill stacks translucent strips in five colors behind the shallow bezel. Film thickness, writing performance, removable adhesion, and refill construction still need a physical sample.',
+  ],
+  notes: [
+    ['Screen-sized strip', 'One slim PET strip fills the complete pager display, keeping the familiar long and shallow screen proportion.'],
+    ['PET material', 'A translucent semi-gloss film stays flexible, accepts handwriting, and lets the page remain visible underneath.'],
+    ['Front refill', 'The display bezel opens so a full stack of long strips can be replaced without a side-dispensing mechanism.'],
+    ['Next test', 'A prototype should verify writing tools, removable adhesive, film curl, refill capacity, and repeated opening.'],
+  ],
+  gallery: [
+    ['hero-three-quarter', '01-hero-three-quarter.webp', '길고 낮은 화면 전체에 노란 PET 인덱스 필름이 들어간 스모크 블랙 삐삐 메모 홀더 사선 렌더', 'Hero view'],
+    ['peel-front', '02-peel-front.webp', '삐삐 화면 전체 크기의 길쭉한 PET 인덱스 필름 한 장을 정면에서 떼어내는 모습', 'Front peel'],
+    ['refill-structure', '03-refill-structure.webp', '전면 베젤과 다섯 가지 색상의 긴 PET 인덱스 리필 묶음을 분리한 구조 렌더', 'Full-length refill'],
+    ['material-detail', '04-material-detail.webp', '노트 위에 펼친 노랑, 분홍, 파랑, 민트, 스모크 컬러의 반투명 PET 인덱스 필름', 'PET material'],
+    ['lifestyle-notebook', '05-lifestyle-notebook.webp', '삐삐 홀더에서 꺼낸 긴 PET 인덱스 필름을 노트 페이지에 붙이는 사용 장면', 'Notebook use'],
+    ['variant-lineup', '06-color-lineup.webp', '블랙, 아이보리, 네이비, 올리브 컬러의 삐삐 인덱스 메모 홀더 네 가지 렌더', 'Color lineup'],
+    ['packaging', '07-packaging.webp', '삐삐 홀더와 다섯 가지 색상의 긴 PET 인덱스 리필을 담은 블리스터 패키지 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-009-pager-index-memo/${file}`,
+    alt,
+    label,
+  })),
+}
+
 export const objects = [
   toastPowerBank,
   toastTshirt,
@@ -333,6 +374,7 @@ export const objects = [
   toastCardWallet,
   toastPouch,
   toastPhoneGrip,
+  pagerIndexMemo,
 ]
 
 export const hiddenObjects = [

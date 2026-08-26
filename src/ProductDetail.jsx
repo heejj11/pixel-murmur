@@ -40,6 +40,11 @@ const galleryLabelKo = {
   'Attached view': '부착 모습',
   'Flavor series': '토핑 시리즈',
   'In hand': '손에 든 모습',
+  'Front peel': '정면 분리',
+  'Full-length refill': '긴 인덱스 리필',
+  'PET material': 'PET 소재',
+  'Notebook use': '노트 사용',
+  'Color lineup': '컬러 구성',
 }
 
 function BilingualGalleryLabel({ label }) {
