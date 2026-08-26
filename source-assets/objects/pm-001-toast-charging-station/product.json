@@ -1,0 +1,14 @@
+{
+  "id": "PM-001",
+  "slug": "pm-001-toast-charging-station",
+  "name": "Toast Charging Station",
+  "nameKo": "토스트 충전 스테이션",
+  "category": "Charging Object",
+  "variant": "Dock + Mini Battery",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "renderCount": 8,
+  "createdAt": "2026-08-26",
+  "source": "OpenAI built-in ImageGen",
+  "reference": "Existing PM-001 hero render and user-supplied detachable toast battery brief"
+}
