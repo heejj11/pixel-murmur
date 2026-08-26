@@ -1,0 +1,13 @@
+{
+  "id": "PM-007",
+  "slug": "pm-007-toast-pouch",
+  "name": "Toast Pouch",
+  "nameKo": "토스트 파우치",
+  "category": "Carry Goods",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "renderCount": 7,
+  "createdAt": "2026-08-26",
+  "source": "OpenAI built-in ImageGen",
+  "reference": "굽기 정도를 고르는 티셔츠-첨부-02.png 중 파우치 콘셉트"
+}

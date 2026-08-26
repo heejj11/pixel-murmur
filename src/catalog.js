@@ -235,6 +235,46 @@ const toastCardWallet = {
   })),
 }
 
+const toastPouch = {
+  id: 'PM-007',
+  name: 'Toast Pouch',
+  nameKo: '토스트 파우치',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-007-toast-pouch/01-hero-three-quarter.webp`,
+  accent: '#8b4a1b',
+  href: '/objects/pm-007',
+  alt: '식빵 모양의 부드러운 크림색 몸체와 갈색 테두리, 상단 지퍼를 갖춘 토스트 파우치 사선 렌더',
+  category: 'Carry Goods',
+  intro: 'A soft everyday pouch that turns one roomy compartment into a padded slice of toast.',
+  introKo: '식빵의 폭신한 속살과 구운 테두리를 넉넉한 수납, 상단 지퍼, 내부 포켓으로 옮긴 파우치 콘셉트입니다.',
+  statement: ['Room for', 'the small things.'],
+  story: [
+    'Toast Pouch keeps cables, cosmetics, and stationery together inside a soft bread-shaped case. Its wider gusset and flexible body clearly separate it from the smaller card wallet.',
+    'A broad opening, washable lining, divided interior pockets, and a side carry loop make the concept useful beyond the visual joke. Capacity and seam strength still need physical testing.',
+  ],
+  notes: [
+    ['Roomy shape', 'A wider gusset and flexible padded body create useful volume without losing the toast silhouette.'],
+    ['Top opening', 'The zipper opens broadly across the top so small items remain visible and easy to reach.'],
+    ['Inside', 'A washable lining with divided pockets keeps cables, cosmetics, or stationery from mixing together.'],
+    ['Next test', 'A sewn sample should verify capacity, zipper travel, lining cleanup, and the strength of the side loop.'],
+  ],
+  gallery: [
+    ['hero-three-quarter', '01-hero-three-quarter.webp', '부드러운 식빵 질감과 넓은 옆폭, 상단 지퍼를 보여주는 토스트 파우치 사선 정면 렌더', 'Hero view'],
+    ['front', '02-front.webp', '식빵 모양 실루엣과 갈색 봉제 테두리를 정면에서 보여주는 토스트 파우치 렌더', 'Front'],
+    ['open', '03-open-interior.webp', '케이블과 펜, 작은 화장품을 나누어 담은 토스트 파우치의 열린 내부 렌더', 'Open interior'],
+    ['side-profile', '04-side-profile.webp', '토스트 파우치의 넓은 옆폭과 상단 지퍼, 측면 고리를 보여주는 측면 렌더', 'Side profile'],
+    ['material-zipper-detail', '05-detail-material-zipper.webp', '식빵 결을 닮은 원단과 갈색 파이핑, 지퍼, 봉제 마감을 확대한 파우치 디테일 렌더', 'Material and zipper'],
+    ['worn-lifestyle', '06-lifestyle.webp', '밝은 책상에서 케이블을 토스트 파우치에 정리하는 라이프스타일 렌더', 'Everyday use'],
+    ['packaging', '07-packaging.webp', '재생 종이 트레이와 글라신지에 담긴 토스트 파우치 패키지 콘셉트 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-007-toast-pouch/${file}`,
+    alt,
+    label,
+  })),
+}
+
 export const objects = [
   toastPowerBank,
   toastTshirt,
@@ -242,6 +282,7 @@ export const objects = [
   toastPhoneCase,
   toastAirpodsCase,
   toastCardWallet,
+  toastPouch,
 ]
 
 export const hiddenObjects = [
