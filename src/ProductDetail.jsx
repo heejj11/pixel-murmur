@@ -3,56 +3,77 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from '@phosphor-icons/react'
 import { objects } from './catalog'
 import { Footer, Header, ProductImage, StatusGlyph } from './SiteChrome'
 
-const statusFacts = [
-  ['Status', 'Just a Pixel'],
-  ['Reality', '0%'],
-  ['Category', 'Unmade Object'],
-  ['Type', 'Concept Product'],
-  ['Possibility', 'Open for Collaboration'],
-]
-
-const conceptNotes = [
-  {
-    title: 'Interaction',
-    copy: 'The toast-shaped battery returns to its base, turning charging into a small, familiar gesture.',
-  },
-  {
-    title: 'Material direction',
-    copy: 'A warm matte shell, tactile tan control, and dark inset display keep the object charming but grown-up.',
-  },
-  {
-    title: 'Intended place',
-    copy: 'Designed to stay visible on a desk, bedside table, or shelf instead of disappearing into a drawer.',
-  },
-  {
-    title: 'Archive note',
-    copy: 'This is an illustrative design study. No manufactured or production-ready version exists yet.',
-  },
-]
-
 function RelatedObject({ object }) {
-  return (
-    <article className="related-object" style={{ '--object-accent': object.accent }}>
+  const content = (
+    <>
       <ProductImage src={object.image} alt={object.alt} />
       <div className="related-object__meta">
         <span>{object.id}</span>
         <h3>{object.name}</h3>
         <span className="related-object__status"><StatusGlyph />{object.status}</span>
       </div>
+    </>
+  )
+
+  return (
+    <article className="related-object" style={{ '--object-accent': object.accent }}>
+      {object.href ? (
+        <a href={object.href} aria-label={`View ${object.name}`}>
+          {content}
+        </a>
+      ) : content}
     </article>
   )
 }
 
-export default function ProductDetail() {
-  const object = objects[0]
+function ProductGallery({ object }) {
+  const gallery = object.gallery.slice(1)
+
+  if (!gallery.length) return null
+
+  return (
+    <section className="product-gallery" aria-labelledby="gallery-title">
+      <div className="detail-section-heading">
+        <h2 id="gallery-title">Object views</h2>
+        <span>{object.gallery.length} renders / one concept</span>
+      </div>
+      <div className="product-gallery__grid">
+        {gallery.map((image) => (
+          <figure
+            className={`gallery-item gallery-item--${image.role}`}
+            key={image.role}
+          >
+            <ProductImage src={image.src} alt={image.alt} />
+            <figcaption>
+              <span>{image.label}</span>
+              <span>{object.id}</span>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export default function ProductDetail({ object }) {
+  const heroImage = object.gallery[0]
+  const statusFacts = [
+    ['Status', object.status],
+    ['Reality', `${object.reality}%`],
+    ['Category', object.category],
+    ['Type', 'Concept Product'],
+    ['Possibility', 'Open for Collaboration'],
+  ]
+  const relatedObjects = objects.filter((item) => item.id !== object.id).slice(0, 4)
 
   useEffect(() => {
     const previousTitle = document.title
-    document.title = 'Bread Power Bank — PixelMurmur'
+    document.title = `${object.name} | PixelMurmur`
+    window.scrollTo(0, 0)
     return () => {
       document.title = previousTitle
     }
-  }, [])
+  }, [object])
 
   return (
     <div className="site-shell detail-shell" id="top">
@@ -64,27 +85,27 @@ export default function ProductDetail() {
               <ArrowLeft size={15} weight="bold" aria-hidden="true" />
               Back to objects
             </a>
-            <span>Objects / PM-001</span>
+            <span>Objects / {object.id}</span>
           </div>
 
           <div className="detail-layout">
             <figure className="detail-figure">
               <ProductImage
                 className="detail-render"
-                src={object.image}
-                alt={object.alt}
+                src={heroImage.src}
+                alt={heroImage.alt}
                 eager
               />
               <figcaption>
-                <span>PM_001_OBJECT.webp</span>
-                <span>Studio view / 01</span>
+                <span>{heroImage.label}</span>
+                <span>{object.id} / 01</span>
               </figcaption>
             </figure>
 
             <div className="detail-summary">
               <div className="detail-identity">
                 <span>{object.id}</span>
-                <h1 id="detail-title">Bread<br />Power Bank</h1>
+                <h1 id="detail-title">{object.name}</h1>
               </div>
 
               <div className="status-chip">
@@ -99,18 +120,13 @@ export default function ProductDetail() {
               </div>
 
               <div className="detail-intro">
-                <p>
-                  A familiar breakfast silhouette reimagined as a quiet charging object.
-                  The toast-shaped battery and its base turn power into a small daily ritual.
-                </p>
-                <p lang="ko">
-                  식빵과 토스터의 익숙한 동작을 충전 경험으로 바꾼 보조배터리 콘셉트입니다.
-                </p>
+                <p>{object.intro}</p>
+                <p lang="ko">{object.introKo}</p>
               </div>
 
               <a
                 className="primary-button"
-                href="mailto:hello@pixelmurmur.com?subject=PM-001%20Bread%20Power%20Bank%20inquiry"
+                href={`mailto:hello@pixelmurmur.com?subject=${encodeURIComponent(`${object.id} ${object.name} inquiry`)}`}
               >
                 Make this real
                 <ArrowUpRight size={19} weight="bold" aria-hidden="true" />
@@ -119,18 +135,12 @@ export default function ProductDetail() {
           </div>
         </section>
 
+        <ProductGallery object={object} />
+
         <section className="concept-story" aria-labelledby="concept-title">
-          <h2 id="concept-title">A small ritual,<br />recharged.</h2>
+          <h2 id="concept-title">{object.statement[0]}<br />{object.statement[1]}</h2>
           <div className="concept-story__copy">
-            <p>
-              Most batteries disappear into bags and drawers. Bread Power Bank is meant
-              to remain visible: a collectible desk object with a useful second life.
-            </p>
-            <p>
-              Returning the toast to its base completes the silhouette and begins charging.
-              Until that mechanism is engineered, the idea remains exactly where PixelMurmur
-              begins — in pixels.
-            </p>
+            {object.story.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           </div>
           <aside className="concept-story__aside">
             <span>Archive note</span>
@@ -159,10 +169,10 @@ export default function ProductDetail() {
             <span>Direction, not specification</span>
           </div>
           <div className="detail-notes__grid">
-            {conceptNotes.map((note) => (
-              <article key={note.title}>
-                <h3>{note.title}</h3>
-                <p>{note.copy}</p>
+            {object.notes.map(([title, copy]) => (
+              <article key={title}>
+                <h3>{title}</h3>
+                <p>{copy}</p>
               </article>
             ))}
           </div>
@@ -173,13 +183,13 @@ export default function ProductDetail() {
             <h2 id="detail-contact-title">Want to make<br />it real?</h2>
             <p>
               For production, collaboration, or licensing inquiries, tell us what you
-              could bring to PM-001.
+              could bring to {object.id}.
             </p>
             <p lang="ko">이 아이디어를 실제 물건으로 만들 수 있다면 이야기해 주세요.</p>
           </div>
           <a
             className="primary-button"
-            href="mailto:hello@pixelmurmur.com?subject=PM-001%20collaboration%20inquiry"
+            href={`mailto:hello@pixelmurmur.com?subject=${encodeURIComponent(`${object.id} collaboration inquiry`)}`}
           >
             Contact PixelMurmur
             <ArrowUpRight size={19} weight="bold" aria-hidden="true" />
@@ -195,7 +205,7 @@ export default function ProductDetail() {
             </a>
           </div>
           <div className="related-grid">
-            {objects.slice(1).map((relatedObject) => (
+            {relatedObjects.map((relatedObject) => (
               <RelatedObject key={relatedObject.id} object={relatedObject} />
             ))}
           </div>

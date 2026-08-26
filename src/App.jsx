@@ -1,5 +1,5 @@
 import { ArrowRight, ArrowUpRight } from '@phosphor-icons/react'
-import { objects } from './catalog'
+import { featuredObject, findObjectByPath, objects } from './catalog'
 import ProductDetail from './ProductDetail'
 import {
   Footer,
@@ -10,6 +10,8 @@ import {
 } from './SiteChrome'
 
 function Hero() {
+  const object = featuredObject
+
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero-copy">
@@ -30,29 +32,29 @@ function Hero() {
 
       <a
         className="hero-object"
-        href={objects[0].href}
-        aria-label="View PM-001 Bread Power Bank"
+        href={object.href}
+        aria-label={`View ${object.id} ${object.name}`}
       >
         <ProductImage
           className="hero-render"
-          src={objects[0].image}
-          alt={objects[0].alt}
+          src={object.image}
+          alt={object.alt}
           eager
         />
       </a>
 
       <div className="hero-meta">
         <div>
-          <span className="meta-label">PM-001</span>
-          <strong>Bread<br />Power Bank</strong>
+          <span className="meta-label">{object.id}</span>
+          <strong>Toast<br />T-Shirt</strong>
         </div>
         <div className="status-chip">
           <StatusGlyph />
-          <span>Just a Pixel</span>
+          <span>{object.status}</span>
         </div>
         <div className="reality-row">
           <span>Reality</span>
-          <strong>0%</strong>
+          <strong>{object.reality}%</strong>
           <span className="reality-line" aria-hidden="true" />
         </div>
       </div>
@@ -196,9 +198,10 @@ function Homepage() {
 
 export default function App() {
   const path = window.location.pathname.replace(/\/+$/, '') || '/'
+  const object = findObjectByPath(path)
 
-  if (path === '/objects/pm-001') {
-    return <ProductDetail />
+  if (object) {
+    return <ProductDetail object={object} />
   }
 
   return <Homepage />

@@ -1,0 +1,45 @@
+{
+  "id": "PM-006",
+  "slug": "toast-tshirt",
+  "name": "Toast T-Shirt",
+  "variant": "Butter",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "gallery": [
+    {
+      "role": "hero-front",
+      "src": "01-hero-front.webp",
+      "alt": "버터 장식과 구운 식빵 가장자리 표현이 들어간 크림색 오버사이즈 티셔츠 정면 렌더"
+    },
+    {
+      "role": "back",
+      "src": "02-back.webp",
+      "alt": "식빵 테두리처럼 갈색 그러데이션이 들어간 토스트 티셔츠 뒷면 렌더"
+    },
+    {
+      "role": "side-profile",
+      "src": "03-side-profile.webp",
+      "alt": "토스트 티셔츠의 드롭 숄더와 옆선을 보여주는 측면 렌더"
+    },
+    {
+      "role": "collar-fabric-detail",
+      "src": "03-detail-collar-fabric.webp",
+      "alt": "갈색 골지 카라와 식빵 결 원단 표현을 확대한 티셔츠 디테일 렌더"
+    },
+    {
+      "role": "butter-detail",
+      "src": "04-detail-butter.webp",
+      "alt": "토스트 티셔츠에 부착된 노란 버터 장식과 흐르는 형태를 확대한 렌더"
+    },
+    {
+      "role": "worn-lifestyle",
+      "src": "05-worn-lifestyle.webp",
+      "alt": "따뜻한 주방에서 토스트 티셔츠를 착용한 모습을 보여주는 라이프스타일 렌더"
+    },
+    {
+      "role": "packaging",
+      "src": "06-packaging.webp",
+      "alt": "식빵 모양으로 접은 토스트 티셔츠를 투명 봉투에 담은 패키지 콘셉트 렌더"
+    }
+  ]
+}
