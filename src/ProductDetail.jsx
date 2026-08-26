@@ -3,6 +3,54 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from '@phosphor-icons/react'
 import { objects } from './catalog'
 import { Footer, Header, ProductImage, StatusGlyph } from './SiteChrome'
 
+const galleryLabelKo = {
+  'Docked view': '도킹 상태',
+  'Detachable structure': '분리 구조',
+  'Portable toast battery': '휴대용 토스트 배터리',
+  'Charging dock': '충전 도크',
+  'Ports and contacts': '포트와 충전 접점',
+  'LCD states': 'LCD 상태',
+  'Portable use': '휴대 사용',
+  'Packaging concept': '패키지 콘셉트',
+  'Front / Butter': '정면 / 버터',
+  Back: '후면',
+  'Side profile': '측면',
+  'Collar and fabric': '카라와 원단',
+  'Butter applique': '버터 장식',
+  'Worn view': '착용 모습',
+  Front: '정면',
+  'Crust and logo': '테두리와 로고',
+  'Interior pocket': '내부 포켓',
+  'Carried view': '휴대 모습',
+  'Hero view': '대표 이미지',
+  'Camera and crust': '카메라와 테두리',
+  'Buttons and ports': '버튼과 포트',
+  'Everyday setting': '일상 장면',
+  'Open view': '열린 모습',
+  'Back and hinge': '후면과 힌지',
+  'Hinge and keyring': '힌지와 키링',
+  'Charging access': '충전 단자',
+  'Open interior': '열린 내부',
+  'Crust and zipper': '테두리와 지퍼',
+  'Everyday carry': '일상 휴대',
+  'Material and zipper': '소재와 지퍼',
+  'Everyday use': '일상 사용',
+  'Collapsed front': '접힌 정면',
+  'Extended profile': '펼친 측면',
+  'Attached view': '부착 모습',
+  'Flavor series': '토핑 시리즈',
+  'In hand': '손에 든 모습',
+}
+
+function BilingualGalleryLabel({ label }) {
+  return (
+    <span className="bilingual-gallery-label">
+      <span>{label}</span>
+      <span lang="ko">{galleryLabelKo[label] ?? '상세 이미지'}</span>
+    </span>
+  )
+}
+
 function RelatedObject({ object }) {
   const content = (
     <>
@@ -35,8 +83,8 @@ function ProductGallery({ object }) {
   return (
     <section className="product-gallery" aria-labelledby="gallery-title">
       <div className="detail-section-heading">
-        <h2 id="gallery-title">Object views</h2>
-        <span>{object.gallery.length} renders / one concept</span>
+        <h2 id="gallery-title">Object views <span lang="ko">제품 이미지</span></h2>
+        <span>{object.gallery.length} renders / 렌더 {object.gallery.length}장</span>
       </div>
       <div className="product-gallery__grid">
         {gallery.map((image) => (
@@ -46,7 +94,7 @@ function ProductGallery({ object }) {
           >
             <ProductImage src={image.src} alt={image.alt} />
             <figcaption>
-              <span>{image.label}</span>
+              <BilingualGalleryLabel label={image.label} />
               <span>{object.id}</span>
             </figcaption>
           </figure>
@@ -98,7 +146,7 @@ export default function ProductDetail({ object }) {
                 eager
               />
               <figcaption>
-                <span>{heroImage.label}</span>
+                <BilingualGalleryLabel label={heroImage.label} />
                 <span>{object.id} / 01</span>
               </figcaption>
             </figure>

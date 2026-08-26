@@ -831,9 +831,33 @@ img {
 
 .detail-figure figcaption {
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   padding-top: 13px;
   color: var(--muted);
+}
+
+.bilingual-gallery-label {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+  min-width: 0;
+  align-items: baseline;
+}
+
+.bilingual-gallery-label [lang='ko'],
+.detail-section-heading h2 [lang='ko'] {
+  color: var(--ink);
+  font-family: 'IBM Plex Sans Variable', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  word-break: keep-all;
+}
+
+.detail-section-heading h2 [lang='ko'] {
+  margin-left: 8px;
 }
 
 .detail-summary {
@@ -951,6 +975,7 @@ img {
 
 .gallery-item figcaption {
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   padding-top: 13px;
   color: var(--muted);
