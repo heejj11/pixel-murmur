@@ -307,10 +307,22 @@ img {
 }
 
 .hero-meta strong {
+  display: block;
+  max-width: 11ch;
   font-family: 'IBM Plex Sans Variable', sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.08;
+}
+
+.hero-meta__ko {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-family: 'IBM Plex Sans Variable', sans-serif;
+  font-size: 12px;
+  text-transform: none;
+  word-break: keep-all;
 }
 
 .status-chip {
@@ -455,6 +467,10 @@ img {
   min-width: 0;
 }
 
+.object-card:first-child {
+  grid-column: span 2;
+}
+
 .object-card__link {
   display: block;
   color: inherit;
@@ -467,6 +483,14 @@ img {
   background: #ebe5dc;
 }
 
+.object-card:first-child .product-image {
+  aspect-ratio: 1.55 / 1;
+}
+
+.object-card:first-child .product-image img {
+  object-fit: contain;
+}
+
 .object-card .product-image img {
   transition: opacity 420ms ease, transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -476,7 +500,7 @@ img {
 }
 
 .object-card__title {
-  min-height: 78px;
+  min-height: 96px;
 }
 
 .object-card__title span,
@@ -500,6 +524,14 @@ img {
   font-weight: 600;
   line-height: 1.02;
   text-transform: uppercase;
+}
+
+.object-card__title p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+  word-break: keep-all;
 }
 
 .object-card__status {
@@ -839,6 +871,14 @@ img {
   text-transform: uppercase;
 }
 
+.detail-identity p {
+  margin: 15px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
 .detail-summary .status-chip {
   margin-top: 40px;
 }
@@ -1115,7 +1155,7 @@ img {
 
 .related-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(14px, 2vw, 30px);
   margin-top: 28px;
 }
@@ -1161,6 +1201,14 @@ img {
   text-transform: uppercase;
 }
 
+.related-object__meta p {
+  margin: -8px 0 18px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
 .related-object__status {
   display: flex;
   align-items: center;
@@ -1194,7 +1242,7 @@ img {
   }
 
   .object-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 46px;
   }
 
@@ -1476,7 +1524,7 @@ img {
   }
 
   .object-card__title {
-    min-height: 72px;
+    min-height: 88px;
   }
 
   .object-card__title h3 {
@@ -1569,6 +1617,10 @@ img {
 @media (max-width: 420px) {
   .object-grid {
     grid-template-columns: 1fr;
+  }
+
+  .object-card:first-child {
+    grid-column: auto;
   }
 
   .object-card .product-image {

@@ -10,6 +10,7 @@ function RelatedObject({ object }) {
       <div className="related-object__meta">
         <span>{object.id}</span>
         <h3>{object.name}</h3>
+        <p lang="ko">{object.nameKo}</p>
         <span className="related-object__status"><StatusGlyph />{object.status}</span>
       </div>
     </>
@@ -106,6 +107,7 @@ export default function ProductDetail({ object }) {
               <div className="detail-identity">
                 <span>{object.id}</span>
                 <h1 id="detail-title">{object.name}</h1>
+                <p lang="ko">{object.nameKo}</p>
               </div>
 
               <div className="status-chip">

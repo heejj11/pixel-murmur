@@ -1,4 +1,4 @@
-# PM-006 Toast T-Shirt — Render Prompt Summary
+# PM-002 Toast T-Shirt - Render Prompt Summary
 
 Built-in ImageGen mode with the supplied toast-goods boards as product references and the PixelMurmur toaster render as a palette/style reference.
 
@@ -20,4 +20,3 @@ Built-in ImageGen mode with the supplied toast-goods boards as product reference
 5. Butter detail: macro of the dimensional butter appliqué, attachment edge, and nearby cotton weave.
 6. Worn lifestyle: face-cropped adult model in a quiet warm kitchen-studio, natural oversized fit.
 7. Packaging: folded garment in a clear bakery-style bag with kraft closure and a text-free toast icon.
-

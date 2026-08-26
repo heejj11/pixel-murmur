@@ -1,159 +1,151 @@
 const imageRoot = '/images/objects'
 
-export const objects = [
+const toastPowerBank = {
+  id: 'PM-001',
+  name: 'Toast Power Bank',
+  nameKo: '토스트 보조배터리',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: '/objects/pm-001-bread-power-bank.webp',
+  accent: '#824817',
+  href: '/objects/pm-001',
+  alt: '토스트가 꽂힌 크림색 토스터 형태의 무선 보조배터리 콘셉트 렌더',
+  category: 'Object',
+  intro: 'A familiar breakfast silhouette reimagined as a quiet charging object. The toast-shaped battery and its base turn power into a small daily ritual.',
+  introKo: '식빵과 토스터의 익숙한 동작을 충전 경험으로 바꾼 보조배터리 콘셉트입니다.',
+  statement: ['A small ritual,', 'recharged.'],
+  story: [
+    'Most batteries disappear into bags and drawers. Toast Power Bank is meant to remain visible: a collectible desk object with a useful second life.',
+    'Returning the toast to its base completes the silhouette and begins charging. Until that mechanism is engineered, the idea remains in pixels.',
+  ],
+  notes: [
+    ['Interaction', 'The toast-shaped battery returns to its base, turning charging into a small, familiar gesture.'],
+    ['Material direction', 'A warm matte shell, tactile tan control, and dark inset display keep the object charming but grown-up.'],
+    ['Intended place', 'Designed to stay visible on a desk, bedside table, or shelf instead of disappearing into a drawer.'],
+    ['Archive note', 'This is an illustrative design study. No manufactured or production-ready version exists yet.'],
+  ],
+  gallery: [
+    {
+      role: 'hero-front',
+      src: '/objects/pm-001-bread-power-bank.webp',
+      alt: '토스트가 꽂힌 크림색 토스터 형태의 무선 보조배터리 콘셉트 렌더',
+      label: 'Studio view',
+    },
+  ],
+}
+
+const toastTshirt = {
+  id: 'PM-002',
+  name: 'Toast T-Shirt',
+  nameKo: '토스트 티셔츠',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-002-toast-tshirt/01-hero-front.webp`,
+  accent: '#9a541d',
+  href: '/objects/pm-002',
+  legacyPaths: ['/objects/pm-006'],
+  alt: '버터 장식과 구운 식빵 가장자리 표현이 들어간 크림색 오버사이즈 티셔츠 정면 렌더',
+  category: 'Wearable',
+  variant: 'Butter',
+  intro: 'A soft oversized T-shirt that borrows its color, texture, and toasted edge from a slice of bread.',
+  introKo: '식빵의 결, 구운 가장자리, 녹아내리는 버터를 한 벌의 티셔츠로 옮긴 의상 콘셉트입니다.',
+  statement: ['Choose your', 'toast level.'],
+  story: [
+    'Toast T-Shirt treats an everyday white tee like a slice waiting to be browned. The warm edge gradient gives the flat silhouette a playful, edible depth.',
+    'The Butter version adds one small three-dimensional accent. Fabric, print method, and washable construction still need to be tested before the idea can leave the screen.',
+  ],
+  notes: [
+    ['Silhouette', 'A relaxed unisex fit with dropped shoulders keeps the toast-shaped body simple and wearable.'],
+    ['Surface', 'A pale bread-crumb texture sits across the fabric with a darker toasted gradient at every edge.'],
+    ['Butter detail', 'The yellow chest accent is imagined as a soft raised applique with a printed melt trail.'],
+    ['Next test', 'Fabric hand feel, edge-print consistency, and wash durability need physical sampling.'],
+  ],
+  gallery: [
+    ['hero-front', '01-hero-front.webp', '버터 장식과 구운 식빵 가장자리 표현이 들어간 크림색 오버사이즈 티셔츠 정면 렌더', 'Front / Butter'],
+    ['back', '02-back.webp', '식빵 테두리처럼 갈색 그러데이션이 들어간 토스트 티셔츠 뒷면 렌더', 'Back'],
+    ['side-profile', '03-side-profile.webp', '토스트 티셔츠의 드롭 숄더와 옆선을 보여주는 측면 렌더', 'Side profile'],
+    ['collar-fabric-detail', '03-detail-collar-fabric.webp', '갈색 골지 카라와 식빵 결 원단 표현을 확대한 티셔츠 디테일 렌더', 'Collar and fabric'],
+    ['butter-detail', '04-detail-butter.webp', '토스트 티셔츠에 부착된 노란 버터 장식과 흐르는 형태를 확대한 렌더', 'Butter applique'],
+    ['worn-lifestyle', '05-worn-lifestyle.webp', '따뜻한 주방에서 토스트 티셔츠를 착용한 모습을 보여주는 라이프스타일 렌더', 'Worn view'],
+    ['packaging', '06-packaging.webp', '식빵 모양으로 접은 토스트 티셔츠를 투명 봉투에 담은 패키지 콘셉트 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-002-toast-tshirt/${file}`,
+    alt,
+    label,
+  })),
+}
+
+const toastEcoBag = {
+  id: 'PM-003',
+  name: 'Toast Eco Bag',
+  nameKo: '토스트 에코백',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-003-toast-eco-bag/01-hero-front.webp`,
+  accent: '#8c4e1e',
+  href: '/objects/pm-003',
+  legacyPaths: ['/objects/pm-007'],
+  alt: '식빵 모양의 크림색 캔버스 몸체와 긴 손잡이가 있는 토스트 에코백 정면 렌더',
+  category: 'Carry Goods',
+  intro: 'A practical canvas tote shaped like one generous slice of toast, complete with browned seams and a quiet stitched mark.',
+  introKo: '도톰한 식빵 한 장의 실루엣과 구운 테두리를 캔버스 가방으로 옮긴 에코백 콘셉트입니다.',
+  statement: ['Carry a slice', 'every day.'],
+  story: [
+    'Toast Eco Bag turns the square utility of a tote into a soft bread silhouette without losing everyday capacity. The visual joke stays readable from a distance.',
+    'A structured canvas body, reinforced handles, magnetic closure, and interior pocket make the concept plausible. Pattern balance and seam construction remain to be sampled.',
+  ],
+  notes: [
+    ['Shape', 'Rounded upper corners and a gently browned perimeter create the slice silhouette without a hard novelty outline.'],
+    ['Material direction', 'Heavy cotton canvas gives the body enough structure while keeping the surface soft and familiar.'],
+    ['Inside', 'A magnetic closure and small hanging pocket organize daily items without changing the clean exterior.'],
+    ['Next test', 'A paper pattern and weight test will decide whether the bag holds its toast shape when carried.'],
+  ],
+  gallery: [
+    ['hero-front', '01-hero-front.webp', '식빵 모양의 크림색 캔버스 몸체와 긴 손잡이가 있는 토스트 에코백 정면 렌더', 'Front'],
+    ['back', '02-back.webp', '구운 식빵 테두리 표현과 손잡이 보강 박음질을 보여주는 토스트 에코백 후면 렌더', 'Back'],
+    ['side-profile', '03-side-profile.webp', '에코백의 옆폭과 입구, 두 개의 긴 손잡이를 보여주는 측면 렌더', 'Side profile'],
+    ['crust-logo-detail', '04-detail-crust-logo.webp', '캔버스 원단과 갈색 테두리 봉제, TOAST 인쇄를 확대한 에코백 디테일 렌더', 'Crust and logo'],
+    ['interior-pocket-detail', '05-detail-interior-pocket.webp', '자석 여밈과 내부 포켓, 손잡이 보강 박음질을 보여주는 에코백 내부 렌더', 'Interior pocket'],
+    ['worn-lifestyle', '06-worn-lifestyle.webp', '밝은 상의를 입은 사람이 토스트 에코백을 어깨에 멘 라이프스타일 렌더', 'Carried view'],
+    ['packaging', '07-packaging.webp', '접은 토스트 에코백을 투명 포장과 식빵 아이콘 띠지로 감싼 패키지 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-003-toast-eco-bag/${file}`,
+    alt,
+    label,
+  })),
+}
+
+export const objects = [toastPowerBank, toastTshirt, toastEcoBag]
+
+export const hiddenObjects = [
   {
-    id: 'PM-001',
-    name: 'Bread Power Bank',
-    status: 'Just a Pixel',
-    reality: 0,
-    image: '/objects/pm-001-bread-power-bank.webp',
-    accent: '#824817',
-    href: '/objects/pm-001',
-    alt: '토스트가 꽂힌 크림색 토스터 형태의 무선 보조배터리 콘셉트 렌더',
-    category: 'Object',
-    intro: 'A familiar breakfast silhouette reimagined as a quiet charging object. The toast-shaped battery and its base turn power into a small daily ritual.',
-    introKo: '식빵과 토스터의 익숙한 동작을 충전 경험으로 바꾼 보조배터리 콘셉트입니다.',
-    statement: ['A small ritual,', 'recharged.'],
-    story: [
-      'Most batteries disappear into bags and drawers. Bread Power Bank is meant to remain visible: a collectible desk object with a useful second life.',
-      'Returning the toast to its base completes the silhouette and begins charging. Until that mechanism is engineered, the idea remains in pixels.',
-    ],
-    notes: [
-      ['Interaction', 'The toast-shaped battery returns to its base, turning charging into a small, familiar gesture.'],
-      ['Material direction', 'A warm matte shell, tactile tan control, and dark inset display keep the object charming but grown-up.'],
-      ['Intended place', 'Designed to stay visible on a desk, bedside table, or shelf instead of disappearing into a drawer.'],
-      ['Archive note', 'This is an illustrative design study. No manufactured or production-ready version exists yet.'],
-    ],
-    gallery: [
-      {
-        role: 'hero-front',
-        src: '/objects/pm-001-bread-power-bank.webp',
-        alt: '토스트가 꽂힌 크림색 토스터 형태의 무선 보조배터리 콘셉트 렌더',
-        label: 'Studio view',
-      },
-    ],
-  },
-  {
-    id: 'PM-002',
+    archiveId: 'PM-002',
     name: 'Cassette Memo Case',
-    status: 'Maybe Real',
-    reality: 20,
     image: '/objects/pm-002-cassette-memo-case.webp',
-    accent: '#45423d',
-    alt: '카세트테이프 형태의 크림색 데스크 메모 케이스 콘셉트 렌더',
-    category: 'Stationery',
   },
   {
-    id: 'PM-003',
+    archiveId: 'PM-003',
     name: 'Film Roll Tape',
-    status: 'Making',
-    reality: 50,
     image: '/objects/pm-003-film-roll-tape.webp',
-    accent: '#514b3f',
-    alt: '필름통과 테이프 디스펜서를 결합한 데스크 오브젝트 콘셉트 렌더',
-    category: 'Stationery',
   },
   {
-    id: 'PM-004',
+    archiveId: 'PM-004',
     name: 'Pixel Alarm Clock',
-    status: 'Soon',
-    reality: 80,
     image: '/objects/pm-004-pixel-alarm-clock.webp',
-    accent: '#825000',
-    alt: '졸린 픽셀 표정을 띄운 작은 CRT 모니터 형태의 알람시계 콘셉트 렌더',
-    category: 'Object',
   },
   {
-    id: 'PM-005',
+    archiveId: 'PM-005',
     name: 'Folding Mood Lamp',
-    status: 'Shelved',
-    reality: 0,
     image: '/objects/pm-005-folding-mood-lamp.webp',
-    accent: '#4e4d45',
-    alt: '작은 초승달 상태창이 있는 접이식 데스크 무드등 콘셉트 렌더',
-    category: 'Lighting',
-  },
-  {
-    id: 'PM-006',
-    name: 'Toast T-Shirt',
-    status: 'Just a Pixel',
-    reality: 0,
-    image: `${imageRoot}/pm-006-toast-tshirt/01-hero-front.webp`,
-    accent: '#9a541d',
-    href: '/objects/pm-006',
-    alt: '버터 장식과 구운 식빵 가장자리 표현이 들어간 크림색 오버사이즈 티셔츠 정면 렌더',
-    category: 'Wearable',
-    variant: 'Butter',
-    intro: 'A soft oversized T-shirt that borrows its color, texture, and toasted edge from a slice of bread.',
-    introKo: '식빵의 결, 구운 가장자리, 녹아내리는 버터를 한 벌의 티셔츠로 옮긴 의상 콘셉트입니다.',
-    statement: ['Choose your', 'toast level.'],
-    story: [
-      'Toast T-Shirt treats an everyday white tee like a slice waiting to be browned. The warm edge gradient gives the flat silhouette a playful, edible depth.',
-      'The Butter version adds one small three-dimensional accent. Fabric, print method, and washable construction still need to be tested before the idea can leave the screen.',
-    ],
-    notes: [
-      ['Silhouette', 'A relaxed unisex fit with dropped shoulders keeps the toast-shaped body simple and wearable.'],
-      ['Surface', 'A pale bread-crumb texture sits across the fabric with a darker toasted gradient at every edge.'],
-      ['Butter detail', 'The yellow chest accent is imagined as a soft raised applique with a printed melt trail.'],
-      ['Next test', 'Fabric hand feel, edge-print consistency, and wash durability need physical sampling.'],
-    ],
-    gallery: [
-      ['hero-front', '01-hero-front.webp', '버터 장식과 구운 식빵 가장자리 표현이 들어간 크림색 오버사이즈 티셔츠 정면 렌더', 'Front / Butter'],
-      ['back', '02-back.webp', '식빵 테두리처럼 갈색 그러데이션이 들어간 토스트 티셔츠 뒷면 렌더', 'Back'],
-      ['side-profile', '03-side-profile.webp', '토스트 티셔츠의 드롭 숄더와 옆선을 보여주는 측면 렌더', 'Side profile'],
-      ['collar-fabric-detail', '03-detail-collar-fabric.webp', '갈색 골지 카라와 식빵 결 원단 표현을 확대한 티셔츠 디테일 렌더', 'Collar and fabric'],
-      ['butter-detail', '04-detail-butter.webp', '토스트 티셔츠에 부착된 노란 버터 장식과 흐르는 형태를 확대한 렌더', 'Butter applique'],
-      ['worn-lifestyle', '05-worn-lifestyle.webp', '따뜻한 주방에서 토스트 티셔츠를 착용한 모습을 보여주는 라이프스타일 렌더', 'Worn view'],
-      ['packaging', '06-packaging.webp', '식빵 모양으로 접은 토스트 티셔츠를 투명 봉투에 담은 패키지 콘셉트 렌더', 'Packaging concept'],
-    ].map(([role, file, alt, label]) => ({
-      role,
-      src: `${imageRoot}/pm-006-toast-tshirt/${file}`,
-      alt,
-      label,
-    })),
-  },
-  {
-    id: 'PM-007',
-    name: 'Toast Eco Bag',
-    status: 'Just a Pixel',
-    reality: 0,
-    image: `${imageRoot}/pm-007-toast-eco-bag/01-hero-front.webp`,
-    accent: '#8c4e1e',
-    href: '/objects/pm-007',
-    alt: '식빵 모양의 크림색 캔버스 몸체와 긴 손잡이가 있는 토스트 에코백 정면 렌더',
-    category: 'Carry Goods',
-    intro: 'A practical canvas tote shaped like one generous slice of toast, complete with browned seams and a quiet stitched mark.',
-    introKo: '도톰한 식빵 한 장의 실루엣과 구운 테두리를 캔버스 가방으로 옮긴 에코백 콘셉트입니다.',
-    statement: ['Carry a slice', 'every day.'],
-    story: [
-      'Toast Eco Bag turns the square utility of a tote into a soft bread silhouette without losing everyday capacity. The visual joke stays readable from a distance.',
-      'A structured canvas body, reinforced handles, magnetic closure, and interior pocket make the concept plausible. Pattern balance and seam construction remain to be sampled.',
-    ],
-    notes: [
-      ['Shape', 'Rounded upper corners and a gently browned perimeter create the slice silhouette without a hard novelty outline.'],
-      ['Material direction', 'Heavy cotton canvas gives the body enough structure while keeping the surface soft and familiar.'],
-      ['Inside', 'A magnetic closure and small hanging pocket organize daily items without changing the clean exterior.'],
-      ['Next test', 'A paper pattern and weight test will decide whether the bag holds its toast shape when carried.'],
-    ],
-    gallery: [
-      ['hero-front', '01-hero-front.webp', '식빵 모양의 크림색 캔버스 몸체와 긴 손잡이가 있는 토스트 에코백 정면 렌더', 'Front'],
-      ['back', '02-back.webp', '구운 식빵 테두리 표현과 손잡이 보강 박음질을 보여주는 토스트 에코백 후면 렌더', 'Back'],
-      ['side-profile', '03-side-profile.webp', '에코백의 옆폭과 입구, 두 개의 긴 손잡이를 보여주는 측면 렌더', 'Side profile'],
-      ['crust-logo-detail', '04-detail-crust-logo.webp', '캔버스 원단과 갈색 테두리 봉제, TOAST 인쇄를 확대한 에코백 디테일 렌더', 'Crust and logo'],
-      ['interior-pocket-detail', '05-detail-interior-pocket.webp', '자석 여밈과 내부 포켓, 손잡이 보강 박음질을 보여주는 에코백 내부 렌더', 'Interior pocket'],
-      ['worn-lifestyle', '06-worn-lifestyle.webp', '밝은 상의를 입은 사람이 토스트 에코백을 어깨에 멘 라이프스타일 렌더', 'Carried view'],
-      ['packaging', '07-packaging.webp', '접은 토스트 에코백을 투명 포장과 식빵 아이콘 띠지로 감싼 패키지 렌더', 'Packaging concept'],
-    ].map(([role, file, alt, label]) => ({
-      role,
-      src: `${imageRoot}/pm-007-toast-eco-bag/${file}`,
-      alt,
-      label,
-    })),
   },
 ]
 
-export const featuredObject = objects.find((object) => object.id === 'PM-006')
+export const featuredObject = toastPowerBank
 
 export function findObjectByPath(path) {
-  return objects.find((object) => object.href === path)
+  return objects.find((object) => (
+    object.href === path || object.legacyPaths?.includes(path)
+  ))
 }

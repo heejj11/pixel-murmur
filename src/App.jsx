@@ -46,7 +46,8 @@ function Hero() {
       <div className="hero-meta">
         <div>
           <span className="meta-label">{object.id}</span>
-          <strong>Toast<br />T-Shirt</strong>
+          <strong>{object.name}</strong>
+          <span className="hero-meta__ko" lang="ko">{object.nameKo}</span>
         </div>
         <div className="status-chip">
           <StatusGlyph />
@@ -69,6 +70,7 @@ function ObjectCard({ object }) {
       <div className="object-card__title">
         <span>{object.id}</span>
         <h3>{object.name}</h3>
+        <p lang="ko">{object.nameKo}</p>
       </div>
       <div className="object-card__status">
         <span><StatusGlyph />{object.status}</span>
@@ -100,7 +102,7 @@ function Archive() {
   return (
     <section className="archive" id="objects" aria-labelledby="archive-title">
       <div className="section-heading archive-heading">
-        <h2 id="archive-title">Unmade Objects</h2>
+        <h2 id="archive-title">Toast Objects</h2>
         <a href="/#about">About the archive <ArrowRight size={16} weight="bold" /></a>
       </div>
       <div className="object-grid">

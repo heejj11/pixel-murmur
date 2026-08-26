@@ -1,6 +1,6 @@
-# PM-007 Toast Eco Bag — Render Prompt Summary
+# PM-003 Toast Eco Bag - Render Prompt Summary
 
-Built-in ImageGen mode with the supplied eco-bag/toast-goods boards as product references and PM-006 as the locked PixelMurmur textile-rendering reference.
+Built-in ImageGen mode with the supplied eco-bag/toast-goods boards as product references and PM-002 as the locked PixelMurmur textile-rendering reference.
 
 ## Locked product direction
 

@@ -8,11 +8,11 @@
 
 ## Published object dossiers
 
-- `/objects/pm-001` - Bread Power Bank
-- `/objects/pm-006` - Toast T-Shirt
-- `/objects/pm-007` - Toast Eco Bag
+- `/objects/pm-001` - Toast Power Bank / 토스트 보조배터리
+- `/objects/pm-002` - Toast T-Shirt / 토스트 티셔츠
+- `/objects/pm-003` - Toast Eco Bag / 토스트 에코백
 
-PM-006과 PM-007은 정면, 후면, 측면, 소재 디테일, 착용 또는 사용 장면, 패키지까지
+PM-002와 PM-003은 정면, 후면, 측면, 소재 디테일, 착용 또는 사용 장면, 패키지까지
 한 상품 단위의 렌더 갤러리로 구성되어 있습니다.
 
 ## Run locally
