@@ -11,6 +11,7 @@ colors:
   object-stage: "#ebe5dc"
   archive-ink: "#191816"
   soft-charcoal: "#272522"
+  reading-graphite: "#4e4942"
   muted-graphite: "#69645c"
   hairline: "#d9d1c6"
 typography:
@@ -34,6 +35,17 @@ typography:
   body:
     fontFamily: "IBM Plex Sans Variable, sans-serif"
     fontSize: "17px"
+    fontWeight: 400
+    lineHeight: 1.65
+  dossier-title:
+    fontFamily: "IBM Plex Sans Variable, sans-serif"
+    fontSize: "clamp(44px, 4.3vw, 68px)"
+    fontWeight: 560
+    lineHeight: 0.94
+    letterSpacing: "-0.04em"
+  dossier-body:
+    fontFamily: "IBM Plex Sans Variable, sans-serif"
+    fontSize: "15px"
     fontWeight: 400
     lineHeight: 1.65
   label:
@@ -100,6 +112,37 @@ components:
     rounded: "{rounded.none}"
     padding: "0 20px 18px"
     height: "150px"
+  detail-dossier:
+    backgroundColor: "{colors.warm-paper}"
+    textColor: "{colors.archive-ink}"
+    typography: "{typography.dossier-title}"
+    rounded: "{rounded.none}"
+    padding: "28px clamp(20px, 3vw, 52px) 96px"
+  status-ledger-item:
+    backgroundColor: "{colors.warm-paper}"
+    textColor: "{colors.archive-ink}"
+    typography: "{typography.label}"
+    rounded: "{rounded.none}"
+    padding: "22px 18px"
+    height: "144px"
+  concept-note:
+    backgroundColor: "{colors.warm-paper}"
+    textColor: "{colors.reading-graphite}"
+    typography: "{typography.dossier-body}"
+    rounded: "{rounded.none}"
+    padding: "22px 0 0"
+  collaboration-band:
+    backgroundColor: "{colors.deep-paper}"
+    textColor: "{colors.archive-ink}"
+    typography: "{typography.display}"
+    rounded: "{rounded.none}"
+    padding: "104px clamp(20px, 3vw, 52px)"
+  related-object:
+    backgroundColor: "{colors.deep-paper}"
+    textColor: "{colors.archive-ink}"
+    typography: "{typography.title}"
+    rounded: "{rounded.none}"
+    padding: "0"
 ---
 
 # Design System: PixelMurmur
@@ -119,6 +162,7 @@ The visual world is editorial rather than technological: pixel display type supp
 - Pixel display accents paired with sober sans and mono support type.
 - English-led labels with concise Korean supporting copy.
 - Flat catalog structure, hairline dividers, and only restrained ambient depth.
+- Object detail pages read as dossiers: image evidence first, then status, notes, inquiry, and related entries.
 
 ## Colors
 
@@ -138,6 +182,7 @@ The palette behaves like warm archival paper around cream, tan, and charcoal ind
 - **Object Stage** (`object-stage`): the quiet neutral field behind archive renders.
 - **Archive Ink** (`archive-ink`): primary text, borders, buttons, and the compact navigation mark.
 - **Soft Charcoal** (`soft-charcoal`): the small pixel-window surface; use only as a contained dark object.
+- **Reading Graphite** (`reading-graphite`): softened long-form copy in object summaries, concept notes, and collaboration bands.
 - **Muted Graphite** (`muted-graphite`): supporting copy, IDs, and secondary labels.
 - **Hairline** (`hairline`): section rules, card dividers, and reality-scale structure.
 
@@ -160,6 +205,8 @@ The palette behaves like warm archival paper around cream, tan, and charcoal ind
 - **Pixel Headline** (520–550, fluid display sizing, 0.9–1 line-height): the collaboration heading and REALITY percentages only.
 - **Title** (600, 15px, 1.02 line-height): compact uppercase object names, typically held to about 12 characters per line.
 - **Body** (400, 15–18px, 1.55–1.65 line-height): English and Korean explanatory copy; Korean uses `word-break: keep-all` when line wrapping needs protection.
+- **Dossier Title** (560, fluid 44–68px scale, 0.94 line-height): uppercase object identity on detail pages; it stays sans rather than pixelated so the product name reads as catalog evidence.
+- **Dossier Body** (400, 15px, 1.65–1.7 line-height): compact concept summaries and note copy; Korean support steps down to 14px while preserving relaxed leading.
 - **Label** (500, 9–11px, uppercase): navigation, object IDs, statuses, section labels, and archive metadata.
 
 **The Pixel-With-Purpose Rule.** Pixelify is for the wordmark, signature calls to action, pixel-status numerals, and small brand marks; never set paragraphs or ordinary metadata in it.
@@ -172,9 +219,13 @@ The site is one centered shell, capped at 1500px and inset from the greige canva
 
 At full desktop width, the hero uses three columns: editorial copy, an object-scale render, and compact metadata. The archive is a five-column grid; About uses statement, copy, and pixel-window columns; the journal pairs its explanation with a five-step REALITY scale. At 1120px, the hero becomes two columns with metadata spanning below, the archive becomes three columns, and About drops the decorative window. At 767px, navigation becomes an accessible dropdown, the hero and narrative sections stack, and the archive starts at two columns. At 420px and below, the archive becomes a single column. The verified targets are 1440px desktop and 390px mobile.
 
+Object detail pages open with a compact trail above a two-column dossier: a wide 1.18:1 studio stage with filename and view metadata, followed by a narrower ruled summary containing identity, state, narrative, and one inquiry action. The concept story uses three editorial columns, the status ledger uses five equal cells, concept notes use four ruled columns, and related objects use four compact tiles. At 1120px these secondary grids reduce to two columns; at 767px the dossier and story become a single reading column, the ledger becomes label/value rows, and notes become one column. Related objects become a single column at 420px.
+
 **The Object-First Rule.** Product renders get the largest uninterrupted area; copy explains them and metadata verifies them, but neither overlays or crowds the object.
 
 **The One-Site Rule.** Preserve a continuous responsive webpage inside one warm shell; never reproduce the laptop, phone, social-post, or brand-board frames visible in the source reference board.
+
+**The Dossier-Reflows Rule.** On narrow screens preserve the evidence order—trail, render and caption, identity, state, summary, action—then turn dense ledger columns into readable label/value rows instead of shrinking them.
 
 ## Elevation & Depth
 
@@ -221,6 +272,28 @@ The page frame is softly rounded, while interface controls and pixel details use
 
 Images load over a quiet paper skeleton and fade to full opacity over 420ms. The hero object receives the system's single entrance gesture: a 780ms settle from slight blur, scale, and vertical offset, only when reduced motion is not requested. Do not add looping object motion, parallax, or multiple competing entrances.
 
+### Object Dossier Hero
+
+The detail hero behaves like an archival evidence sheet, not a commerce product page. Lead with a breadcrumb trail and an oversized contained render on Deep Paper; place filename and studio-view metadata directly beneath it. The adjacent summary starts with an Archive Ink top rule and orders the object ID, uppercase sans title, status chip, REALITY track, English/Korean introduction, and the existing primary inquiry button.
+
+**The Dossier-Is-Evidence Rule.** Use filenames, view labels, update dates, status, and REALITY to establish archive context; do not replace them with prices, ratings, inventory, purchase controls, or invented specifications.
+
+### Status Ledger
+
+Use a semantic label/value ledger for stable object facts. Desktop presents five equal hairline-separated cells with the value anchored low in each cell; mobile converts the same facts into stacked rows with labels left and values right. Status and REALITY remain editorial language, and the update date stays in the section heading.
+
+### Concept Story and Notes
+
+The story pairs one large sans statement with readable prose and a compact ruled archive aside. Concept notes are borderless, shadowless columns defined only by an Archive Ink top rule, mono label, and 15px Reading Graphite copy. Notes describe interaction, material direction, intended setting, and archive caveats as directions—not engineered specifications.
+
+### Detail Collaboration Band
+
+Use Deep Paper to close the dossier with a large Pixelify question, restrained English/Korean inquiry copy, and the existing primary button. The action uses the confirmed public inquiry address and a PM-specific subject; on mobile the band stacks copy above the button without centering either.
+
+### Related Objects
+
+Related entries are a compact continuation of the archive: a Deep Paper image stage, PM identifier, short uppercase title, and accented status. Keep them flat and let only the image scale to 1.025 on hover. The grid moves from four columns to two at 1120px and one at 420px.
+
 ### Pixel Mark
 
 The square face is a code-native signature used at 28px in navigation and 94px inside the About window. It uses square pixel eyes and a three-part mouth; it is decorative where nearby text already supplies meaning.
@@ -234,6 +307,8 @@ The square face is a code-native signature used at 28px in navigation and 94px i
 - Do keep status, IDs, filenames, and REALITY metadata compact and catalog-like.
 - Do pair English navigation and labels with concise Korean support where the approved composition does.
 - Do preserve visible focus states, meaningful image alternatives, semantic structure, and the reduced-motion fallback.
+- Do structure object details as calm dossiers with visible state, provenance-style metadata, concept caveats, and one focused collaboration path.
+- Do convert ledger cells into label/value rows and preserve evidence order on mobile.
 
 ### Don't:
 
@@ -243,3 +318,4 @@ The square face is a code-native signature used at 28px in navigation and 94px i
 - Don't use pixel type for paragraphs, long Korean copy, or ordinary body text.
 - Don't add excessive color, shadow, animation, rounded pills, or childish decoration around the objects.
 - Don't imply that illustrative renders are manufactured products or production-ready goods.
+- Don't turn a concept dossier into an ecommerce page or fill it with prices, ratings, inventory, purchase controls, or unverified specifications.

@@ -16,7 +16,7 @@ The primary audience is design-conscious visitors, makers, manufacturers, and po
 
 ## Product Purpose
 
-PixelMurmur is a public archive of unmade objects. It presents product ideas as refined concepts, mockups, and digital designs that may eventually become physical products. The homepage should make the archive understandable, desirable to explore, and open to collaboration.
+PixelMurmur is a public archive of unmade objects. It presents product ideas as refined concepts, mockups, and digital designs that may eventually become physical products. The homepage introduces the archive, while object detail pages make individual ideas understandable and open to collaboration.
 
 ## Positioning
 
@@ -24,13 +24,14 @@ PixelMurmur is a quiet independent studio, laboratory, and archive for ideas bef
 
 ## Operating Context
 
-Visitors browse a homepage with a featured object, explore an archive of additional concepts, learn the project philosophy, and find a clear route for production, collaboration, or licensing inquiries.
+Visitors browse a homepage with a featured object, explore an archive of additional concepts, open an object dossier for deeper concept and status information, learn the project philosophy, and find a clear route for production, collaboration, or licensing inquiries.
 
 ## Capabilities and Constraints
 
-- The first deliverable is a responsive homepage.
+- The current deliverable includes a responsive homepage and a dedicated PM-001 object detail route at `/objects/pm-001`.
 - Primary sections: navigation, hero, featured object, object archive, philosophy, collaboration CTA, and footer.
 - Featured object: PM_001 Bread Power Bank.
+- The PM-001 detail page may describe a toast-shaped battery returning to a charging base as a concept direction, but it must remain explicit that no engineered or manufactured product currently exists.
 - Additional archive entries: PM_002 Cassette Memo Case, PM_003 Film Roll Tape, PM_004 Pixel Alarm Clock, and PM_005 Folding Mood Lamp.
 - Status language may use JUST A PIXEL, MAYBE REAL, MAKING, SOON, and SHELVED.
 - Display object numbers as PM-001, PM-002, and so on. Asset filenames and metadata may use underscore notation such as `PM_004_OBJECT.jpg`.
@@ -60,6 +61,7 @@ Visitors browse a homepage with a featured object, explore an archive of additio
 ## Evidence on Hand
 
 - The user supplied the complete homepage content and visual brief in `pasted-text.txt` outside the project workspace.
+- The user supplied a dedicated PM-001 product-detail brief defining the page structure, product concept, status language, inquiry action, and related-object section.
 - No existing logo files, photographs, testimonials, customers, metrics, or licensing terms are available. The public inquiry address is confirmed as `hello@pixelmurmur.com`.
 - Product imagery for this concept site may be authored as clearly illustrative design renders, but no commercial or production claims should be inferred from them.
 
