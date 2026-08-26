@@ -403,7 +403,7 @@ const floppyDiskMemoPad = {
   gallery: [
     ['hero-three-quarter', '01-hero-three-quarter.webp', '네이비 플로피디스크 하단 라벨 영역에 메모 스택이 들어간 사선 제품 렌더', 'Hero view'],
     ['peel-sheet', '02-peel-sheet.webp', '플로피디스크 라벨 영역에서 메모지 한 장의 모서리를 들어 떼어내는 모습', 'Peel one sheet'],
-    ['refill-mechanism', '03-refill-mechanism.webp', '플로피디스크 하단 슬롯에서 약 3밀리미터 두께의 얇은 메모 리필 트레이를 꺼낸 구조 렌더', 'Refill mechanism'],
+    ['refill-mechanism', '03-refill-mechanism-v2.webp', '플로피디스크 하단 슬롯에서 약 3밀리미터 두께의 얇은 메모 리필 트레이를 꺼낸 구조 렌더', 'Refill mechanism'],
     ['rear-construction', '04-rear-construction.webp', '원형 허브와 고무 받침, 하단 리필 잠금 장치가 있는 후면 구조 렌더', 'Rear construction'],
     ['variant-lineup', '05-color-lineup.webp', '네이비, 그래파이트, 아이보리, 올리브 플로피디스크 메모패드 네 가지 컬러 렌더', 'Color lineup'],
     ['worn-lifestyle', '06-everyday-use.webp', '나무 책상에서 플로피디스크 메모패드에 펜으로 기록하고 떼어낸 메모를 노트에 꽂은 사용 장면', 'Everyday use'],
