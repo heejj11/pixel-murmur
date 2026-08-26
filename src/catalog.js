@@ -157,7 +157,47 @@ const toastPhoneCase = {
   })),
 }
 
-export const objects = [toastPowerBank, toastTshirt, toastEcoBag, toastPhoneCase]
+const toastAirpodsCase = {
+  id: 'PM-005',
+  name: 'Toast AirPods Case',
+  nameKo: '토스트 에어팟 케이스',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-005-toast-airpods-case/01-hero-closed.webp`,
+  accent: '#8f4c1a',
+  href: '/objects/pm-005',
+  alt: '식빵의 속살과 구운 갈색 테두리를 입체적으로 표현한 토스트 에어팟 케이스의 닫힌 모습',
+  category: 'Accessory',
+  intro: 'A compact earbud case that turns every charge into a pocket-sized slice of toast, complete with crumb, crust, hinge, and carry ring.',
+  introKo: '식빵의 속살과 구운 테두리를 충전 케이스의 뚜껑, 힌지, 키링 구조로 옮긴 에어팟 케이스 콘셉트입니다.',
+  statement: ['A small slice,', 'ready to carry.'],
+  story: [
+    'Toast AirPods Case makes a familiar charging object easier to find and more enjoyable to carry. The toast lid opens with the case instead of becoming a separate decoration.',
+    'The idea depends on precise engineering. Hinge clearance, wireless charging, speaker openings, grip, and the side ring all need to survive everyday pocket and bag use.',
+  ],
+  notes: [
+    ['Lid and hinge', 'A fitted two-part shell follows the charging case lid so the toast silhouette opens in one natural movement.'],
+    ['Surface', 'A shallow crumb texture and softly browned perimeter create the bread character without adding unnecessary bulk.'],
+    ['Carry ring', 'A compact side loop gives the case a secure attachment point for a keyring, strap, or bag clip.'],
+    ['Next test', 'A first flexible-shell sample should verify hinge clearance, charging access, wireless charging, and pocket wear.'],
+  ],
+  gallery: [
+    ['hero-closed', '01-hero-closed.webp', '토스트 에어팟 케이스의 식빵 질감과 측면 키링을 보여주는 닫힌 사선 렌더', 'Hero view'],
+    ['open', '02-open.webp', '흰색 무선 이어버드가 들어 있는 토스트 에어팟 케이스의 열린 모습', 'Open view'],
+    ['back', '03-back-hinge.webp', '토스트 에어팟 케이스의 후면 힌지와 갈색 크러스트 테두리를 보여주는 렌더', 'Back and hinge'],
+    ['hinge-keyring-detail', '04-detail-hinge-keyring.webp', '토스트 에어팟 케이스의 힌지와 금속 키링 연결부를 확대한 디테일 렌더', 'Hinge and keyring'],
+    ['charging-detail', '05-detail-charging-port.webp', '토스트 에어팟 케이스 하단의 충전 단자와 스피커 구멍을 확대한 디테일 렌더', 'Charging access'],
+    ['worn-lifestyle', '06-lifestyle.webp', '크림색 캔버스 가방에 토스트 에어팟 케이스를 키링으로 연결한 라이프스타일 렌더', 'Carried view'],
+    ['packaging', '07-packaging.webp', '투명 식빵 봉투와 종이 트레이에 담긴 토스트 에어팟 케이스 패키지 콘셉트 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-005-toast-airpods-case/${file}`,
+    alt,
+    label,
+  })),
+}
+
+export const objects = [toastPowerBank, toastTshirt, toastEcoBag, toastPhoneCase, toastAirpodsCase]
 
 export const hiddenObjects = [
   {
