@@ -1,6 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 import { GithubLogo, List, X } from '@phosphor-icons/react'
 
+const statusLabelKo = {
+  'Just a Pixel': '아직은 픽셀',
+  'Maybe Real': '제작 가능성 검토 중',
+  Making: '제작 중',
+  Soon: '곧 공개',
+  Shelved: '잠시 보류',
+}
+
 export function PixelFace({ small = false }) {
   return (
     <span className={`pixel-face${small ? ' pixel-face--small' : ''}`} aria-hidden="true">
@@ -15,6 +23,17 @@ export function PixelFace({ small = false }) {
 
 export function StatusGlyph() {
   return <span className="status-glyph" aria-hidden="true" />
+}
+
+export function StatusLabel({ status }) {
+  return (
+    <span className="status-label">
+      <span>{status}</span>
+      <span className="status-label__ko" lang="ko">
+        {statusLabelKo[status] ?? '상태 미정'}
+      </span>
+    </span>
+  )
 }
 
 export function ProductImage({ src, alt, eager = false, className = '' }) {

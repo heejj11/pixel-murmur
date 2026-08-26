@@ -8,6 +8,7 @@ import {
   PixelFace,
   ProductImage,
   StatusGlyph,
+  StatusLabel,
 } from './SiteChrome'
 
 const archiveCollections = [
@@ -58,7 +59,7 @@ function Hero() {
         </div>
         <div className="status-chip">
           <StatusGlyph />
-          <span>{object.status}</span>
+          <StatusLabel status={object.status} />
         </div>
         <div className="reality-row">
           <span>Reality</span>
@@ -80,7 +81,7 @@ function ObjectCard({ object }) {
         <p lang="ko">{object.nameKo}</p>
       </div>
       <div className="object-card__status">
-        <span><StatusGlyph />{object.status}</span>
+        <span><StatusGlyph /><StatusLabel status={object.status} /></span>
       </div>
       <div className="object-card__reality">
         <span>Reality</span>
@@ -180,23 +181,33 @@ function About() {
 }
 
 function Journal() {
+  const realityStages = [
+    ['0', 'Concept', '아이디어'],
+    ['20', 'Sourcing', '제작 검토'],
+    ['50', 'Prototype', '시제품'],
+    ['80', 'Production', '생산 준비'],
+    ['100', 'Real', '실물'],
+  ]
+
   return (
     <section className="journal" id="journal" aria-labelledby="journal-title">
       <div className="journal-heading">
-        <h2 id="journal-title">From pixel to object</h2>
-        <p lang="ko">REALITY는 아이디어가 실제 물건에 가까워지는 과정을 기록합니다.</p>
+        <h2 id="journal-title">
+          From pixel to object <span lang="ko">픽셀에서 물건으로</span>
+        </h2>
+        <p lang="ko">REALITY는 아이디어가 실제 물건에 가까워지는 단계를 기록합니다.</p>
       </div>
-      <ol className="reality-scale" aria-label="Reality scale">
-        {[
-          ['0%', 'Concept'],
-          ['20%', 'Sourcing'],
-          ['50%', 'Prototype'],
-          ['80%', 'Production'],
-          ['100%', 'Real'],
-        ].map(([value, label]) => (
+      <ol className="reality-scale" aria-label="아이디어가 실물이 되는 단계">
+        {realityStages.map(([value, label, labelKo]) => (
           <li key={value}>
-            <strong>{value}</strong>
-            <span>{label}</span>
+            <strong>
+              <span className="reality-scale__value">{value}</span>
+              <span className="reality-scale__unit">%</span>
+            </strong>
+            <span className="reality-scale__label">
+              <span>{label}</span>
+              <span lang="ko">{labelKo}</span>
+            </span>
           </li>
         ))}
       </ol>

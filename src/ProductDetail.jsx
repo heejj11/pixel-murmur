@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { ArrowLeft, ArrowRight, ArrowUpRight } from '@phosphor-icons/react'
 import { objects } from './catalog'
-import { Footer, Header, ProductImage, StatusGlyph } from './SiteChrome'
+import { Footer, Header, ProductImage, StatusGlyph, StatusLabel } from './SiteChrome'
 
 const galleryLabelKo = {
   'Docked view': '도킹 상태',
@@ -64,7 +64,10 @@ function RelatedObject({ object }) {
         <span>{object.id}</span>
         <h3>{object.name}</h3>
         <p lang="ko">{object.nameKo}</p>
-        <span className="related-object__status"><StatusGlyph />{object.status}</span>
+        <span className="related-object__status">
+          <StatusGlyph />
+          <StatusLabel status={object.status} />
+        </span>
       </div>
     </>
   )
@@ -112,7 +115,7 @@ function ProductGallery({ object }) {
 export default function ProductDetail({ object }) {
   const heroImage = object.gallery[0]
   const statusFacts = [
-    ['Status', object.status],
+    ['Status', <StatusLabel key="status" status={object.status} />],
     ['Reality', `${object.reality}%`],
     ['Category', object.category],
     ['Type', 'Concept Product'],
@@ -165,7 +168,7 @@ export default function ProductDetail({ object }) {
 
               <div className="status-chip">
                 <StatusGlyph />
-                <span>{object.status}</span>
+                <StatusLabel status={object.status} />
               </div>
 
               <div className="detail-reality">
