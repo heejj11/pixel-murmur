@@ -416,6 +416,48 @@ const floppyDiskMemoPad = {
   })),
 }
 
+const cassetteTapeMiniPouch = {
+  id: 'PM-011',
+  collection: 'stationery',
+  name: 'Cassette Tape Mini Pouch',
+  nameKo: '카세트테이프 미니 파우치',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-011-cassette-tape-mini-pouch/01-hero-three-quarter.webp`,
+  accent: '#a84f36',
+  href: '/objects/pm-011',
+  alt: '스모크 블랙 반투명 카세트테이프 패널과 얕은 상단 지퍼 수납부를 결합한 미니 파우치 렌더',
+  category: 'Small Carry Goods',
+  variant: 'Smoke Black',
+  intro: 'A cassette-shaped mini pouch with a shallow top-opening compartment and a label card that changes with what you carry.',
+  introKo: '카세트테이프의 투명 바디와 라벨을 얕은 상단 개방 수납 구조로 옮긴 작은 파우치 콘셉트입니다.',
+  statement: ['Carry the small things,', 'like a saved track.'],
+  story: [
+    'Cassette Tape Mini Pouch keeps the original cassette proportion visible while adding only enough depth for a short cable, USB memory, or other slim essentials. The front and back stay parallel instead of unfolding like a case.',
+    'A single zipper opens a narrow mouth across the top, and the blank label card slides into an interior front sleeve. Gusset flexibility, zipper clearance, card access, and scratch resistance still need a physical sample.',
+  ],
+  notes: [
+    ['Shallow top opening', 'The zipper crosses the top and turns only slightly around the upper corners, creating an 18–20 mm opening without folding either cassette panel.'],
+    ['Cassette construction', 'Smoke-black translucent front and back panels preserve the reels, label window, and familiar 115 × 75 mm cassette face.'],
+    ['Changeable label', 'A blank paper card slides into a slim interior sleeve, so the front label can be replaced without adding an exterior slot.'],
+    ['Next test', 'A 115 × 75 × 23 mm sample should verify zipper travel, shallow capacity, TPU stiffness, label-card access, and surface scratching.'],
+  ],
+  gallery: [
+    ['hero-three-quarter', '01-hero-three-quarter.webp', '스모크 블랙 반투명 카세트 패널과 얕은 상단 지퍼 구조를 보여주는 미니 파우치 사선 렌더', 'Hero view'],
+    ['open-interior', '02-top-open-interior.webp', '앞뒤 패널을 접지 않고 상단 지퍼만 좁게 연 카세트테이프 미니 파우치의 얕은 내부 렌더', 'Top-open interior'],
+    ['side-profile', '03-side-zipper.webp', '약 23밀리미터 두께의 차콜 거싯과 상단 지퍼 경로를 보여주는 미니 파우치 측면 렌더', 'Side and zipper'],
+    ['label-card', '04-label-card-change.webp', '상단으로 연 파우치 내부 슬리브에서 빈 라벨 카드를 꺼내 교체하는 모습', 'Label card change'],
+    ['variant-lineup', '05-color-lineup.webp', '스모크 블랙, 크림 클리어, 뮤트 블루 카세트테이프 미니 파우치 세 가지 컬러 렌더', 'Color lineup'],
+    ['worn-lifestyle', '06-everyday-use.webp', '얕게 열린 카세트테이프 미니 파우치에 짧은 케이블을 넣고 USB 메모리를 수납한 사용 장면', 'Everyday use'],
+    ['packaging', '07-packaging.webp', '투명 재생 PET 슬리브와 성형 펄프 트레이, 교체 라벨 카드로 구성한 패키지 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-011-cassette-tape-mini-pouch/${file}`,
+    alt,
+    label,
+  })),
+}
+
 export const objects = [
   toastPowerBank,
   toastTshirt,
@@ -427,6 +469,7 @@ export const objects = [
   toastPhoneGrip,
   pagerIndexMemo,
   floppyDiskMemoPad,
+  cassetteTapeMiniPouch,
 ]
 
 export const hiddenObjects = [

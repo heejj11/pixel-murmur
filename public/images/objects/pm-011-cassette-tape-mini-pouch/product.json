@@ -1,0 +1,45 @@
+{
+  "id": "PM-011",
+  "slug": "cassette-tape-mini-pouch",
+  "name": "Cassette Tape Mini Pouch",
+  "nameKo": "카세트테이프 미니 파우치",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "gallery": [
+    {
+      "role": "hero-three-quarter",
+      "src": "01-hero-three-quarter.webp",
+      "alt": "스모크 블랙 반투명 카세트 패널과 얕은 상단 지퍼 구조를 보여주는 미니 파우치 사선 렌더"
+    },
+    {
+      "role": "open-interior",
+      "src": "02-top-open-interior.webp",
+      "alt": "앞뒤 패널을 접지 않고 상단 지퍼만 좁게 연 카세트테이프 미니 파우치의 얕은 내부 렌더"
+    },
+    {
+      "role": "side-profile",
+      "src": "03-side-zipper.webp",
+      "alt": "약 23밀리미터 두께의 차콜 거싯과 상단 지퍼 경로를 보여주는 미니 파우치 측면 렌더"
+    },
+    {
+      "role": "label-card",
+      "src": "04-label-card-change.webp",
+      "alt": "상단으로 연 파우치 내부 슬리브에서 빈 라벨 카드를 꺼내 교체하는 모습"
+    },
+    {
+      "role": "variant-lineup",
+      "src": "05-color-lineup.webp",
+      "alt": "스모크 블랙, 크림 클리어, 뮤트 블루 카세트테이프 미니 파우치 세 가지 컬러 렌더"
+    },
+    {
+      "role": "worn-lifestyle",
+      "src": "06-everyday-use.webp",
+      "alt": "얕게 열린 카세트테이프 미니 파우치에 짧은 케이블을 넣고 USB 메모리를 수납한 사용 장면"
+    },
+    {
+      "role": "packaging",
+      "src": "07-packaging.webp",
+      "alt": "투명 재생 PET 슬리브와 성형 펄프 트레이, 교체 라벨 카드로 구성한 패키지 렌더"
+    }
+  ]
+}

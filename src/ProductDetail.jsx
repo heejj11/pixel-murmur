@@ -48,6 +48,9 @@ const galleryLabelKo = {
   'Peel one sheet': '메모 한 장 떼기',
   'Thin profile': '얇은 적층 구조',
   'Rear construction': '후면 구조',
+  'Top-open interior': '상단 개방 내부',
+  'Side and zipper': '측면과 지퍼',
+  'Label card change': '라벨 카드 교체',
 }
 
 function BilingualGalleryLabel({ label }) {
