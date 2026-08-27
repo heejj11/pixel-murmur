@@ -94,18 +94,12 @@ function Hero() {
   )
 }
 
-const archiveCardSpans = {
-  11: ['wide', 'medium', 'narrow', 'feature', 'medium', 'wide', 'narrow', 'feature', 'tiny', 'narrow', 'medium'],
-  8: ['wide', 'medium', 'narrow', 'feature', 'medium', 'wide', 'narrow', 'feature'],
-  3: ['wide', 'medium', 'full'],
-}
-
-function ObjectCard({ object, index, layout }) {
+function ObjectCard({ object, index }) {
   const copyKo = getObjectCopyKo(object)
 
   return (
     <article
-      className={`object-card object-card--${layout}`}
+      className="object-card"
       style={{ '--object-accent': object.accent, '--card-index': index }}
     >
       <a
@@ -145,7 +139,6 @@ function Archive() {
   const visibleObjects = activeCollection === 'all'
     ? objects
     : objects.filter((object) => object.collection === activeCollection)
-  const cardSpans = archiveCardSpans[visibleObjects.length] ?? visibleObjects.map(() => 'medium')
 
   return (
     <section className="archive" id="objects" aria-labelledby="archive-title">
@@ -193,7 +186,6 @@ function Archive() {
               key={object.id}
               object={object}
               index={index}
-              layout={cardSpans[index]}
             />
           ))
         ) : (
