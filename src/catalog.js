@@ -631,6 +631,50 @@ const disposableCameraDateStamp = {
   })),
 }
 
+const filmIndexLabeler = {
+  id: 'PM-016',
+  collection: 'stationery',
+  name: '35mm Index Labeler',
+  nameKo: '35mm 인덱스 라벨러',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-016-35mm-index-labeler/01-hero.webp`,
+  accent: '#d97c22',
+  href: '/objects/pm-016',
+  alt: '한 손바닥 위에 올라가는 차콜색 35mm 필름 형태의 인덱스 라벨러 렌더',
+  category: 'Stationery Tool',
+  variant: 'Mechanical Index Label Dispenser',
+  intro: 'A palm-sized mechanical labeler that turns the film-advance gesture into one clean index label for books, planners, and files.',
+  introKo: '필름 감기 휠을 한 칸 돌리면 책과 플래너, 파일에 붙일 작은 인덱스 라벨 한 장이 나오는 손바닥 크기의 기계식 문구 콘셉트입니다.',
+  statement: ['Wind one frame.', 'Peel one index.'],
+  story: [
+    'The orange film-advance wheel performs the real action. One indexed click moves the take-up spool, bends the backing liner around a peel edge, and presents one small writable label at the outlet.',
+    'A slim twin-spool cassette keeps the unused labels and spent liner contained inside the body. The frame counter steps from 36 toward zero and the entire cassette slides out through the rear refill door.',
+  ],
+  notes: [
+    ['Palm-sized body', 'At roughly 78 × 44 × 28 mm, the labeler sits comfortably in one hand and stays shorter than a standard pencil.'],
+    ['Two-spool path', 'The supply spool feeds pre-cut labels while the used liner turns around a peel edge and winds onto a separate take-up spool.'],
+    ['Writable PP labels', 'Each refill contains 36 small 24 × 14 mm matte polypropylene labels designed for fine-tip permanent pens.'],
+    ['Next test', 'A working sample should tune wheel torque, click spacing, peel angle, liner tension, label adhesion, refill alignment, and counter accuracy.'],
+  ],
+  gallery: [
+    ['hero', '01-hero.webp', '손바닥과 연필을 기준으로 크기를 보여주는 차콜색 35mm 인덱스 라벨러 대표 렌더', 'Hero view'],
+    ['advance-and-peel', '02-advance-and-peel.webp', '주황색 필름 감기 휠을 돌려 작은 인덱스 라벨 한 장을 배출하고 플래너 가장자리에 붙이는 사용 렌더', 'Advance one label'],
+    ['two-spool-cutaway', '03-two-spool-cutaway.webp', '본체 안의 라벨 공급 스풀과 박리 엣지, 폐 라이너 회수 스풀, 구동 기어를 보여주는 절개 렌더', 'Two-spool cutaway'],
+    ['refill-cassette', '04-refill-cassette.webp', '후면 도어를 열고 손바닥 크기 본체 안에서 얇은 2스풀 리필 카세트를 꺼내는 렌더', 'Refill cassette'],
+    ['advance-wheel', '05-advance-wheel.webp', '엄지로 주황색 감기 휠을 한 칸 돌려 카운터가 35로 바뀌고 라벨이 나오는 디테일 렌더', 'Film-advance wheel'],
+    ['label-colors', '06-label-colors.webp', '크림, 옐로, 더스티 블루, 뮤트 핑크 무광 PP 인덱스 라벨 네 가지 구성 렌더', 'Label color set'],
+    ['everyday-use', '07-everyday-use.webp', 'A6 플래너와 책, 파일 가장자리에 작은 인덱스 라벨을 붙이고 글씨를 쓰는 일상 사용 장면', 'Everyday use'],
+    ['variant-lineup', '08-color-lineup.webp', '차콜, 아이보리, 올리브, 더스티 블루 35mm 인덱스 라벨러 네 가지 컬러 렌더', 'Color lineup'],
+    ['packaging', '09-packaging.webp', '인덱스 라벨러 본체와 리필 카세트 두 개, 안내서, 작은 펜을 성형 펄프 트레이에 담은 패키지 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-016-35mm-index-labeler/${file}`,
+    alt,
+    label,
+  })),
+}
+
 export const objects = [
   toastPowerBank,
   toastTshirt,
@@ -647,6 +691,7 @@ export const objects = [
   rotaryPhoneTapeDispenser,
   publicPhoneMemoDispenser,
   disposableCameraDateStamp,
+  filmIndexLabeler,
 ]
 
 export const hiddenObjects = [

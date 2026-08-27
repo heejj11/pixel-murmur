@@ -69,6 +69,11 @@ const galleryLabelKo = {
   'Ink-pad cartridge': '잉크 패드 교체',
   'Bottom stamp face': '하단 스탬프 면',
   'Ink color options': '잉크 컬러 옵션',
+  'Advance one label': '라벨 한 장 배출',
+  'Two-spool cutaway': '2스풀 내부 구조',
+  'Refill cassette': '리필 카세트',
+  'Film-advance wheel': '필름 감기 휠',
+  'Label color set': '라벨 컬러 구성',
 }
 
 function BilingualGalleryLabel({ label }) {

@@ -1,0 +1,19 @@
+{
+  "id": "PM-016",
+  "slug": "35mm-index-labeler",
+  "name": "35mm Index Labeler",
+  "nameKo": "35mm 인덱스 라벨러",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "gallery": [
+    { "role": "hero", "src": "01-hero.webp", "alt": "손바닥과 연필을 기준으로 크기를 보여주는 차콜색 35mm 인덱스 라벨러 대표 렌더" },
+    { "role": "advance-and-peel", "src": "02-advance-and-peel.webp", "alt": "주황색 필름 감기 휠을 돌려 작은 인덱스 라벨 한 장을 배출하고 플래너 가장자리에 붙이는 사용 렌더" },
+    { "role": "two-spool-cutaway", "src": "03-two-spool-cutaway.webp", "alt": "본체 안의 라벨 공급 스풀과 박리 엣지, 폐 라이너 회수 스풀, 구동 기어를 보여주는 절개 렌더" },
+    { "role": "refill-cassette", "src": "04-refill-cassette.webp", "alt": "후면 도어를 열고 손바닥 크기 본체 안에서 얇은 2스풀 리필 카세트를 꺼내는 렌더" },
+    { "role": "advance-wheel", "src": "05-advance-wheel.webp", "alt": "엄지로 주황색 감기 휠을 한 칸 돌려 카운터가 35로 바뀌고 라벨이 나오는 디테일 렌더" },
+    { "role": "label-colors", "src": "06-label-colors.webp", "alt": "크림, 옐로, 더스티 블루, 뮤트 핑크 무광 PP 인덱스 라벨 네 가지 구성 렌더" },
+    { "role": "everyday-use", "src": "07-everyday-use.webp", "alt": "A6 플래너와 책, 파일 가장자리에 작은 인덱스 라벨을 붙이고 글씨를 쓰는 일상 사용 장면" },
+    { "role": "variant-lineup", "src": "08-color-lineup.webp", "alt": "차콜, 아이보리, 올리브, 더스티 블루 35mm 인덱스 라벨러 네 가지 컬러 렌더" },
+    { "role": "packaging", "src": "09-packaging.webp", "alt": "인덱스 라벨러 본체와 리필 카세트 두 개, 안내서, 작은 펜을 성형 펄프 트레이에 담은 패키지 렌더" }
+  ]
+}
