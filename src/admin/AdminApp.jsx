@@ -4,12 +4,14 @@ import AdminLogin, {
   AdminUnauthorized,
 } from './AdminLogin'
 import AdminShell from './AdminShell'
+import ContentManager from './ContentManager'
 import Dashboard from './Dashboard'
 import { hasSupabaseConfig, supabase } from '../lib/supabase'
 import './admin.css'
 
-function routePlatform() {
+function routeSection() {
   const path = window.location.pathname.replace(/\/+$/, '')
+  if (path === '/admin/objects') return 'objects'
   if (path === '/admin/instagram') return 'instagram'
   if (path === '/admin/x') return 'x'
   return 'all'
@@ -19,11 +21,11 @@ export default function AdminApp() {
   const demo = import.meta.env.DEV && new URLSearchParams(window.location.search).get('demo') === '1'
   const [session, setSession] = useState(null)
   const [loading, setLoading] = useState(hasSupabaseConfig && !demo)
-  const platform = routePlatform()
+  const section = routeSection()
 
   useEffect(() => {
     const previousTitle = document.title
-    document.title = 'Social Desk — PixelMurmur'
+    document.title = 'Studio Desk — PixelMurmur'
     return () => {
       document.title = previousTitle
     }
@@ -72,12 +74,14 @@ export default function AdminApp() {
 
   return (
     <AdminShell
-      activePlatform={platform}
+      activeSection={section}
       demo={demo}
       userEmail={demo ? 'demo@pixelmurmur.local' : session.user.email}
       onSignOut={handleSignOut}
     >
-      <Dashboard platform={platform} demo={demo} />
+      {section === 'objects'
+        ? <ContentManager demo={demo} />
+        : <Dashboard platform={section} demo={demo} />}
     </AdminShell>
   )
 }

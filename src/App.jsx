@@ -1,6 +1,13 @@
-import { lazy, Suspense, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { ArrowRight, ArrowUpRight } from '@phosphor-icons/react'
-import { featuredObject, findObjectByPath, objects } from './catalog'
+import { findObjectByPath, objects as catalogObjects } from './catalog'
+import {
+  applyObjectSettings,
+  createDefaultObjectSettings,
+  createHiddenObjectSettings,
+  loadPublicObjectSettings,
+} from './contentSettings'
+import { hasSupabaseConfig } from './lib/supabase'
 import { getObjectCopyKo } from './koreanCopy'
 import ProductDetail from './ProductDetail'
 import {
@@ -9,6 +16,7 @@ import {
   ProductImage,
   StatusLabel,
 } from './SiteChrome'
+import './contentSettings.css'
 
 const AdminApp = lazy(() => import('./admin/AdminApp'))
 
@@ -18,10 +26,16 @@ const archiveCollections = [
   { id: 'stationery', label: 'Retro Stationery', labelKo: '레트로 문구' },
 ]
 
-function Hero() {
-  const showcaseObjects = [objects[0], objects[8], objects[3], objects[10]]
-  const [activeObjectId, setActiveObjectId] = useState(featuredObject.id)
-  const object = showcaseObjects.find((item) => item.id === activeObjectId) ?? featuredObject
+function Hero({ objects }) {
+  const showcaseObjects = useMemo(() => objects.slice(0, 4), [objects])
+  const [activeObjectId, setActiveObjectId] = useState(showcaseObjects[0]?.id ?? null)
+  const object = showcaseObjects.find((item) => item.id === activeObjectId) ?? showcaseObjects[0]
+
+  useEffect(() => {
+    if (!showcaseObjects.some((item) => item.id === activeObjectId)) {
+      setActiveObjectId(showcaseObjects[0]?.id ?? null)
+    }
+  }, [activeObjectId, showcaseObjects])
 
   return (
     <section className="hero" aria-labelledby="hero-title">
@@ -39,35 +53,41 @@ function Hero() {
         </p>
       </div>
 
-      <div
-        className="hero-showcase"
-        id="showcase-panel"
-        style={{ '--object-accent': object.accent }}
-        aria-live="polite"
-      >
-        <div className="hero-stage" key={object.id}>
-          <ProductImage
-            className="hero-render"
-            src={object.image}
-            alt={object.alt}
-            eager
-          />
-        </div>
-        <div className="hero-showcase__caption">
-          <div>
-            <span>{object.id}</span>
-            <h2>{object.name}</h2>
-            <p lang="ko">{object.nameKo}</p>
+      {object ? (
+        <div
+          className="hero-showcase"
+          id="showcase-panel"
+          style={{ '--object-accent': object.accent }}
+          aria-live="polite"
+        >
+          <div className="hero-stage" key={object.id}>
+            <ProductImage
+              className="hero-render"
+              src={object.image}
+              alt={object.alt}
+              eager
+            />
           </div>
-          <a className="quiet-cta" href={object.href}>
-            <span className="action-copy">
-              <span>Open dossier</span>
-              <span lang="ko">상세 보기</span>
-            </span>
-            <ArrowRight size={18} weight="bold" aria-hidden="true" />
-          </a>
+          <div className="hero-showcase__caption">
+            <div>
+              <span>{object.id}</span>
+              <h2>{object.name}</h2>
+              <p lang="ko">{object.nameKo}</p>
+            </div>
+            <a className="quiet-cta" href={object.href}>
+              <span className="action-copy">
+                <span>Open dossier</span>
+                <span lang="ko">상세 보기</span>
+              </span>
+              <ArrowRight size={18} weight="bold" aria-hidden="true" />
+            </a>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="hero-showcase hero-showcase--empty" id="showcase-panel">
+          <p>No objects are public yet.<span lang="ko">아직 공개된 작품이 없습니다.</span></p>
+        </div>
+      )}
 
       <div className="hero-picker">
         <p>
@@ -136,7 +156,7 @@ function ObjectCard({ object, index }) {
   )
 }
 
-function Archive() {
+function Archive({ objects }) {
   const [activeCollection, setActiveCollection] = useState('all')
   const visibleObjects = activeCollection === 'all'
     ? objects
@@ -201,7 +221,7 @@ function Archive() {
   )
 }
 
-function About() {
+function About({ objectCount }) {
   return (
     <section className="about" id="about" aria-labelledby="about-title">
       <div className="about-statement">
@@ -226,9 +246,9 @@ function About() {
       </div>
       <div
         className="about-counter"
-        aria-label={`${objects.length} unmade objects / 아직 없는 물건 ${objects.length}개`}
+        aria-label={`${objectCount} unmade objects / 아직 없는 물건 ${objectCount}개`}
       >
-        <strong>{String(objects.length).padStart(2, '0')}</strong>
+        <strong>{String(objectCount).padStart(2, '0')}</strong>
         <span className="about-counter__label">
           <span>unmade<br />objects</span>
           <span lang="ko">아직 없는<br />물건들</span>
@@ -306,14 +326,14 @@ function Contact() {
   )
 }
 
-function Homepage() {
+function Homepage({ objects }) {
   return (
     <div className="site-shell" id="top">
       <Header />
       <main>
-        <Hero />
-        <Archive />
-        <About />
+        <Hero objects={objects} />
+        <Archive objects={objects} />
+        <About objectCount={objects.length} />
         <Journal />
         <Contact />
       </main>
@@ -322,10 +342,87 @@ function Homepage() {
   )
 }
 
+function ArchiveRouteStatus({ unavailable = false }) {
+  return (
+    <div className="site-shell public-route-status" id="top">
+      <Header />
+      <main>
+        <section aria-live="polite">
+          <span>PixelMurmur / Unmade Objects</span>
+          <h1>{unavailable ? 'Not public. Yet.' : 'Checking the archive.'}</h1>
+          <p lang="ko">
+            {unavailable
+              ? '이 작품은 아직 공개되지 않았습니다.'
+              : '작품의 공개 상태를 확인하고 있습니다.'}
+          </p>
+          {unavailable && (
+            <a className="primary-button" href="/#objects">
+              <span className="action-copy">
+                <span>View public objects</span>
+                <span lang="ko">공개 작품 보기</span>
+              </span>
+              <ArrowRight size={18} weight="bold" aria-hidden="true" />
+            </a>
+          )}
+        </section>
+      </main>
+      <Footer />
+    </div>
+  )
+}
+
+function usePublicArchive(enabled) {
+  const [settings, setSettings] = useState(() => (
+    enabled && hasSupabaseConfig
+      ? createHiddenObjectSettings(catalogObjects)
+      : createDefaultObjectSettings(catalogObjects)
+  ))
+  const [ready, setReady] = useState(!enabled || !hasSupabaseConfig)
+
+  useEffect(() => {
+    if (!enabled) {
+      setReady(true)
+      return undefined
+    }
+
+    if (!hasSupabaseConfig) {
+      setReady(true)
+      return undefined
+    }
+
+    let mounted = true
+    setReady(false)
+
+    loadPublicObjectSettings(catalogObjects)
+      .then((nextSettings) => {
+        if (mounted) setSettings(nextSettings)
+      })
+      .catch((loadError) => {
+        console.error('Failed to load public object settings.', loadError)
+      })
+      .finally(() => {
+        if (mounted) setReady(true)
+      })
+
+    return () => {
+      mounted = false
+    }
+  }, [enabled])
+
+  const publicObjects = useMemo(
+    () => applyObjectSettings(catalogObjects, settings),
+    [settings],
+  )
+
+  return { publicObjects, ready }
+}
+
 export default function App() {
   const path = window.location.pathname.replace(/\/+$/, '') || '/'
+  const isAdminRoute = path === '/admin' || path.startsWith('/admin/')
+  const { publicObjects, ready } = usePublicArchive(!isAdminRoute)
 
-  if (path === '/admin' || path.startsWith('/admin/')) {
+  if (isAdminRoute) {
     return (
       <Suspense
         fallback={(
@@ -339,11 +436,16 @@ export default function App() {
     )
   }
 
-  const object = findObjectByPath(path)
+  if (!ready) return <ArchiveRouteStatus />
 
-  if (object) {
-    return <ProductDetail object={object} />
+  const catalogObject = findObjectByPath(path)
+
+  if (catalogObject) {
+    const publicObject = publicObjects.find((object) => object.id === catalogObject.id)
+    if (!publicObject) return <ArchiveRouteStatus unavailable />
+
+    return <ProductDetail object={publicObject} publicObjects={publicObjects} />
   }
 
-  return <Homepage />
+  return <Homepage objects={publicObjects} />
 }

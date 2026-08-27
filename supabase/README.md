@@ -7,11 +7,16 @@
 - `social_accounts`: 연결 계정과 마지막 수집 상태
 - `social_posts`: Instagram·X 게시물 원문 정보
 - `social_metric_snapshots`: 계정·게시물별 일일 지표
+- `object_publication`: 작품 공개 여부와 Instagram·X 원문 게시물 주소
 - `sync-instagram`, `sync-x`: 플랫폼 API 수집 함수
-- Supabase Auth + RLS: `app_metadata.role = admin`인 로그인 사용자만 조회
+- Supabase Auth + RLS: 공개 클라이언트는 `object_publication`의 공개된 행만 읽고, `app_metadata.role = admin`인 로그인 사용자는 모든 행을 읽고 변경
+- SNS 통계 테이블은 운영자만 조회
 - Supabase Cron: 한국 시간 오전 3시대에 플랫폼별 하루 한 번 수집
 
-공개 사이트의 오브젝트 콘텐츠는 이 DB로 옮기지 않습니다.
+작품 본문과 이미지는 이 DB로 옮기지 않습니다. 공개 여부와 SNS 원문 주소만 저장합니다.
+초기 마이그레이션은 PM-001·PM-002만 공개하고, 나머지 작품은 운영자가 켤 때까지 숨깁니다.
+SNS 주소는 Instagram의 게시물·릴스·TV URL 또는 X/Twitter의 상태 게시물 URL이어야 하며,
+프론트 검증과 DB 제약이 같은 형식을 강제합니다.
 
 ## 1. 프로젝트와 프론트 연결
 
@@ -106,9 +111,11 @@ select vault.create_secret(
 ## 6. 연결 확인
 
 1. `/admin`에서 운영자 이메일로 로그인합니다.
-2. `지금 동기화`를 누릅니다.
-3. Instagram·X 연결 상태와 마지막 동기화 시각을 확인합니다.
-4. 다음 날 일별 팔로워 선이 누적되는지 확인합니다.
+2. `/admin/objects`에서 작품 공개 여부와 게시물 주소를 바꾸고 `변경사항 저장`을 누릅니다.
+3. 공개 사이트에서 목록·상세·관련 작품과 SNS 링크가 바뀌었는지 확인합니다.
+4. 통계 화면에서 `지금 동기화`를 누릅니다.
+5. Instagram·X 연결 상태와 마지막 동기화 시각을 확인합니다.
+6. 다음 날 일별 팔로워 선이 누적되는지 확인합니다.
 
 개발 서버에서 UI만 먼저 볼 때는 `/admin?demo=1`을 사용합니다. 이 예시 데이터 경로는
 개발 빌드에서만 활성화됩니다.

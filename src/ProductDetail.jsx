@@ -1,6 +1,11 @@
 import { useEffect } from 'react'
-import { ArrowLeft, ArrowRight, ArrowUpRight } from '@phosphor-icons/react'
-import { objects } from './catalog'
+import {
+  ArrowLeft,
+  ArrowRight,
+  ArrowUpRight,
+  InstagramLogo,
+  XLogo,
+} from '@phosphor-icons/react'
 import { getObjectCopyKo } from './koreanCopy'
 import { Footer, Header, ProductImage, StatusGlyph, StatusLabel } from './SiteChrome'
 
@@ -157,7 +162,7 @@ function ProductGallery({ object }) {
   )
 }
 
-export default function ProductDetail({ object }) {
+export default function ProductDetail({ object, publicObjects }) {
   const heroImage = object.gallery[0]
   const copyKo = getObjectCopyKo(object)
   const statusFacts = [
@@ -182,7 +187,21 @@ export default function ProductDetail({ object }) {
       </span>
     )],
   ]
-  const relatedObjects = objects.filter((item) => item.id !== object.id).slice(0, 4)
+  const relatedObjects = publicObjects.filter((item) => item.id !== object.id).slice(0, 4)
+  const socialPublications = [
+    object.socialLinks?.instagram && {
+      href: object.socialLinks.instagram,
+      label: 'Instagram post',
+      labelKo: '인스타그램 게시물',
+      icon: InstagramLogo,
+    },
+    object.socialLinks?.x && {
+      href: object.socialLinks.x,
+      label: 'X post',
+      labelKo: '엑스 게시물',
+      icon: XLogo,
+    },
+  ].filter(Boolean)
 
   useEffect(() => {
     const previousTitle = document.title
@@ -256,6 +275,24 @@ export default function ProductDetail({ object }) {
                 </span>
                 <ArrowUpRight size={19} weight="bold" aria-hidden="true" />
               </a>
+
+              {socialPublications.length > 0 && (
+                <div className="detail-publications">
+                  <span>Published at <span lang="ko">게시물 원문</span></span>
+                  <div>
+                    {socialPublications.map(({ href, label, labelKo, icon: Icon }) => (
+                      <a href={href} target="_blank" rel="noreferrer" key={label}>
+                        <Icon size={17} weight="bold" aria-hidden="true" />
+                        <span className="action-copy">
+                          <span>{label}</span>
+                          <span lang="ko">{labelKo}</span>
+                        </span>
+                        <ArrowUpRight size={15} weight="bold" aria-hidden="true" />
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </section>
