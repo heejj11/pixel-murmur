@@ -692,11 +692,11 @@ const typewriterKeyMagnets = {
   introKo: '철제 보드에 하나씩 붙여 단어를 만들고 메모를 고정하며, 누를 때마다 작은 기계식 클릭감을 주는 타자기 키 자석입니다.',
   statement: ['Arrange a word.', 'Press every letter.'],
   story: [
-    'Each letter is an independent magnet rather than part of a keyboard. The low square base stays fixed to a steel surface while the round keycap travels downward and returns with a compact tactile snap.',
+    'Each letter is an independent magnet rather than part of a keyboard. A compact backing, almost hidden beneath the circular metal ring, stays fixed to a steel surface while the round keycap travels downward and returns with a tactile snap.',
     'The key can hold a note like an ordinary magnet or sit beside other letters to build short words. Alphabet, duplicate-letter, number, and symbol packs share the same body and can be rearranged freely.',
   ],
   notes: [
-    ['Independent key unit', 'Each roughly 26 × 26 × 16 mm module contains its own keycap, guide, tactile element, magnetic base, and protective rear pad.'],
+    ['Compact key unit', 'Each roughly 22 × 22 × 11 mm module keeps the backing within 1–2 mm of the circular bezel while containing its own guide, tactile element, recessed magnet, and protective rear ring.'],
     ['Mechanical click', 'A guided plunger and stainless snap dome create about 2 mm of travel and return without a battery, switch, or electronic sound.'],
     ['Board-safe magnet', 'A recessed circular magnet provides the hold while a thin silicone ring keeps the metal surface from being scratched or marked.'],
     ['Next test', 'A working sample should tune press force, key wobble, snap-dome fatigue, click sound, magnetic hold, rear-pad wear, and small-part safety.'],
