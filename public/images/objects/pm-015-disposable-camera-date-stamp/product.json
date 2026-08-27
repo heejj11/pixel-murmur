@@ -1,0 +1,19 @@
+{
+  "id": "PM-015",
+  "slug": "disposable-camera-date-stamp",
+  "name": "Disposable Camera Date Stamp",
+  "nameKo": "일회용 카메라 날짜 스탬프",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "gallery": [
+    { "role": "hero", "src": "01-hero.webp", "alt": "손바닥과 연필을 기준으로 크기를 보여주는 크림색 일회용 카메라 날짜 스탬프 대표 렌더" },
+    { "role": "press-to-stamp", "src": "02-press-to-stamp.webp", "alt": "플래너 위 카메라 스탬프의 주황색 셔터 버튼을 눌러 날짜를 찍는 사용 장면" },
+    { "role": "self-inking-cutaway", "src": "03-self-inking-cutaway.webp", "alt": "카메라 본체 안쪽의 셔터 플런저와 링크, 회전식 날짜 면, 잉크 패드를 보여주는 절개 렌더" },
+    { "role": "date-setting-wheels", "src": "04-date-setting-wheels.webp", "alt": "본체 오른쪽의 작은 날짜 설정 휠 세 개 중 하나를 손가락으로 돌리는 디테일 렌더" },
+    { "role": "ink-pad-cartridge", "src": "05-ink-pad-cartridge.webp", "alt": "하단 서비스 해치에서 주황색 탭이 달린 얇은 잉크 패드 카트리지를 빼는 렌더" },
+    { "role": "bottom-stamp-face", "src": "06-bottom-stamp-face.webp", "alt": "미끄럼 방지 발과 보호 테두리 안쪽의 회전식 날짜 스탬프 면을 보여주는 하단 렌더" },
+    { "role": "ink-colors", "src": "07-ink-colors.webp", "alt": "검정, 브릭 레드, 네이비, 올리브 잉크 패드와 날짜 인쇄 결과 네 가지 렌더" },
+    { "role": "variant-lineup", "src": "08-color-lineup.webp", "alt": "크림, 올리브, 더스티 블루, 브릭 레드 카메라 날짜 스탬프 네 가지 컬러 렌더" },
+    { "role": "packaging", "src": "09-packaging.webp", "alt": "카메라 날짜 스탬프와 여분 잉크 패드, 설명서, 성형 펄프 트레이로 구성한 작은 패키지 렌더" }
+  ]
+}

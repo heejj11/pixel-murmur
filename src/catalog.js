@@ -587,6 +587,50 @@ const publicPhoneMemoDispenser = {
   })),
 }
 
+const disposableCameraDateStamp = {
+  id: 'PM-015',
+  collection: 'stationery',
+  name: 'Disposable Camera Date Stamp',
+  nameKo: '일회용 카메라 날짜 스탬프',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-015-disposable-camera-date-stamp/01-hero.webp`,
+  accent: '#d17639',
+  href: '/objects/pm-015',
+  alt: '한 손바닥 위에 올라가는 크림색 일회용 카메라 형태의 날짜 스탬프 렌더',
+  category: 'Stationery Tool',
+  variant: 'Self-Inking Date Stamp',
+  intro: 'A palm-sized date stamp that borrows the shutter, counter, flash, and grip of a disposable camera for one satisfying planner action.',
+  introKo: '일회용 카메라의 셔터와 카운터, 플래시, 그립을 손바닥 크기의 셀프잉킹 날짜 스탬프로 바꾼 문구 콘셉트입니다.',
+  statement: ['Press the shutter.', 'Mark the date.'],
+  story: [
+    'The orange shutter button performs the real action: one press rotates a spring-loaded date face from its ink pad to the paper. The shallow front lens and flash window preserve the camera character without pretending to take a photograph.',
+    'Three recessed side wheels set year, month, and day. A slim cartridge keeps the stamp face inked between uses and slides out through a small service hatch when its color or pad needs replacing.',
+  ],
+  notes: [
+    ['Camera-sized body', 'At roughly 108 × 67 × 38 mm, the object keeps a familiar disposable-camera footprint and fits comfortably in one hand.'],
+    ['Shutter mechanism', 'A 14 mm plunger, paired pivot links, and a return spring rotate the 32 × 16 mm stamp carriage down and back.'],
+    ['Date and ink', 'Three protected thumbwheels adjust the rubber date bands, while one tool-free cartridge supplies black or colored ink.'],
+    ['Next test', 'A working sample should tune shutter force, impression pressure, wheel detents, rubber-band alignment, ink transfer, and cartridge sealing.'],
+  ],
+  gallery: [
+    ['hero', '01-hero.webp', '손바닥과 연필을 기준으로 크기를 보여주는 크림색 일회용 카메라 날짜 스탬프 대표 렌더', 'Hero view'],
+    ['press-to-stamp', '02-press-to-stamp.webp', '플래너 위 카메라 스탬프의 주황색 셔터 버튼을 눌러 날짜를 찍는 사용 장면', 'Press to stamp'],
+    ['self-inking-cutaway', '03-self-inking-cutaway.webp', '카메라 본체 안쪽의 셔터 플런저와 링크, 회전식 날짜 면, 잉크 패드를 보여주는 절개 렌더', 'Self-inking cutaway'],
+    ['date-setting-wheels', '04-date-setting-wheels.webp', '본체 오른쪽의 작은 날짜 설정 휠 세 개 중 하나를 손가락으로 돌리는 디테일 렌더', 'Date-setting wheels'],
+    ['ink-pad-cartridge', '05-ink-pad-cartridge.webp', '하단 서비스 해치에서 주황색 탭이 달린 얇은 잉크 패드 카트리지를 빼는 렌더', 'Ink-pad cartridge'],
+    ['bottom-stamp-face', '06-bottom-stamp-face.webp', '미끄럼 방지 발과 보호 테두리 안쪽의 회전식 날짜 스탬프 면을 보여주는 하단 렌더', 'Bottom stamp face'],
+    ['ink-colors', '07-ink-colors.webp', '검정, 브릭 레드, 네이비, 올리브 잉크 패드와 날짜 인쇄 결과 네 가지 렌더', 'Ink color options'],
+    ['variant-lineup', '08-color-lineup.webp', '크림, 올리브, 더스티 블루, 브릭 레드 카메라 날짜 스탬프 네 가지 컬러 렌더', 'Color lineup'],
+    ['packaging', '09-packaging.webp', '카메라 날짜 스탬프와 여분 잉크 패드, 설명서, 성형 펄프 트레이로 구성한 작은 패키지 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-015-disposable-camera-date-stamp/${file}`,
+    alt,
+    label,
+  })),
+}
+
 export const objects = [
   toastPowerBank,
   toastTshirt,
@@ -602,6 +646,7 @@ export const objects = [
   cdJewelMemoSet,
   rotaryPhoneTapeDispenser,
   publicPhoneMemoDispenser,
+  disposableCameraDateStamp,
 ]
 
 export const hiddenObjects = [

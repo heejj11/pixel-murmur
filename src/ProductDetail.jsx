@@ -63,6 +63,12 @@ const galleryLabelKo = {
   'Roll refill': '롤 리필',
   'Tear-off detail': '한 장 절취',
   'Memo refill set': '메모 리필 구성',
+  'Press to stamp': '눌러 날짜 찍기',
+  'Self-inking cutaway': '셀프잉킹 내부 구조',
+  'Date-setting wheels': '날짜 설정 휠',
+  'Ink-pad cartridge': '잉크 패드 교체',
+  'Bottom stamp face': '하단 스탬프 면',
+  'Ink color options': '잉크 컬러 옵션',
 }
 
 function BilingualGalleryLabel({ label }) {
