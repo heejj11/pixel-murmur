@@ -1,0 +1,19 @@
+{
+  "id": "PM-019",
+  "slug": "slide-projector-sharpener",
+  "name": "Slide Projector Sharpener",
+  "nameKo": "슬라이드 영사기 연필깎이",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "gallery": [
+    { "role": "hero", "src": "01-hero.webp", "alt": "두 손으로 렌즈 투입구에 연필을 넣고 측면 초점 휠 크랭크를 돌리는 대표 렌더" },
+    { "role": "sharpening-action", "src": "02-sharpening-action.webp", "alt": "렌즈 가이드 안쪽의 보호된 나선형 커터와 측면 크랭크 작동을 보여주는 근접 렌더" },
+    { "role": "shavings-drawer", "src": "03-shavings-drawer.webp", "alt": "슬라이드 매거진처럼 뒤로 빠지는 스모크 앰버 서랍과 내부 깎임 가루를 보여주는 렌더" },
+    { "role": "multi-angle", "src": "04-multi-angle.webp", "alt": "정면 렌즈와 측면 크랭크, 후면 가루 서랍을 여러 각도에서 보여주는 렌더" },
+    { "role": "gear-cutaway", "src": "05-gear-cutaway.webp", "alt": "측면 패널을 열어 크랭크 축과 2단 기어, 나선형 커터, 안전 격자와 서랍을 보여주는 절개 렌더" },
+    { "role": "desk-use", "src": "06-desk-use.webp", "alt": "노트와 슬라이드 필름 옆에서 본체를 잡고 연필을 깎는 데스크 사용 장면" },
+    { "role": "exploded-mechanism", "src": "07-exploded-mechanism.webp", "alt": "렌즈 가이드와 커터, 기어, 크랭크, 안전 격자, 가루 서랍과 고무발을 분리한 구조 렌더" },
+    { "role": "color-lineup", "src": "08-color-lineup.webp", "alt": "아이보리와 올리브, 뮤트 오렌지, 차콜 네 가지 컬러 렌더" },
+    { "role": "packaging", "src": "09-packaging.webp", "alt": "본체와 가루 서랍, 사용 안내서와 샘플 연필을 담은 한영 병기 패키지 렌더" }
+  ]
+}

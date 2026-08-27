@@ -763,6 +763,50 @@ const vhsMiniStapler = {
   })),
 }
 
+const slideProjectorSharpener = {
+  id: 'PM-019',
+  collection: 'stationery',
+  name: 'Slide Projector Sharpener',
+  nameKo: '슬라이드 영사기 연필깎이',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-019-slide-projector-sharpener/01-hero.webp`,
+  accent: '#c85832',
+  href: '/objects/pm-019',
+  alt: '렌즈 모양 투입구에 연필을 넣고 측면 크랭크를 돌리는 슬라이드 영사기 연필깎이 대표 렌더',
+  category: 'Manual Pencil Sharpener',
+  variant: 'Crank Helical Cutter',
+  intro: 'A palm-sized slide projector whose lens guides the pencil, focus wheel turns the cutter, and rear magazine collects the shavings.',
+  introKo: '앞쪽 렌즈에 연필을 넣고 옆의 초점 휠을 돌리면, 뒤쪽 슬라이드 매거진 서랍에 깎임 가루가 모이는 수동 연필깎이입니다.',
+  statement: ['Turn the focus.', 'Sharpen the point.'],
+  story: [
+    'The front projector lens is a rubber pencil guide rather than a light. Turning the fold-out focus-wheel crank drives two compact gears and a centered steel helical cutter around a standard 7–8 mm pencil without any motor or battery.',
+    'Shavings fall through a sealed chute and safety grate into a smoke-amber drawer shaped like a slide magazine. The drawer pulls out from the rear for emptying while the cutter remains inaccessible to fingers.',
+  ],
+  notes: [
+    ['Palm-sized projector', 'At roughly 84 × 58 × 61 mm, the body stays small enough for one hand to steady while leaving room for the cutter, gears, chute, and drawer.'],
+    ['Focus-wheel crank', 'A short axle and two simple gears transfer the side crank rotation to the helical cutter aligned directly behind the front rubber guide.'],
+    ['Safe slide drawer', 'A fixed grate and enclosed chute separate the blade chamber from the removable smoke-amber drawer so shavings can be emptied without touching the cutter.'],
+    ['Next test', 'A working sample should tune gear ratio, crank torque, pencil grip, point angle, cutter alignment, drawer seal, grate clearance, rubber-foot grip, and child safety.'],
+  ],
+  gallery: [
+    ['hero', '01-hero.webp', '두 손으로 렌즈 투입구에 연필을 넣고 측면 초점 휠 크랭크를 돌리는 대표 렌더', 'Hero view'],
+    ['sharpening-action', '02-sharpening-action.webp', '렌즈 가이드 안쪽의 보호된 나선형 커터와 측면 크랭크 작동을 보여주는 근접 렌더', 'Sharpening action'],
+    ['shavings-drawer', '03-shavings-drawer.webp', '슬라이드 매거진처럼 뒤로 빠지는 스모크 앰버 서랍과 내부 깎임 가루를 보여주는 렌더', 'Shavings drawer'],
+    ['multi-angle', '04-multi-angle.webp', '정면 렌즈와 측면 크랭크, 후면 가루 서랍을 여러 각도에서 보여주는 렌더', 'Multi-angle views'],
+    ['gear-cutaway', '05-gear-cutaway.webp', '측면 패널을 열어 크랭크 축과 2단 기어, 나선형 커터, 안전 격자와 서랍을 보여주는 절개 렌더', 'Gear cutaway'],
+    ['desk-use', '06-desk-use.webp', '노트와 슬라이드 필름 옆에서 본체를 잡고 연필을 깎는 데스크 사용 장면', 'Desk use'],
+    ['exploded-mechanism', '07-exploded-mechanism.webp', '렌즈 가이드와 커터, 기어, 크랭크, 안전 격자, 가루 서랍과 고무발을 분리한 구조 렌더', 'Exploded mechanism'],
+    ['color-lineup', '08-color-lineup.webp', '아이보리와 올리브, 뮤트 오렌지, 차콜 네 가지 컬러 렌더', 'Color lineup'],
+    ['packaging', '09-packaging.webp', '본체와 가루 서랍, 사용 안내서와 샘플 연필을 담은 한영 병기 패키지 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-019-slide-projector-sharpener/${file}`,
+    alt,
+    label,
+  })),
+}
+
 export const objects = [
   toastPowerBank,
   toastTshirt,
@@ -782,6 +826,7 @@ export const objects = [
   filmIndexLabeler,
   typewriterKeyMagnets,
   vhsMiniStapler,
+  slideProjectorSharpener,
 ]
 
 export const hiddenObjects = [

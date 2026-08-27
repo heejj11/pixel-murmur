@@ -86,6 +86,9 @@ const galleryLabelKo = {
   'Underside clincher': '하부 접힘판',
   'Desk use': '데스크 사용',
   'Exploded mechanism': '분해 구조',
+  'Sharpening action': '연필 깎기',
+  'Shavings drawer': '깎임 가루 서랍',
+  'Gear cutaway': '기어 내부 구조',
 }
 
 function BilingualGalleryLabel({ label }) {
