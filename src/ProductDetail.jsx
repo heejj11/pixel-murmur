@@ -52,6 +52,13 @@ const galleryLabelKo = {
   'Top-open interior': '상단 개방 내부',
   'Side and zipper': '측면과 지퍼',
   'Label card change': '라벨 카드 교체',
+  'Peel disc memo': '원형 메모 한 장 떼기',
+  'Closed view': '닫힌 모습',
+  'Memo refills': '메모 리필',
+  'Mechanical cutaway': '기계 구조 절개',
+  'Single-roll refill': '한 롤 리필',
+  'Manual pull': '수동 길이 조절',
+  'Guarded cutter': '보호형 절단 구조',
 }
 
 function BilingualGalleryLabel({ label }) {

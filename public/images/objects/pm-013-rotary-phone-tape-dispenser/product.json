@@ -1,0 +1,18 @@
+{
+  "id": "PM-013",
+  "slug": "rotary-phone-tape-dispenser",
+  "name": "Rotary Phone Tape Dispenser",
+  "nameKo": "로터리폰 테이프 디스펜서",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "gallery": [
+    { "role": "hero-three-quarter", "src": "01-hero-three-quarter.webp", "alt": "크림 베이지 로터리 전화기 형태와 수화기 아래 테이프 출구를 보여주는 디스펜서 대표 렌더" },
+    { "role": "mechanism-cutaway", "src": "02-mechanism-cutaway.webp", "alt": "다이얼 도어 안쪽의 테이프 롤과 가이드 롤러, 후크 버튼, 절단 링크를 보여주는 절개 렌더" },
+    { "role": "tape-refill", "src": "03-tape-refill.webp", "alt": "열린 다이얼 도어 안쪽의 축에 한 개의 마스킹테이프 롤을 끼우는 리필 장면" },
+    { "role": "manual-pull", "src": "04-manual-pull.webp", "alt": "수화기를 들어 올린 상태에서 테이프를 손으로 원하는 길이만큼 당기는 사용 장면" },
+    { "role": "cutter-detail", "src": "05-cutter-detail.webp", "alt": "수화기 후크 버튼과 캠 링크, 보호 구조 안쪽 칼날, 역류 방지 롤러를 확대한 렌더" },
+    { "role": "variant-lineup", "src": "06-color-lineup.webp", "alt": "크림, 올리브, 브릭 레드, 웜 브라운 로터리폰 테이프 디스펜서 네 가지 컬러 렌더" },
+    { "role": "worn-lifestyle", "src": "07-everyday-use.webp", "alt": "책상 위 플래너에 잘라낸 마스킹테이프를 붙이고 디스펜서에는 짧은 테이프 끝이 남은 사용 장면" },
+    { "role": "packaging", "src": "08-packaging.webp", "alt": "성형 펄프 트레이가 있는 종이 상자와 디스펜서, 리필 롤, 설명서로 구성한 패키지 렌더" }
+  ]
+}

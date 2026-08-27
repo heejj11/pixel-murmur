@@ -458,6 +458,91 @@ const cassetteTapeMiniPouch = {
   })),
 }
 
+const cdJewelMemoSet = {
+  id: 'PM-012',
+  collection: 'stationery',
+  name: 'CD Jewel Memo Set',
+  nameKo: 'CD 주얼 메모 세트',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-012-cd-jewel-memo-set/01-hero-open.webp`,
+  accent: '#c77c62',
+  href: '/objects/pm-012',
+  alt: '투명 CD 주얼케이스 안에 사각 체크 메모와 원형 디스크 메모를 나란히 넣은 열린 제품 렌더',
+  category: 'Stationery',
+  variant: 'Track + Disc Memo',
+  intro: 'A standard CD jewel case that stores one thin checklist pad and one peelable disc-shaped memo in its familiar two-part interior.',
+  introKo: '표준 CD 주얼케이스의 양쪽 공간에 얇은 체크 메모와 한 장씩 떼는 원형 디스크 메모를 담은 문구 콘셉트입니다.',
+  statement: ['Save the note,', 'not the track.'],
+  story: [
+    'CD Jewel Memo Set turns the liner-notes side into a compact checklist and the disc tray into a circular sticky memo. Opening the case reveals both formats without adding a new container.',
+    'Each refill stays at roughly 25–30 sheets so the clear 142 × 125 × 12 mm case can close without bulging. Paper release, hub clearance, and hinge durability still need a physical sample.',
+  ],
+  notes: [
+    ['Standard case', 'The complete object keeps a familiar 142 × 125 × 12 mm jewel-case footprint with precise clear hinges and front latches.'],
+    ['Two memo formats', 'A liner-notes checklist sits inside the front clips while a CD-sized circular memo stays on the center hub.'],
+    ['Thin refills', 'Both pads use only 25–30 fine sheets, keeping each stack close to 2–3 mm and the closed case flat.'],
+    ['Next test', 'A prototype should verify paper release, booklet-clip pressure, center-hole tolerance, closing clearance, and hinge life.'],
+  ],
+  gallery: [
+    ['hero-open', '01-hero-open.webp', '투명 CD 주얼케이스 안에 사각 체크 메모와 원형 디스크 메모를 나란히 넣은 열린 제품 렌더', 'Open view'],
+    ['peel-disc', '02-peel-disc-memo.webp', '원형 디스크 메모 스택에서 맨 위 한 장의 가장자리를 손으로 들어 올리는 사용 렌더', 'Peel disc memo'],
+    ['closed-view', '03-closed-view.webp', '체크 메모가 전면 커버 뒤로 보이고 원형 메모가 뒤쪽 트레이에 겹쳐진 닫힌 CD 케이스 렌더', 'Closed view'],
+    ['thin-profile', '04-thin-profile.webp', '표준 CD 케이스에 가까운 약 12밀리미터 두께와 투명 레이어를 보여주는 측면 렌더', 'Thin profile'],
+    ['memo-refills', '05-memo-refills.webp', '사각 체크 메모와 원형 디스크 메모의 얇은 리필 스택과 낱장을 보여주는 렌더', 'Memo refills'],
+    ['worn-lifestyle', '06-everyday-use.webp', '열린 CD 케이스의 체크 메모에 표시하고 원형 메모를 노트에 붙여 사용하는 장면', 'Everyday use'],
+    ['packaging', '07-packaging.webp', '닫힌 CD 케이스와 사각·원형 리필을 얇은 포장으로 구성한 패키지 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-012-cd-jewel-memo-set/${file}`,
+    alt,
+    label,
+  })),
+}
+
+const rotaryPhoneTapeDispenser = {
+  id: 'PM-013',
+  collection: 'stationery',
+  name: 'Rotary Phone Tape Dispenser',
+  nameKo: '로터리폰 테이프 디스펜서',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-013-rotary-phone-tape-dispenser/01-hero-three-quarter.webp`,
+  accent: '#9a4f3e',
+  href: '/objects/pm-013',
+  alt: '크림 베이지 로터리 전화기 형태에 수화기 아래 테이프 배출구를 결합한 디스펜서 렌더',
+  category: 'Stationery Tool',
+  variant: 'Mechanical Cut',
+  intro: 'A rotary-phone-shaped masking-tape dispenser that lets you lift, pull to length, and hang up to cut with a guarded mechanical linkage.',
+  introKo: '수화기를 들고 원하는 길이만큼 테이프를 당긴 뒤 다시 내려놓으면 숨겨진 기계식 칼날이 절단하는 디스펜서 콘셉트입니다.',
+  statement: ['Lift and pull.', 'Hang up to cut.'],
+  story: [
+    'The rotary dial opens as a refill door for one vertical masking-tape roll. Lifting the hinged handset releases two familiar hook switches and leaves the tape free to pull by hand.',
+    'Lowering the handset drives a compact cam linkage that cuts the tape behind a protective lip. A silicone nip roller prevents rollback and leaves a short tail ready for the next use.',
+  ],
+  notes: [
+    ['Single-roll refill', 'The dial door opens onto one horizontal axle sized for a 15 mm-wide roll with an outer diameter up to roughly 55 mm.'],
+    ['Hook-switch cut', 'A 5–7 mm plunger stroke transfers the handset press through a spring-loaded cam to the guarded cutter.'],
+    ['Ready tail', 'Two silicone nip rollers hold the tape after cutting and leave an 8–10 mm end outside the slot for the next pull.'],
+    ['Next test', 'A working prototype should tune spring force, cutting pressure, roller grip, door latch tolerance, and finger-safe blade shielding.'],
+  ],
+  gallery: [
+    ['hero-three-quarter', '01-hero-three-quarter.webp', '크림 베이지 로터리 전화기 형태와 수화기 아래 테이프 출구를 보여주는 디스펜서 대표 렌더', 'Hero view'],
+    ['mechanism-cutaway', '02-mechanism-cutaway.webp', '다이얼 도어 안쪽의 테이프 롤과 가이드 롤러, 후크 버튼, 절단 링크를 보여주는 절개 렌더', 'Mechanical cutaway'],
+    ['tape-refill', '03-tape-refill.webp', '열린 다이얼 도어 안쪽의 축에 한 개의 마스킹테이프 롤을 끼우는 리필 장면', 'Single-roll refill'],
+    ['manual-pull', '04-manual-pull.webp', '수화기를 들어 올린 상태에서 테이프를 손으로 원하는 길이만큼 당기는 사용 장면', 'Manual pull'],
+    ['cutter-detail', '05-cutter-detail.webp', '수화기 후크 버튼과 캠 링크, 보호 구조 안쪽 칼날, 역류 방지 롤러를 확대한 렌더', 'Guarded cutter'],
+    ['variant-lineup', '06-color-lineup.webp', '크림, 올리브, 브릭 레드, 웜 브라운 로터리폰 테이프 디스펜서 네 가지 컬러 렌더', 'Color lineup'],
+    ['worn-lifestyle', '07-everyday-use.webp', '책상 위 플래너에 잘라낸 마스킹테이프를 붙이고 디스펜서에는 짧은 테이프 끝이 남은 사용 장면', 'Everyday use'],
+    ['packaging', '08-packaging.webp', '성형 펄프 트레이가 있는 종이 상자와 디스펜서, 리필 롤, 설명서로 구성한 패키지 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-013-rotary-phone-tape-dispenser/${file}`,
+    alt,
+    label,
+  })),
+}
+
 export const objects = [
   toastPowerBank,
   toastTshirt,
@@ -470,6 +555,8 @@ export const objects = [
   pagerIndexMemo,
   floppyDiskMemoPad,
   cassetteTapeMiniPouch,
+  cdJewelMemoSet,
+  rotaryPhoneTapeDispenser,
 ]
 
 export const hiddenObjects = [

@@ -1,0 +1,17 @@
+{
+  "id": "PM-012",
+  "slug": "cd-jewel-memo-set",
+  "name": "CD Jewel Memo Set",
+  "nameKo": "CD 주얼 메모 세트",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "gallery": [
+    { "role": "hero-open", "src": "01-hero-open.webp", "alt": "투명 CD 주얼케이스 안에 사각 체크 메모와 원형 디스크 메모를 나란히 넣은 열린 제품 렌더" },
+    { "role": "peel-disc", "src": "02-peel-disc-memo.webp", "alt": "원형 디스크 메모 스택에서 맨 위 한 장의 가장자리를 손으로 들어 올리는 사용 렌더" },
+    { "role": "closed-view", "src": "03-closed-view.webp", "alt": "체크 메모가 전면 커버 뒤로 보이고 원형 메모가 뒤쪽 트레이에 겹쳐진 닫힌 CD 케이스 렌더" },
+    { "role": "thin-profile", "src": "04-thin-profile.webp", "alt": "표준 CD 케이스에 가까운 약 12밀리미터 두께와 투명 레이어를 보여주는 측면 렌더" },
+    { "role": "memo-refills", "src": "05-memo-refills.webp", "alt": "사각 체크 메모와 원형 디스크 메모의 얇은 리필 스택과 낱장을 보여주는 렌더" },
+    { "role": "worn-lifestyle", "src": "06-everyday-use.webp", "alt": "열린 CD 케이스의 체크 메모에 표시하고 원형 메모를 노트에 붙여 사용하는 장면" },
+    { "role": "packaging", "src": "07-packaging.webp", "alt": "닫힌 CD 케이스와 사각·원형 리필을 얇은 포장으로 구성한 패키지 렌더" }
+  ]
+}
