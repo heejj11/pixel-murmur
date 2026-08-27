@@ -17,8 +17,8 @@ port = 54323
 
 [auth]
 enabled = true
-site_url = "http://127.0.0.1:5173/admin"
-additional_redirect_urls = ["https://pixelmurmur.com/admin"]
+site_url = "http://127.0.0.1:4175"
+additional_redirect_urls = ["http://127.0.0.1:4175/admin/objects", "https://pixelmurmur.com/admin/objects"]
 enable_signup = false
 
 [functions.sync-instagram]

@@ -7,7 +7,7 @@ import {
   createHiddenObjectSettings,
   loadPublicObjectSettings,
 } from './contentSettings'
-import { hasSupabaseConfig } from './lib/supabase'
+import { hasSupabaseConfig } from './lib/supabaseConfig'
 import { getObjectCopyKo } from './koreanCopy'
 import ProductDetail from './ProductDetail'
 import {

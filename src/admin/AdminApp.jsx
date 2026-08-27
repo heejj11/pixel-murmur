@@ -22,6 +22,7 @@ export default function AdminApp() {
   const [session, setSession] = useState(null)
   const [loading, setLoading] = useState(hasSupabaseConfig && !demo)
   const section = routeSection()
+  const configuredAdminEmail = import.meta.env.VITE_ADMIN_EMAIL?.trim().toLowerCase()
 
   useEffect(() => {
     const previousTitle = document.title
@@ -68,7 +69,10 @@ export default function AdminApp() {
 
   if (!session && !demo) return <AdminLogin />
 
-  if (!demo && session.user.app_metadata?.role !== 'admin') {
+  const isAdmin = session?.user.app_metadata?.role === 'admin'
+    || (configuredAdminEmail && session?.user.email?.toLowerCase() === configuredAdminEmail)
+
+  if (!demo && !isAdmin) {
     return <AdminUnauthorized email={session.user.email} onSignOut={handleSignOut} />
   }
 

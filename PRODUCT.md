@@ -30,7 +30,7 @@ Visitors browse a homepage with a featured object, explore an archive of additio
 
 - A private `/admin` studio desk lets one operator review Instagram and X analytics, control which object dossiers are public, and attach each object's original social posts. PM-001 and PM-002 are public by default; every other object stays hidden until the operator enables it. Publication changes are explicit and saved as one batch.
 - Social links must be actual Instagram post, reel, or TV URLs and X/Twitter status URLs; profile and homepage URLs are not valid publication links.
-- Supabase RLS exposes only published object settings to public clients, while the admin can read and write every object setting. Social analytics remain admin-only; platform tokens and metric writes stay inside Supabase Edge Functions, and scheduled collection runs once per day.
+- Supabase RLS exposes only published object settings to public clients, while the registered PixelMurmur mailbox or an explicit admin role can read and write every object setting. The operator signs in through a one-time email link, so no admin password is stored in the browser. Social analytics remain admin-only; platform tokens and metric writes stay inside Supabase Edge Functions, and scheduled collection runs once per day.
 - The current deliverable includes a responsive homepage and a dedicated PM-001 object detail route at `/objects/pm-001`.
 - Primary sections: navigation, hero, featured object, object archive, philosophy, collaboration CTA, and footer.
 - Featured object: PM_001 Bread Power Bank.

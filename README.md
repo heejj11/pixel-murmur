@@ -45,5 +45,6 @@ Instagram과 X의 통계·동기화 상태를 확인하고, `/admin/objects`에�
 X/Twitter 상태 게시물 주소만 허용합니다.
 
 로컬에서는 `.env.example`을 `.env.local`로 복사한 뒤 Supabase 프로젝트 값을 넣습니다.
+`VITE_ADMIN_EMAIL`에는 일회용 로그인 링크를 받을 운영자 메일을 넣습니다.
 전체 데이터베이스·로그인·API 토큰·매일 수집 설정은
 [`supabase/README.md`](supabase/README.md)에 정리되어 있습니다.

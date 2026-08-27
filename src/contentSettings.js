@@ -1,4 +1,4 @@
-import { hasSupabaseConfig, supabase } from './lib/supabase'
+import { hasSupabaseConfig } from './lib/supabaseConfig'
 
 export const DEFAULT_PUBLIC_OBJECT_IDS = new Set(['PM-001', 'PM-002'])
 
@@ -58,9 +58,11 @@ export function applyObjectSettings(objects, settings) {
 }
 
 export async function loadPublicObjectSettings(objects) {
-  if (!hasSupabaseConfig || !supabase) {
+  if (!hasSupabaseConfig) {
     return createDefaultObjectSettings(objects)
   }
+
+  const { supabase } = await import('./lib/supabase')
 
   const { data, error } = await supabase
     .from('object_publication')

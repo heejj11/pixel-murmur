@@ -9,7 +9,7 @@
 - `social_metric_snapshots`: 계정·게시물별 일일 지표
 - `object_publication`: 작품 공개 여부와 Instagram·X 원문 게시물 주소
 - `sync-instagram`, `sync-x`: 플랫폼 API 수집 함수
-- Supabase Auth + RLS: 공개 클라이언트는 `object_publication`의 공개된 행만 읽고, `app_metadata.role = admin`인 로그인 사용자는 모든 행을 읽고 변경
+- Supabase Auth + RLS: 공개 클라이언트는 `object_publication`의 공개된 행만 읽고, 등록된 운영자 메일 또는 `app_metadata.role = admin`인 로그인 사용자는 모든 행을 읽고 변경
 - SNS 통계 테이블은 운영자만 조회
 - Supabase Cron: 한국 시간 오전 3시대에 플랫폼별 하루 한 번 수집
 
@@ -17,6 +17,7 @@
 초기 마이그레이션은 PM-001·PM-002만 공개하고, 나머지 작품은 운영자가 켤 때까지 숨깁니다.
 SNS 주소는 Instagram의 게시물·릴스·TV URL 또는 X/Twitter의 상태 게시물 URL이어야 하며,
 프론트 검증과 DB 제약이 같은 형식을 강제합니다.
+운영자는 비밀번호 대신 Supabase가 발송하는 일회용 이메일 링크로 로그인합니다.
 
 ## 1. 프로젝트와 프론트 연결
 
@@ -25,6 +26,7 @@ Supabase 프로젝트를 만든 뒤 루트의 `.env.example`을 `.env.local`로 
 ```dotenv
 VITE_SUPABASE_URL=https://PROJECT_REF.supabase.co
 VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
+VITE_ADMIN_EMAIL=admin@example.com
 ```
 
 배포 환경에도 같은 두 값을 등록한 뒤 프론트를 다시 빌드해야 합니다. Publishable key는
@@ -45,11 +47,13 @@ npx supabase functions deploy sync-x --no-verify-jwt
 두 함수는 JWT 검사를 끄고 배포하지만 공개 함수는 아닙니다. 함수 내부에서 운영자 JWT 또는
 Cron 전용 비밀값을 직접 확인합니다.
 
-## 3. 운영자 한 명 만들기
+## 3. 운영자 한 명 연결하기
 
-Supabase Dashboard의 Authentication → Users에서 이메일·비밀번호 사용자를 직접 만듭니다.
-공개 회원가입은 `supabase/config.toml`에서 비활성화되어 있습니다. 이어 SQL Editor에서 그
-사용자에게 운영자 역할을 지정합니다.
+프론트의 `VITE_ADMIN_EMAIL`과 `202608270004_magic_link_admin.sql`에 같은 운영자 메일을
+설정합니다. `/admin`에서 그 메일로 일회용 링크를 요청하면 첫 요청 시 Auth 사용자가 만들어지고,
+메일 링크를 누른 뒤 운영 데스크 세션이 시작됩니다. 비밀번호 사용자는 만들 필요가 없습니다.
+
+메일 주소 대신 별도의 운영자 역할을 더 부여해야 할 때만 SQL Editor에서 아래 쿼리를 사용합니다.
 
 ```sql
 update auth.users
@@ -110,7 +114,7 @@ select vault.create_secret(
 
 ## 6. 연결 확인
 
-1. `/admin`에서 운영자 이메일로 로그인합니다.
+1. `/admin`에 운영자 이메일을 입력하고 받은 일회용 링크를 누릅니다.
 2. `/admin/objects`에서 작품 공개 여부와 게시물 주소를 바꾸고 `변경사항 저장`을 누릅니다.
 3. 공개 사이트에서 목록·상세·관련 작품과 SNS 링크가 바뀌었는지 확인합니다.
 4. 통계 화면에서 `지금 동기화`를 누릅니다.

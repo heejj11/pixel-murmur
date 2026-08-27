@@ -42,7 +42,6 @@ export function AdminUnauthorized({ email, onSignOut }) {
 
 export default function AdminLogin() {
   const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
   const [status, setStatus] = useState('idle')
   const [errorMessage, setErrorMessage] = useState('')
 
@@ -51,10 +50,15 @@ export default function AdminLogin() {
     setStatus('loading')
     setErrorMessage('')
 
-    const { error } = await supabase.auth.signInWithPassword({ email, password })
+    const { error } = await supabase.auth.signInWithOtp({
+      email,
+      options: {
+        emailRedirectTo: `${window.location.origin}/admin/objects`,
+      },
+    })
     if (error) {
       setStatus('error')
-      setErrorMessage('이메일 또는 비밀번호를 확인해 주세요.')
+      setErrorMessage('운영자 이메일을 확인해 주세요.')
       return
     }
 
@@ -70,8 +74,8 @@ export default function AdminLogin() {
             <span>PixelMurmur</span>
           </a>
           <div>
-            <h1>Social desk</h1>
-            <p lang="ko">SNS 통계 운영자 화면</p>
+            <h1>Studio desk</h1>
+            <p lang="ko">PixelMurmur 운영자 화면</p>
           </div>
         </header>
         <form onSubmit={handleSubmit}>
@@ -85,28 +89,23 @@ export default function AdminLogin() {
               required
             />
           </label>
-          <label>
-            <span>Password / 비밀번호</span>
-            <input
-              type="password"
-              autoComplete="current-password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              required
-            />
-          </label>
           {errorMessage && <p className="admin-form-error" role="alert">{errorMessage}</p>}
+          {status === 'success' && (
+            <p className="admin-form-success" role="status">
+              로그인 링크를 보냈습니다. 메일에서 링크를 눌러 주세요.
+            </p>
+          )}
           <button
             className="admin-login-button"
             type="submit"
-            disabled={status === 'loading'}
+            disabled={status === 'loading' || status === 'success'}
           >
-            <span>{status === 'loading' ? '확인 중…' : '로그인'}</span>
+            <span>{status === 'loading' ? '보내는 중…' : '로그인 링크 받기'}</span>
             <ArrowRight size={18} weight="bold" aria-hidden="true" />
           </button>
         </form>
         <p className="admin-auth-note">
-          운영자 계정 한 명만 접근할 수 있습니다. SNS 토큰은 이 화면이나 브라우저에 저장되지 않습니다.
+          등록된 운영자 이메일만 접근할 수 있습니다. 로그인 비밀번호와 SNS 토큰은 브라우저에 저장하지 않습니다.
         </p>
       </section>
     </main>
