@@ -1,0 +1,19 @@
+{
+  "id": "PM-017",
+  "slug": "typewriter-key-magnets",
+  "name": "Typewriter Key Magnets",
+  "nameKo": "타자기 키 자석",
+  "status": "Just a Pixel",
+  "reality": 0,
+  "gallery": [
+    { "role": "hero", "src": "01-hero.webp", "alt": "MURMUR 단어를 만든 타자기 키 자석 중 하나를 손가락으로 누르고 연필로 크기를 보여주는 대표 렌더" },
+    { "role": "press-travel", "src": "02-press-travel.webp", "alt": "철제 보드에 붙은 A 키와 약 2밀리미터 눌린 B 키의 높이 차이를 보여주는 근접 렌더" },
+    { "role": "tactile-mechanism", "src": "03-tactile-mechanism.webp", "alt": "키캡과 가이드 플런저, 스테인리스 스냅 돔, 자석 베이스, 실리콘 패드를 분리해 보여주는 구조 렌더" },
+    { "role": "magnetic-back", "src": "04-magnetic-back.webp", "alt": "손가락으로 든 키 자석의 후면 매립 자석과 보호 패드를 보여주고 다른 키로 메모를 고정한 렌더" },
+    { "role": "alphabet-set", "src": "05-alphabet-set.webp", "alt": "A부터 R까지 독립된 타자기 키 자석과 브릭 레드 느낌표 키를 배열한 알파벳 세트 렌더" },
+    { "role": "message-board-use", "src": "06-message-board-use.webp", "alt": "철제 보드에 IDEA 단어를 만들고 두 개의 키 자석으로 메모를 고정하는 사용 장면" },
+    { "role": "numbers-symbols", "src": "07-numbers-symbols.webp", "alt": "숫자 0부터 9와 느낌표, 물음표로 구성한 타자기 키 자석 확장 세트 렌더" },
+    { "role": "variant-lineup", "src": "08-color-lineup.webp", "alt": "차콜, 아이보리, 올리브, 더스티 블루 타자기 키 자석 네 가지 컬러 구성 렌더" },
+    { "role": "packaging", "src": "09-packaging.webp", "alt": "타자기 배열처럼 키 자석을 담고 여분 글자판과 사용 안내서를 넣은 성형 펄프 패키지 렌더" }
+  ]
+}

@@ -74,6 +74,12 @@ const galleryLabelKo = {
   'Refill cassette': '리필 카세트',
   'Film-advance wheel': '필름 감기 휠',
   'Label color set': '라벨 컬러 구성',
+  'Press travel': '키 눌림 거리',
+  'Tactile mechanism': '클릭 내부 구조',
+  'Magnetic back': '자석 후면',
+  'Alphabet set': '알파벳 세트',
+  'Message-board use': '메모 보드 사용',
+  'Numbers and symbols': '숫자와 기호 세트',
 }
 
 function BilingualGalleryLabel({ label }) {

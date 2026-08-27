@@ -675,6 +675,50 @@ const filmIndexLabeler = {
   })),
 }
 
+const typewriterKeyMagnets = {
+  id: 'PM-017',
+  collection: 'stationery',
+  name: 'Typewriter Key Magnets',
+  nameKo: '타자기 키 자석',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-017-typewriter-key-magnets/01-hero.webp`,
+  accent: '#a9513f',
+  href: '/objects/pm-017',
+  alt: '철제 보드에 붙인 타자기 키 자석 여섯 개 중 하나를 손가락으로 누르는 대표 렌더',
+  category: 'Magnetic Stationery',
+  variant: 'Pressable Tactile Magnet Set',
+  intro: 'Individual typewriter keys that hold notes, build words, and press with a small mechanical click on any steel surface.',
+  introKo: '철제 보드에 하나씩 붙여 단어를 만들고 메모를 고정하며, 누를 때마다 작은 기계식 클릭감을 주는 타자기 키 자석입니다.',
+  statement: ['Arrange a word.', 'Press every letter.'],
+  story: [
+    'Each letter is an independent magnet rather than part of a keyboard. The low square base stays fixed to a steel surface while the round keycap travels downward and returns with a compact tactile snap.',
+    'The key can hold a note like an ordinary magnet or sit beside other letters to build short words. Alphabet, duplicate-letter, number, and symbol packs share the same body and can be rearranged freely.',
+  ],
+  notes: [
+    ['Independent key unit', 'Each roughly 26 × 26 × 16 mm module contains its own keycap, guide, tactile element, magnetic base, and protective rear pad.'],
+    ['Mechanical click', 'A guided plunger and stainless snap dome create about 2 mm of travel and return without a battery, switch, or electronic sound.'],
+    ['Board-safe magnet', 'A recessed circular magnet provides the hold while a thin silicone ring keeps the metal surface from being scratched or marked.'],
+    ['Next test', 'A working sample should tune press force, key wobble, snap-dome fatigue, click sound, magnetic hold, rear-pad wear, and small-part safety.'],
+  ],
+  gallery: [
+    ['hero', '01-hero.webp', 'MURMUR 단어를 만든 타자기 키 자석 중 하나를 손가락으로 누르고 연필로 크기를 보여주는 대표 렌더', 'Hero view'],
+    ['press-travel', '02-press-travel.webp', '철제 보드에 붙은 A 키와 약 2밀리미터 눌린 B 키의 높이 차이를 보여주는 근접 렌더', 'Press travel'],
+    ['tactile-mechanism', '03-tactile-mechanism.webp', '키캡과 가이드 플런저, 스테인리스 스냅 돔, 자석 베이스, 실리콘 패드를 분리해 보여주는 구조 렌더', 'Tactile mechanism'],
+    ['magnetic-back', '04-magnetic-back.webp', '손가락으로 든 키 자석의 후면 매립 자석과 보호 패드를 보여주고 다른 키로 메모를 고정한 렌더', 'Magnetic back'],
+    ['alphabet-set', '05-alphabet-set.webp', 'A부터 R까지 독립된 타자기 키 자석과 브릭 레드 느낌표 키를 배열한 알파벳 세트 렌더', 'Alphabet set'],
+    ['message-board-use', '06-message-board-use.webp', '철제 보드에 IDEA 단어를 만들고 두 개의 키 자석으로 메모를 고정하는 사용 장면', 'Message-board use'],
+    ['numbers-symbols', '07-numbers-symbols.webp', '숫자 0부터 9와 느낌표, 물음표로 구성한 타자기 키 자석 확장 세트 렌더', 'Numbers and symbols'],
+    ['variant-lineup', '08-color-lineup.webp', '차콜, 아이보리, 올리브, 더스티 블루 타자기 키 자석 네 가지 컬러 구성 렌더', 'Color lineup'],
+    ['packaging', '09-packaging.webp', '타자기 배열처럼 키 자석을 담고 여분 글자판과 사용 안내서를 넣은 성형 펄프 패키지 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-017-typewriter-key-magnets/${file}`,
+    alt,
+    label,
+  })),
+}
+
 export const objects = [
   toastPowerBank,
   toastTshirt,
@@ -692,6 +736,7 @@ export const objects = [
   publicPhoneMemoDispenser,
   disposableCameraDateStamp,
   filmIndexLabeler,
+  typewriterKeyMagnets,
 ]
 
 export const hiddenObjects = [
