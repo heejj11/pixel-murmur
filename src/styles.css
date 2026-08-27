@@ -592,23 +592,27 @@ img {
 }
 
 .archive-intro {
-  margin-bottom: clamp(42px, 6vw, 84px);
+  margin-bottom: clamp(36px, 4.5vw, 64px);
 }
 
 .archive-intro h2 {
-  max-width: 12ch;
+  max-width: 14ch;
   margin: 0;
-  font-size: clamp(52px, 7vw, 106px);
-  font-weight: 510;
-  line-height: 0.88;
-  letter-spacing: -0.055em;
+  font-size: clamp(44px, 4.5vw, 68px);
+  font-weight: 520;
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+}
+
+.archive-intro h2 > [lang='ko'] {
+  font-size: clamp(14px, 0.24em, 17px);
 }
 
 .archive-intro p {
   max-width: 38ch;
-  margin: 26px 0 0;
+  margin: 20px 0 0;
   color: #4e4942;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.65;
   word-break: keep-all;
 }
@@ -2137,7 +2141,7 @@ img {
   }
 
   .archive-intro h2 {
-    font-size: clamp(42px, 12.5vw, 52px);
+    font-size: clamp(34px, 9.5vw, 42px);
   }
 
   .archive-intro p {

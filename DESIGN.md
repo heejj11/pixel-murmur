@@ -50,6 +50,18 @@ typography:
     fontSize: "14px"
     fontWeight: 550
     lineHeight: 1.3
+  archive-headline:
+    fontFamily: "IBM Plex Sans Variable, sans-serif"
+    fontSize: "clamp(44px, 4.5vw, 68px)"
+    fontWeight: 520
+    lineHeight: 0.94
+    letterSpacing: "-0.04em"
+  archive-headline-mobile:
+    fontFamily: "IBM Plex Sans Variable, sans-serif"
+    fontSize: "clamp(34px, 9.5vw, 42px)"
+    fontWeight: 520
+    lineHeight: 0.94
+    letterSpacing: "-0.04em"
   title:
     fontFamily: "IBM Plex Sans Variable, sans-serif"
     fontSize: "15px"
@@ -225,6 +237,7 @@ The palette behaves like warm archival paper around cream, tan, and charcoal ind
 
 - **Display** (650, fluid display scale, 0.86 line-height): hero wordmark and other rare identity moments; the mobile hero resets to a smaller fluid range so the wordmark stays on one line.
 - **Headline** (520, responsive 28–66px scale, 0.94 line-height): large editorial statements such as the philosophy section. The About statement preserves one intentional line per sentence, steps through desktop, mid-width, tablet, and mobile scales, and stacks to a single layout before the text becomes cramped.
+- **Archive Headline** (520, responsive 34–68px scale, 0.94 line-height): the collection invitation stays clearly secondary to the object showcase, with a compact bilingual translation and restrained paragraph spacing.
 - **Pixel Headline** (520–550, fluid display sizing, 0.9–1 line-height): the collaboration heading and REALITY percentages only.
 - **Title** (600, 15px, 1.02 line-height): compact uppercase object names, typically held to about 12 characters per line.
 - **Body** (400, 15–18px, 1.55–1.65 line-height): English and Korean explanatory copy; Korean uses `word-break: keep-all` when line wrapping needs protection.
