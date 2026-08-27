@@ -59,6 +59,10 @@ const galleryLabelKo = {
   'Single-roll refill': '한 롤 리필',
   'Manual pull': '수동 길이 조절',
   'Guarded cutter': '보호형 절단 구조',
+  'Press and feed': '누르고 한 장 배출',
+  'Roll refill': '롤 리필',
+  'Tear-off detail': '한 장 절취',
+  'Memo refill set': '메모 리필 구성',
 }
 
 function BilingualGalleryLabel({ label }) {
