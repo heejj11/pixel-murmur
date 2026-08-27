@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { ArrowLeft, ArrowRight, ArrowUpRight } from '@phosphor-icons/react'
 import { objects } from './catalog'
+import { getObjectCopyKo } from './koreanCopy'
 import { Footer, Header, ProductImage, StatusGlyph, StatusLabel } from './SiteChrome'
 
 const galleryLabelKo = {
@@ -81,7 +82,7 @@ function RelatedObject({ object }) {
   return (
     <article className="related-object" style={{ '--object-accent': object.accent }}>
       {object.href ? (
-        <a href={object.href} aria-label={`View ${object.name}`}>
+        <a href={object.href} aria-label={`View ${object.name} / ${object.nameKo} 보기`}>
           {content}
         </a>
       ) : content}
@@ -120,18 +121,34 @@ function ProductGallery({ object }) {
 
 export default function ProductDetail({ object }) {
   const heroImage = object.gallery[0]
+  const copyKo = getObjectCopyKo(object)
   const statusFacts = [
-    ['Status', <StatusLabel key="status" status={object.status} />],
-    ['Reality', `${object.reality}%`],
-    ['Category', object.category],
-    ['Type', 'Concept Product'],
-    ['Possibility', 'Open for Collaboration'],
+    ['Status', '상태', <StatusLabel key="status" status={object.status} />],
+    ['Reality', '실현도', `${object.reality}%`],
+    ['Category', '분류', (
+      <span className="ledger-value" key="category">
+        <span>{object.category}</span>
+        <span lang="ko">{copyKo.category}</span>
+      </span>
+    )],
+    ['Type', '유형', (
+      <span className="ledger-value" key="type">
+        <span>Concept Product</span>
+        <span lang="ko">콘셉트 제품</span>
+      </span>
+    )],
+    ['Possibility', '가능성', (
+      <span className="ledger-value" key="possibility">
+        <span>Open for Collaboration</span>
+        <span lang="ko">협업 제안 가능</span>
+      </span>
+    )],
   ]
   const relatedObjects = objects.filter((item) => item.id !== object.id).slice(0, 4)
 
   useEffect(() => {
     const previousTitle = document.title
-    document.title = `${object.name} | PixelMurmur`
+    document.title = `${object.name} / ${object.nameKo} | PixelMurmur`
     window.scrollTo(0, 0)
     return () => {
       document.title = previousTitle
@@ -146,9 +163,12 @@ export default function ProductDetail({ object }) {
           <div className="detail-trail">
             <a href="/#objects">
               <ArrowLeft size={15} weight="bold" aria-hidden="true" />
-              Back to objects
+              <span className="trail-label">
+                <span>Back to objects</span>
+                <span lang="ko">오브젝트로 돌아가기</span>
+              </span>
             </a>
-            <span>Objects / {object.id}</span>
+            <span>Objects / 오브젝트 / {object.id}</span>
           </div>
 
           <div className="detail-layout">
@@ -178,7 +198,7 @@ export default function ProductDetail({ object }) {
               </div>
 
               <div className="detail-reality">
-                <span>Reality</span>
+                <span>Reality / <span lang="ko">실현도</span></span>
                 <strong>{object.reality}%</strong>
                 <span className="detail-reality__track" aria-hidden="true" />
               </div>
@@ -192,7 +212,10 @@ export default function ProductDetail({ object }) {
                 className="primary-button"
                 href={`mailto:hello@pixelmurmur.com?subject=${encodeURIComponent(`${object.id} ${object.name} inquiry`)}`}
               >
-                Make this real
+                <span className="action-copy">
+                  <span>Make this real</span>
+                  <span lang="ko">실물로 만들기</span>
+                </span>
                 <ArrowUpRight size={19} weight="bold" aria-hidden="true" />
               </a>
             </div>
@@ -202,25 +225,38 @@ export default function ProductDetail({ object }) {
         <ProductGallery object={object} />
 
         <section className="concept-story" aria-labelledby="concept-title">
-          <h2 id="concept-title">{object.statement[0]}<br />{object.statement[1]}</h2>
+          <h2 id="concept-title">
+            <span>{object.statement[0]}<br />{object.statement[1]}</span>
+            <span className="concept-story__title-ko" lang="ko">
+              {copyKo.statement[0]}<br />{copyKo.statement[1]}
+            </span>
+          </h2>
           <div className="concept-story__copy">
-            {object.story.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            {object.story.map((paragraph, index) => (
+              <div className="story-pair" key={paragraph}>
+                <p>{paragraph}</p>
+                <p lang="ko">{copyKo.story[index]}</p>
+              </div>
+            ))}
           </div>
           <aside className="concept-story__aside">
-            <span>Archive note</span>
-            <strong>Currently: pixels.<br />Hopefully: objects.</strong>
+            <span>Archive note / <span lang="ko">아카이브 노트</span></span>
+            <strong>
+              Currently: pixels.<br />Hopefully: objects.
+              <span lang="ko">지금은 픽셀.<br />언젠가는 물건.</span>
+            </strong>
           </aside>
         </section>
 
         <section className="status-ledger" aria-labelledby="status-title">
           <div className="detail-section-heading">
-            <h2 id="status-title">Object state</h2>
-            <span>Updated / 2026.08</span>
+            <h2 id="status-title">Object state <span lang="ko">오브젝트 상태</span></h2>
+            <span>Updated / 업데이트 / 2026.08</span>
           </div>
           <dl>
-            {statusFacts.map(([label, value]) => (
+            {statusFacts.map(([label, labelKo, value]) => (
               <div key={label}>
-                <dt>{label}</dt>
+                <dt>{label} <span lang="ko">{labelKo}</span></dt>
                 <dd>{value}</dd>
               </div>
             ))}
@@ -229,14 +265,18 @@ export default function ProductDetail({ object }) {
 
         <section className="detail-notes" aria-labelledby="notes-title">
           <div className="detail-section-heading">
-            <h2 id="notes-title">Concept notes</h2>
-            <span>Direction, not specification</span>
+            <h2 id="notes-title">Concept notes <span lang="ko">콘셉트 노트</span></h2>
+            <span>Direction, not specification / 사양이 아닌 방향</span>
           </div>
           <div className="detail-notes__grid">
-            {object.notes.map(([title, copy]) => (
+            {object.notes.map(([title, copy], index) => (
               <article key={title}>
-                <h3>{title}</h3>
+                <h3>
+                  <span>{title}</span>
+                  <span lang="ko">{copyKo.notes[index][0]}</span>
+                </h3>
                 <p>{copy}</p>
+                <p lang="ko">{copyKo.notes[index][1]}</p>
               </article>
             ))}
           </div>
@@ -244,27 +284,38 @@ export default function ProductDetail({ object }) {
 
         <section className="detail-contact" aria-labelledby="detail-contact-title">
           <div>
-            <h2 id="detail-contact-title">Want to make<br />it real?</h2>
+            <h2 className="paired-display" id="detail-contact-title">
+              Want to make<br />it real?
+              <span lang="ko">실물로<br />만들고 싶나요?</span>
+            </h2>
             <p>
               For production, collaboration, or licensing inquiries, tell us what you
               could bring to {object.id}.
             </p>
-            <p lang="ko">이 아이디어를 실제 물건으로 만들 수 있다면 이야기해 주세요.</p>
+            <p lang="ko">
+              제작, 협업, 라이선스 문의가 있다면 {object.id}를 위해 어떤 일을 함께할 수 있는지 알려 주세요.
+            </p>
           </div>
           <a
             className="primary-button"
             href={`mailto:hello@pixelmurmur.com?subject=${encodeURIComponent(`${object.id} collaboration inquiry`)}`}
           >
-            Contact PixelMurmur
+            <span className="action-copy">
+              <span>Contact PixelMurmur</span>
+              <span lang="ko">PixelMurmur에 문의하기</span>
+            </span>
             <ArrowUpRight size={19} weight="bold" aria-hidden="true" />
           </a>
         </section>
 
         <section className="related" aria-labelledby="related-title">
           <div className="detail-section-heading">
-            <h2 id="related-title">Related objects</h2>
+            <h2 id="related-title">Related objects <span lang="ko">관련 오브젝트</span></h2>
             <a href="/#objects">
-              View all objects
+              <span className="action-copy">
+                <span>View all objects</span>
+                <span lang="ko">전체 보기</span>
+              </span>
               <ArrowRight size={16} weight="bold" aria-hidden="true" />
             </a>
           </div>

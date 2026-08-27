@@ -36,7 +36,7 @@ Visitors browse a homepage with a featured object, explore an archive of additio
 - Status language may use JUST A PIXEL, MAYBE REAL, MAKING, SOON, and SHELVED.
 - Display object numbers as PM-001, PM-002, and so on. Asset filenames and metadata may use underscore notation such as `PM_004_OBJECT.jpg`.
 - A `REALITY` value can communicate the concept's path from pixels toward a physical object: 0% concept only, 20% sourcing or estimates, 50% prototype, 80% production preparation, and 100% released. These values are editorial status language, not engineering claims.
-- Website copy is primarily English, with optional restrained Korean support.
+- Website copy is bilingual throughout: every visitor-facing English label and narrative passage is paired with a clear Korean counterpart. Proper names, email addresses, IDs, and numeric values do not require translation.
 - The site must feel like a real website, not a presentation board, device mockup, poster, moodboard, Behance sheet, or collage.
 - The public inquiry address is `hello@pixelmurmur.com`; it currently forwards incoming mail to the studio's private inbox.
 - Commercial claims and production readiness are not confirmed and must not be invented.
@@ -54,7 +54,7 @@ Visitors browse a homepage with a featured object, explore an archive of additio
 - User-approved style reference: `.impeccable/mocks/user-style-board.png`. The large desktop homepage panel is cropped as `.impeccable/mocks/user-approved-homepage-reference.png` and is the approved composition reference.
 - The approved object language is warm retro-futurist industrial design: compact cream housings, tactile tan controls, dark inset displays with small pixel faces, soft studio lighting, and restrained nostalgic forms.
 - The PixelMurmur wordmark and main display treatment should use a legible pixel-inspired type voice. Supporting UI text remains clean sans or mono.
-- Korean and English copy may appear together as in the approved reference, with English carrying navigation and product labels and Korean providing concise supporting context.
+- Korean and English copy appear together throughout the experience. English keeps the archival voice while Korean carries the same meaning nearby, including navigation, actions, metadata, and object narratives.
 - Use the reference board only as visual authority. The implementation remains a single responsive website and must not reproduce the board's laptop, phone, social-post, or brand-guideline frames.
 - Avoid neon cyberpunk, heavy gradients, gaming UI, startup pitch-deck styling, clutter, childish product styling, excessive color, and generic AI-looking layouts.
 

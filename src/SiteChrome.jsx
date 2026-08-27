@@ -1,5 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
-import { GithubLogo, List, X } from '@phosphor-icons/react'
+import {
+  GithubLogo,
+  InstagramLogoIcon,
+  List,
+  X,
+  XLogoIcon,
+} from '@phosphor-icons/react'
 
 const statusLabelKo = {
   'Just a Pixel': '아직은 픽셀',
@@ -44,7 +50,10 @@ export function ProductImage({ src, alt, eager = false, className = '' }) {
     <div className={`product-image ${loaded ? 'is-loaded' : ''} ${className}`}>
       {!loaded && !failed && <span className="image-skeleton" aria-hidden="true" />}
       {failed ? (
-        <p className="image-error">Render unavailable.</p>
+        <p className="image-error">
+          Render unavailable.<br />
+          <span lang="ko">이미지를 불러오지 못했습니다.</span>
+        </p>
       ) : (
         <img
           src={src}
@@ -81,24 +90,32 @@ export function Header() {
 
   return (
     <header className="site-header">
-      <a className="nav-wordmark" href="/" aria-label="PixelMurmur home">
+      <a className="nav-wordmark" href="/" aria-label="PixelMurmur home / PixelMurmur 홈">
         PixelMurmur
       </a>
       <nav
         className={`site-nav ${open ? 'is-open' : ''}`}
         id="primary-navigation"
-        aria-label="Primary navigation"
+        aria-label="Primary navigation / 주요 메뉴"
       >
-        <a href="/#objects" onClick={closeMenu}>Objects</a>
-        <a href="/#about" onClick={closeMenu}>About</a>
-        <a href="/#journal" onClick={closeMenu}>Journal</a>
-        <a href="/#contact" onClick={closeMenu}>Contact</a>
+        <a href="/#objects" onClick={closeMenu}>
+          <span>Objects</span><span lang="ko">오브젝트</span>
+        </a>
+        <a href="/#about" onClick={closeMenu}>
+          <span>About</span><span lang="ko">소개</span>
+        </a>
+        <a href="/#journal" onClick={closeMenu}>
+          <span>Journal</span><span lang="ko">과정</span>
+        </a>
+        <a href="/#contact" onClick={closeMenu}>
+          <span>Contact</span><span lang="ko">문의</span>
+        </a>
       </nav>
       <div className="nav-actions">
         <a
           className="nav-mark"
           href="/#objects"
-          aria-label="Jump to the object archive"
+          aria-label="Jump to the object archive / 오브젝트 아카이브로 이동"
         >
           <PixelFace small />
         </a>
@@ -106,7 +123,7 @@ export function Header() {
           ref={menuButtonRef}
           className="menu-button"
           type="button"
-          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-label={open ? 'Close menu / 메뉴 닫기' : 'Open menu / 메뉴 열기'}
           aria-controls="primary-navigation"
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
@@ -123,15 +140,41 @@ export function Footer() {
     <footer className="site-footer">
       <div>
         <span className="footer-wordmark">PixelMurmur</span>
-        <span>Unmade Objects</span>
+        <span className="footer-descriptor">
+          <span>Unmade Objects</span>
+          <span lang="ko">아직 없는 물건들</span>
+        </span>
       </div>
       <div className="footer-links">
         <a href="mailto:hello@pixelmurmur.com">hello@pixelmurmur.com</a>
+        <a
+          href="https://www.instagram.com/pixelmurmur/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="PixelMurmur on Instagram / 인스타그램에서 PixelMurmur 보기"
+        >
+          <InstagramLogoIcon size={18} weight="bold" aria-hidden="true" />
+          Instagram
+        </a>
+        <a
+          href="https://x.com/pixelmurmur"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="PixelMurmur on X (Twitter) / X에서 PixelMurmur 보기"
+        >
+          <XLogoIcon size={17} weight="bold" aria-hidden="true" />
+          Twitter
+        </a>
         <a href="https://github.com/heejj11/pixel-murmur" target="_blank" rel="noreferrer">
           <GithubLogo size={18} weight="fill" aria-hidden="true" />
           GitHub
         </a>
-        <a href="#top">Back to top</a>
+        <a href="#top">
+          <span className="footer-back-label">
+            <span>Back to top</span>
+            <span lang="ko">맨 위로</span>
+          </span>
+        </a>
       </div>
       <span>© 2026 PixelMurmur</span>
     </footer>

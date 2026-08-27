@@ -392,12 +392,12 @@ const floppyDiskMemoPad = {
   statement: ['Save a thought,', 'one sheet at a time.'],
   story: [
     'Floppy Disk Memo Pad brings back the shape of a saved file as a place to save one thought. The memo stack fills the complete lower label window, so the paper feels built into the object rather than attached afterward.',
-    'A shallow front recess holds only 15–20 thin sheets, keeping the complete object close to a real floppy disk profile. There is no internal dispenser, drawer, slot, or moving refill mechanism.',
+    'A shallow front recess holds only 15-20 thin sheets, keeping the complete object close to a real floppy disk profile. There is no internal dispenser, drawer, slot, or moving refill mechanism.',
   ],
   notes: [
     ['Label becomes paper', 'The complete lower label recess holds a warm off-white memo stack, keeping the floppy silhouette readable at a glance.'],
     ['One-sheet interaction', 'The exposed top sheet stays flat for writing and lifts cleanly from one corner without pulling the remaining stack out.'],
-    ['Thin construction', 'Two slim molded plates and a 15–20 sheet memo layer keep the complete object close to 5 mm thick.'],
+    ['Thin construction', 'Two slim molded plates and a 15-20 sheet memo layer keep the complete object close to 5 mm thick.'],
     ['Next test', 'A prototype should verify paper release, writing pressure, front-pad adhesion, edge curl, and total thickness.'],
   ],
   gallery: [
@@ -437,7 +437,7 @@ const cassetteTapeMiniPouch = {
     'A single zipper opens a narrow mouth across the top, and the blank label card slides into an interior front sleeve. Gusset flexibility, zipper clearance, card access, and scratch resistance still need a physical sample.',
   ],
   notes: [
-    ['Shallow top opening', 'The zipper crosses the top and turns only slightly around the upper corners, creating an 18–20 mm opening without folding either cassette panel.'],
+    ['Shallow top opening', 'The zipper crosses the top and turns only slightly around the upper corners, creating an 18-20 mm opening without folding either cassette panel.'],
     ['Cassette construction', 'Smoke-black translucent front and back panels preserve the reels, label window, and familiar 115 × 75 mm cassette face.'],
     ['Changeable label', 'A blank paper card slides into a slim interior sleeve, so the front label can be replaced without adding an exterior slot.'],
     ['Next test', 'A 115 × 75 × 23 mm sample should verify zipper travel, shallow capacity, TPU stiffness, label-card access, and surface scratching.'],

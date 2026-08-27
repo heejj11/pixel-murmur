@@ -160,7 +160,7 @@ The visual world is editorial rather than technological: pixel display type supp
 - Warm ivory and greige surfaces with near-black type.
 - Large softly lit object renders; small, exact interface chrome.
 - Pixel display accents paired with sober sans and mono support type.
-- English-led labels with concise Korean supporting copy.
+- Consistent English and Korean pairs across navigation, actions, metadata, and narrative copy.
 - Flat catalog structure, hairline dividers, and only restrained ambient depth.
 - Object detail pages read as dossiers: image evidence first, then status, notes, inquiry, and related entries.
 
@@ -217,7 +217,7 @@ The palette behaves like warm archival paper around cream, tan, and charcoal ind
 
 The site is one centered shell, capped at 1500px and inset from the greige canvas. Its desktop page gutter is fluid (`page-gutter`), and thin horizontal rules make long sections feel like a continuous catalog rather than separate cards.
 
-At full desktop width, the hero uses three columns: editorial copy, an object-scale render, and compact metadata. The archive is a five-column grid; About uses statement, copy, and pixel-window columns; the journal pairs its explanation with a five-step REALITY scale. At 1120px, the hero becomes two columns with metadata spanning below, the archive becomes three columns, and About drops the decorative window. At 767px, navigation becomes an accessible dropdown, the hero and narrative sections stack, and the archive starts at two columns. At 420px and below, the archive becomes a single column. The verified targets are 1440px desktop and 390px mobile.
+At full desktop width, the hero uses three columns: editorial copy, an object-scale interactive showcase, and a four-object picker. The archive uses a 12-column editorial grid with changing 7:5, 4:8, and 5:7 compositions instead of equal catalog cards. About pairs its statement and copy with a live object count, while the journal keeps the five-step REALITY scale. At 1120px, the picker becomes a horizontal four-column rail below the two-column hero. At 767px, navigation becomes an accessible dropdown, the hero and narrative sections stack, the picker becomes a swipeable rail, and the archive becomes a single reading column. The verified targets are 1280px desktop and 390px mobile.
 
 Object detail pages open with a compact trail above a two-column dossier: a wide 1.18:1 studio stage with filename and view metadata, followed by a narrower ruled summary containing identity, state, narrative, and one inquiry action. The concept story uses three editorial columns, the status ledger uses five equal cells, concept notes use four ruled columns, and related objects use four compact tiles. At 1120px these secondary grids reduce to two columns; at 767px the dossier and story become a single reading column, the ledger becomes label/value rows, and notes become one column. Related objects become a single column at 420px.
 
