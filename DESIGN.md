@@ -23,10 +23,33 @@ typography:
     letterSpacing: "-0.035em"
   headline:
     fontFamily: "IBM Plex Sans Variable, sans-serif"
-    fontSize: "clamp(46px, 6vw, 88px)"
+    fontSize: "clamp(46px, 4.6vw, 66px)"
     fontWeight: 520
     lineHeight: 0.94
     letterSpacing: "-0.04em"
+  headline-mid:
+    fontFamily: "IBM Plex Sans Variable, sans-serif"
+    fontSize: "clamp(44px, 5vw, 56px)"
+    fontWeight: 520
+    lineHeight: 0.94
+    letterSpacing: "-0.04em"
+  headline-tablet:
+    fontFamily: "IBM Plex Sans Variable, sans-serif"
+    fontSize: "clamp(50px, 7vw, 58px)"
+    fontWeight: 520
+    lineHeight: 0.94
+    letterSpacing: "-0.04em"
+  headline-mobile:
+    fontFamily: "IBM Plex Sans Variable, sans-serif"
+    fontSize: "clamp(28px, 8.7vw, 42px)"
+    fontWeight: 520
+    lineHeight: 0.94
+    letterSpacing: "-0.04em"
+  headline-translation:
+    fontFamily: "IBM Plex Sans Variable, sans-serif"
+    fontSize: "14px"
+    fontWeight: 550
+    lineHeight: 1.3
   title:
     fontFamily: "IBM Plex Sans Variable, sans-serif"
     fontSize: "15px"
@@ -201,7 +224,7 @@ The palette behaves like warm archival paper around cream, tan, and charcoal ind
 ### Hierarchy
 
 - **Display** (650, fluid display scale, 0.86 line-height): hero wordmark and other rare identity moments; the mobile hero resets to a smaller fluid range so the wordmark stays on one line.
-- **Headline** (520, fluid headline scale, 0.94 line-height): large editorial statements such as the philosophy section.
+- **Headline** (520, responsive 28–66px scale, 0.94 line-height): large editorial statements such as the philosophy section. The About statement preserves one intentional line per sentence, steps through desktop, mid-width, tablet, and mobile scales, and stacks to a single layout before the text becomes cramped.
 - **Pixel Headline** (520–550, fluid display sizing, 0.9–1 line-height): the collaboration heading and REALITY percentages only.
 - **Title** (600, 15px, 1.02 line-height): compact uppercase object names, typically held to about 12 characters per line.
 - **Body** (400, 15–18px, 1.55–1.65 line-height): English and Korean explanatory copy; Korean uses `word-break: keep-all` when line wrapping needs protection.

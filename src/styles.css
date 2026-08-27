@@ -858,8 +858,8 @@ img {
 
 .about {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr 0.45fr;
-  gap: clamp(36px, 7vw, 120px);
+  grid-template-columns: minmax(500px, 1.35fr) minmax(260px, 0.75fr) minmax(140px, 0.35fr);
+  gap: clamp(32px, 4vw, 72px);
   align-items: center;
   min-height: 600px;
   padding: 120px var(--page-pad);
@@ -867,12 +867,20 @@ img {
 }
 
 .about h2 {
-  max-width: 13ch;
   margin: 0;
-  font-size: clamp(46px, 6vw, 88px);
+  font-size: clamp(46px, 4.6vw, 66px);
   font-weight: 520;
   line-height: 0.94;
   letter-spacing: -0.04em;
+}
+
+.about-heading__line {
+  display: block;
+  white-space: nowrap;
+}
+
+.about-heading > [lang='ko'] {
+  font-size: clamp(14px, 0.25em, 17px);
 }
 
 .about-copy {
@@ -1785,6 +1793,11 @@ img {
 
   .about {
     grid-template-columns: 1.2fr 0.8fr;
+    gap: clamp(28px, 4vw, 52px);
+  }
+
+  .about h2 {
+    font-size: clamp(44px, 5vw, 56px);
   }
 
   .about-counter {
@@ -1830,6 +1843,23 @@ img {
   .gallery-item--worn-lifestyle,
   .gallery-item--packaging {
     grid-column: span 6;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    min-height: auto;
+    padding-block: 100px;
+  }
+
+  .about h2 {
+    font-size: clamp(50px, 7vw, 58px);
+  }
+
+  .about-counter {
+    grid-column: auto;
   }
 }
 
@@ -2158,7 +2188,7 @@ img {
   }
 
   .about h2 {
-    font-size: clamp(44px, 13vw, 64px);
+    font-size: clamp(28px, 8.7vw, 42px);
   }
 
   .about-copy {

@@ -203,9 +203,13 @@ function About() {
   return (
     <section className="about" id="about" aria-labelledby="about-title">
       <div className="about-statement">
-        <h2 className="paired-display" id="about-title">
-          Currently: pixels.<br />Hopefully: objects.
-          <span lang="ko">지금은 픽셀.<br />언젠가는 물건.</span>
+        <h2 className="paired-display about-heading" id="about-title">
+          <span className="about-heading__line">Currently: pixels.</span>
+          <span className="about-heading__line">Hopefully: objects.</span>
+          <span lang="ko">
+            <span className="about-heading__line">지금은 픽셀.</span>
+            <span className="about-heading__line">언젠가는 물건.</span>
+          </span>
         </h2>
       </div>
       <div className="about-copy">
