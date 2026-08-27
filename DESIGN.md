@@ -96,6 +96,9 @@ rounded:
   shell: "14px"
 spacing:
   page-gutter: "clamp(20px, 3vw, 52px)"
+  archive-section-top: "clamp(56px, 6vw, 88px)"
+  archive-intro-gap: "clamp(28px, 3.5vw, 48px)"
+  archive-grid-gap: "clamp(36px, 4.5vw, 64px)"
 components:
   button-primary:
     backgroundColor: "{colors.archive-ink}"
