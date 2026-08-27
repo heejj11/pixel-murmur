@@ -6,14 +6,14 @@
   "status": "Just a Pixel",
   "reality": 0,
   "gallery": [
-    { "role": "hero", "src": "01-hero.webp", "alt": "올리브색 공중전화 형태와 전용 MEMO 버튼, 한 장의 메모가 나온 하단 배출구를 보여주는 대표 렌더" },
-    { "role": "press-and-feed", "src": "02-press-and-feed.webp", "alt": "손가락으로 전용 MEMO 버튼을 눌러 하단에서 메모 한 장 길이를 내보내는 사용 렌더" },
-    { "role": "mechanical-cutaway", "src": "03-mechanical-cutaway.webp", "alt": "내부의 메모 롤과 실리콘 급지 롤러, 래칫 기어, 스프링 구조를 보여주는 절개 렌더" },
-    { "role": "roll-refill", "src": "04-roll-refill.webp", "alt": "측면 리필 도어를 열고 가로축에 57밀리미터 메모 롤 한 개를 끼우는 렌더" },
+    { "role": "hero", "src": "01-hero.webp", "alt": "연필과 비교해 한 손바닥 위에 올라가는 크기를 보여주는 올리브색 미니 공중전화 메모 디스펜서 대표 렌더" },
+    { "role": "press-and-feed", "src": "02-press-and-feed.webp", "alt": "연필보다 짧은 미니 본체의 MEMO 레버를 눌러 48밀리미터 폭 메모 한 장을 내보내는 사용 렌더" },
+    { "role": "mechanical-cutaway", "src": "03-mechanical-cutaway.webp", "alt": "손바닥 크기 본체 안에 들어간 40밀리미터 롤과 실리콘 급지 롤러, 래칫 기어를 보여주는 절개 렌더" },
+    { "role": "roll-refill", "src": "04-roll-refill.webp", "alt": "한 손에 올린 본체의 측면 도어를 열고 가로축에 폭 48밀리미터 메모 롤 한 개를 끼우는 렌더" },
     { "role": "tear-off-detail", "src": "05-tear-off-detail.webp", "alt": "보호 턱 안쪽의 미세 톱니 절취선으로 메모 한 장을 손으로 떼는 디테일 렌더" },
-    { "role": "memo-refills", "src": "06-memo-refills.webp", "alt": "크림, 세이지, 블루, 핑크 색상의 줄 메모와 체크, 도트, 무지 리필 롤 구성 렌더" },
-    { "role": "variant-lineup", "src": "07-color-lineup.webp", "alt": "올리브, 크림 베이지, 브릭 레드, 차콜 색상의 공중전화 메모 디스펜서 네 가지 렌더" },
-    { "role": "worn-lifestyle", "src": "08-everyday-use.webp", "alt": "플래너와 펜이 놓인 책상에서 메모를 한 장 떼어 사용하는 일상 장면" },
-    { "role": "packaging", "src": "09-packaging.webp", "alt": "공중전화 메모 디스펜서와 리필 롤, 금속 토큰, 설명서, 성형 펄프 트레이로 구성한 패키지 렌더" }
+    { "role": "memo-refills", "src": "06-memo-refills.webp", "alt": "연필과 비교한 크림, 세이지, 블루, 핑크 색상의 48밀리미터 소형 메모 리필 구성 렌더" },
+    { "role": "variant-lineup", "src": "07-color-lineup.webp", "alt": "연필보다 짧은 올리브, 크림 베이지, 브릭 레드, 차콜 미니 디스펜서 네 가지 렌더" },
+    { "role": "worn-lifestyle", "src": "08-everyday-use.webp", "alt": "A6 플래너와 연필, 작은 잔 옆에 놓인 손바닥 크기 메모 디스펜서의 일상 장면" },
+    { "role": "packaging", "src": "09-packaging.webp", "alt": "손바닥 크기 디스펜서와 소형 리필 롤, 설명서, 작은 성형 펄프 트레이로 구성한 패키지 렌더" }
   ]
 }
