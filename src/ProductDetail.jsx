@@ -80,6 +80,12 @@ const galleryLabelKo = {
   'Alphabet set': '알파벳 세트',
   'Message-board use': '메모 보드 사용',
   'Numbers and symbols': '숫자와 기호 세트',
+  'Stapling action': '눌러 철하기',
+  'No.10 refill': '10호 침 리필',
+  'Multi-angle views': '여러 각도',
+  'Underside clincher': '하부 접힘판',
+  'Desk use': '데스크 사용',
+  'Exploded mechanism': '분해 구조',
 }
 
 function BilingualGalleryLabel({ label }) {

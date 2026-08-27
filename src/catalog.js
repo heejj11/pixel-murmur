@@ -719,6 +719,50 @@ const typewriterKeyMagnets = {
   })),
 }
 
+const vhsMiniStapler = {
+  id: 'PM-018',
+  collection: 'stationery',
+  name: 'VHS Mini Stapler',
+  nameKo: 'VHS 미니 스테이플러',
+  status: 'Just a Pixel',
+  reality: 0,
+  image: `${imageRoot}/pm-018-vhs-mini-stapler/01-hero.webp`,
+  accent: '#ad4e3c',
+  href: '/objects/pm-018',
+  alt: '종이를 넣고 상단을 누르는 손바닥 크기의 투명 VHS 미니 스테이플러 대표 렌더',
+  category: 'Stapling Tool',
+  variant: 'VHS Shell No.10 Stapler',
+  intro: 'A palm-sized VHS cassette whose transparent upper shell becomes the press arm of a practical No.10 mini stapler.',
+  introKo: '투명 VHS 카세트의 상단 셸 전체를 눌러 실제 10호 침을 찍는 손바닥 크기의 미니 스테이플러입니다.',
+  statement: ['Press the cassette.', 'Bind the page.'],
+  story: [
+    'The smoke-transparent VHS shell is the stapler handle rather than a decorative case. Its twin reel circles remain shallow molded details while a straight steel magazine, driver lever, and return spring do the actual work underneath.',
+    'Paper enters through the short front edge. Pressing the front half sends one ordinary No.10 staple through the sheets and into a steel clincher plate; lifting the rear-hinged shell exposes the magazine for a conventional strip refill.',
+  ],
+  notes: [
+    ['Palm-sized VHS', 'At roughly 96 × 54 × 23 mm, the body keeps the familiar VHS ratio while remaining close to the footprint of a practical mini stapler.'],
+    ['Direct press mechanism', 'A reinforced rib in the upper shell transfers hand pressure to a steel driver lever, with a rear pivot and return spring reopening the paper mouth.'],
+    ['Standard No.10 refill', 'The straight magazine accepts an ordinary No.10 staple strip; decorative reel windows never pretend to feed or store staples.'],
+    ['Next test', 'A working sample should tune shell stiffness, hinge play, driver alignment, clincher geometry, staple depth, opening force, refill access, and pinch-point safety.'],
+  ],
+  gallery: [
+    ['hero', '01-hero.webp', '두 장의 메모지를 앞쪽 투입구에 넣고 상단 VHS 셸을 눌러 철하는 대표 렌더', 'Hero view'],
+    ['staple-action', '02-staple-action.webp', '손가락으로 투명 셸을 누를 때 전면 드라이버가 종이에 10호 침을 찍는 근접 렌더', 'Stapling action'],
+    ['refill-magazine', '03-refill-magazine.webp', '후면 힌지로 셸을 열고 직선 금속 레일에 일반 10호 침을 넣는 리필 렌더', 'No.10 refill'],
+    ['multi-angle', '04-multi-angle.webp', 'VHS 미니 스테이플러의 전면 투입구와 측면 높이, 후면 힌지를 함께 보여주는 렌더', 'Multi-angle views'],
+    ['underside-clincher', '05-underside-clincher.webp', '제품을 뒤집어 금속 접힘판과 미끄럼 방지 패드, 완성된 철심을 보여주는 렌더', 'Underside clincher'],
+    ['desk-use', '06-desk-use.webp', '노트와 연필 옆에서 프로젝트 메모 두 장을 철하는 데스크 사용 장면', 'Desk use'],
+    ['exploded-mechanism', '07-exploded-mechanism.webp', '투명 상판과 누름 레버, 침 레일, 스프링, 하부 본체와 접힘판을 분리한 구조 렌더', 'Exploded mechanism'],
+    ['color-lineup', '08-color-lineup.webp', '스모크 차콜과 코발트 블루, 올리브, 클리어 앰버 네 가지 컬러 렌더', 'Color lineup'],
+    ['packaging', '09-packaging.webp', '본체와 10호 리필 침, 사용 안내서를 담은 성형 펄프 패키지 렌더', 'Packaging concept'],
+  ].map(([role, file, alt, label]) => ({
+    role,
+    src: `${imageRoot}/pm-018-vhs-mini-stapler/${file}`,
+    alt,
+    label,
+  })),
+}
+
 export const objects = [
   toastPowerBank,
   toastTshirt,
@@ -737,6 +781,7 @@ export const objects = [
   disposableCameraDateStamp,
   filmIndexLabeler,
   typewriterKeyMagnets,
+  vhsMiniStapler,
 ]
 
 export const hiddenObjects = [
