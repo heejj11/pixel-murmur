@@ -17,14 +17,14 @@
       "alt": "플로피디스크 라벨 영역에서 메모지 한 장의 모서리를 들어 떼어내는 모습"
     },
     {
-      "role": "refill-mechanism",
-      "src": "03-refill-mechanism-v2.webp",
-      "alt": "플로피디스크 하단 슬롯에서 약 3밀리미터 두께의 얇은 메모 리필 트레이를 꺼낸 구조 렌더"
+      "role": "side-profile",
+      "src": "03-thin-profile-v3.webp",
+      "alt": "어떤 배출구나 트레이 없이 전면 라벨 홈 안에 얇은 메모 층만 들어간 약 5밀리미터 두께의 측면 렌더"
     },
     {
       "role": "rear-construction",
       "src": "04-rear-construction.webp",
-      "alt": "원형 허브와 고무 받침, 하단 리필 잠금 장치가 있는 후면 구조 렌더"
+      "alt": "원형 허브와 고무 받침, 얇은 후면 쉘을 보여주는 플로피디스크 메모패드 후면 렌더"
     },
     {
       "role": "variant-lineup",

@@ -46,7 +46,7 @@ const galleryLabelKo = {
   'Notebook use': '노트 사용',
   'Color lineup': '컬러 구성',
   'Peel one sheet': '메모 한 장 떼기',
-  'Refill mechanism': '리필 구조',
+  'Thin profile': '얇은 적층 구조',
   'Rear construction': '후면 구조',
 }
 
