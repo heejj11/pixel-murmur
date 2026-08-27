@@ -1,0 +1,28 @@
+project_id = "pixel-murmur"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+enabled = true
+site_url = "http://127.0.0.1:5173/admin"
+additional_redirect_urls = ["https://pixelmurmur.com/admin"]
+enable_signup = false
+
+[functions.sync-instagram]
+verify_jwt = false
+
+[functions.sync-x]
+verify_jwt = false

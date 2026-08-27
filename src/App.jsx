@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { lazy, Suspense, useState } from 'react'
 import { ArrowRight, ArrowUpRight } from '@phosphor-icons/react'
 import { featuredObject, findObjectByPath, objects } from './catalog'
 import { getObjectCopyKo } from './koreanCopy'
@@ -9,6 +9,8 @@ import {
   ProductImage,
   StatusLabel,
 } from './SiteChrome'
+
+const AdminApp = lazy(() => import('./admin/AdminApp'))
 
 const archiveCollections = [
   { id: 'all', label: 'All Objects', labelKo: '전체' },
@@ -322,6 +324,21 @@ function Homepage() {
 
 export default function App() {
   const path = window.location.pathname.replace(/\/+$/, '') || '/'
+
+  if (path === '/admin' || path.startsWith('/admin/')) {
+    return (
+      <Suspense
+        fallback={(
+          <main className="admin-auth-page">
+            <div className="admin-auth-loading" role="status">운영자 화면 불러오는 중…</div>
+          </main>
+        )}
+      >
+        <AdminApp />
+      </Suspense>
+    )
+  }
+
   const object = findObjectByPath(path)
 
   if (object) {

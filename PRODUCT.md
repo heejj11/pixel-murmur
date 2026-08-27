@@ -28,6 +28,8 @@ Visitors browse a homepage with a featured object, explore an archive of additio
 
 ## Capabilities and Constraints
 
+- A private `/admin` social desk lets one operator review daily Instagram and X snapshots, recent post performance, connection health, and trigger a manual sync. It is an analytics surface, not a content CMS.
+- The browser can only read analytics rows through Supabase RLS. Platform tokens and write access stay inside Supabase Edge Functions, and scheduled collection runs once per day.
 - The current deliverable includes a responsive homepage and a dedicated PM-001 object detail route at `/objects/pm-001`.
 - Primary sections: navigation, hero, featured object, object archive, philosophy, collaboration CTA, and footer.
 - Featured object: PM_001 Bread Power Bank.

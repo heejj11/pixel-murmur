@@ -34,3 +34,14 @@ npm run build
 - React
 - CSS
 - Phosphor Icons
+- Supabase Auth, Postgres, Edge Functions, Cron
+
+## Social desk / SNS 통계 운영 화면
+
+`/admin`에는 PixelMurmur 운영자 한 명을 위한 비공개 SNS 통계 화면이 있습니다.
+Instagram과 X의 팔로워 추이, 조회·도달·참여 합계, 최근 게시물 성과와
+동기화 상태만 다루며 공개 오브젝트 콘텐츠는 기존 `src/catalog.js`에서 계속 관리합니다.
+
+로컬에서는 `.env.example`을 `.env.local`로 복사한 뒤 Supabase 프로젝트 값을 넣습니다.
+전체 데이터베이스·로그인·API 토큰·매일 수집 설정은
+[`supabase/README.md`](supabase/README.md)에 정리되어 있습니다.
