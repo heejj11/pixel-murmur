@@ -55,17 +55,17 @@ const toastTshirt = {
   href: '/objects/pm-002',
   alt: '버터 장식과 구운 식빵 가장자리 표현이 들어간 크림색 오버사이즈 티셔츠 정면 렌더',
   category: 'Wearable',
-  variant: 'Butter',
+  variant: 'Butter / Four Toast Levels',
   intro: 'A soft oversized T-shirt that borrows its color, texture, and toasted edge from a slice of bread.',
   introKo: '식빵의 결, 구운 가장자리, 녹아내리는 버터를 한 벌의 티셔츠로 옮긴 의상 콘셉트입니다.',
   statement: ['Choose your', 'toast level.'],
   story: [
-    'Toast T-Shirt treats an everyday white tee like a slice waiting to be browned. The warm edge gradient gives the flat silhouette a playful, edible depth.',
+    'Toast T-Shirt treats an everyday white tee like a slice waiting to be browned. Light, Medium, Well Done, and Burnt print recipes turn the warm edge gradient into a choice.',
     'The Butter version adds one small three-dimensional accent. Fabric, print method, and washable construction still need to be tested before the idea can leave the screen.',
   ],
   notes: [
     ['Silhouette', 'A relaxed unisex fit with dropped shoulders keeps the toast-shaped body simple and wearable.'],
-    ['Surface', 'A pale bread-crumb texture sits across the fabric with a darker toasted gradient at every edge.'],
+    ['Four toast levels', 'Light, Medium, Well Done, and Burnt keep one silhouette while gradually deepening the body color and toasted edge.'],
     ['Butter detail', 'The yellow chest accent is imagined as a soft raised applique with a printed melt trail.'],
     ['Next test', 'Fabric hand feel, edge-print consistency, and wash durability need physical sampling.'],
   ],
@@ -75,6 +75,7 @@ const toastTshirt = {
     ['side-profile', '03-side-profile.webp', '토스트 티셔츠의 드롭 숄더와 옆선을 보여주는 측면 렌더', 'Side profile'],
     ['collar-fabric-detail', '03-detail-collar-fabric.webp', '갈색 골지 카라와 식빵 결 원단 표현을 확대한 티셔츠 디테일 렌더', 'Collar and fabric'],
     ['butter-detail', '04-detail-butter.webp', '토스트 티셔츠에 부착된 노란 버터 장식과 흐르는 형태를 확대한 렌더', 'Butter applique'],
+    ['toast-levels', '07-toast-levels.webp', '같은 핏과 버터 장식을 유지한 채 라이트, 미디엄, 웰던, 번트 네 단계로 구움색이 깊어지는 토스트 티셔츠 비교 렌더', 'Toast levels'],
     ['worn-lifestyle', '05-worn-lifestyle.webp', '따뜻한 주방에서 토스트 티셔츠를 착용한 모습을 보여주는 라이프스타일 렌더', 'Worn view'],
     ['packaging', '06-packaging.webp', '식빵 모양으로 접은 토스트 티셔츠를 투명 봉투에 담은 패키지 콘셉트 렌더', 'Packaging concept'],
   ].map(([role, file, alt, label]) => ({

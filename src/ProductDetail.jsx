@@ -89,6 +89,7 @@ const galleryLabelKo = {
   'Sharpening action': '연필 깎기',
   'Shavings drawer': '깎임 가루 서랍',
   'Gear cutaway': '기어 내부 구조',
+  'Toast levels': '굽기 단계',
 }
 
 function BilingualGalleryLabel({ label }) {

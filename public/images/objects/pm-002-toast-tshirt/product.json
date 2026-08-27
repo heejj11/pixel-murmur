@@ -2,7 +2,7 @@
   "id": "PM-002",
   "slug": "toast-tshirt",
   "name": "Toast T-Shirt",
-  "variant": "Butter",
+  "variant": "Butter / Four Toast Levels",
   "status": "Just a Pixel",
   "reality": 0,
   "gallery": [
@@ -30,6 +30,11 @@
       "role": "butter-detail",
       "src": "04-detail-butter.webp",
       "alt": "토스트 티셔츠에 부착된 노란 버터 장식과 흐르는 형태를 확대한 렌더"
+    },
+    {
+      "role": "toast-levels",
+      "src": "07-toast-levels.webp",
+      "alt": "같은 핏과 버터 장식을 유지한 채 라이트, 미디엄, 웰던, 번트 네 단계로 구움색이 깊어지는 토스트 티셔츠 비교 렌더"
     },
     {
       "role": "worn-lifestyle",
