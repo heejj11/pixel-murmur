@@ -68,6 +68,166 @@ const makeTrack = ({ durationSeconds, seed, events }) => {
     }
   };
 
+  const addKick = ({ at, amplitude = 0.1 }) => {
+    const start = Math.round(at * sampleRate);
+    const length = Math.round(0.2 * sampleRate);
+    let phase = 0;
+
+    for (let i = 0; i < length; i += 1) {
+      const t = i / sampleRate;
+      const frequency = 112 * Math.exp(-t * 18) + 47;
+      phase += (2 * Math.PI * frequency) / sampleRate;
+      const body = Math.sin(phase) * Math.exp(-t * 23);
+      const transient = Math.sin(2 * Math.PI * 840 * t) * Math.exp(-t * 95);
+      mix(start + i, (body + transient * 0.16) * amplitude, 0);
+    }
+  };
+
+  const addHat = ({ at, pan = 0, amplitude = 0.025 }) => {
+    const start = Math.round(at * sampleRate);
+    const length = Math.round(0.07 * sampleRate);
+    let previousNoise = 0;
+
+    for (let i = 0; i < length; i += 1) {
+      const t = i / sampleRate;
+      const noise = random() * 2 - 1;
+      const highPassedNoise = noise - previousNoise * 0.97;
+      previousNoise = noise;
+      mix(
+        start + i,
+        highPassedNoise * Math.exp(-t * 58) * amplitude,
+        pan,
+      );
+    }
+  };
+
+  const addSnare = ({ at, pan = 0, amplitude = 0.055 }) => {
+    const start = Math.round(at * sampleRate);
+    const length = Math.round(0.16 * sampleRate);
+    let previousNoise = 0;
+
+    for (let i = 0; i < length; i += 1) {
+      const t = i / sampleRate;
+      const noise = random() * 2 - 1;
+      const brightNoise = noise - previousNoise * 0.74;
+      previousNoise = noise;
+      const body = Math.sin(2 * Math.PI * 176 * t) * Math.exp(-t * 25);
+      const snap = brightNoise * Math.exp(-t * 19);
+      mix(start + i, (snap * 0.66 + body * 0.34) * amplitude, pan);
+    }
+  };
+
+  const addBass = ({ at, frequency, amplitude = 0.058 }) => {
+    const start = Math.round(at * sampleRate);
+    const length = Math.round(0.47 * sampleRate);
+
+    for (let i = 0; i < length; i += 1) {
+      const t = i / sampleRate;
+      const attack = Math.min(1, t / 0.012);
+      const release = Math.min(1, (0.47 - t) / 0.07);
+      const envelope = Math.max(0, Math.min(attack, release));
+      const pulse =
+        Math.sin(2 * Math.PI * frequency * t) +
+        0.18 * Math.sin(2 * Math.PI * frequency * 2 * t + 0.12);
+      mix(start + i, pulse * envelope * amplitude, 0);
+    }
+  };
+
+  const addPluck = ({ at, frequency, pan = 0, amplitude = 0.052 }) => {
+    const start = Math.round(at * sampleRate);
+    const length = Math.round(0.245 * sampleRate);
+
+    for (let i = 0; i < length; i += 1) {
+      const t = i / sampleRate;
+      const attack = Math.min(1, t / 0.006);
+      const decay = 0.28 + 0.72 * Math.exp(-t * 9.5);
+      const triangle =
+        (2 / Math.PI) * Math.asin(Math.sin(2 * Math.PI * frequency * t));
+      const shimmer = Math.sin(2 * Math.PI * frequency * 2.01 * t + 0.21);
+      mix(
+        start + i,
+        (triangle * 0.82 + shimmer * 0.18) * attack * decay * amplitude,
+        pan,
+      );
+    }
+  };
+
+  const addPad = ({ at, duration, root, amplitude = 0.021 }) => {
+    const start = Math.round(at * sampleRate);
+    const length = Math.round(duration * sampleRate);
+    const frequencies = [root * 2, root * 2.5, root * 3.01];
+
+    for (let i = 0; i < length; i += 1) {
+      const t = i / sampleRate;
+      const attack = Math.min(1, t / 0.08);
+      const release = Math.min(1, (duration - t) / 0.1);
+      const envelope = Math.max(0, Math.min(attack, release));
+      const pulse = 0.82 + 0.18 * Math.sin(2 * Math.PI * 2 * t);
+      const value = frequencies.reduce(
+        (sum, frequency, index) =>
+          sum +
+          Math.sin(2 * Math.PI * frequency * t + index * 0.33) /
+            frequencies.length,
+        0,
+      );
+      mix(start + i, value * envelope * pulse * amplitude, -0.18);
+      mix(start + i, value * envelope * pulse * amplitude, 0.18);
+    }
+  };
+
+  const addMusic = () => {
+    const beatDuration = 0.5;
+    const stepDuration = beatDuration / 2;
+    const barDuration = beatDuration * 4;
+    const barRoots = [110, 123.47, 92.5, 110, 146.83, 98];
+    const motifRatios = [2, 3, 2.5, 3.5, 2.25, 3, 2.66, 3.75];
+    const totalBars = Math.ceil(durationSeconds / barDuration);
+    const totalBeats = Math.ceil(durationSeconds / beatDuration);
+    const totalSteps = Math.ceil(durationSeconds / stepDuration);
+
+    for (let bar = 0; bar < totalBars; bar += 1) {
+      const at = bar * barDuration;
+      const root = barRoots[bar % barRoots.length];
+      addPad({
+        at,
+        duration: Math.min(barDuration, durationSeconds - at),
+        root,
+      });
+    }
+
+    for (let beat = 0; beat < totalBeats; beat += 1) {
+      const at = beat * beatDuration;
+      const bar = Math.floor(beat / 4);
+      const root = barRoots[bar % barRoots.length];
+      addKick({ at, amplitude: beat % 4 === 0 ? 0.12 : 0.095 });
+      addBass({
+        at,
+        frequency: beat % 4 === 3 ? root * 1.5 : root,
+      });
+
+      if (beat % 4 === 1 || beat % 4 === 3) {
+        addSnare({ at, pan: beat % 4 === 1 ? -0.08 : 0.08 });
+      }
+    }
+
+    for (let step = 0; step < totalSteps; step += 1) {
+      const at = step * stepDuration;
+      const bar = Math.floor(at / barDuration);
+      const root = barRoots[bar % barRoots.length];
+      addHat({
+        at: at + stepDuration / 2,
+        pan: step % 2 === 0 ? -0.28 : 0.28,
+        amplitude: step % 4 === 3 ? 0.032 : 0.023,
+      });
+      addPluck({
+        at,
+        frequency: root * motifRatios[step % motifRatios.length],
+        pan: step % 2 === 0 ? -0.32 : 0.32,
+        amplitude: step % 8 === 0 ? 0.062 : 0.048,
+      });
+    }
+  };
+
   const addServo = ({ at, duration, from, to, pan = 0, amplitude = 0.065 }) => {
     const start = Math.round(at * sampleRate);
     const length = Math.round(duration * sampleRate);
@@ -86,12 +246,13 @@ const makeTrack = ({ durationSeconds, seed, events }) => {
     }
   };
 
-  // A quiet, non-melodic electrical bed. Frequencies are intentionally not a
-  // conventional chord or scale; every other audible event is synthesized below.
+  addMusic();
+
+  // A continuous electrical undertone fills the gaps beneath the rhythm.
   for (let i = 0; i < sampleCount; i += 1) {
     const t = i / sampleRate;
-    const fadeIn = Math.min(1, t / 0.12);
-    const fadeOut = Math.min(1, (durationSeconds - t) / 0.16);
+    const fadeIn = Math.min(1, t / 0.025);
+    const fadeOut = Math.min(1, (durationSeconds - t) / 0.04);
     const envelope = Math.max(0, Math.min(fadeIn, fadeOut));
     const lfo = 0.76 + 0.24 * Math.sin(2 * Math.PI * 0.19 * t + 0.4);
     const leftBed =
@@ -100,8 +261,8 @@ const makeTrack = ({ durationSeconds, seed, events }) => {
     const rightBed =
       Math.sin(2 * Math.PI * 73.4 * t + 0.025) +
       0.33 * Math.sin(2 * Math.PI * 146.1 * t + 0.36);
-    left[i] += leftBed * 0.034 * lfo * envelope;
-    right[i] += rightBed * 0.034 * lfo * envelope;
+    left[i] += leftBed * 0.016 * lfo * envelope;
+    right[i] += rightBed * 0.016 * lfo * envelope;
   }
 
   for (const event of events) {
@@ -204,13 +365,13 @@ const loopEvents = [
 
 const outputs = [
   writeWave({
-    outputPath: "public/pm001/audio/pm001-original-bed-12s.wav",
+    outputPath: "public/pm001/audio/pm001-original-music-12s-v02.wav",
     durationSeconds: 12,
     seed: 10_010_012,
     events: reelEvents,
   }),
   writeWave({
-    outputPath: "public/pm001/audio/pm001-original-loop-6s.wav",
+    outputPath: "public/pm001/audio/pm001-original-music-loop-6s-v02.wav",
     durationSeconds: 6,
     seed: 10_010_006,
     events: loopEvents,

@@ -1,10 +1,10 @@
 {
   "campaignId": "2026-09-pilot-pm-001",
   "objectId": "PM-001",
-  "version": "v01",
-  "status": "audio-qc-complete-owner-review-pending",
+  "version": "v02",
+  "status": "audio-v02-qc-complete-owner-review-pending",
   "createdAt": "2026-09-01T18:06:39+09:00",
-  "updatedAt": "2026-09-01T18:18:52+09:00",
+  "updatedAt": "2026-09-01T22:46:44+09:00",
   "toolchain": {
     "remotion": "4.0.519",
     "react": "19.2.3",
@@ -21,7 +21,7 @@
     {
       "type": "instagram-reel",
       "compositionId": "PM001-Reel",
-      "path": "renders/pm-001_ig_12s_v01.mp4",
+      "path": "renders/pm-001_ig_12s_v02.mp4",
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -30,15 +30,15 @@
       "hasAudio": true,
       "audioCodec": "aac",
       "audioSampleRate": 48000,
-      "integratedLoudnessLufs": -20.0,
-      "truePeakDbtp": -4.7,
-      "bytes": 3924277,
-      "sha256": "52979439bf07907cb1235b09acce7ff1541886b1753c489844c071c1deb93643"
+      "integratedLoudnessLufs": -17.6,
+      "truePeakDbtp": -4.9,
+      "bytes": 3989157,
+      "sha256": "18ed1a14dbd1e8f510b9379235c03e0e7ceb5c4773cb383f3061a17d80e5e667"
     },
     {
       "type": "instagram-x-loop",
       "compositionId": "PM001-Loop",
-      "path": "renders/pm-001_ig_loop_06s_v01.mp4",
+      "path": "renders/pm-001_ig_loop_06s_v02.mp4",
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -47,10 +47,10 @@
       "hasAudio": true,
       "audioCodec": "aac",
       "audioSampleRate": 48000,
-      "integratedLoudnessLufs": -19.3,
-      "truePeakDbtp": -5.4,
-      "bytes": 1610481,
-      "sha256": "88c3bd02cb8148f8a3fab791749a3a364c9741b43f2682133a655496e232fcba"
+      "integratedLoudnessLufs": -16.0,
+      "truePeakDbtp": -4.8,
+      "bytes": 1651920,
+      "sha256": "fe04b83d3cf4d76af5d11fe84da9397735c3446e4294f20b6b217e2b15eac6a8"
     },
     {
       "type": "reel-cover",
@@ -66,28 +66,30 @@
     "authorship": "Original deterministic synthesis created for PixelMurmur PM-001",
     "thirdPartySamples": false,
     "downloadedAudio": false,
+    "style": "Continuous 120 BPM playful electronic rhythm with bass, percussion, arpeggio, and mechanical accents",
+    "continuousPlayback": true,
     "generator": "social/remotion/scripts/generate-pm001-audio.mjs",
     "sources": [
       {
-        "path": "social/remotion/public/pm001/audio/pm001-original-bed-12s.wav",
+        "path": "social/remotion/public/pm001/audio/pm001-original-music-12s-v02.wav",
         "durationSeconds": 12,
         "sampleRate": 48000,
         "channels": 2,
         "peakDbfs": -3.1,
-        "rmsDbfs": -19.58,
-        "sha256": "ed8b11674f49ea03092e49815893644a858bf9d9b4bb2aa2a227a145181c6918"
+        "rmsDbfs": -18.11,
+        "sha256": "53f3d6949bd67f5840bd5825014808182375f5e3d9b8f879780a0cada00947f5"
       },
       {
-        "path": "social/remotion/public/pm001/audio/pm001-original-loop-6s.wav",
+        "path": "social/remotion/public/pm001/audio/pm001-original-music-loop-6s-v02.wav",
         "durationSeconds": 6,
         "sampleRate": 48000,
         "channels": 2,
         "peakDbfs": -3.1,
-        "rmsDbfs": -18.94,
-        "sha256": "0f4816ef66d6cf3a8f136b5d828ccfa6f41015df6e85ba37bdece7df595bfc14"
+        "rmsDbfs": -16.52,
+        "sha256": "b8aa76f29b65d0d4642e8d34809d5f2526cf4aa9b5a2e8ed865ccdd4305f2894"
       }
     ],
-    "note": "No third-party music, MIDI, loops, or samples were used. The synthesized files remain reproducible from the checked-in generator. Content ID false positives cannot be ruled out by technical checks alone."
+    "note": "Version 02 replaces the sparse ambience with continuous music from first frame to last. No third-party music, MIDI, loops, or samples were used. The synthesized files remain reproducible from the checked-in generator. Content ID false positives cannot be ruled out by technical checks alone."
   },
   "disclosures": [
     "CONCEPT RENDER · NOT PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음",
@@ -104,6 +106,7 @@
     "exactDurationVerified": true,
     "audioTrackVerified": true,
     "audioLoudnessVerified": true,
+    "noSilenceLongerThan100msAtMinus45Db": true,
     "ownerVisualApproval": true,
     "publishReady": false,
     "blocker": "Owner audio review and explicit publish approval are required."

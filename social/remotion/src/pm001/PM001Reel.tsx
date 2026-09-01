@@ -61,7 +61,7 @@ export const PM001Reel: React.FC = () => {
         </TransitionSeries.Sequence>
       </TransitionSeries>
       <Audio
-        src={staticFile("pm001/audio/pm001-original-bed-12s.wav")}
+        src={staticFile("pm001/audio/pm001-original-music-12s-v02.wav")}
         volume={0.88}
       />
     </>

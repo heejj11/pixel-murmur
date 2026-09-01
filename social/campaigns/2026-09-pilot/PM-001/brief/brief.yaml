@@ -2,7 +2,7 @@ campaign:
   id: "2026-09-pilot-pm-001"
   object_id: "PM-001"
   phase: "brand-opening"
-  status: "audio-ready-for-owner-review"
+  status: "audio-v02-ready-for-owner-review"
   owner_approval_required: true
   pin_first_post: true
 
@@ -110,6 +110,6 @@ approval_gates:
   reveal: "pending"
   copy: "pending"
   design: "pending-existing-pack-qc"
-  video: "visual-approved-audio-pending"
+  video: "visual-approved-audio-v02-pending"
   publish: "blocked"
   paid_media: "blocked"
