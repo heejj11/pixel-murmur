@@ -1,25 +1,27 @@
 {
-  "campaignId": "2026-09-pilot-pm-019",
-  "objectId": "PM-019",
-  "state": "queued-after-pm-001",
+  "campaignId": "2026-09-pilot-pm-001",
+  "objectId": "PM-001",
+  "state": "draft",
   "updatedAt": "2026-09-01T00:00:00+09:00",
   "approvals": {
     "reveal": "pending",
     "copy": "pending",
-    "design": "pending",
+    "design": "pending-existing-pack-qc",
     "video": "pending",
     "publish": "blocked",
     "paidMedia": "blocked"
   },
   "outputs": {
-    "brief": "queued",
-    "captions": "queued",
-    "design": "not-started",
+    "brief": "ready-for-review",
+    "captions": "ready-for-review",
+    "existingSocialPack": "ready-for-qc",
     "video": "not-started",
     "analysis": "not-started"
   },
   "externalActionsAllowed": false,
   "notes": [
+    "PM-001 is the opening and pinned campaign.",
+    "Existing files under social/pm-001 must be reviewed and reused without overwriting.",
     "No social post may be published until publish is approved.",
     "No paid media may run until paidMedia is approved with an exact KRW cap."
   ]

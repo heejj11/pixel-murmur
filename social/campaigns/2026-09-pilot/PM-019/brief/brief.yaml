@@ -2,7 +2,7 @@ campaign:
   id: "2026-09-pilot-pm-019"
   object_id: "PM-019"
   phase: "pilot"
-  status: "draft"
+  status: "queued-after-pm-001"
   owner_approval_required: true
 
 object:
@@ -68,11 +68,11 @@ proposed_schedule:
   status: "not-approved"
   posts:
     - slot: "reveal"
-      at: "2026-09-08T19:30:00+09:00"
+      at: "2026-09-15T19:30:00+09:00"
     - slot: "mechanism"
-      at: "2026-09-10T19:30:00+09:00"
+      at: "2026-09-17T19:30:00+09:00"
     - slot: "prototype-intent"
-      at: "2026-09-12T11:00:00+09:00"
+      at: "2026-09-19T11:00:00+09:00"
 
 measurement:
   checkpoints_hours:

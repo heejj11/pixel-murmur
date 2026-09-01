@@ -1,0 +1,115 @@
+campaign:
+  id: "2026-09-pilot-pm-001"
+  object_id: "PM-001"
+  phase: "brand-opening"
+  status: "draft"
+  owner_approval_required: true
+  pin_first_post: true
+
+object:
+  name: "Toast Charging Station"
+  name_ko: "토스트 충전 스테이션"
+  source_of_truth:
+    - "src/catalog.js"
+    - "public/images/objects/pm-001-toast-charging-station/product.json"
+  existing_local_assets:
+    - "social/pm-001/captions.md"
+    - "social/pm-001/pm001-social-feed-pack.zip"
+  existing_asset_rule: "review and reuse without overwriting"
+  product_state: "concept-render-not-produced"
+
+hypothesis:
+  statement: "PixelMurmur의 첫 게시물에서 PM-001의 익숙한 토스트 형태와 분리형 배터리 구조를 함께 보여주면, 계정이 단순 이미지 모음이 아니라 아직 만들어지지 않은 객체를 탐색하는 프로젝트라는 점을 이해시킬 수 있다."
+  primary_audience: "한국의 제품디자인, 데스크테리어, 소형 전자기기와 기묘한 생활용품 관심층"
+  primary_goal: "brand-and-concept-understanding"
+  single_variable: "첫 문장의 브랜드 설명 방식"
+  hook_a: "토스트가 보조배터리라면? / What if toast were a battery?"
+  hook_b: "아직 세상에 없는 토스트 충전기. / A toast charger that does not exist yet."
+
+disclosure:
+  persistent: "CONCEPT RENDER · NOT YET PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음"
+  motion: "MOTION VISUALIZATION / 동작 시각화"
+  final_question: "이 픽셀은 객체가 될 가치가 있을까요? / Is this pixel worth becoming an object?"
+
+content:
+  pinned_introduction:
+    platform: "instagram"
+    format: "carousel"
+    size: "1080x1350"
+    source_roles:
+      - "hero-inserted"
+      - "detachable-structure"
+      - "toast-battery"
+      - "lcd-ui-states"
+      - "desk-usage"
+    slides:
+      - "PixelMurmur and PM-001 introduction"
+      - "dock and removable battery"
+      - "portable toast battery"
+      - "pixel LCD states"
+      - "concept disclosure and prototype-intent question"
+  reveal_reel:
+    platform: "instagram"
+    duration_seconds: 12
+    aspect_ratio: "9:16"
+    source_roles:
+      - "hero-inserted"
+      - "detachable-structure"
+      - "toast-battery"
+      - "lcd-ui-states"
+      - "desk-usage"
+    timeline:
+      - "0.0-0.8: toast battery hook"
+      - "0.8-3.5: docked hero"
+      - "3.5-6.5: detach the toast battery"
+      - "6.5-9.0: LCD and portable use"
+      - "9.0-12.0: project statement and prototype-intent question"
+  gesture_loop:
+    platform: "instagram,x"
+    duration_seconds: 6
+    source_roles:
+      - "hero-inserted"
+      - "detachable-structure"
+    loop_action: "lift toast battery from dock and return"
+  x_post:
+    platform: "x"
+    format: "short project introduction + object explanation + question"
+    source_roles:
+      - "hero-inserted"
+      - "detachable-structure"
+      - "lcd-ui-states"
+      - "desk-usage"
+
+proposed_schedule:
+  timezone: "Asia/Seoul"
+  status: "not-approved"
+  posts:
+    - slot: "pinned-introduction"
+      at: "2026-09-08T19:30:00+09:00"
+    - slot: "detachable-mechanism"
+      at: "2026-09-10T19:30:00+09:00"
+    - slot: "prototype-intent"
+      at: "2026-09-12T11:00:00+09:00"
+
+measurement:
+  checkpoints_hours:
+    - 24
+    - 72
+    - 168
+  primary_signals:
+    - "profile_visits"
+    - "follows"
+    - "saves"
+    - "shares"
+    - "meaningful_comments"
+    - "explicit_prototype_intent"
+  interpretation: "The first campaign establishes the account baseline; do not compare it to generic industry benchmarks."
+  paid_media: "blocked until 3-4 weeks of organic data and two repeat winners"
+
+approval_gates:
+  reveal: "pending"
+  copy: "pending"
+  design: "pending-existing-pack-qc"
+  video: "pending"
+  publish: "blocked"
+  paid_media: "blocked"
