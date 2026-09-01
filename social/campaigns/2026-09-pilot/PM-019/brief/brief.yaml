@@ -1,0 +1,99 @@
+campaign:
+  id: "2026-09-pilot-pm-019"
+  object_id: "PM-019"
+  phase: "pilot"
+  status: "draft"
+  owner_approval_required: true
+
+object:
+  name: "Slide Projector Sharpener"
+  name_ko: "슬라이드 영사기 연필깎이"
+  source_of_truth:
+    - "src/catalog.js"
+    - "public/images/objects/pm-019-slide-projector-sharpener/product.json"
+  product_state: "concept-render-not-produced"
+
+hypothesis:
+  statement: "익숙한 슬라이드 영사기의 초점 휠을 연필깎이 크랭크로 바꾼 장면은 2초 안에 기능을 이해시키고, 저장·공유보다 먼저 구체적인 시제품 의향 댓글을 만든다."
+  primary_audience: "한국의 제품디자인, 문구, 아날로그 카메라와 빈티지 전자제품 관심층"
+  single_variable: "첫 2초 훅"
+  hook_a: "영사기인 줄 알았는데, 연필깎이입니다. / It looks like a projector. It sharpens pencils."
+  hook_b: "초점을 돌리면 연필이 깎입니다. / Turn the focus. Sharpen the point."
+
+disclosure:
+  persistent: "CONCEPT RENDER · NOT YET PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음"
+  motion: "MOTION VISUALIZATION / 동작 시각화"
+  final_question: "실제로 만들어볼까요? / Should we prototype this?"
+
+content:
+  reveal_reel:
+    platform: "instagram"
+    duration_seconds: 12
+    aspect_ratio: "9:16"
+    source_roles:
+      - "hero"
+      - "sharpening-action"
+      - "gear-cutaway"
+      - "shavings-drawer"
+      - "color-lineup"
+    timeline:
+      - "0.0-0.8: hook A or B"
+      - "0.8-4.2: pencil and crank action"
+      - "4.2-7.5: gear and cutter cutaway"
+      - "7.5-9.5: shavings drawer"
+      - "9.5-12.0: color lineup and prototype question"
+  gesture_loop:
+    platform: "instagram,x"
+    duration_seconds: 6
+    source_roles:
+      - "hero"
+      - "sharpening-action"
+    loop_action: "insert pencil, turn crank, return to first frame"
+  carousel:
+    platform: "instagram"
+    size: "1080x1350"
+    slides:
+      - "reveal"
+      - "crank action"
+      - "gear mechanism"
+      - "shavings drawer"
+      - "color vote"
+  x_post:
+    platform: "x"
+    format: "short claim + question + 6-second loop"
+    avoid: "copying the Instagram caption verbatim"
+
+proposed_schedule:
+  timezone: "Asia/Seoul"
+  status: "not-approved"
+  posts:
+    - slot: "reveal"
+      at: "2026-09-08T19:30:00+09:00"
+    - slot: "mechanism"
+      at: "2026-09-10T19:30:00+09:00"
+    - slot: "prototype-intent"
+      at: "2026-09-12T11:00:00+09:00"
+
+measurement:
+  checkpoints_hours:
+    - 24
+    - 72
+    - 168
+  primary_signals:
+    - "saves"
+    - "shares"
+    - "meaningful_comments"
+    - "profile_visits"
+    - "follows"
+    - "explicit_prototype_intent"
+  comparison: "recent median of comparable posts; if unavailable, treat this campaign as baseline"
+  insufficient_sample: "Do not judge the object from a single low-reach post. Retest one hook once."
+  paid_media: "blocked until 3-4 weeks of organic data and two repeat winners"
+
+approval_gates:
+  reveal: "pending"
+  copy: "pending"
+  design: "pending"
+  video: "pending"
+  publish: "blocked"
+  paid_media: "blocked"

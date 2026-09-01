@@ -1,0 +1,26 @@
+{
+  "campaignId": "2026-09-pilot-pm-019",
+  "objectId": "PM-019",
+  "state": "draft",
+  "updatedAt": "2026-09-01T00:00:00+09:00",
+  "approvals": {
+    "reveal": "pending",
+    "copy": "pending",
+    "design": "pending",
+    "video": "pending",
+    "publish": "blocked",
+    "paidMedia": "blocked"
+  },
+  "outputs": {
+    "brief": "ready-for-review",
+    "captions": "ready-for-review",
+    "design": "not-started",
+    "video": "not-started",
+    "analysis": "not-started"
+  },
+  "externalActionsAllowed": false,
+  "notes": [
+    "No social post may be published until publish is approved.",
+    "No paid media may run until paidMedia is approved with an exact KRW cap."
+  ]
+}
