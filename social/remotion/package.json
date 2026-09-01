@@ -1,0 +1,39 @@
+{
+  "name": "remotion",
+  "version": "1.0.0",
+  "description": "My Remotion video",
+  "repository": {},
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@remotion/cli": "4.0.519",
+    "@remotion/fonts": "4.0.519",
+    "@remotion/tailwind-v4": "4.0.519",
+    "@remotion/transitions": "4.0.519",
+    "mediabunny": "1.55.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.519",
+    "tailwindcss": "4.0.0"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.519",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "render:pm001:reel": "remotion render src/index.ts PM001-Reel ../campaigns/2026-09-pilot/PM-001/video/renders/pm-001_ig_12s_v01.mp4 --codec=h264 --crf=18 --muted",
+    "render:pm001:loop": "remotion render src/index.ts PM001-Loop ../campaigns/2026-09-pilot/PM-001/video/renders/pm-001_ig_loop_06s_v01.mp4 --codec=h264 --crf=18 --muted",
+    "still:pm001": "remotion still src/index.ts PM001-Reel ../campaigns/2026-09-pilot/PM-001/video/renders/pm-001_reel_cover_v01.png --frame=12"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}

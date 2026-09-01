@@ -1,21 +1,21 @@
 {
   "campaignId": "2026-09-pilot-pm-001",
   "objectId": "PM-001",
-  "state": "draft",
-  "updatedAt": "2026-09-01T00:00:00+09:00",
+  "state": "video-ready-for-owner-review",
+  "updatedAt": "2026-09-01T18:06:39+09:00",
   "approvals": {
     "reveal": "pending",
     "copy": "pending",
-    "design": "pending-existing-pack-qc",
-    "video": "pending",
+    "design": "needs-carousel-revision",
+    "video": "pending-owner-review",
     "publish": "blocked",
     "paidMedia": "blocked"
   },
   "outputs": {
     "brief": "ready-for-review",
     "captions": "ready-for-review",
-    "existingSocialPack": "ready-for-qc",
-    "video": "not-started",
+    "existingSocialPack": "qc-complete-needs-revision",
+    "video": "ready-for-owner-review",
     "analysis": "not-started"
   },
   "externalActionsAllowed": false,

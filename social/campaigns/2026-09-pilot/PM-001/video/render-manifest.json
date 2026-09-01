@@ -1,0 +1,74 @@
+{
+  "campaignId": "2026-09-pilot-pm-001",
+  "objectId": "PM-001",
+  "version": "v01",
+  "status": "video-qc-complete-owner-review-pending",
+  "createdAt": "2026-09-01T18:06:39+09:00",
+  "toolchain": {
+    "remotion": "4.0.519",
+    "react": "19.2.3",
+    "mediabunny": "1.55.1"
+  },
+  "sourceImages": [
+    "public/images/objects/pm-001-toast-charging-station/01-hero-inserted.webp",
+    "public/images/objects/pm-001-toast-charging-station/02-detachable-structure.webp",
+    "public/images/objects/pm-001-toast-charging-station/03-toast-battery.webp",
+    "public/images/objects/pm-001-toast-charging-station/06-lcd-ui-states.webp",
+    "public/images/objects/pm-001-toast-charging-station/07-desk-usage.webp"
+  ],
+  "outputs": [
+    {
+      "type": "instagram-reel",
+      "compositionId": "PM001-Reel",
+      "path": "renders/pm-001_ig_12s_v01.mp4",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "durationSeconds": 12,
+      "codec": "h264",
+      "hasAudio": false,
+      "bytes": 4505677,
+      "sha256": "9457f797738e4672f010c2990071a795d8ac0fd49b82be6b5d88e546394dc44b"
+    },
+    {
+      "type": "instagram-x-loop",
+      "compositionId": "PM001-Loop",
+      "path": "renders/pm-001_ig_loop_06s_v01.mp4",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "durationSeconds": 6,
+      "codec": "h264",
+      "hasAudio": false,
+      "bytes": 1992562,
+      "sha256": "ad48d4a20f6c294d9cfa398f720ccdb23b3758f60be0ca3b8d823f326693af73"
+    },
+    {
+      "type": "reel-cover",
+      "path": "renders/pm-001_reel_cover_v01.png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 765020,
+      "sha256": "fdc758aaf267ff608a9e74cbcf63daff6b670698812a889137c99266d0a12d65"
+    }
+  ],
+  "audio": {
+    "included": false,
+    "note": "Choose licensed platform audio only after owner approval. The video is designed to remain understandable while muted."
+  },
+  "disclosures": [
+    "CONCEPT RENDER · NOT PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음",
+    "MOTION VISUALIZATION / 동작 시각화"
+  ],
+  "qc": {
+    "lintAndTypecheck": "passed",
+    "firstFrameReviewed": true,
+    "midFrameReviewed": true,
+    "endFrameReviewed": true,
+    "safeAreaReviewed": true,
+    "bilingualDisclosurePersistent": true,
+    "metadataVerifiedWithMediabunny": true,
+    "publishReady": false,
+    "blocker": "Owner review and explicit publish approval are required."
+  }
+}

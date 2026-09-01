@@ -2,7 +2,7 @@ campaign:
   id: "2026-09-pilot-pm-001"
   object_id: "PM-001"
   phase: "brand-opening"
-  status: "draft"
+  status: "video-ready-for-owner-review"
   owner_approval_required: true
   pin_first_post: true
 
@@ -11,7 +11,7 @@ object:
   name_ko: "토스트 충전 스테이션"
   source_of_truth:
     - "src/catalog.js"
-    - "public/images/objects/pm-001-toast-charging-station/product.json"
+    - "source-assets/objects/pm-001-toast-charging-station/product.json"
   existing_local_assets:
     - "social/pm-001/captions.md"
     - "social/pm-001/pm001-social-feed-pack.zip"
