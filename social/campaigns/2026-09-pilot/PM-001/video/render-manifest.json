@@ -2,8 +2,9 @@
   "campaignId": "2026-09-pilot-pm-001",
   "objectId": "PM-001",
   "version": "v01",
-  "status": "video-qc-complete-owner-review-pending",
+  "status": "audio-qc-complete-owner-review-pending",
   "createdAt": "2026-09-01T18:06:39+09:00",
+  "updatedAt": "2026-09-01T18:18:52+09:00",
   "toolchain": {
     "remotion": "4.0.519",
     "react": "19.2.3",
@@ -26,9 +27,13 @@
       "fps": 30,
       "durationSeconds": 12,
       "codec": "h264",
-      "hasAudio": false,
-      "bytes": 4505677,
-      "sha256": "9457f797738e4672f010c2990071a795d8ac0fd49b82be6b5d88e546394dc44b"
+      "hasAudio": true,
+      "audioCodec": "aac",
+      "audioSampleRate": 48000,
+      "integratedLoudnessLufs": -20.0,
+      "truePeakDbtp": -4.7,
+      "bytes": 3924277,
+      "sha256": "52979439bf07907cb1235b09acce7ff1541886b1753c489844c071c1deb93643"
     },
     {
       "type": "instagram-x-loop",
@@ -39,9 +44,13 @@
       "fps": 30,
       "durationSeconds": 6,
       "codec": "h264",
-      "hasAudio": false,
-      "bytes": 1992562,
-      "sha256": "ad48d4a20f6c294d9cfa398f720ccdb23b3758f60be0ca3b8d823f326693af73"
+      "hasAudio": true,
+      "audioCodec": "aac",
+      "audioSampleRate": 48000,
+      "integratedLoudnessLufs": -19.3,
+      "truePeakDbtp": -5.4,
+      "bytes": 1610481,
+      "sha256": "88c3bd02cb8148f8a3fab791749a3a364c9741b43f2682133a655496e232fcba"
     },
     {
       "type": "reel-cover",
@@ -53,8 +62,32 @@
     }
   ],
   "audio": {
-    "included": false,
-    "note": "Choose licensed platform audio only after owner approval. The video is designed to remain understandable while muted."
+    "included": true,
+    "authorship": "Original deterministic synthesis created for PixelMurmur PM-001",
+    "thirdPartySamples": false,
+    "downloadedAudio": false,
+    "generator": "social/remotion/scripts/generate-pm001-audio.mjs",
+    "sources": [
+      {
+        "path": "social/remotion/public/pm001/audio/pm001-original-bed-12s.wav",
+        "durationSeconds": 12,
+        "sampleRate": 48000,
+        "channels": 2,
+        "peakDbfs": -3.1,
+        "rmsDbfs": -19.58,
+        "sha256": "ed8b11674f49ea03092e49815893644a858bf9d9b4bb2aa2a227a145181c6918"
+      },
+      {
+        "path": "social/remotion/public/pm001/audio/pm001-original-loop-6s.wav",
+        "durationSeconds": 6,
+        "sampleRate": 48000,
+        "channels": 2,
+        "peakDbfs": -3.1,
+        "rmsDbfs": -18.94,
+        "sha256": "0f4816ef66d6cf3a8f136b5d828ccfa6f41015df6e85ba37bdece7df595bfc14"
+      }
+    ],
+    "note": "No third-party music, MIDI, loops, or samples were used. The synthesized files remain reproducible from the checked-in generator. Content ID false positives cannot be ruled out by technical checks alone."
   },
   "disclosures": [
     "CONCEPT RENDER · NOT PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음",
@@ -68,7 +101,11 @@
     "safeAreaReviewed": true,
     "bilingualDisclosurePersistent": true,
     "metadataVerifiedWithMediabunny": true,
+    "exactDurationVerified": true,
+    "audioTrackVerified": true,
+    "audioLoudnessVerified": true,
+    "ownerVisualApproval": true,
     "publishReady": false,
-    "blocker": "Owner review and explicit publish approval are required."
+    "blocker": "Owner audio review and explicit publish approval are required."
   }
 }

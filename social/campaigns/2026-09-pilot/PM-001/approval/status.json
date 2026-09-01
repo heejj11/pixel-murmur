@@ -1,13 +1,13 @@
 {
   "campaignId": "2026-09-pilot-pm-001",
   "objectId": "PM-001",
-  "state": "video-ready-for-owner-review",
-  "updatedAt": "2026-09-01T18:06:39+09:00",
+  "state": "audio-ready-for-owner-review",
+  "updatedAt": "2026-09-01T18:18:52+09:00",
   "approvals": {
     "reveal": "pending",
     "copy": "pending",
     "design": "needs-carousel-revision",
-    "video": "pending-owner-review",
+    "video": "visual-approved-audio-pending",
     "publish": "blocked",
     "paidMedia": "blocked"
   },
@@ -15,7 +15,7 @@
     "brief": "ready-for-review",
     "captions": "ready-for-review",
     "existingSocialPack": "qc-complete-needs-revision",
-    "video": "ready-for-owner-review",
+    "video": "audio-ready-for-owner-review",
     "analysis": "not-started"
   },
   "externalActionsAllowed": false,
@@ -23,6 +23,7 @@
     "PM-001 is the opening and pinned campaign.",
     "Existing files under social/pm-001 must be reviewed and reused without overwriting.",
     "No social post may be published until publish is approved.",
-    "No paid media may run until paidMedia is approved with an exact KRW cap."
+    "No paid media may run until paidMedia is approved with an exact KRW cap.",
+    "Owner approved both PM-001 video directions on 2026-09-01; only the new original audio mix remains for review."
   ]
 }
