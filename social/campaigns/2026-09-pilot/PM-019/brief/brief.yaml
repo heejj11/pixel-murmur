@@ -69,10 +69,10 @@ proposed_schedule:
   status: "recommended-not-published"
   posts:
     - slot: "instagram-reveal"
-      at: "2026-09-05T19:30:00+09:00"
+      at: "2026-09-04T19:30:00+09:00"
     - slot: "x-reveal"
-      at: "2026-09-05T19:45:00+09:00"
-  rationale: "PM-001의 24시간 신호를 확인한 뒤 약 이틀 간격으로 다른 형태의 작품을 공개해 계정 정체성과 작품 반응을 함께 비교한다."
+      at: "2026-09-04T19:45:00+09:00"
+  rationale: "PM-001의 첫 24시간 신호를 확보한 뒤 약 30시간 간격으로 다른 형태의 작품을 공개해 초기 계정의 흐름을 유지하고 작품 반응을 비교한다."
 
 measurement:
   checkpoints_hours:
