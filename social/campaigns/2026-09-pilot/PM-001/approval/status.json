@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-001",
   "objectId": "PM-001",
   "state": "assets-v03-ready-login-required",
-  "updatedAt": "2026-09-03T12:14:41+09:00",
+  "updatedAt": "2026-09-03T12:18:13+09:00",
   "approvals": {
     "reveal": "completed-existing-posts",
     "copy": "ready-for-action-confirmation",
@@ -30,6 +30,8 @@
     "Instagram and X each already have an introduction post and a PM-001 static post; do not duplicate them.",
     "The owner delegated organic social operations on 2026-09-03; public posting still requires confirmation at the moment of the action.",
     "No paid media may run until paidMedia is approved with an exact KRW cap.",
+    "Paid subscriptions, verification, premium platform features, auto-renewal, and any other spend require a separate proposal and exact owner approval.",
+    "KRW 50,000 for Instagram ads and one month of X Premium are request examples, not pre-approved purchases.",
     "Audio v02 replaces the sparse ambience with a continuous 120 BPM electronic rhythm after owner feedback.",
     "Video v03 keeps that continuous audio and corrects the English disclosure to NOT YET PRODUCED."
   ]

@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-019",
   "objectId": "PM-019",
   "state": "queued-after-pm-001",
-  "updatedAt": "2026-09-01T00:00:00+09:00",
+  "updatedAt": "2026-09-03T12:18:13+09:00",
   "approvals": {
     "reveal": "pending",
     "copy": "pending",
@@ -21,6 +21,8 @@
   "externalActionsAllowed": false,
   "notes": [
     "No social post may be published until publish is approved.",
-    "No paid media may run until paidMedia is approved with an exact KRW cap."
+    "No paid media may run until paidMedia is approved with an exact KRW cap.",
+    "Paid subscriptions, verification, premium platform features, auto-renewal, and any other spend require a separate proposal and exact owner approval.",
+    "KRW 50,000 for Instagram ads and one month of X Premium are request examples, not pre-approved purchases."
   ]
 }
