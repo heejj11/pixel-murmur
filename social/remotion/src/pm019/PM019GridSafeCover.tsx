@@ -34,35 +34,36 @@ export const PM019GridSafeCover: React.FC = () => {
         <div
           style={{
             marginTop: 58,
-            fontSize: 78,
+            fontSize: 54,
             fontWeight: 800,
             lineHeight: 1.04,
-            letterSpacing: -4,
+            letterSpacing: -2.2,
           }}
         >
-          영사기인 줄 알았는데,
+          초점을 돌리면,
           <br />
-          연필깎이입니다.
+          연필이 깎입니다.
         </div>
         <div
           style={{
-            marginTop: 24,
+            marginTop: 18,
             color: "#e77b49",
             fontFamily: "IBM Plex Mono, Menlo, monospace",
-            fontSize: 29,
+            fontSize: 54,
             fontWeight: 700,
-            lineHeight: 1.18,
+            lineHeight: 1.04,
+            letterSpacing: -2.2,
           }}
         >
-          IT LOOKS LIKE A PROJECTOR.
+          TURN THE FOCUS.
           <br />
-          IT SHARPENS PENCILS.
+          SHARPEN THE POINT.
         </div>
         <div
           style={{
-            marginTop: 54,
+            marginTop: 38,
             width: 840,
-            height: 710,
+            height: 690,
             overflow: "hidden",
             border: "2px solid #4d4740",
             borderRadius: 34,
@@ -71,15 +72,15 @@ export const PM019GridSafeCover: React.FC = () => {
         >
           <CanvasImage
             name="Projector sharpener cover image"
-            src={staticFile("pm019/01-hero.webp")}
-            style={{ width: 840, height: 710, objectFit: "cover" }}
+            src={staticFile("pm019/02-sharpening-action.webp")}
+            style={{ width: 840, height: 690, objectFit: "cover" }}
           />
         </div>
         <div
           style={{
             marginTop: 31,
             color: "#cfc5b9",
-            fontSize: 25,
+            fontSize: 23,
             fontWeight: 650,
             lineHeight: 1.3,
           }}

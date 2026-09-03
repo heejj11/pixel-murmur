@@ -13,7 +13,7 @@ export const SceneClosing: React.FC = () => {
 
   return (
     <AbsoluteFill
-      name="05 Closing"
+      name="03 Color vote"
       style={{
         backgroundColor: "#171512",
         color: "#fffdf9",
@@ -23,98 +23,111 @@ export const SceneClosing: React.FC = () => {
       }}
     >
       <Interactive.Div
+        name="Brand"
+        style={{
+          position: "absolute",
+          top: 72,
+          left: 80,
+          fontFamily: "IBM Plex Mono, Menlo, monospace",
+          fontSize: 25,
+          fontWeight: 700,
+          letterSpacing: 2.2,
+        }}
+      >
+        PIXELMURMUR · PM_019
+      </Interactive.Div>
+
+      <Interactive.Div
+        name="Scene counter"
+        style={{
+          position: "absolute",
+          top: 74,
+          right: 80,
+          color: "#a49a8f",
+          fontFamily: "IBM Plex Mono, Menlo, monospace",
+          fontSize: 23,
+          fontWeight: 600,
+          letterSpacing: 1.6,
+        }}
+      >
+        03 / 03
+      </Interactive.Div>
+
+      <Interactive.Div
         name="Concept disclosure"
         style={{
           position: "absolute",
-          top: 88,
-          left: 80,
-          color: "#cfc5b9",
-          fontFamily: "IBM Plex Mono, Menlo, monospace",
-          fontSize: 23,
-          fontWeight: 700,
-          lineHeight: 1.25,
-          letterSpacing: 1,
-          opacity: interpolate(frame, [0, 9], [0, 1], {
-            extrapolateLeft: "clamp",
-            extrapolateRight: "clamp",
-            easing: Easing.bezier(0.16, 1, 0.3, 1),
-          }),
-        }}
-      >
-        CONCEPT RENDER · NOT YET PRODUCED
-        <br />
-        콘셉트 렌더 · 아직 제작되지 않음
-      </Interactive.Div>
-
-      <Interactive.Div
-        name="Closing title"
-        style={{
-          position: "absolute",
-          top: 240,
+          top: 142,
           left: 80,
           width: 920,
-          fontSize: 94,
-          fontWeight: 800,
-          lineHeight: 1.03,
-          letterSpacing: -4.8,
-          opacity: interpolate(frame, [1, 14], [0, 1], {
-            extrapolateLeft: "clamp",
-            extrapolateRight: "clamp",
-            easing: Easing.bezier(0.16, 1, 0.3, 1),
-          }),
-          translate: interpolate(frame, [1, 16], ["0px 30px", "0px 0px"], {
-            extrapolateLeft: "clamp",
-            extrapolateRight: "clamp",
-            easing: Easing.bezier(0.16, 1, 0.3, 1),
-          }),
+          color: "#a49a8f",
+          fontFamily: "IBM Plex Mono, Menlo, monospace",
+          fontSize: 20,
+          fontWeight: 650,
+          lineHeight: 1.25,
+          letterSpacing: 0.2,
         }}
       >
-        어떤 색으로
-        <br />
-        만들어볼까요?
+        CONCEPT RENDER · 콘셉트 렌더 / NOT YET PRODUCED · 아직 제작되지 않음
       </Interactive.Div>
 
       <Interactive.Div
-        name="Closing question"
+        name="Bilingual question"
         style={{
           position: "absolute",
-          top: 486,
-          left: 82,
-          width: 916,
-          color: "#e77b49",
-          fontFamily: "IBM Plex Mono, Menlo, monospace",
-          fontSize: 34,
-          fontWeight: 700,
-          lineHeight: 1.18,
-          letterSpacing: 0.2,
-          opacity: interpolate(frame, [9, 22], [0, 1], {
+          top: 232,
+          left: 80,
+          width: 920,
+          opacity: interpolate(frame, [0, 9], [0.9, 1], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+            easing: Easing.bezier(0.16, 1, 0.3, 1),
+          }),
+          translate: interpolate(frame, [0, 11], ["0px 16px", "0px 0px"], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
             easing: Easing.bezier(0.16, 1, 0.3, 1),
           }),
         }}
       >
-        WHICH COLOR SHOULD BECOME A PROTOTYPE?
+        <div
+          style={{
+            fontSize: 64,
+            fontWeight: 800,
+            lineHeight: 1.04,
+            letterSpacing: -2.8,
+          }}
+        >
+          어떤 색을 만들까요?
+        </div>
+        <div
+          style={{
+            marginTop: 14,
+            color: "#e77b49",
+            fontFamily: "IBM Plex Mono, Menlo, monospace",
+            fontSize: 64,
+            fontWeight: 700,
+            lineHeight: 1.04,
+            letterSpacing: -2.4,
+          }}
+        >
+          WHICH COLOR SHOULD WE MAKE?
+        </div>
       </Interactive.Div>
 
       <Interactive.Div
         name="Color lineup"
         style={{
           position: "absolute",
-          top: 606,
+          top: 500,
           left: 80,
           width: 920,
-          height: 920,
+          height: 900,
           overflow: "hidden",
           border: "2px solid #4d4740",
-          borderRadius: 36,
+          borderRadius: 34,
           backgroundColor: "#eee8df",
-          opacity: interpolate(frame, [13, 29], [0, 1], {
-            extrapolateLeft: "clamp",
-            extrapolateRight: "clamp",
-            easing: Easing.bezier(0.16, 1, 0.3, 1),
-          }),
-          scale: interpolate(frame, [13, 42], [0.98, 1], {
+          scale: interpolate(frame, [0, 36], [0.985, 1], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
             easing: Easing.bezier(0.16, 1, 0.3, 1),
@@ -125,48 +138,77 @@ export const SceneClosing: React.FC = () => {
         <CanvasImage
           name="Four color concepts"
           src={staticFile("pm019/08-color-lineup.webp")}
-          style={{ width: 920, height: 920, objectFit: "cover" }}
+          style={{ width: 920, height: 900, objectFit: "contain" }}
         />
       </Interactive.Div>
 
       <Interactive.Div
-        name="Color labels"
+        name="Bilingual color labels"
         style={{
           position: "absolute",
-          top: 1575,
+          top: 1450,
           left: 80,
           width: 920,
           color: "#cfc5b9",
-          fontSize: 29,
+          fontSize: 30,
           fontWeight: 650,
           lineHeight: 1.35,
           letterSpacing: -0.4,
-          opacity: interpolate(frame, [21, 35], [0, 1], {
-            extrapolateLeft: "clamp",
-            extrapolateRight: "clamp",
-            easing: Easing.bezier(0.16, 1, 0.3, 1),
-          }),
         }}
       >
-        아이보리 · 올리브 · 뮤트 오렌지 · 차콜
-        <br />
-        IVORY · OLIVE · MUTED ORANGE · CHARCOAL
+        <div>아이보리 · 올리브 · 뮤트 오렌지 · 차콜</div>
+        <div
+          style={{
+            marginTop: 8,
+            fontFamily: "IBM Plex Mono, Menlo, monospace",
+            fontSize: 30,
+            fontWeight: 650,
+          }}
+        >
+          IVORY · OLIVE · MUTED ORANGE · CHARCOAL
+        </div>
       </Interactive.Div>
 
       <Interactive.Div
-        name="Closing brand"
+        name="Bilingual call to action"
         style={{
           position: "absolute",
-          bottom: 82,
+          top: 1570,
           left: 80,
+          width: 920,
           color: "#fffdf9",
-          fontFamily: "IBM Plex Mono, Menlo, monospace",
-          fontSize: 29,
-          fontWeight: 700,
-          letterSpacing: 2.3,
+          fontSize: 34,
+          fontWeight: 750,
+          lineHeight: 1.28,
         }}
       >
-        PIXELMURMUR · PM_019
+        <div>댓글로 하나를 골라주세요.</div>
+        <div
+          style={{
+            marginTop: 6,
+            fontFamily: "IBM Plex Mono, Menlo, monospace",
+            fontSize: 34,
+            fontWeight: 700,
+          }}
+        >
+          PICK ONE IN THE COMMENTS.
+        </div>
+      </Interactive.Div>
+
+      <Interactive.Div
+        name="Project mark"
+        style={{
+          position: "absolute",
+          bottom: 88,
+          left: 80,
+          color: "#a49a8f",
+          fontFamily: "IBM Plex Mono, Menlo, monospace",
+          fontSize: 21,
+          fontWeight: 650,
+          letterSpacing: 0.8,
+        }}
+      >
+        JUST A PIXEL · 아직은 픽셀입니다
       </Interactive.Div>
     </AbsoluteFill>
   );

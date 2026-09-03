@@ -1,45 +1,45 @@
 # PM-019 공개 문구
 
-두 번째 공개에서는 A안을 사용한다. B안은 첫 게시의 노출은 있었지만 시청 유지나 반응이 약할 때 첫 2초 훅만 바꾸는 재시험용이다.
+두 번째 공개에서는 짧게 압축한 B 훅을 사용한다. 영상과 문구 모두 첫 문장에서 동작을 먼저 보여준다.
 
 ## Instagram — A안
 
-CONCEPT RENDER · NOT YET PRODUCED
-콘셉트 렌더 · 아직 제작되지 않음
+CONCEPT RENDER · 콘셉트 렌더
 
-영사기인 줄 알았는데, 연필깎이입니다.
+초점을 돌리면, 연필이 깎입니다.
+Turn the focus. Sharpen the point.
 
 PM-019 Slide Projector Sharpener
 PM-019 슬라이드 영사기 연필깎이
 
-렌즈에 연필을 넣고 초점 휠을 돌리면 안쪽 커터가 연필을 깎습니다. 깎임 가루는 뒤쪽 슬라이드 서랍으로 모입니다.
+렌즈에 연필을 넣고 휠을 돌리는 수동 연필깎이입니다.
+Insert the pencil and turn the focus wheel.
 
-It looks like a projector. It sharpens pencils. Insert a pencil into the lens, turn the focus wheel, and the shavings collect in the slide drawer at the back.
-
-실제로 만든다면 어떤 색이 좋을까요?
+실제로 만든다면 어떤 색이 좋을까요? 댓글로 하나를 골라주세요.
 아이보리 · 올리브 · 뮤트 오렌지 · 차콜
 
-Which color should become a prototype?
+Which color should we make? Pick one in the comments.
 Ivory · Olive · Muted Orange · Charcoal
 
-#PixelMurmur #제품디자인 #문구디자인 #ConceptDesign #IndustrialDesign
+#PixelMurmur #제품디자인 #문구디자인 #IndustrialDesign
 
 ## X — A안
 
-콘셉트 렌더 · 아직 제작되지 않음 / CONCEPT RENDER
+콘셉트 렌더 / CONCEPT RENDER
 
-영사기인 줄 알았는데, 연필깎이입니다.
+초점을 돌리면, 연필이 깎입니다.
+Turn the focus. Sharpen the point.
 
-렌즈에 연필을 넣고 초점 휠을 돌리면, 가루는 뒤쪽 슬라이드 서랍으로 모입니다.
+PM-019 슬라이드 영사기 연필깎이
+PM-019 Slide Projector Sharpener
 
-It looks like a projector. It sharpens pencils.
-
-실제로 만든다면 어떤 색이 좋을까요?
+어떤 색을 만들까요?
+아이보리 · 올리브 · 뮤트 오렌지 · 차콜
 
 ## 재시험용 B 훅
 
-초점을 돌리면 연필이 깎입니다.
-Turn the focus. Sharpen the point.
+영사기인 줄 알았는데, 연필깎이입니다.
+It looks like a projector. It sharpens pencils.
 
 ## Alt text
 

@@ -197,6 +197,25 @@ const loopAccents = [
   { type: "tone", at: 4.6, duration: 0.55, frequency: 523.25, amplitude: 0.05 },
 ];
 
+const condensedReelAccents = [
+  { type: "click", at: 0.08, amplitude: 0.12, pan: -0.2 },
+  { type: "crank", at: 0.42, duration: 2.25, pan: 0.22, amplitude: 0.058 },
+  { type: "click", at: 3.32, amplitude: 0.11, pan: 0.12 },
+  { type: "crank", at: 3.55, duration: 1.72, pan: -0.14, amplitude: 0.045 },
+  { type: "click", at: 5.92, amplitude: 0.1, pan: -0.24 },
+  { type: "tone", at: 7.42, duration: 0.52, frequency: 523.25, amplitude: 0.055 },
+  { type: "tone", at: 8.02, duration: 0.62, frequency: 659.25, amplitude: 0.052 },
+];
+
+const condensedLoopAccents = [
+  { type: "click", at: 0.08, amplitude: 0.12, pan: -0.2 },
+  { type: "crank", at: 0.35, duration: 1.8, pan: 0.22, amplitude: 0.058 },
+  { type: "click", at: 2.52, amplitude: 0.105, pan: 0.12 },
+  { type: "crank", at: 2.7, duration: 1.0, pan: -0.14, amplitude: 0.043 },
+  { type: "tone", at: 4.48, duration: 0.48, frequency: 523.25, amplitude: 0.055 },
+  { type: "tone", at: 5.12, duration: 0.62, frequency: 659.25, amplitude: 0.052 },
+];
+
 console.log(
   JSON.stringify(
     [
@@ -211,6 +230,18 @@ console.log(
         durationSeconds: 6,
         seed: 19_006,
         accents: loopAccents,
+      }),
+      writeWave({
+        outputPath: "public/pm019/audio/pm019-original-music-9s-v02.wav",
+        durationSeconds: 9,
+        seed: 19_902,
+        accents: condensedReelAccents,
+      }),
+      writeWave({
+        outputPath: "public/pm019/audio/pm019-original-music-loop-6s-v02.wav",
+        durationSeconds: 6,
+        seed: 19_602,
+        accents: condensedLoopAccents,
       }),
     ],
     null,

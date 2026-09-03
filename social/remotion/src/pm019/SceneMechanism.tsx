@@ -8,17 +8,23 @@ export const SceneMechanism: React.FC = () => {
       image="05-gear-cutaway.webp"
       title={
         <>
-          기어가 나선형 커터를
+          안쪽 커터가
           <br />
-          움직입니다.
+          함께 돌아갑니다.
         </>
       }
-      english="THE FOCUS WHEEL DRIVES THE CUTTER."
-      note="기어·커터·안전 격자를 보여주는 구조 시각화입니다."
-      step="03 / 05"
-      titleSize={76}
-      imageScaleFrom={1.03}
-      imageScaleTo={1.09}
+      english={
+        <>
+          THE CUTTER
+          <br />
+          TURNS INSIDE.
+        </>
+      }
+      note="기어가 휠의 회전을 나선형 커터로 전달합니다."
+      noteEn="THE GEARS TRANSFER THE CRANK TO THE CUTTER."
+      step="02 / 03"
+      imageScaleFrom={1.025}
+      imageScaleTo={1.075}
     />
   );
 };

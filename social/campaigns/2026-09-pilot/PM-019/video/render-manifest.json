@@ -1,29 +1,29 @@
 {
   "campaignId": "2026-09-pilot-pm-019",
   "objectId": "PM-019",
-  "generatedAt": "2026-09-03T18:22:45+09:00",
+  "generatedAt": "2026-09-03T20:35:00+09:00",
   "source": "social/remotion/src/pm019",
   "audio": {
     "origin": "Original procedural composition created for PixelMurmur; no third-party music or samples",
-    "reel": "social/remotion/public/pm019/audio/pm019-original-music-12s.wav",
-    "loop": "social/remotion/public/pm019/audio/pm019-original-music-loop-6s.wav",
+    "reel": "social/remotion/public/pm019/audio/pm019-original-music-9s-v02.wav",
+    "loop": "social/remotion/public/pm019/audio/pm019-original-music-loop-6s-v02.wav",
     "continuous": true
   },
   "renders": [
     {
       "platform": "instagram",
       "kind": "reel",
-      "file": "renders/pm-019_ig_12s_v01.mp4",
+      "file": "renders/pm-019_ig_09s_v02.mp4",
       "width": 1080,
       "height": 1920,
       "fps": 30,
-      "durationSeconds": 12,
+      "durationSeconds": 9,
       "hasAudio": true
     },
     {
       "platform": "x",
       "kind": "loop",
-      "file": "renders/pm-019_x_loop_06s_v01.mp4",
+      "file": "renders/pm-019_x_loop_06s_v02.mp4",
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -33,7 +33,7 @@
     {
       "platform": "instagram",
       "kind": "grid-safe-cover",
-      "file": "renders/pm-019_grid_safe_cover_v01.png",
+      "file": "renders/pm-019_grid_safe_cover_v02.png",
       "width": 1080,
       "height": 1920
     }

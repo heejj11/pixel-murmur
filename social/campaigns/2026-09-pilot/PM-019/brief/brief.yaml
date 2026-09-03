@@ -16,9 +16,10 @@ object:
 hypothesis:
   statement: "익숙한 슬라이드 영사기의 초점 휠을 연필깎이 크랭크로 바꾼 장면은 2초 안에 기능을 이해시키고, 저장·공유보다 먼저 구체적인 시제품 의향 댓글을 만든다."
   primary_audience: "한국의 제품디자인, 문구, 아날로그 카메라와 빈티지 전자제품 관심층"
-  single_variable: "첫 2초 훅"
+  single_variable: "첫 1초 동작 훅"
   hook_a: "영사기인 줄 알았는데, 연필깎이입니다. / It looks like a projector. It sharpens pencils."
   hook_b: "초점을 돌리면 연필이 깎입니다. / Turn the focus. Sharpen the point."
+  selected_hook: "hook_b"
 
 disclosure:
   persistent: "CONCEPT RENDER · NOT YET PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음"
@@ -28,27 +29,24 @@ disclosure:
 content:
   reveal_reel:
     platform: "instagram"
-    duration_seconds: 12
+    duration_seconds: 9
     aspect_ratio: "9:16"
     source_roles:
-      - "hero"
       - "sharpening-action"
       - "gear-cutaway"
-      - "shavings-drawer"
       - "color-lineup"
     timeline:
-      - "0.0-0.8: hook A or B"
-      - "0.8-4.2: pencil and crank action"
-      - "4.2-7.5: gear and cutter cutaway"
-      - "7.5-9.5: shavings drawer"
-      - "9.5-12.0: color lineup and prototype question"
+      - "0.0-3.2: pencil and crank action with hook B"
+      - "3.2-5.9: gear and cutter cutaway"
+      - "5.9-9.0: color lineup and prototype question"
   gesture_loop:
     platform: "instagram,x"
     duration_seconds: 6
     source_roles:
-      - "hero"
       - "sharpening-action"
-    loop_action: "insert pencil, turn crank, return to first frame"
+      - "gear-cutaway"
+      - "color-lineup"
+    loop_action: "action hook, mechanism, color vote"
   optional_carousel:
     platform: "instagram"
     condition: "첫 공개에서 저장, 공유, 색상 응답 중 하나가 확인된 경우에만 제작"
@@ -76,8 +74,8 @@ proposed_schedule:
 
 measurement:
   checkpoints_hours:
-    - 2
-    - 6
+    - 1
+    - 4
     - 12
     - 24
     - 72
@@ -91,7 +89,7 @@ measurement:
     - "explicit_prototype_intent"
   comparison: "recent median of comparable posts; if unavailable, treat this campaign as baseline"
   insufficient_sample: "Do not judge the object from a single low-reach post. Retest one hook once."
-  paid_media: "blocked until 3-4 weeks of organic data and two repeat winners"
+  paid_media: "blocked until the four-post organic sprint is complete and one clear winner appears"
 
 approval_gates:
   reveal: "pending"

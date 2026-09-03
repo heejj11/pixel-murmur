@@ -8,17 +8,25 @@ export const SceneAction: React.FC = () => {
       image="02-sharpening-action.webp"
       title={
         <>
-          렌즈에 넣고,
+          초점을 돌리면,
           <br />
-          초점 휠을 돌립니다.
+          연필이 깎입니다.
         </>
       }
-      english="INSERT. TURN. SHARPEN."
-      note="오른쪽 크랭크를 돌리면 안쪽 커터가 연필을 깎는 구조입니다."
-      step="02 / 05"
+      english={
+        <>
+          TURN THE FOCUS.
+          <br />
+          SHARPEN THE POINT.
+        </>
+      }
+      note="렌즈에 연필을 넣고 휠을 돌리는 수동 연필깎이."
+      noteEn="INSERT THE PENCIL. TURN THE FOCUS WHEEL."
+      step="01 / 03"
       imageScaleFrom={1.08}
-      imageScaleTo={1.015}
+      imageScaleTo={1.025}
       imagePosition="center 48%"
+      motionCue
     />
   );
 };

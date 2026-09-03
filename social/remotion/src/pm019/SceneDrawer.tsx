@@ -13,10 +13,16 @@ export const SceneDrawer: React.FC = () => {
           슬라이드 서랍으로.
         </>
       }
-      english="SHAVINGS OUT. SLIDE DRAWER IN."
+      english={
+        <>
+          SHAVINGS OUT.
+          <br />
+          SLIDE DRAWER IN.
+        </>
+      }
       note="슬라이드 매거진처럼 당겨 비우는 반투명 가루 서랍입니다."
-      step="04 / 05"
-      titleSize={77}
+      noteEn="PULL THE REAR DRAWER OUT TO EMPTY THE SHAVINGS."
+      step="02 / 03"
       imageScaleFrom={1.08}
       imageScaleTo={1.02}
     />
