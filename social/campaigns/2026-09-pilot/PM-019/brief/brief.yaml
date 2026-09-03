@@ -2,7 +2,7 @@ campaign:
   id: "2026-09-pilot-pm-019"
   object_id: "PM-019"
   phase: "pilot"
-  status: "queued-after-pm-001"
+  status: "ready-for-review"
   owner_approval_required: true
 
 object:
@@ -49,8 +49,9 @@ content:
       - "hero"
       - "sharpening-action"
     loop_action: "insert pencil, turn crank, return to first frame"
-  carousel:
+  optional_carousel:
     platform: "instagram"
+    condition: "첫 공개에서 저장, 공유, 색상 응답 중 하나가 확인된 경우에만 제작"
     size: "1080x1350"
     slides:
       - "reveal"
@@ -65,17 +66,19 @@ content:
 
 proposed_schedule:
   timezone: "Asia/Seoul"
-  status: "not-approved"
+  status: "recommended-not-published"
   posts:
-    - slot: "reveal"
-      at: "2026-09-15T19:30:00+09:00"
-    - slot: "mechanism"
-      at: "2026-09-17T19:30:00+09:00"
-    - slot: "prototype-intent"
-      at: "2026-09-19T11:00:00+09:00"
+    - slot: "instagram-reveal"
+      at: "2026-09-05T19:30:00+09:00"
+    - slot: "x-reveal"
+      at: "2026-09-05T19:45:00+09:00"
+  rationale: "PM-001의 24시간 신호를 확인한 뒤 약 이틀 간격으로 다른 형태의 작품을 공개해 계정 정체성과 작품 반응을 함께 비교한다."
 
 measurement:
   checkpoints_hours:
+    - 2
+    - 6
+    - 12
     - 24
     - 72
     - 168

@@ -1,8 +1,8 @@
 {
   "campaignId": "2026-09-pilot-pm-019",
   "objectId": "PM-019",
-  "state": "queued-after-pm-001",
-  "updatedAt": "2026-09-03T12:18:13+09:00",
+  "state": "ready-for-review",
+  "updatedAt": "2026-09-03T18:22:45+09:00",
   "approvals": {
     "reveal": "pending",
     "copy": "pending",
@@ -12,11 +12,11 @@
     "paidMedia": "blocked"
   },
   "outputs": {
-    "brief": "queued",
-    "captions": "queued",
-    "design": "not-started",
-    "video": "not-started",
-    "analysis": "not-started"
+    "brief": "ready",
+    "captions": "ready",
+    "design": "rendered",
+    "video": "rendered",
+    "analysis": "quality-checked"
   },
   "externalActionsAllowed": false,
   "notes": [

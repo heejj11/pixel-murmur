@@ -1,0 +1,41 @@
+{
+  "campaignId": "2026-09-pilot-pm-019",
+  "objectId": "PM-019",
+  "generatedAt": "2026-09-03T18:22:45+09:00",
+  "source": "social/remotion/src/pm019",
+  "audio": {
+    "origin": "Original procedural composition created for PixelMurmur; no third-party music or samples",
+    "reel": "social/remotion/public/pm019/audio/pm019-original-music-12s.wav",
+    "loop": "social/remotion/public/pm019/audio/pm019-original-music-loop-6s.wav",
+    "continuous": true
+  },
+  "renders": [
+    {
+      "platform": "instagram",
+      "kind": "reel",
+      "file": "renders/pm-019_ig_12s_v01.mp4",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "durationSeconds": 12,
+      "hasAudio": true
+    },
+    {
+      "platform": "x",
+      "kind": "loop",
+      "file": "renders/pm-019_x_loop_06s_v01.mp4",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "durationSeconds": 6,
+      "hasAudio": true
+    },
+    {
+      "platform": "instagram",
+      "kind": "grid-safe-cover",
+      "file": "renders/pm-019_grid_safe_cover_v01.png",
+      "width": 1080,
+      "height": 1920
+    }
+  ]
+}
