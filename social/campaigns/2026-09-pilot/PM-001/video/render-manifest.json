@@ -1,10 +1,10 @@
 {
   "campaignId": "2026-09-pilot-pm-001",
   "objectId": "PM-001",
-  "version": "v02",
-  "status": "audio-v02-qc-complete-owner-review-pending",
+  "version": "v03",
+  "status": "asset-v03-qc-complete-login-required",
   "createdAt": "2026-09-01T18:06:39+09:00",
-  "updatedAt": "2026-09-01T22:46:44+09:00",
+  "updatedAt": "2026-09-03T12:14:41+09:00",
   "toolchain": {
     "remotion": "4.0.519",
     "react": "19.2.3",
@@ -21,7 +21,7 @@
     {
       "type": "instagram-reel",
       "compositionId": "PM001-Reel",
-      "path": "renders/pm-001_ig_12s_v02.mp4",
+      "path": "renders/pm-001_ig_12s_v03.mp4",
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -32,13 +32,13 @@
       "audioSampleRate": 48000,
       "integratedLoudnessLufs": -17.6,
       "truePeakDbtp": -4.9,
-      "bytes": 3989157,
-      "sha256": "18ed1a14dbd1e8f510b9379235c03e0e7ceb5c4773cb383f3061a17d80e5e667"
+      "bytes": 3985477,
+      "sha256": "756e3f3146fcec210bdab625afff8468b40d936573aaff754efa744848229b37"
     },
     {
       "type": "instagram-x-loop",
       "compositionId": "PM001-Loop",
-      "path": "renders/pm-001_ig_loop_06s_v02.mp4",
+      "path": "renders/pm-001_ig_loop_06s_v03.mp4",
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -49,16 +49,16 @@
       "audioSampleRate": 48000,
       "integratedLoudnessLufs": -16.0,
       "truePeakDbtp": -4.8,
-      "bytes": 1651920,
-      "sha256": "fe04b83d3cf4d76af5d11fe84da9397735c3446e4294f20b6b217e2b15eac6a8"
+      "bytes": 1655073,
+      "sha256": "07a04ade76126a75b3375d4a743bd5fad8a28e69c0c0a30d33852ad767367f62"
     },
     {
       "type": "reel-cover",
-      "path": "renders/pm-001_reel_cover_v01.png",
+      "path": "renders/pm-001_reel_cover_v03.png",
       "width": 1080,
       "height": 1920,
-      "bytes": 765020,
-      "sha256": "fdc758aaf267ff608a9e74cbcf63daff6b670698812a889137c99266d0a12d65"
+      "bytes": 765668,
+      "sha256": "8f68a2991e7be4ea64ea9024be9ad3d9a80b2a010e3c1b44ba60009a5f18e927"
     }
   ],
   "audio": {
@@ -89,7 +89,7 @@
         "sha256": "b8aa76f29b65d0d4642e8d34809d5f2526cf4aa9b5a2e8ed865ccdd4305f2894"
       }
     ],
-    "note": "Version 02 replaces the sparse ambience with continuous music from first frame to last. No third-party music, MIDI, loops, or samples were used. The synthesized files remain reproducible from the checked-in generator. Content ID false positives cannot be ruled out by technical checks alone."
+    "note": "The v03 videos retain the v02 continuous soundtrack and correct the required English concept disclosure. No third-party music, MIDI, loops, or samples were used. The synthesized files remain reproducible from the checked-in generator. Content ID false positives cannot be ruled out by technical checks alone."
   },
   "disclosures": [
     "CONCEPT RENDER · NOT PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음",
@@ -107,8 +107,11 @@
     "audioTrackVerified": true,
     "audioLoudnessVerified": true,
     "noSilenceLongerThan100msAtMinus45Db": true,
+    "exactDisclosureVerified": true,
+    "coverVisuallyReviewed": true,
     "ownerVisualApproval": true,
+    "assetReadyForPublish": true,
     "publishReady": false,
-    "blocker": "Owner audio review and explicit publish approval are required."
+    "blocker": "Instagram and X login plus action-time publish confirmation are required."
   }
 }

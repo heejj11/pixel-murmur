@@ -8,8 +8,8 @@ const renderDirectory = resolve(
 );
 const temporaryDirectory = mkdtempSync(join(tmpdir(), "pm001-renders-"));
 const renders = [
-  { file: "pm-001_ig_12s_v02.mp4", duration: "12" },
-  { file: "pm-001_ig_loop_06s_v02.mp4", duration: "6" },
+  { file: "pm-001_ig_12s_v03.mp4", duration: "12" },
+  { file: "pm-001_ig_loop_06s_v03.mp4", duration: "6" },
 ];
 
 for (const render of renders) {

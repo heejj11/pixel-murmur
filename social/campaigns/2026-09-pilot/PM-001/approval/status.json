@@ -1,30 +1,36 @@
 {
   "campaignId": "2026-09-pilot-pm-001",
   "objectId": "PM-001",
-  "state": "audio-v02-ready-for-owner-review",
-  "updatedAt": "2026-09-01T22:46:44+09:00",
+  "state": "assets-v03-ready-login-required",
+  "updatedAt": "2026-09-03T12:14:41+09:00",
   "approvals": {
-    "reveal": "pending",
-    "copy": "pending",
-    "design": "needs-carousel-revision",
-    "video": "visual-approved-audio-v02-pending",
-    "publish": "blocked",
+    "reveal": "completed-existing-posts",
+    "copy": "ready-for-action-confirmation",
+    "design": "video-v03-ready",
+    "video": "v03-ready-for-action-confirmation",
+    "publish": "blocked-login-and-action-confirmation",
     "paidMedia": "blocked"
   },
   "outputs": {
-    "brief": "ready-for-review",
-    "captions": "ready-for-review",
-    "existingSocialPack": "qc-complete-needs-revision",
-    "video": "audio-v02-ready-for-owner-review",
-    "analysis": "not-started"
+    "brief": "ready",
+    "captions": "ready",
+    "existingSocialPack": "audited-no-repost",
+    "video": "v03-qc-complete",
+    "analysis": "baseline-plan-ready"
   },
   "externalActionsAllowed": false,
+  "delegatedScope": {
+    "organicOperations": true,
+    "paidMedia": false,
+    "publishAction": "action-time-confirmation-required"
+  },
   "notes": [
     "PM-001 is the opening and pinned campaign.",
     "Existing files under social/pm-001 must be reviewed and reused without overwriting.",
-    "No social post may be published until publish is approved.",
+    "Instagram and X each already have an introduction post and a PM-001 static post; do not duplicate them.",
+    "The owner delegated organic social operations on 2026-09-03; public posting still requires confirmation at the moment of the action.",
     "No paid media may run until paidMedia is approved with an exact KRW cap.",
-    "Owner approved both PM-001 video directions on 2026-09-01; only the new original audio mix remains for review.",
-    "Audio v02 replaces the sparse ambience with a continuous 120 BPM electronic rhythm after owner feedback."
+    "Audio v02 replaces the sparse ambience with a continuous 120 BPM electronic rhythm after owner feedback.",
+    "Video v03 keeps that continuous audio and corrects the English disclosure to NOT YET PRODUCED."
   ]
 }

@@ -2,7 +2,7 @@ campaign:
   id: "2026-09-pilot-pm-001"
   object_id: "PM-001"
   phase: "brand-opening"
-  status: "audio-v02-ready-for-owner-review"
+  status: "assets-v03-ready-login-required"
   owner_approval_required: true
   pin_first_post: true
 
@@ -17,6 +17,23 @@ object:
     - "social/pm-001/pm001-social-feed-pack.zip"
   existing_asset_rule: "review and reuse without overwriting"
   product_state: "concept-render-not-produced"
+
+existing_public_posts:
+  instagram:
+    - role: "introduction"
+      published_at: "2026-08-27"
+      url: "https://www.instagram.com/pixelmurmur/p/DciwE4MkhSM/"
+    - role: "pm-001-carousel"
+      published_at: "2026-08-28"
+      url: "https://www.instagram.com/pixelmurmur/p/DckdF1aEphp/"
+  x:
+    - role: "introduction"
+      public_views_checked_2026_09_03: 6
+      url: "https://x.com/pixelmurmur/status/2092973505025626222"
+    - role: "pm-001-static"
+      public_views_checked_2026_09_03: 3
+      url: "https://x.com/pixelmurmur/status/2093186335565897940"
+  rule: "Do not delete or duplicate existing introduction and PM-001 static posts."
 
 hypothesis:
   statement: "PixelMurmur의 첫 게시물에서 PM-001의 익숙한 토스트 형태와 분리형 배터리 구조를 함께 보여주면, 계정이 단순 이미지 모음이 아니라 아직 만들어지지 않은 객체를 탐색하는 프로젝트라는 점을 이해시킬 수 있다."
@@ -82,14 +99,14 @@ content:
 
 proposed_schedule:
   timezone: "Asia/Seoul"
-  status: "not-approved"
+  status: "login-and-action-confirmation-required"
   posts:
-    - slot: "pinned-introduction"
-      at: "2026-09-08T19:30:00+09:00"
-    - slot: "detachable-mechanism"
-      at: "2026-09-10T19:30:00+09:00"
-    - slot: "prototype-intent"
-      at: "2026-09-12T11:00:00+09:00"
+    - slot: "next-instagram-motion"
+      at: "next available 19:30 KST after login"
+      asset: "pm-001_ig_12s_v03.mp4"
+    - slot: "same-day-x-motion"
+      at: "20:00 KST on the Instagram publish date"
+      asset: "pm-001_ig_loop_06s_v03.mp4"
 
 measurement:
   checkpoints_hours:
@@ -107,9 +124,9 @@ measurement:
   paid_media: "blocked until 3-4 weeks of organic data and two repeat winners"
 
 approval_gates:
-  reveal: "pending"
-  copy: "pending"
-  design: "pending-existing-pack-qc"
-  video: "visual-approved-audio-v02-pending"
-  publish: "blocked"
+  reveal: "completed-existing-posts"
+  copy: "ready-for-action-confirmation"
+  design: "video-v03-ready"
+  video: "v03-qc-complete"
+  publish: "blocked-login-and-action-confirmation"
   paid_media: "blocked"

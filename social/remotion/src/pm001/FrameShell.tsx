@@ -119,7 +119,7 @@ export const FrameShell: React.FC<FrameShellProps> = ({
           }),
         }}
       >
-        CONCEPT RENDER · NOT PRODUCED
+        CONCEPT RENDER · NOT YET PRODUCED
         <br />
         <span
           style={{

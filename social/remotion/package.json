@@ -31,10 +31,10 @@
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
     "audio:pm001": "node scripts/generate-pm001-audio.mjs",
-    "render:pm001:reel": "remotion render src/index.ts PM001-Reel ../campaigns/2026-09-pilot/PM-001/video/renders/pm-001_ig_12s_v02.mp4 --codec=h264 --crf=18",
-    "render:pm001:loop": "remotion render src/index.ts PM001-Loop ../campaigns/2026-09-pilot/PM-001/video/renders/pm-001_ig_loop_06s_v02.mp4 --codec=h264 --crf=18",
+    "render:pm001:reel": "remotion render src/index.ts PM001-Reel ../campaigns/2026-09-pilot/PM-001/video/renders/pm-001_ig_12s_v03.mp4 --codec=h264 --crf=18",
+    "render:pm001:loop": "remotion render src/index.ts PM001-Loop ../campaigns/2026-09-pilot/PM-001/video/renders/pm-001_ig_loop_06s_v03.mp4 --codec=h264 --crf=18",
     "finalize:pm001": "node scripts/finalize-pm001-renders.mjs",
-    "still:pm001": "remotion still src/index.ts PM001-Reel ../campaigns/2026-09-pilot/PM-001/video/renders/pm-001_reel_cover_v01.png --frame=12"
+    "still:pm001": "remotion still src/index.ts PM001-Reel ../campaigns/2026-09-pilot/PM-001/video/renders/pm-001_reel_cover_v03.png --frame=12"
   },
   "sideEffects": [
     "*.css"
