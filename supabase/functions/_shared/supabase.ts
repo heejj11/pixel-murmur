@@ -64,7 +64,14 @@ export async function authorizeSyncRequest(
   if (!token) return { authorized: false, source: null, userId: null };
 
   const { data, error } = await admin.auth.getUser(token);
-  if (error || data.user?.app_metadata?.role !== "admin") {
+  const configuredAdminEmail = (
+    Deno.env.get("ADMIN_EMAIL") ?? "pixelmurmurlab@gmail.com"
+  ).trim().toLowerCase();
+  const userEmail = data.user?.email?.trim().toLowerCase();
+  const isAdmin = data.user?.app_metadata?.role === "admin" ||
+    Boolean(configuredAdminEmail && userEmail === configuredAdminEmail);
+
+  if (error || !isAdmin) {
     return { authorized: false, source: null, userId: data.user?.id ?? null };
   }
 

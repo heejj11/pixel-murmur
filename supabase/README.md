@@ -45,7 +45,8 @@ npx supabase functions deploy sync-x --no-verify-jwt
 ```
 
 두 함수는 JWT 검사를 끄고 배포하지만 공개 함수는 아닙니다. 함수 내부에서 운영자 JWT 또는
-Cron 전용 비밀값을 직접 확인합니다.
+Cron 전용 비밀값을 직접 확인합니다. 수동 동기화는 `app_metadata.role = admin`이거나
+`ADMIN_EMAIL`과 일치하는 로그인 사용자만 허용합니다.
 
 ## 3. 운영자 한 명 연결하기
 
@@ -68,6 +69,11 @@ where email = '운영자 이메일';
 
 `supabase/functions/.env.example`을 참고해 아래 값을 프로젝트의 Edge Function Secrets에
 등록합니다. `SYNC_CRON_SECRET`은 충분히 긴 무작위 문자열을 사용합니다.
+
+공통 필수 값:
+
+- `ADMIN_EMAIL`
+- `SYNC_CRON_SECRET`
 
 ```bash
 npx supabase secrets set --env-file supabase/functions/.env
