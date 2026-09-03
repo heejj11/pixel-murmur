@@ -1,7 +1,7 @@
 {
   "campaignId": "2026-09-pilot-pm-019",
   "objectId": "PM-019",
-  "generatedAt": "2026-09-03T20:35:00+09:00",
+  "generatedAt": "2026-09-03T20:43:00+09:00",
   "source": "social/remotion/src/pm019",
   "audio": {
     "origin": "Original procedural composition created for PixelMurmur; no third-party music or samples",
@@ -13,7 +13,7 @@
     {
       "platform": "instagram",
       "kind": "reel",
-      "file": "renders/pm-019_ig_09s_v02.mp4",
+      "file": "renders/pm-019_ig_09s_v03.mp4",
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -23,7 +23,7 @@
     {
       "platform": "x",
       "kind": "loop",
-      "file": "renders/pm-019_x_loop_06s_v02.mp4",
+      "file": "renders/pm-019_x_loop_06s_v03.mp4",
       "width": 1080,
       "height": 1920,
       "fps": 30,

@@ -26,7 +26,6 @@ export const SceneAction: React.FC = () => {
       imageScaleFrom={1.08}
       imageScaleTo={1.025}
       imagePosition="center 48%"
-      motionCue
     />
   );
 };

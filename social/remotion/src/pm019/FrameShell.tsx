@@ -21,7 +21,6 @@ type FrameShellProps = {
   imagePosition?: string;
   imageScaleFrom?: number;
   imageScaleTo?: number;
-  motionCue?: boolean;
 };
 
 export const FrameShell: React.FC<FrameShellProps> = ({
@@ -36,7 +35,6 @@ export const FrameShell: React.FC<FrameShellProps> = ({
   imagePosition = "center",
   imageScaleFrom = 1.045,
   imageScaleTo = 1,
-  motionCue = false,
 }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
@@ -181,52 +179,6 @@ export const FrameShell: React.FC<FrameShellProps> = ({
           }}
         />
 
-        {motionCue ? (
-          <>
-            <Interactive.Div
-              name="Crank rotation cue"
-              style={{
-                position: "absolute",
-                top: 304,
-                left: 708,
-                width: 138,
-                height: 138,
-                border: "8px solid rgba(214, 95, 47, 0.18)",
-                borderTopColor: "#d65f2f",
-                borderRightColor: "#d65f2f",
-                borderRadius: "50%",
-                rotate: interpolate(
-                  frame,
-                  [0, durationInFrames],
-                  ["0deg", "560deg"],
-                  {
-                    extrapolateLeft: "clamp",
-                    extrapolateRight: "clamp",
-                    easing: Easing.linear,
-                  },
-                ),
-              }}
-            />
-            <Interactive.Div
-              name="Motion cue label"
-              style={{
-                position: "absolute",
-                top: 454,
-                right: 54,
-                padding: "9px 13px",
-                borderRadius: 999,
-                backgroundColor: "#171512",
-                color: "#fffdf9",
-                fontFamily: "IBM Plex Mono, Menlo, monospace",
-                fontSize: 22,
-                fontWeight: 700,
-                letterSpacing: 0.4,
-              }}
-            >
-              돌리기 · TURN
-            </Interactive.Div>
-          </>
-        ) : null}
       </Interactive.Div>
 
       <Interactive.Div
