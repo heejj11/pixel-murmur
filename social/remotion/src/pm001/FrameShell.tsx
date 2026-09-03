@@ -19,6 +19,7 @@ type FrameShellProps = {
   step: string;
   imageFit?: "contain" | "cover";
   imagePosition?: string;
+  gridSafeCover?: boolean;
 };
 
 export const FrameShell: React.FC<FrameShellProps> = ({
@@ -31,6 +32,7 @@ export const FrameShell: React.FC<FrameShellProps> = ({
   step,
   imageFit = "contain",
   imagePosition = "center",
+  gridSafeCover = false,
 }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
@@ -101,9 +103,9 @@ export const FrameShell: React.FC<FrameShellProps> = ({
         name="Concept disclosure"
         style={{
           position: "absolute",
-          top: 226,
-          left: 80,
-          width: 548,
+          top: gridSafeCover ? 424 : 226,
+          left: gridSafeCover ? 180 : 80,
+          width: gridSafeCover ? 720 : 548,
           padding: "11px 16px 10px",
           border: "2px solid #171512",
           backgroundColor: "#f3eee7",
@@ -137,9 +139,10 @@ export const FrameShell: React.FC<FrameShellProps> = ({
         name="Motion disclosure"
         style={{
           position: "absolute",
-          top: 226,
-          right: 80,
-          width: 338,
+          top: gridSafeCover ? 514 : 226,
+          left: gridSafeCover ? 180 : undefined,
+          right: gridSafeCover ? undefined : 80,
+          width: gridSafeCover ? 360 : 338,
           padding: "11px 14px 10px",
           backgroundColor: "#171512",
           color: "#fffdf9",
@@ -173,10 +176,10 @@ export const FrameShell: React.FC<FrameShellProps> = ({
         name="Korean headline"
         style={{
           position: "absolute",
-          top: 326,
-          left: 80,
-          width: 920,
-          fontSize: 86,
+          top: gridSafeCover ? 606 : 326,
+          left: gridSafeCover ? 180 : 80,
+          width: gridSafeCover ? 720 : 920,
+          fontSize: gridSafeCover ? 64 : 86,
           fontWeight: 800,
           lineHeight: 1.02,
           letterSpacing: -4.4,
@@ -203,12 +206,12 @@ export const FrameShell: React.FC<FrameShellProps> = ({
         name="English supporting line"
         style={{
           position: "absolute",
-          top: 500,
-          left: 82,
-          width: 916,
+          top: gridSafeCover ? 748 : 500,
+          left: gridSafeCover ? 182 : 82,
+          width: gridSafeCover ? 716 : 916,
           color: "#9a541d",
           fontFamily: "IBM Plex Mono, Menlo, monospace",
-          fontSize: 38,
+          fontSize: gridSafeCover ? 32 : 38,
           fontWeight: 700,
           lineHeight: 1.12,
           letterSpacing: 0.8,
@@ -226,10 +229,10 @@ export const FrameShell: React.FC<FrameShellProps> = ({
         name="Product stage"
         style={{
           position: "absolute",
-          top: 584,
-          left: 80,
-          width: 920,
-          height: 920,
+          top: gridSafeCover ? 812 : 584,
+          left: gridSafeCover ? 180 : 80,
+          width: gridSafeCover ? 720 : 920,
+          height: gridSafeCover ? 620 : 920,
           overflow: "hidden",
           border: "2px solid #d8cfc4",
           borderRadius: 34,
@@ -245,8 +248,8 @@ export const FrameShell: React.FC<FrameShellProps> = ({
           name={imageName}
           src={staticFile(`pm001/${image}`)}
           style={{
-            width: 920,
-            height: 920,
+            width: gridSafeCover ? 720 : 920,
+            height: gridSafeCover ? 620 : 920,
             objectFit: imageFit,
             objectPosition: imagePosition,
             scale: interpolate(frame, [0, durationInFrames], [1.035, 1], {
@@ -263,9 +266,9 @@ export const FrameShell: React.FC<FrameShellProps> = ({
         name="Scene note"
         style={{
           position: "absolute",
-          top: 1562,
-          left: 80,
-          width: 820,
+          top: gridSafeCover ? 1458 : 1562,
+          left: gridSafeCover ? 180 : 80,
+          width: gridSafeCover ? 720 : 820,
           color: "#171512",
           fontSize: 32,
           fontWeight: 650,

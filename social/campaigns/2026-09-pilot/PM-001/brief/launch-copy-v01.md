@@ -6,6 +6,8 @@
 - Instagram PM-001 캐러셀: 2026-08-28 게시 완료 — https://www.instagram.com/pixelmurmur/p/DckdF1aEphp/
 - X 소개: 게시 완료 — https://x.com/pixelmurmur/status/2092973505025626222 — 확인 시점 공개 조회 6
 - X PM-001 이미지: 게시 완료 — https://x.com/pixelmurmur/status/2093186335565897940 — 확인 시점 공개 조회 3
+- Instagram PM-001 12초 릴스: 2026-09-03 13:48:43 KST 게시 완료 — https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/
+- X PM-001 6초 영상: 2026-09-03 12:28 KST 게시 완료 — https://x.com/pixelmurmur/status/2095353286807429503
 - 소개 게시물과 PM-001 정지 이미지는 재게시하지 않는다.
 
 ## 이번 시험
@@ -17,10 +19,10 @@
 
 ## 정확한 게시 순서
 
-1. **로그인 완료 후 다음 19:30 KST 슬롯 — Instagram PM-001 12초 v03 릴스**
-2. **같은 날 20:00 KST 슬롯 — X PM-001 6초 v03 영상**
+1. **X PM-001 6초 v03 영상 — 2026-09-03 12:28 KST 공개 완료**
+2. **Instagram PM-001 12초 v03 릴스 — 2026-09-03 13:48:43 KST 공개 완료**
 
-두 게시물 모두 제안 시간일 뿐이다. **계정 로그인과 실제 게시 행동 시점에 운영자 승인을 받기 전에는 게시하지 않는다.**
+두 게시물 모두 운영자의 실제 게시 행동 시점 승인을 받은 뒤 유기적으로 공개했다. 다음 게시물도 같은 승인 절차를 유지한다.
 
 ---
 
@@ -29,7 +31,9 @@
 ### 소재
 
 - 영상: `pm-001_ig_12s_v03.mp4`
-- 표지: `pm-001_reel_cover_v03.png`
+- 표지: `pm-001_reel_cover_v05.png`
+- 공개 URL: https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/
+- 공개 검수: 프로필 3:4 그리드에서 한영 고지, 한글 제목, 영문 제목, 제품 이미지가 모두 잘리지 않음
 - 소스 역할: `hero-inserted`, `detachable-structure`, `toast-battery`, `lcd-ui-states`, `desk-usage`
 
 ### 게시 카피
@@ -76,6 +80,7 @@ What should a working prototype test first: capacity, thermal control, or repeat
 
 - 영상: `pm-001_ig_loop_06s_v03.mp4`
 - 소스 역할: `hero-inserted`, `detachable-structure`
+- 공개 URL: https://x.com/pixelmurmur/status/2095353286807429503
 
 ### 게시 카피
 

@@ -1,28 +1,41 @@
 {
   "campaignId": "2026-09-pilot-pm-001",
   "objectId": "PM-001",
-  "state": "assets-v03-ready-login-required",
-  "updatedAt": "2026-09-03T12:18:13+09:00",
+  "state": "published-monitoring",
+  "updatedAt": "2026-09-03T13:48:43+09:00",
   "approvals": {
     "reveal": "completed-existing-posts",
-    "copy": "ready-for-action-confirmation",
-    "design": "video-v03-ready",
-    "video": "v03-ready-for-action-confirmation",
-    "publish": "blocked-login-and-action-confirmation",
+    "copy": "published",
+    "design": "video-v03-cover-v05-published",
+    "video": "published",
+    "publish": "completed-live",
     "paidMedia": "blocked"
   },
   "outputs": {
     "brief": "ready",
     "captions": "ready",
     "existingSocialPack": "audited-no-repost",
-    "video": "v03-qc-complete",
-    "analysis": "baseline-plan-ready"
+    "video": "published-live",
+    "analysis": "monitoring-24h-pending"
   },
   "externalActionsAllowed": false,
   "delegatedScope": {
     "organicOperations": true,
     "paidMedia": false,
     "publishAction": "action-time-confirmation-required"
+  },
+  "publications": {
+    "instagram": {
+      "url": "https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/",
+      "publishedAt": "2026-09-03T13:48:43+09:00",
+      "cover": "pm-001_reel_cover_v05.png",
+      "status": "live"
+    },
+    "x": {
+      "url": "https://x.com/pixelmurmur/status/2095353286807429503",
+      "publishedAt": "2026-09-03T12:28:00+09:00",
+      "status": "live"
+    }
   },
   "notes": [
     "PM-001 is the opening and pinned campaign.",
@@ -33,6 +46,10 @@
     "Paid subscriptions, verification, premium platform features, auto-renewal, and any other spend require a separate proposal and exact owner approval.",
     "KRW 50,000 for Instagram ads and one month of X Premium are request examples, not pre-approved purchases.",
     "Audio v02 replaces the sparse ambience with a continuous 120 BPM electronic rhythm after owner feedback.",
-    "Video v03 keeps that continuous audio and corrects the English disclosure to NOT YET PRODUCED."
+    "Video v03 keeps that continuous audio and corrects the English disclosure to NOT YET PRODUCED.",
+    "Instagram cover v05 keeps every essential element inside the live 3:4 profile-grid crop; the live profile grid was visually reviewed after publishing.",
+    "Instagram reels Dcz2MfCu5-- and Dcz9shkMxck were deleted after live profile-grid crop defects were found; exclude them from performance measurement.",
+    "The live Instagram reel includes the AI content label, bilingual caption, alt text, and concept/motion disclosures.",
+    "Future organic posts and object visibility changes may be prepared through the admin workflow, but each public post still requires action-time confirmation."
   ]
 }

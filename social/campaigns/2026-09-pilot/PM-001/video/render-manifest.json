@@ -1,10 +1,10 @@
 {
   "campaignId": "2026-09-pilot-pm-001",
   "objectId": "PM-001",
-  "version": "v03",
-  "status": "asset-v03-qc-complete-login-required",
+  "version": "v03-video-v05-cover",
+  "status": "published-monitoring",
   "createdAt": "2026-09-01T18:06:39+09:00",
-  "updatedAt": "2026-09-03T12:14:41+09:00",
+  "updatedAt": "2026-09-03T13:48:43+09:00",
   "toolchain": {
     "remotion": "4.0.519",
     "react": "19.2.3",
@@ -54,13 +54,30 @@
     },
     {
       "type": "reel-cover",
-      "path": "renders/pm-001_reel_cover_v03.png",
+      "compositionId": "PM001-GridSafe-Cover",
+      "path": "renders/pm-001_reel_cover_v05.png",
       "width": 1080,
       "height": 1920,
-      "bytes": 765668,
-      "sha256": "8f68a2991e7be4ea64ea9024be9ad3d9a80b2a010e3c1b44ba60009a5f18e927"
+      "bytes": 452705,
+      "sha256": "d3d08635f430d762334e1958234723abe72f0fcea834c550ecbacd5c3c2306fb"
     }
   ],
+  "publications": {
+    "instagram": {
+      "url": "https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/",
+      "publishedAt": "2026-09-03T13:48:43+09:00",
+      "format": "12-second-reel",
+      "cover": "renders/pm-001_reel_cover_v05.png",
+      "aiContentLabel": true,
+      "organic": true
+    },
+    "x": {
+      "url": "https://x.com/pixelmurmur/status/2095353286807429503",
+      "publishedAt": "2026-09-03T12:28:00+09:00",
+      "format": "6-second-video",
+      "organic": true
+    }
+  },
   "audio": {
     "included": true,
     "authorship": "Original deterministic synthesis created for PixelMurmur PM-001",
@@ -92,7 +109,7 @@
     "note": "The v03 videos retain the v02 continuous soundtrack and correct the required English concept disclosure. No third-party music, MIDI, loops, or samples were used. The synthesized files remain reproducible from the checked-in generator. Content ID false positives cannot be ruled out by technical checks alone."
   },
   "disclosures": [
-    "CONCEPT RENDER · NOT PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음",
+    "CONCEPT RENDER · NOT YET PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음",
     "MOTION VISUALIZATION / 동작 시각화"
   ],
   "qc": {
@@ -109,9 +126,13 @@
     "noSilenceLongerThan100msAtMinus45Db": true,
     "exactDisclosureVerified": true,
     "coverVisuallyReviewed": true,
+    "instagramProfileGrid43CropReviewed": true,
+    "instagramLiveProfileGridReviewed": true,
+    "aiContentLabelApplied": true,
     "ownerVisualApproval": true,
     "assetReadyForPublish": true,
-    "publishReady": false,
-    "blocker": "Instagram and X login plus action-time publish confirmation are required."
+    "publishReady": true,
+    "published": true,
+    "blocker": null
   }
 }

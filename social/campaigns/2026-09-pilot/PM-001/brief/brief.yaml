@@ -2,7 +2,7 @@ campaign:
   id: "2026-09-pilot-pm-001"
   object_id: "PM-001"
   phase: "brand-opening"
-  status: "assets-v03-ready-login-required"
+  status: "published-monitoring"
   owner_approval_required: true
   pin_first_post: true
 
@@ -26,6 +26,13 @@ existing_public_posts:
     - role: "pm-001-carousel"
       published_at: "2026-08-28"
       url: "https://www.instagram.com/pixelmurmur/p/DckdF1aEphp/"
+    - role: "pm-001-motion"
+      published_at: "2026-09-03T13:48:43+09:00"
+      url: "https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/"
+      asset: "pm-001_ig_12s_v03.mp4"
+      cover: "pm-001_reel_cover_v05.png"
+      ai_content_label: true
+      organic: true
   x:
     - role: "introduction"
       public_views_checked_2026_09_03: 6
@@ -33,6 +40,11 @@ existing_public_posts:
     - role: "pm-001-static"
       public_views_checked_2026_09_03: 3
       url: "https://x.com/pixelmurmur/status/2093186335565897940"
+    - role: "pm-001-motion"
+      published_at: "2026-09-03T12:28:00+09:00"
+      url: "https://x.com/pixelmurmur/status/2095353286807429503"
+      asset: "pm-001_ig_loop_06s_v03.mp4"
+      organic: true
   rule: "Do not delete or duplicate existing introduction and PM-001 static posts."
 
 hypothesis:
@@ -75,6 +87,8 @@ content:
       - "toast-battery"
       - "lcd-ui-states"
       - "desk-usage"
+    cover: "pm-001_reel_cover_v05.png"
+    profile_grid_safe_area: "center 810x1080 after Instagram square-cover processing"
     timeline:
       - "0.0-0.8: toast battery hook"
       - "0.8-3.5: docked hero"
@@ -99,14 +113,16 @@ content:
 
 proposed_schedule:
   timezone: "Asia/Seoul"
-  status: "login-and-action-confirmation-required"
+  status: "completed-organic"
   posts:
-    - slot: "next-instagram-motion"
-      at: "next available 19:30 KST after login"
+    - slot: "instagram-motion"
+      at: "2026-09-03T13:48:43+09:00"
       asset: "pm-001_ig_12s_v03.mp4"
-    - slot: "same-day-x-motion"
-      at: "20:00 KST on the Instagram publish date"
+      url: "https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/"
+    - slot: "x-motion"
+      at: "2026-09-03T12:28:00+09:00"
       asset: "pm-001_ig_loop_06s_v03.mp4"
+      url: "https://x.com/pixelmurmur/status/2095353286807429503"
 
 measurement:
   checkpoints_hours:
@@ -125,8 +141,8 @@ measurement:
 
 approval_gates:
   reveal: "completed-existing-posts"
-  copy: "ready-for-action-confirmation"
-  design: "video-v03-ready"
-  video: "v03-qc-complete"
-  publish: "blocked-login-and-action-confirmation"
+  copy: "published"
+  design: "video-v03-cover-v05-published"
+  video: "published"
+  publish: "completed-live"
   paid_media: "blocked"
