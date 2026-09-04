@@ -2,8 +2,8 @@ campaign:
   id: "2026-09-pilot-pm-019"
   object_id: "PM-019"
   phase: "pilot"
-  status: "ready-for-review"
-  owner_approval_required: true
+  status: "published-monitoring"
+  owner_approval_required: false
 
 object:
   name: "Slide Projector Sharpener"
@@ -64,13 +64,15 @@ content:
 
 proposed_schedule:
   timezone: "Asia/Seoul"
-  status: "recommended-not-published"
+  status: "published"
   posts:
     - slot: "instagram-reveal"
-      at: "2026-09-04T19:30:00+09:00"
+      at: "2026-09-04T18:28:14+09:00"
+      url: "https://www.instagram.com/pixelmurmur/reel/Dc3EINshz1E/"
     - slot: "x-reveal"
-      at: "2026-09-04T19:45:00+09:00"
-  rationale: "PM-001의 첫 24시간 신호를 확보한 뒤 약 30시간 간격으로 다른 형태의 작품을 공개해 초기 계정의 흐름을 유지하고 작품 반응을 비교한다."
+      at: "2026-09-04T18:42:11+09:00"
+      url: "https://x.com/pixelmurmur/status/2095809640718291135"
+  rationale: "PM-001의 첫 24시간 신호를 확보한 뒤 다른 형태의 작품을 공개해 초기 계정의 흐름을 유지하고 작품 반응을 비교한다."
 
 measurement:
   checkpoints_hours:
@@ -92,9 +94,9 @@ measurement:
   paid_media: "blocked until the four-post organic sprint is complete and one clear winner appears"
 
 approval_gates:
-  reveal: "pending"
-  copy: "pending"
-  design: "pending"
-  video: "pending"
-  publish: "blocked"
+  reveal: "approved"
+  copy: "published"
+  design: "published"
+  video: "published"
+  publish: "completed-live"
   paid_media: "blocked"
