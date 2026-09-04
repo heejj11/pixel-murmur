@@ -1,14 +1,14 @@
 {
   "campaignId": "2026-09-pilot-pm-019",
   "objectId": "PM-019",
-  "state": "ready-for-review",
-  "updatedAt": "2026-09-04T18:13:03+09:00",
+  "state": "published",
+  "updatedAt": "2026-09-04T18:42:11+09:00",
   "approvals": {
-    "reveal": "pending",
-    "copy": "pending",
-    "design": "pending",
-    "video": "pending",
-    "publish": "blocked",
+    "reveal": "approved",
+    "copy": "approved",
+    "design": "approved",
+    "video": "approved",
+    "publish": "approved",
     "paidMedia": "blocked"
   },
   "outputs": {
@@ -18,11 +18,25 @@
     "video": "rendered",
     "analysis": "quality-checked"
   },
+  "publication": {
+    "instagram": {
+      "publishedAt": "2026-09-04T18:28:14+09:00",
+      "url": "https://www.instagram.com/pixelmurmur/reel/Dc3EINshz1E/",
+      "asset": "video/renders/pm-019_ig_09s_v04.mp4",
+      "cover": "video/renders/pm-019_grid_safe_cover_v02.png"
+    },
+    "x": {
+      "publishedAt": "2026-09-04T18:42:11+09:00",
+      "url": "https://x.com/pixelmurmur/status/2095809640718291135",
+      "asset": "video/renders/pm-019_x_loop_06s_v04.mp4"
+    }
+  },
   "externalActionsAllowed": false,
   "notes": [
-    "The four-post sprint direction is approved; the final PM-019 creative and publishing remain subject to review.",
-    "The v04 final candidates replace crossfades with clean cuts so adjacent scenes and bilingual text never overlap.",
-    "No social post may be published until publish is approved.",
+    "The owner approved publishing with the instruction '공개해' on 2026-09-04.",
+    "Instagram was published in 9:16 with the grid-safe cover, bilingual copy, alt text, original audio, and the AI content label.",
+    "X was published with the six-second loop, bilingual copy, and the AI-generated content label; X web supports an SRT caption track for video rather than a free-form video alt-text field.",
+    "Post-publication checks confirmed the Instagram grid cover, full-height video framing, X video framing, playback, and audio presence.",
     "No paid media may run until paidMedia is approved with an exact KRW cap.",
     "Paid subscriptions, verification, premium platform features, auto-renewal, and any other spend require a separate proposal and exact owner approval.",
     "KRW 50,000 for Instagram ads and one month of X Premium are request examples, not pre-approved purchases."
