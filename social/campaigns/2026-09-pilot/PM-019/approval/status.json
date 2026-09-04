@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-019",
   "objectId": "PM-019",
   "state": "ready-for-review",
-  "updatedAt": "2026-09-03T20:43:00+09:00",
+  "updatedAt": "2026-09-04T18:13:03+09:00",
   "approvals": {
     "reveal": "pending",
     "copy": "pending",
@@ -21,6 +21,7 @@
   "externalActionsAllowed": false,
   "notes": [
     "The four-post sprint direction is approved; the final PM-019 creative and publishing remain subject to review.",
+    "The v04 final candidates replace crossfades with clean cuts so adjacent scenes and bilingual text never overlap.",
     "No social post may be published until publish is approved.",
     "No paid media may run until paidMedia is approved with an exact KRW cap.",
     "Paid subscriptions, verification, premium platform features, auto-renewal, and any other spend require a separate proposal and exact owner approval.",
