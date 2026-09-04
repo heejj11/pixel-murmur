@@ -145,6 +145,22 @@ Instagram은 게시 후 12시간 13분, X는 게시 후 13시간 34분에 로그
 - **표본 판정:** Instagram은 배포는 있었지만 반응 인원이 2명뿐이라 `insufficient sample`, X는 조회 12로 소비·반응 원인을 나눌 수 없어 `insufficient distribution`을 유지한다.
 - **권고:** `continue`. 낮은 수치만으로 PM-001을 수정·삭제·재게시하지 않는다. 24시간 체크포인트에서 첫 기준선을 고정하고 72시간까지의 유지 판정을 내린다.
 
+### 24시간 체크포인트 — 2026-09-04 14:08 KST
+
+Instagram은 게시 후 24시간 20분, X는 게시 후 25시간 40분에 로그인된 웹 화면에서 확인했다. 두 플랫폼 모두 유료 집행은 `not run`이다.
+
+| 플랫폼 | 게시 후 경과 | 분포·조회 | 좋아요 | 댓글·답글 | 공유·재게시 | 저장·북마크 | 프로필·계정 상태 |
+| --- | ---: | --- | ---: | ---: | ---: | ---: | --- |
+| Instagram | 24시간 20분 | 릴스 조회 146 | 2 | 댓글 0 | 미확인 | 미확인 | 팔로워 0, 팔로우 6; 프로필 행동 미확인 |
+| X | 25시간 40분 | 노출 14; 영상 조회 11; 고유 조회수 1 | 0 | 답글 0 | 재게시 0 | 북마크 0 | 프로필 조회수 0, 팔로워 0, 팔로우 6 |
+
+- **증가 속도:** 12시간 체크포인트 이후 약 12시간 동안 Instagram은 143에서 146으로 `+3`, X 공개 노출은 12에서 14로 `+2` 증가했다. 초기 배포 이후 두 플랫폼 모두 거의 정체됐다.
+- **X 상세 소비:** 게시물 애널리틱스에는 참여수 9, 세부정보 펼치기 9, 프로필 조회수 0이 표시됐다. 영상은 조회 11, 고유 조회수 1로 표시되고 오디언스 유지 그래프는 한 명의 고유 표본만 있어 품질 판정에 사용하지 않는다.
+- **직접 반응:** Instagram 좋아요 2건 외에 댓글·팔로워 증가는 없다. X는 답글·재게시·좋아요·북마크가 모두 0이고 프로필 조회수도 0이다. Instagram 도달·저장·공유·프로필 행동은 현재 웹 화면에서 확인할 수 없어 `미확인`이다.
+- **배포 오류:** Instagram 최종 릴스의 12초 재생기, 오리지널 오디오, AI 콘텐츠 레이블과 프로필 릴스 표지가 정상 표시된다. X도 6초 영상, 한영 본문과 게시물 애널리틱스가 정상 표시된다. 삭제·음소거·링크·크롭·재생 오류는 확인되지 않았다.
+- **표본 판정:** Instagram은 직접 반응 인원이 2명뿐이라 `insufficient sample`, X는 노출 14와 고유 영상 조회수 1로 콘텐츠 소비를 판단할 수 없어 `insufficient distribution`이다.
+- **권고:** PM-001은 `continue`. 수정·삭제·재게시하지 않고 72시간과 7일 증분을 관찰한다. 다음 작품 PM-019 공개는 PM-001 재시험이 아닌 별도 작품 비교 표본으로 진행한다.
+
 ## 3. Instagram 관찰표
 
 Instagram 안에서 같은 형식끼리만 비교한다. 릴스는 릴스와, 캐러셀은 캐러셀과 비교한다. 아래 표는 12초 v03 릴스의 새 기준선이며, 기존 PM-001 캐러셀의 미확인값을 옮겨 적지 않는다.
@@ -153,15 +169,15 @@ Instagram 안에서 같은 형식끼리만 비교한다. 릴스는 릴스와, �
 | --- | --- | ---: | ---: | ---: |
 | 분포 | 도달 계정 | pending | pending | pending |
 | 분포 | 노출 | pending | pending | pending |
-| 시청(릴스) | 재생, 총 시청 시간, 평균 시청 시간, 제공되는 완주 지표 | pending | pending | pending |
+| 시청(릴스) | 재생, 총 시청 시간, 평균 시청 시간, 제공되는 완주 지표 | 재생 146; 기타 미확인 | pending | pending |
 | 탐색(캐러셀) | 제공되는 탐색·슬라이드 관련 지표 | pending | pending | pending |
 | 깊은 반응 | 저장 | pending | pending | pending |
 | 깊은 반응 | 공유 | pending | pending | pending |
-| 대화 | 댓글 / 의미 있는 댓글 | pending | pending | pending |
-| 객체화 | 명시적 시제품 의향(댓글 수/고유 인원) | pending | pending | pending |
-| 프로필 | 프로필 방문 | pending | pending | pending |
-| 전환 | 게시물에서 확인 가능한 팔로우 | pending | pending | pending |
-| 참고 | 좋아요 | pending | pending | pending |
+| 대화 | 댓글 / 의미 있는 댓글 | 0 / 0 | pending | pending |
+| 객체화 | 명시적 시제품 의향(댓글 수/고유 인원) | 0 / 0 | pending | pending |
+| 프로필 | 프로필 방문 | 미확인 | pending | pending |
+| 전환 | 게시물에서 확인 가능한 팔로우 | 팔로워 증가 0 | pending | pending |
+| 참고 | 좋아요 | 2 | pending | pending |
 | 유료 | 비용·유료 도달·유료 반응 | not run | not run | not run |
 
 ### Instagram 빠른 초기 점검
@@ -198,15 +214,15 @@ X의 노출·영상 조회 정의는 Instagram과 다르므로 X 안에서 같�
 
 | 구분 | 지표 | 24h | 72h | 7d |
 | --- | --- | ---: | ---: | ---: |
-| 분포 | 노출 | pending | pending | pending |
-| 시청 | 영상 조회와 제공되는 시청·완주 지표 | pending | pending | pending |
-| 확산 | 재게시 | pending | pending | pending |
-| 보존 | 북마크(제공될 때) | pending | pending | pending |
-| 대화 | 답글 / 의미 있는 답글 | pending | pending | pending |
-| 객체화 | 명시적 시제품 의향(답글 수/고유 인원) | pending | pending | pending |
-| 프로필 | 프로필 클릭·방문(제공될 때) | pending | pending | pending |
-| 전환 | 게시물에서 확인 가능한 팔로우 | pending | pending | pending |
-| 참고 | 좋아요 | pending | pending | pending |
+| 분포 | 노출 | 14 | pending | pending |
+| 시청 | 영상 조회와 제공되는 시청·완주 지표 | 조회 11; 고유 1; 유지율 판정 불가 | pending | pending |
+| 확산 | 재게시 | 0 | pending | pending |
+| 보존 | 북마크(제공될 때) | 0 | pending | pending |
+| 대화 | 답글 / 의미 있는 답글 | 0 / 0 | pending | pending |
+| 객체화 | 명시적 시제품 의향(답글 수/고유 인원) | 0 / 0 | pending | pending |
+| 프로필 | 프로필 클릭·방문(제공될 때) | 프로필 조회수 0 | pending | pending |
+| 전환 | 게시물에서 확인 가능한 팔로우 | 팔로워 증가 0 | pending | pending |
+| 참고 | 좋아요 | 0 | pending | pending |
 | 유료 | 비용·유료 노출·유료 반응 | not run | not run | not run |
 
 ### X 빠른 초기 점검
