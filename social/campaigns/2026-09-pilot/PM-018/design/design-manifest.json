@@ -1,0 +1,56 @@
+{
+  "campaignId": "2026-09-pilot-pm-018",
+  "objectId": "PM-018",
+  "version": "v01",
+  "status": "quality-check-passed",
+  "renderedAt": "2026-09-04T19:25:58+09:00",
+  "canvas": {
+    "platform": "instagram",
+    "format": "carousel",
+    "width": 1080,
+    "height": 1350,
+    "colorSpace": "RGB"
+  },
+  "safeArea": {
+    "profileGridCrop": "center 3:4",
+    "criticalHorizontalRangePx": [70, 1010],
+    "note": "The actual 3:4 center crop keeps approximately x=34–1046; all critical content uses a more conservative inset."
+  },
+  "disclosure": "CONCEPT RENDER · NOT YET PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음",
+  "sources": [
+    {
+      "card": "01",
+      "role": "hero",
+      "path": "public/images/objects/pm-018-vhs-mini-stapler/01-hero.webp",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "card": "02",
+      "role": "staple-action",
+      "path": "public/images/objects/pm-018-vhs-mini-stapler/02-staple-action.webp",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "card": "03",
+      "role": "refill-magazine",
+      "path": "public/images/objects/pm-018-vhs-mini-stapler/03-refill-magazine.webp",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "card": "04",
+      "role": "desk-use",
+      "path": "public/images/objects/pm-018-vhs-mini-stapler/06-desk-use.webp",
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "outputs": [
+    { "card": "01", "path": "pm-018_ig_carousel_01_v01.png", "status": "quality-check-passed" },
+    { "card": "02", "path": "pm-018_ig_carousel_02_v01.png", "status": "quality-check-passed" },
+    { "card": "03", "path": "pm-018_ig_carousel_03_v01.png", "status": "quality-check-passed" },
+    { "card": "04", "path": "pm-018_ig_carousel_04_v01.png", "status": "quality-check-passed" }
+  ]
+}

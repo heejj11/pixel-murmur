@@ -1,0 +1,73 @@
+campaign:
+  id: "2026-09-pilot-pm-018"
+  object_id: "PM-018"
+  phase: "format-exploration"
+  status: "ready-for-scheduled-publish"
+  owner_approval_required: false
+
+object:
+  name: "VHS Mini Stapler"
+  name_ko: "VHS 미니 스테이플러"
+  source_of_truth:
+    - "src/catalog.js"
+    - "public/images/objects/pm-018-vhs-mini-stapler/product.json"
+  product_state: "concept-render-not-produced"
+
+hypothesis:
+  statement: "미니덕트식 한 문장 변환 훅의 즉시성과 산업디자인 계정의 구조 설명을 결합하면, 완성 렌더만 보여주는 게시물보다 이미지 확장·저장·프로필 행동이 늘어난다."
+  primary_audience: "한국의 문구, 레트로 미디어, 산업디자인, 데스크 오브젝트 관심층"
+  single_variable: "platform-specific static format"
+  instagram_format: "four-card mechanism carousel"
+  x_format: "single hero image"
+
+disclosure:
+  persistent: "CONCEPT RENDER · NOT YET PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음"
+  ai_label: true
+
+content:
+  instagram_carousel:
+    aspect_ratio: "4:5"
+    size: "1080x1350"
+    cards:
+      - "01 hook: VHS를 누르면, 종이가 묶입니다. / Press the cassette. Bind the page."
+      - "02 action: the clear cassette shell works as the press arm"
+      - "03 mechanism: an ordinary No.10 staple strip fits inside"
+      - "04 intent: 책상 위에 두고 싶나요? / Would this stay on your desk?"
+  x_post:
+    aspect_ratio: "1:1"
+    size: "1200x1200"
+    image: "public/images/objects/pm-018-vhs-mini-stapler/01-hero.webp"
+    rule: "Use the hero render with no large overlay; let the short post copy provide the hook."
+
+schedule:
+  timezone: "Asia/Seoul"
+  status: "scheduled"
+  posts:
+    - slot: "instagram-carousel"
+      at: "2026-09-05T18:30:00+09:00"
+    - slot: "x-hero"
+      at: "2026-09-05T18:45:00+09:00"
+
+measurement:
+  checkpoints_hours:
+    - 24
+    - 72
+    - 168
+  instagram_primary:
+    - "saves"
+    - "shares"
+    - "profile_visits"
+    - "meaningful_comments"
+  x_primary:
+    - "image_expands"
+    - "bookmarks"
+    - "reposts"
+    - "profile_visits"
+  decision_rule: "Do not rank the format before 72 hours; retain seven-day metrics as the final comparison point."
+
+approval_gates:
+  reveal: "pre-authorized-by-owner"
+  copy: "internal-quality-check"
+  design: "internal-quality-check"
+  publish: "automatic-after-quality-check-at-scheduled-time"
+  paid_media: "blocked"
