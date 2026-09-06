@@ -1,8 +1,8 @@
 {
   "campaignId": "2026-09-pilot-pm-018",
   "objectId": "PM-018",
-  "state": "ready-for-scheduled-publish",
-  "updatedAt": "2026-09-04T19:28:00+09:00",
+  "state": "ready-awaiting-browser-connection",
+  "updatedAt": "2026-09-06T12:18:55+09:00",
   "approvals": {
     "reveal": "pre-authorized-by-owner",
     "copy": "quality-check-passed",
@@ -30,6 +30,7 @@
   "notes": [
     "The owner authorized scheduled organic posts to publish without a separate action-time approval.",
     "Crop, copy, disclosure, dimensions, color space, and asset integrity passed internal quality checks on 2026-09-04.",
+    "The 2026-09-05 scheduled publication did not occur because the authenticated Codex browser was unavailable; no partial or duplicate post was created.",
     "Paid media, subscriptions, replies, DMs, mentions, and deletion remain blocked without separate owner approval."
   ]
 }
