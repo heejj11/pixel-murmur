@@ -7,16 +7,16 @@
 - `social_accounts`: 연결 계정과 마지막 수집 상태
 - `social_posts`: Instagram·X 게시물 원문 정보
 - `social_metric_snapshots`: 계정·게시물별 일일 지표
-- `object_publication`: 작품 공개 여부와 Instagram·X 원문 게시물 주소
+- `object_publication`: 작품 공개 여부와 Instagram·X 원문 게시물 주소 목록
 - `sync-instagram`, `sync-x`: 플랫폼 API 수집 함수
 - Supabase Auth + RLS: 공개 클라이언트는 `object_publication`의 공개된 행만 읽고, 등록된 운영자 메일 또는 `app_metadata.role = admin`인 로그인 사용자는 모든 행을 읽고 변경
 - SNS 통계 테이블은 운영자만 조회
 - Supabase Cron: 한국 시간 오전 3시대에 플랫폼별 하루 한 번 수집
 
 작품 본문과 이미지는 이 DB로 옮기지 않습니다. 공개 여부와 SNS 원문 주소만 저장합니다.
-초기 마이그레이션은 PM-001·PM-002만 공개하고, 나머지 작품은 운영자가 켤 때까지 숨깁니다.
+초기 마이그레이션은 PM-001·PM-002를 공개하고, PM-018은 첫 Instagram·X 게시물과 함께 공개합니다.
 SNS 주소는 Instagram의 게시물·릴스·TV URL 또는 X/Twitter의 상태 게시물 URL이어야 하며,
-프론트 검증과 DB 제약이 같은 형식을 강제합니다.
+플랫폼별 작품당 최대 12개까지 저장할 수 있습니다. 프론트 검증과 DB 제약이 같은 형식을 강제합니다.
 운영자는 비밀번호 대신 Supabase가 발송하는 일회용 이메일 링크로 로그인합니다.
 
 ## 1. 프로젝트와 프론트 연결

@@ -188,20 +188,31 @@ export default function ProductDetail({ object, publicObjects }) {
     )],
   ]
   const relatedObjects = publicObjects.filter((item) => item.id !== object.id).slice(0, 4)
-  const socialPublications = [
-    object.socialLinks?.instagram && {
-      href: object.socialLinks.instagram,
+  const socialPlatforms = [
+    {
+      key: 'instagram',
       label: 'Instagram post',
       labelKo: '인스타그램 게시물',
       icon: InstagramLogo,
     },
-    object.socialLinks?.x && {
-      href: object.socialLinks.x,
+    {
+      key: 'x',
       label: 'X post',
       labelKo: '엑스 게시물',
       icon: XLogo,
     },
-  ].filter(Boolean)
+  ]
+  const socialPublications = socialPlatforms.flatMap((platform) => {
+    const value = object.socialLinks?.[platform.key]
+    const urls = (Array.isArray(value) ? value : value ? [value] : []).filter(Boolean)
+
+    return urls.map((href, index) => ({
+      ...platform,
+      href,
+      label: urls.length > 1 ? `${platform.label} ${index + 1}` : platform.label,
+      labelKo: urls.length > 1 ? `${platform.labelKo} ${index + 1}` : platform.labelKo,
+    }))
+  })
 
   useEffect(() => {
     const previousTitle = document.title
@@ -280,8 +291,8 @@ export default function ProductDetail({ object, publicObjects }) {
                 <div className="detail-publications">
                   <span>Published at <span lang="ko">게시물 원문</span></span>
                   <div>
-                    {socialPublications.map(({ href, label, labelKo, icon: Icon }) => (
-                      <a href={href} target="_blank" rel="noreferrer" key={label}>
+                    {socialPublications.map(({ href, label, labelKo, icon: Icon, key }) => (
+                      <a href={href} target="_blank" rel="noreferrer" key={`${key}-${href}`}>
                         <Icon size={17} weight="bold" aria-hidden="true" />
                         <span className="action-copy">
                           <span>{label}</span>

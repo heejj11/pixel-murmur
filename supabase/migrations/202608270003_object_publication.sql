@@ -3,7 +3,7 @@ create table public.object_publication (
   is_published boolean not null default false,
   instagram_url text check (
     instagram_url is null
-    or instagram_url ~ '^https://(www\.)?instagram\.com/(p|reel|tv)/[^/?#]+/?([?#].*)?$'
+    or instagram_url ~ '^https://(www\.)?instagram\.com/([^/?#]+/)?(p|reel|tv)/[^/?#]+/?([?#].*)?$'
   ),
   x_url text check (
     x_url is null

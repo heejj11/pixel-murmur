@@ -5,8 +5,9 @@ import {
 } from '../contentSettings'
 import { supabase } from '../lib/supabase'
 
-function normalizeUrl(value) {
-  return value.trim() || null
+export function normalizeSocialUrls(values = []) {
+  const source = Array.isArray(values) ? values : [values]
+  return [...new Set(source.map((value) => value?.trim()).filter(Boolean))]
 }
 
 export function makeDemoContentRows() {
@@ -19,7 +20,7 @@ export async function loadContentRows() {
 
   const { data, error } = await supabase
     .from('object_publication')
-    .select('object_id, is_published, instagram_url, x_url, updated_at')
+    .select('object_id, is_published, instagram_url, x_url, instagram_urls, x_urls, updated_at')
     .order('object_id')
 
   if (error) throw error
@@ -34,17 +35,24 @@ export async function loadContentRows() {
 export async function saveContentRows(rows) {
   if (!supabase) throw new Error('Supabase configuration is missing.')
 
-  const payload = rows.map((row) => ({
-    object_id: row.object_id,
-    is_published: Boolean(row.is_published),
-    instagram_url: normalizeUrl(row.instagram_url ?? ''),
-    x_url: normalizeUrl(row.x_url ?? ''),
-  }))
+  const payload = rows.map((row) => {
+    const instagramUrls = normalizeSocialUrls(row.instagram_urls)
+    const xUrls = normalizeSocialUrls(row.x_urls)
+
+    return {
+      object_id: row.object_id,
+      is_published: Boolean(row.is_published),
+      instagram_url: instagramUrls[0] ?? null,
+      x_url: xUrls[0] ?? null,
+      instagram_urls: instagramUrls,
+      x_urls: xUrls,
+    }
+  })
 
   const { data, error } = await supabase
     .from('object_publication')
     .upsert(payload, { onConflict: 'object_id' })
-    .select('object_id, is_published, instagram_url, x_url, updated_at')
+    .select('object_id, is_published, instagram_url, x_url, instagram_urls, x_urls, updated_at')
 
   if (error) throw error
   return data ?? []
@@ -60,7 +68,7 @@ export function validateSocialUrl(value, platform) {
     const hostname = url.hostname.replace(/^www\./, '').toLowerCase()
     if (platform === 'instagram') {
       const isInstagramPost = hostname === 'instagram.com'
-        && /^\/(p|reel|tv)\/[^/]+\/?$/.test(url.pathname)
+        && /^\/(?:[^/]+\/)?(p|reel|tv)\/[^/]+\/?$/.test(url.pathname)
       if (!isInstagramPost) {
         return 'Instagram 게시물 또는 릴스 주소를 입력해 주세요.'
       }

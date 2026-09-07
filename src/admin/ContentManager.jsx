@@ -6,26 +6,111 @@ import {
   EyeSlash,
   FloppyDisk,
   InstagramLogo,
+  Plus,
+  TrashSimple,
   XLogo,
 } from '@phosphor-icons/react'
 import {
   loadContentRows,
   makeDemoContentRows,
+  normalizeSocialUrls,
   saveContentRows,
   validateSocialUrl,
 } from './contentData'
+
+const MAX_SOCIAL_LINKS = 12
+
+function editableUrls(row, platform) {
+  const urls = row[`${platform}_urls`]
+  if (Array.isArray(urls) && urls.length > 0) return urls
+
+  const legacyUrl = row[`${platform}_url`]
+  return legacyUrl ? [legacyUrl] : ['']
+}
 
 function comparableRow(row) {
   return {
     object_id: row.object_id,
     is_published: Boolean(row.is_published),
-    instagram_url: row.instagram_url?.trim() ?? '',
-    x_url: row.x_url?.trim() ?? '',
+    instagram_urls: normalizeSocialUrls(editableUrls(row, 'instagram')),
+    x_urls: normalizeSocialUrls(editableUrls(row, 'x')),
   }
 }
 
 function rowsMatch(left, right) {
   return JSON.stringify(left.map(comparableRow)) === JSON.stringify(right.map(comparableRow))
+}
+
+function validateSocialUrls(values, platform) {
+  const trimmedValues = values.map((value) => value.trim())
+
+  return values.map((value, index) => {
+    const formatError = validateSocialUrl(value, platform)
+    if (formatError) return formatError
+    if (!value.trim()) return ''
+
+    const duplicate = trimmedValues.some(
+      (candidate, candidateIndex) => candidateIndex !== index && candidate === value.trim(),
+    )
+    return duplicate ? '같은 게시물 주소가 이미 있습니다.' : ''
+  })
+}
+
+function SocialLinkFields({ objectId, platform, icon: Icon, label, labelKo, placeholder, values, errors, onChange, onAdd, onRemove }) {
+  const atLimit = values.length >= MAX_SOCIAL_LINKS
+
+  return (
+    <fieldset className="admin-social-platform">
+      <legend>
+        <Icon size={17} weight="bold" aria-hidden="true" />
+        {label} <span lang="ko">{labelKo}</span>
+      </legend>
+      <div className="admin-social-list">
+        {values.map((value, index) => {
+          const errorId = `${objectId}-${platform}-${index}-error`
+          return (
+            <div className="admin-social-entry" key={`${platform}-${index}`}>
+              <div>
+                <input
+                  type="url"
+                  value={value}
+                  placeholder={placeholder}
+                  aria-label={`${label} ${index + 1} / ${labelKo} ${index + 1}`}
+                  aria-invalid={Boolean(errors[index])}
+                  aria-describedby={errors[index] ? errorId : undefined}
+                  onChange={(event) => onChange(index, event.target.value)}
+                />
+                <button
+                  type="button"
+                  className="admin-social-remove"
+                  onClick={() => onRemove(index)}
+                  aria-label={`${label} ${index + 1} 삭제 / ${labelKo} ${index + 1} 삭제`}
+                  title="Remove post / 게시물 삭제"
+                >
+                  <TrashSimple size={16} weight="bold" aria-hidden="true" />
+                </button>
+              </div>
+              {errors[index] && (
+                <small className="admin-field-error" id={errorId}>
+                  {errors[index]}
+                </small>
+              )}
+            </div>
+          )
+        })}
+      </div>
+      <button
+        type="button"
+        className="admin-social-add"
+        onClick={onAdd}
+        disabled={atLimit}
+      >
+        <Plus size={15} weight="bold" aria-hidden="true" />
+        <span>Add post <span lang="ko">게시물 추가</span></span>
+      </button>
+      {atLimit && <small className="admin-social-limit">플랫폼별 최대 12개까지 추가할 수 있습니다.</small>}
+    </fieldset>
+  )
 }
 
 export default function ContentManager({ demo = false }) {
@@ -58,15 +143,19 @@ export default function ContentManager({ demo = false }) {
     }
   }, [demo])
 
-  const validation = useMemo(() => Object.fromEntries(rows.map((row) => [
-    row.object_id,
-    {
-      instagram: validateSocialUrl(row.instagram_url ?? '', 'instagram'),
-      x: validateSocialUrl(row.x_url ?? '', 'x'),
-    },
-  ])), [rows])
+  const validation = useMemo(() => Object.fromEntries(rows.map((row) => {
+    const instagramUrls = editableUrls(row, 'instagram')
+    const xUrls = editableUrls(row, 'x')
+    return [
+      row.object_id,
+      {
+        instagram: validateSocialUrls(instagramUrls, 'instagram'),
+        x: validateSocialUrls(xUrls, 'x'),
+      },
+    ]
+  })), [rows])
   const hasValidationError = Object.values(validation).some(
-    (row) => row.instagram || row.x,
+    (row) => [...row.instagram, ...row.x].some(Boolean),
   )
   const dirty = !rowsMatch(rows, savedRows)
   const publicCount = rows.filter((row) => row.is_published).length
@@ -88,6 +177,29 @@ export default function ContentManager({ demo = false }) {
       row.object_id === objectId ? { ...row, ...patch } : row
     )))
     setNotice('')
+  }
+
+  function updateSocialUrl(objectId, platform, index, value) {
+    const row = rows.find((candidate) => candidate.object_id === objectId)
+    if (!row) return
+    const urls = [...editableUrls(row, platform)]
+    urls[index] = value
+    updateRow(objectId, { [`${platform}_urls`]: urls })
+  }
+
+  function addSocialUrl(objectId, platform) {
+    const row = rows.find((candidate) => candidate.object_id === objectId)
+    if (!row) return
+    const urls = editableUrls(row, platform)
+    if (urls.length >= MAX_SOCIAL_LINKS) return
+    updateRow(objectId, { [`${platform}_urls`]: [...urls, ''] })
+  }
+
+  function removeSocialUrl(objectId, platform, index) {
+    const row = rows.find((candidate) => candidate.object_id === objectId)
+    if (!row) return
+    const urls = editableUrls(row, platform).filter((_, candidateIndex) => candidateIndex !== index)
+    updateRow(objectId, { [`${platform}_urls`]: urls.length > 0 ? urls : [''] })
   }
 
   async function handleSave() {
@@ -202,48 +314,32 @@ export default function ContentManager({ demo = false }) {
                   </label>
 
                   <div className="admin-social-fields">
-                    <label>
-                      <span>
-                        <InstagramLogo size={17} weight="bold" aria-hidden="true" />
-                        Instagram post <span lang="ko">인스타그램 게시물</span>
-                      </span>
-                      <input
-                        type="url"
-                        value={row.instagram_url ?? ''}
-                        placeholder="https://www.instagram.com/p/…"
-                        aria-invalid={Boolean(rowErrors.instagram)}
-                        aria-describedby={rowErrors.instagram ? `${row.object_id}-instagram-error` : undefined}
-                        onChange={(event) => updateRow(row.object_id, {
-                          instagram_url: event.target.value,
-                        })}
-                      />
-                      {rowErrors.instagram && (
-                        <small className="admin-field-error" id={`${row.object_id}-instagram-error`}>
-                          {rowErrors.instagram}
-                        </small>
-                      )}
-                    </label>
-                    <label>
-                      <span>
-                        <XLogo size={17} weight="bold" aria-hidden="true" />
-                        X post <span lang="ko">엑스 게시물</span>
-                      </span>
-                      <input
-                        type="url"
-                        value={row.x_url ?? ''}
-                        placeholder="https://x.com/…/status/…"
-                        aria-invalid={Boolean(rowErrors.x)}
-                        aria-describedby={rowErrors.x ? `${row.object_id}-x-error` : undefined}
-                        onChange={(event) => updateRow(row.object_id, {
-                          x_url: event.target.value,
-                        })}
-                      />
-                      {rowErrors.x && (
-                        <small className="admin-field-error" id={`${row.object_id}-x-error`}>
-                          {rowErrors.x}
-                        </small>
-                      )}
-                    </label>
+                    <SocialLinkFields
+                      objectId={row.object_id}
+                      platform="instagram"
+                      icon={InstagramLogo}
+                      label="Instagram posts"
+                      labelKo="인스타그램 게시물"
+                      placeholder="https://www.instagram.com/p/…"
+                      values={editableUrls(row, 'instagram')}
+                      errors={rowErrors.instagram}
+                      onChange={(index, value) => updateSocialUrl(row.object_id, 'instagram', index, value)}
+                      onAdd={() => addSocialUrl(row.object_id, 'instagram')}
+                      onRemove={(index) => removeSocialUrl(row.object_id, 'instagram', index)}
+                    />
+                    <SocialLinkFields
+                      objectId={row.object_id}
+                      platform="x"
+                      icon={XLogo}
+                      label="X posts"
+                      labelKo="엑스 게시물"
+                      placeholder="https://x.com/…/status/…"
+                      values={editableUrls(row, 'x')}
+                      errors={rowErrors.x}
+                      onChange={(index, value) => updateSocialUrl(row.object_id, 'x', index, value)}
+                      onAdd={() => addSocialUrl(row.object_id, 'x')}
+                      onRemove={(index) => removeSocialUrl(row.object_id, 'x', index)}
+                    />
                   </div>
 
                   <a
