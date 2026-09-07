@@ -2,13 +2,31 @@
   "campaignId": "2026-09-pilot-pm-001-retest-v04",
   "objectId": "PM-001",
   "state": "instagram-published-x-scheduled",
-  "updatedAt": "2026-09-08T03:48:00+09:00",
+  "updatedAt": "2026-09-08T06:49:00+09:00",
   "quality": "passed",
   "requestedByOwner": true,
   "approval": "organic-publication-authorized-after-quality-check",
   "schedulingMode": "codex-thread-heartbeat",
   "automationId": "v04",
   "timezone": "Asia/Seoul",
+  "scheduleReview": {
+    "reviewedAt": "2026-09-08T06:49:00+09:00",
+    "state": "remaining-slots-adjusted-and-saved-fields-verified",
+    "observedTriggerTimesUtc": [
+      "2026-09-07T18:46:25.623Z",
+      "2026-09-07T20:45:25.613Z",
+      "2026-09-07T21:46:55.838Z"
+    ],
+    "assessment": "Observed triggers align with the former rule's UTC hours, not the intended Korean wall-clock hours. Timezone interpretation is inferred from these runs; the official schedule guide does not establish the implementation detail.",
+    "remainingExpectedTriggerTimesUtc": [
+      "2026-09-08T09:45:00Z",
+      "2026-09-08T11:45:00Z"
+    ],
+    "intendedPublicationTimesChanged": false,
+    "savedAutomationFieldsVerified": true,
+    "futureExecutionVerified": false,
+    "noFreshSocialObservation": true
+  },
   "publication": {
     "instagram": {
       "state": "published",
