@@ -40,7 +40,12 @@
     "render:pm019:reel": "remotion render src/index.ts PM019-Reel ../campaigns/2026-09-pilot/PM-019/video/renders/pm-019_ig_09s_v04.mp4 --codec=h264 --crf=18",
     "render:pm019:loop": "remotion render src/index.ts PM019-Loop ../campaigns/2026-09-pilot/PM-019/video/renders/pm-019_x_loop_06s_v04.mp4 --codec=h264 --crf=18",
     "finalize:pm019": "node scripts/finalize-pm019-renders.mjs",
-    "still:pm019:grid-safe": "remotion still src/index.ts PM019-GridSafe-Cover ../campaigns/2026-09-pilot/PM-019/video/renders/pm-019_grid_safe_cover_v02.png --frame=18"
+    "still:pm019:grid-safe": "remotion still src/index.ts PM019-GridSafe-Cover ../campaigns/2026-09-pilot/PM-019/video/renders/pm-019_grid_safe_cover_v02.png --frame=18",
+    "audio:pm013": "node scripts/generate-pm013-audio.mjs",
+    "render:pm013:reel": "remotion render src/index.ts PM013-Reel ../campaigns/2026-09-pilot/PM-013/video/renders/pm-013_ig_09s_v01.mp4 --codec=h264 --crf=18",
+    "render:pm013:x": "remotion render src/index.ts PM013-X-Loop ../campaigns/2026-09-pilot/PM-013/video/renders/pm-013_x_square_06s_v01.mp4 --codec=h264 --crf=18",
+    "finalize:pm013": "node scripts/finalize-pm013-renders.mjs",
+    "still:pm013:grid-safe": "remotion still src/index.ts PM013-Grid-Safe-Cover ../campaigns/2026-09-pilot/PM-013/video/renders/pm-013_grid_safe_cover_v01.png --frame=18"
   },
   "sideEffects": [
     "*.css"

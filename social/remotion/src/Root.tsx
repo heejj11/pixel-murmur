@@ -6,6 +6,9 @@ import { PM001GridSafeCover } from "./pm001/PM001GridSafeCover";
 import { PM019GridSafeCover } from "./pm019/PM019GridSafeCover";
 import { PM019Loop } from "./pm019/PM019Loop";
 import { PM019Reel } from "./pm019/PM019Reel";
+import { PM013GridSafeCover } from "./pm013/PM013GridSafeCover";
+import { PM013Reel } from "./pm013/PM013Reel";
+import { PM013XLoop } from "./pm013/PM013XLoop";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -56,6 +59,32 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="PM019-GridSafe-Cover"
           component={PM019GridSafeCover}
+          durationInFrames={60}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+      </Folder>
+      <Folder name="PixelMurmur-PM-013">
+        <Composition
+          id="PM013-Reel"
+          component={PM013Reel}
+          durationInFrames={270}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="PM013-X-Loop"
+          component={PM013XLoop}
+          durationInFrames={180}
+          fps={30}
+          width={1080}
+          height={1080}
+        />
+        <Composition
+          id="PM013-Grid-Safe-Cover"
+          component={PM013GridSafeCover}
           durationInFrames={60}
           fps={30}
           width={1080}

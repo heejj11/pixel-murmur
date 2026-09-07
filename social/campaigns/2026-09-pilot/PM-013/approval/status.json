@@ -1,0 +1,30 @@
+{
+  "campaignId": "2026-09-pilot-pm-013",
+  "objectId": "PM-013",
+  "state": "ready-for-review",
+  "updatedAt": "2026-09-07T16:27:00+09:00",
+  "approvals": {
+    "reveal": "requested-by-owner",
+    "copy": "pending-owner-review",
+    "design": "pending-owner-review",
+    "video": "pending-owner-review",
+    "publish": "not-approved",
+    "paidMedia": "blocked"
+  },
+  "outputs": {
+    "brief": "ready",
+    "captions": "ready",
+    "design": "rendered",
+    "video": "rendered",
+    "analysis": "quality-checked"
+  },
+  "publication": {
+    "instagram": null,
+    "x": null
+  },
+  "externalActionsAllowed": false,
+  "notes": [
+    "No post or schedule action is permitted until the owner confirms the final assets and timing.",
+    "No paid media, subscription, or other spend is approved."
+  ]
+}

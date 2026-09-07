@@ -1,0 +1,65 @@
+campaign:
+  id: "2026-09-pilot-pm-013"
+  object_id: "PM-013"
+  phase: "pilot"
+  status: "ready-for-review"
+  owner_approval_required: true
+
+object:
+  name: "Rotary Phone Tape Dispenser"
+  name_ko: "로터리폰 테이프 디스펜서"
+  source_of_truth:
+    - "src/catalog.js"
+    - "public/images/objects/pm-013-rotary-phone-tape-dispenser/product.json"
+  product_state: "concept-render-not-produced"
+
+hypothesis:
+  statement: "수화기를 들고 테이프를 당긴 뒤 내려놓아 자르는 세 단계가 첫 3초 안에 보이면, 생소한 제품 기능이 설명 없이도 이해되고 이전 작품보다 직접 반응을 만들 수 있다."
+  primary_audience: "한국의 제품디자인, 문구, 데스크테리어와 레트로 오브젝트 관심층"
+  single_variable: "제품 고유의 사용 동작"
+  selected_hook: "수화기를 들고, 테이프를 당기세요. / Lift. Then pull."
+
+disclosure:
+  persistent: "CONCEPT RENDER · NOT YET PRODUCED / 콘셉트 렌더 · 아직 제작되지 않음"
+  motion: "MOTION VISUALIZATION / 동작 시각화"
+
+content:
+  instagram_reel:
+    duration_seconds: 9
+    aspect_ratio: "9:16"
+    sequence:
+      - "0.0-3.2: lift and pull"
+      - "3.2-5.8: guarded cutter mechanism"
+      - "5.8-9.0: object reveal"
+  x_loop:
+    duration_seconds: 6
+    aspect_ratio: "1:1"
+    sequence:
+      - "0.0-2.4: lift and pull"
+      - "2.4-4.0: guarded cutter mechanism"
+      - "4.0-6.0: object reveal"
+    rationale: "X 피드에서 세로 영상보다 전체 프레임과 문구를 한눈에 보이게 하는 정사각 포맷을 시험한다."
+
+proposed_schedule:
+  timezone: "Asia/Seoul"
+  status: "not-scheduled"
+  posts:
+    - slot: "instagram-reveal"
+      at: "2026-09-08T18:30:00+09:00"
+    - slot: "x-reveal"
+      at: "2026-09-08T18:45:00+09:00"
+  rationale: "PM-018과 같은 날 두 작품을 겹쳐 올리지 않고, 다음 날 같은 저녁 시간대에 새 동작 훅을 비교한다."
+
+measurement:
+  checkpoints_hours: [1, 4, 12, 24, 72, 168]
+  primary_signals: [views, likes, saves, shares, meaningful_comments, profile_visits, follows]
+  comparison: "PM-019와 PM-018의 같은 경과 시간 공개 수치"
+  paid_media: "blocked until a clear organic winner appears"
+
+approval_gates:
+  reveal: "requested-by-owner"
+  copy: "ready-for-review"
+  design: "ready-for-review"
+  video: "ready-for-review"
+  publish: "not-approved"
+  paid_media: "blocked"
