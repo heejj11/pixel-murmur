@@ -2,10 +2,10 @@
   "campaignId": "2026-09-pilot-pm-001",
   "objectId": "PM-001",
   "state": "published-monitoring",
-  "updatedAt": "2026-09-07T17:30:00+09:00",
+  "updatedAt": "2026-09-07T20:51:00+09:00",
   "nextPublication": {
     "version": "retest-v04",
-    "state": "scheduled-in-codex",
+    "state": "instagram-published-x-scheduled",
     "quality": "passed",
     "automationId": "v04",
     "directory": "../retest-v04",
@@ -47,6 +47,7 @@
     }
   },
   "notes": [
+    "2026-09-07 20:43:02 KST: v04 Instagram reel Dc_B8EmvZd2 published at the owner's request. The older publications below remain live. See retest-v04/status.json for the new post, remaining X slot and pending site login.",
     "2026-09-07 latest owner instruction prioritizes PM-001 and authorizes improving the imagery, video, and copy for the next organic post.",
     "The earlier action-time-confirmation notes below are historical. The owner subsequently asked to publish scheduled, quality-checked organic content without asking again.",
     "PM-001 is the opening and pinned campaign.",

@@ -1,7 +1,8 @@
 {
   "campaignId": "2026-09-pilot-pm-001-retest-v04",
   "objectId": "PM-001",
-  "state": "scheduled-in-codex",
+  "state": "instagram-published-x-scheduled",
+  "updatedAt": "2026-09-07T20:51:00+09:00",
   "quality": "passed",
   "requestedByOwner": true,
   "approval": "organic-publication-authorized-after-quality-check",
@@ -10,13 +11,19 @@
   "timezone": "Asia/Seoul",
   "publication": {
     "instagram": {
-      "state": "pending",
-      "scheduledAt": "2026-09-08T18:30:00+09:00",
+      "state": "published",
+      "originallyScheduledAt": "2026-09-08T18:30:00+09:00",
+      "rescheduledBy": "owner-requested-instagram-first-now",
       "video": "renders/pm-001_ig_08s_v04.mp4",
       "cover": "renders/pm-001_cover_v04.png",
       "captionKey": "instagram",
-      "url": null,
-      "publishedAt": null
+      "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/",
+      "publishedAt": "2026-09-07T20:43:02+09:00",
+      "publishedAtSource": "live-post-time-element",
+      "liveQuality": "passed",
+      "aiLabel": true,
+      "altTextEntered": true,
+      "originalAudioPresent": true
     },
     "x": {
       "state": "pending",
@@ -30,7 +37,12 @@
   "site": {
     "objectUrl": "https://pixelmurmur.com/objects/pm-001",
     "requiredActionAfterPublication": "Keep PM-001 public and append every new post URL to the existing social-link arrays",
-    "state": "awaiting-new-publication-urls"
+    "state": "pending-admin-login",
+    "objectPublicVerified": true,
+    "pendingInstagramUrls": [
+      "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/"
+    ],
+    "blocker": "Site admin session expired. Separate private DB dashboard access was denied by automatic review; no workaround attempted. Owner asked to sign in to the existing admin page."
   },
   "platformNativeSchedulesCreated": false,
   "supersededNativeSchedule": {
@@ -39,11 +51,18 @@
     "state": "cancelled-and-empty-list-verified"
   },
   "checkpointsAfterActualPublicationHours": [1, 4, 24, 72],
+  "scheduledActions": [
+    { "at": "2026-09-07T21:45:00+09:00", "action": "instagram-1h-check" },
+    { "at": "2026-09-08T00:45:00+09:00", "action": "instagram-4h-check" },
+    { "at": "2026-09-08T18:45:00+09:00", "action": "x-publication" },
+    { "at": "2026-09-08T20:45:00+09:00", "action": "instagram-24h-and-x-early-check" }
+  ],
   "preserveExistingPosts": true,
   "paidMediaAuthorized": false,
   "notes": [
     "This is a new creative package with several changes, not an isolated single-variable A/B test.",
-    "The post itself is not published yet. The Codex task resumes at the scheduled slots.",
+    "Instagram was published early at the owner's request. Do not publish it again at the former slot.",
+    "Automation v04 now combines X publication and initial Instagram observations because only one heartbeat can be attached to this thread.",
     "Publishing requires the local computer and Codex app to be running and the platform session to remain usable.",
     "Recheck platform upload, cover crop, audio, bilingual captions and AI labeling immediately before publishing."
   ]

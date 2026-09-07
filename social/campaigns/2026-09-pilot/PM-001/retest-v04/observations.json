@@ -1,0 +1,79 @@
+{
+  "campaignId": "2026-09-pilot-pm-001-retest-v04",
+  "platform": "instagram",
+  "timezone": "Asia/Seoul",
+  "method": "manual-observation-of-logged-in-platform-ui",
+  "unavailableMetricsAreNull": true,
+  "observations": [
+    {
+      "id": "pre-publication-20260907",
+      "phase": "baseline-before-v04-publication",
+      "observationWindow": "2026-09-07 20:37–20:43 KST",
+      "capturedAt": null,
+      "timePrecision": "session-window; exact per-item capture time not recorded",
+      "account": { "username": "pixelmurmur", "followers": 0, "following": 9, "posts": 5 },
+      "posts": [
+        {
+          "url": "https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/",
+          "objectId": "PM-001",
+          "version": "v03",
+          "views": 146,
+          "likes": 2,
+          "visibleAudienceComments": 0,
+          "reach": null,
+          "saves": null,
+          "shares": null,
+          "profileVisits": null
+        },
+        {
+          "url": "https://www.instagram.com/pixelmurmur/reel/Dc3EINshz1E/",
+          "objectId": "PM-019",
+          "views": 74,
+          "likes": null,
+          "visibleAudienceComments": null,
+          "reach": null,
+          "saves": null,
+          "shares": null,
+          "profileVisits": null
+        }
+      ],
+      "assessment": "Observed counts match the previous record: distribution has stalled, but these small cumulative samples do not identify a cause or prove lack of product demand."
+    },
+    {
+      "id": "publication-qa-20260907",
+      "phase": "publication-quality-check-not-a-performance-checkpoint",
+      "observationWindow": "2026-09-07 20:43–20:49 KST",
+      "capturedAt": null,
+      "timePrecision": "session-window; exact per-item capture time not recorded",
+      "account": { "username": "pixelmurmur", "followers": 0, "following": 9, "posts": 6 },
+      "posts": [
+        {
+          "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/",
+          "objectId": "PM-001",
+          "version": "v04",
+          "views": null,
+          "likes": 0,
+          "visibleAudienceComments": 0,
+          "reach": null,
+          "saves": null,
+          "shares": null,
+          "profileVisits": null
+        }
+      ],
+      "assessment": "Too early to assess response. Owner-account playback occurred during QA and must not be treated as new audience reach."
+    },
+    {
+      "id": "reels-tab-20260907-2050",
+      "phase": "publication-quality-check-not-a-performance-checkpoint",
+      "capturedAt": "2026-09-07T20:50:00+09:00",
+      "timePrecision": "minute",
+      "account": { "username": "pixelmurmur", "followers": 0, "following": 9, "posts": 6 },
+      "posts": [
+        { "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/", "objectId": "PM-001", "version": "v04", "views": 0, "likes": null, "visibleAudienceComments": null, "reach": null, "saves": null, "shares": null, "profileVisits": null },
+        { "url": "https://www.instagram.com/pixelmurmur/reel/Dc3EINshz1E/", "objectId": "PM-019", "views": 74, "likes": null, "visibleAudienceComments": null, "reach": null, "saves": null, "shares": null, "profileVisits": null },
+        { "url": "https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/", "objectId": "PM-001", "version": "v03", "views": 146, "likes": null, "visibleAudienceComments": null, "reach": null, "saves": null, "shares": null, "profileVisits": null }
+      ],
+      "assessment": "Reels-tab displayed counts only. Approximately seven minutes after publication; reporting delay and owner QA playback preclude an early outcome judgment."
+    }
+  ]
+}
