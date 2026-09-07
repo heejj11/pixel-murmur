@@ -74,6 +74,46 @@
         { "url": "https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/", "objectId": "PM-001", "version": "v03", "views": 146, "likes": null, "visibleAudienceComments": null, "reach": null, "saves": null, "shares": null, "profileVisits": null }
       ],
       "assessment": "Reels-tab displayed counts only. Approximately seven minutes after publication; reporting delay and owner QA playback preclude an early outcome judgment."
+    },
+    {
+      "id": "delayed-initial-check-20260908-0348",
+      "phase": "delayed-initial-reaction-check",
+      "capturedAt": "2026-09-08T03:48:00+09:00",
+      "observationWindow": "2026-09-08 03:47–03:48 KST",
+      "timePrecision": "minute",
+      "elapsedSincePublicationSeconds": 25498,
+      "scheduledCheckpoints": [
+        { "targetAt": "2026-09-07T21:45:00+09:00", "state": "missed-no-historical-measurement", "metricValuesAtTarget": null },
+        { "targetAt": "2026-09-08T00:45:00+09:00", "state": "checked-late", "metricValuesAtTarget": null }
+      ],
+      "accountSourceUrl": "https://www.instagram.com/pixelmurmur/reels/",
+      "account": { "username": "pixelmurmur", "followers": 1, "following": 9, "posts": 6 },
+      "accountFollowerChangeSincePublication": 1,
+      "posts": [
+        {
+          "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/",
+          "objectId": "PM-001",
+          "version": "v04",
+          "views": 127,
+          "likes": 2,
+          "visibleAudienceComments": 0,
+          "reach": null,
+          "saves": null,
+          "shares": null,
+          "profileVisits": null,
+          "followersAttributedToPost": null
+        },
+        { "url": "https://www.instagram.com/pixelmurmur/reel/Dc3EINshz1E/", "objectId": "PM-019", "views": 78, "likes": null, "visibleAudienceComments": null, "reach": null, "saves": null, "shares": null, "profileVisits": null },
+        { "url": "https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/", "objectId": "PM-001", "version": "v03", "views": 148, "likes": null, "visibleAudienceComments": null, "reach": null, "saves": null, "shares": null, "profileVisits": null }
+      ],
+      "assessment": "New reel has 127 displayed views and two likes; account followers increased from zero to one. This is an early response, not a validated creative improvement. Follower attribution, unique reach and deeper engagement are unavailable. Record only this actual late observation, not invented one-hour or four-hour values.",
+      "caveats": [
+        "The initial checkpoint runs are absent from the saved observations; the cause of their delay is not established.",
+        "Owner-account playback occurred during publication QA and this read-only inspection; displayed views are not necessarily unique new audience.",
+        "Counts on older posts have different elapsed durations and are not used as a like-for-like performance comparison."
+      ],
+      "paidMedia": "not-run",
+      "decision": "continue-without-editing-or-reposting"
     }
   ]
 }
