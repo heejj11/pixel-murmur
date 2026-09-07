@@ -1,8 +1,8 @@
 {
   "campaignId": "2026-09-pilot-pm-018",
   "objectId": "PM-018",
-  "state": "ready-awaiting-browser-connection",
-  "updatedAt": "2026-09-06T12:18:55+09:00",
+  "state": "published-instagram-x-pending",
+  "updatedAt": "2026-09-07T09:30:37+09:00",
   "approvals": {
     "reveal": "pre-authorized-by-owner",
     "copy": "quality-check-passed",
@@ -20,6 +20,18 @@
     "instagram": "2026-09-05T18:30:00+09:00",
     "x": "2026-09-05T18:45:00+09:00"
   },
+  "publication": {
+    "instagram": {
+      "status": "published",
+      "url": "https://www.instagram.com/pixelmurmur/p/Dc7rFxtEkAf/",
+      "publishedAt": "not-captured",
+      "observedAgeAt2026-09-07T09:30:37+09:00": "about-20-hours"
+    },
+    "x": {
+      "status": "pending",
+      "url": null
+    }
+  },
   "externalActionsAllowed": {
     "scheduledOrganicPublish": true,
     "paidMedia": false,
@@ -31,6 +43,7 @@
     "The owner authorized scheduled organic posts to publish without a separate action-time approval.",
     "Crop, copy, disclosure, dimensions, color space, and asset integrity passed internal quality checks on 2026-09-04.",
     "The 2026-09-05 scheduled publication did not occur because the authenticated Codex browser was unavailable; no partial or duplicate post was created.",
+    "Instagram publication completed on 2026-09-06 with four carousel cards, AI label, and per-card bilingual alt text. The X publication did not occur before the browser turn was interrupted.",
     "Paid media, subscriptions, replies, DMs, mentions, and deletion remain blocked without separate owner approval."
   ]
 }
