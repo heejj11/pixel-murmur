@@ -2,7 +2,16 @@
   "campaignId": "2026-09-pilot-pm-001",
   "objectId": "PM-001",
   "state": "published-monitoring",
-  "updatedAt": "2026-09-03T13:48:43+09:00",
+  "updatedAt": "2026-09-07T17:30:00+09:00",
+  "nextPublication": {
+    "version": "retest-v04",
+    "state": "scheduled-in-codex",
+    "quality": "passed",
+    "automationId": "v04",
+    "directory": "../retest-v04",
+    "requestedByOwner": true,
+    "schedulingMode": "codex-thread-heartbeat"
+  },
   "approvals": {
     "reveal": "completed-existing-posts",
     "copy": "published",
@@ -22,7 +31,7 @@
   "delegatedScope": {
     "organicOperations": true,
     "paidMedia": false,
-    "publishAction": "action-time-confirmation-required"
+    "publishAction": "authorized-organic-post-after-quality-check"
   },
   "publications": {
     "instagram": {
@@ -38,6 +47,8 @@
     }
   },
   "notes": [
+    "2026-09-07 latest owner instruction prioritizes PM-001 and authorizes improving the imagery, video, and copy for the next organic post.",
+    "The earlier action-time-confirmation notes below are historical. The owner subsequently asked to publish scheduled, quality-checked organic content without asking again.",
     "PM-001 is the opening and pinned campaign.",
     "Existing files under social/pm-001 must be reviewed and reused without overwriting.",
     "Instagram and X each already have an introduction post and a PM-001 static post; do not duplicate them.",

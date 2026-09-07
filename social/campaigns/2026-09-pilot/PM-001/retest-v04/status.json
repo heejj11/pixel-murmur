@@ -1,0 +1,50 @@
+{
+  "campaignId": "2026-09-pilot-pm-001-retest-v04",
+  "objectId": "PM-001",
+  "state": "scheduled-in-codex",
+  "quality": "passed",
+  "requestedByOwner": true,
+  "approval": "organic-publication-authorized-after-quality-check",
+  "schedulingMode": "codex-thread-heartbeat",
+  "automationId": "v04",
+  "timezone": "Asia/Seoul",
+  "publication": {
+    "instagram": {
+      "state": "pending",
+      "scheduledAt": "2026-09-08T18:30:00+09:00",
+      "video": "renders/pm-001_ig_08s_v04.mp4",
+      "cover": "renders/pm-001_cover_v04.png",
+      "captionKey": "instagram",
+      "url": null,
+      "publishedAt": null
+    },
+    "x": {
+      "state": "pending",
+      "scheduledAt": "2026-09-08T18:45:00+09:00",
+      "video": "renders/pm-001_x_06s_v04.mp4",
+      "captionKey": "x",
+      "url": null,
+      "publishedAt": null
+    }
+  },
+  "site": {
+    "objectUrl": "https://pixelmurmur.com/objects/pm-001",
+    "requiredActionAfterPublication": "Keep PM-001 public and append every new post URL to the existing social-link arrays",
+    "state": "awaiting-new-publication-urls"
+  },
+  "platformNativeSchedulesCreated": false,
+  "supersededNativeSchedule": {
+    "objectId": "PM-013",
+    "platform": "x",
+    "state": "cancelled-and-empty-list-verified"
+  },
+  "checkpointsAfterActualPublicationHours": [1, 4, 24, 72],
+  "preserveExistingPosts": true,
+  "paidMediaAuthorized": false,
+  "notes": [
+    "This is a new creative package with several changes, not an isolated single-variable A/B test.",
+    "The post itself is not published yet. The Codex task resumes at the scheduled slots.",
+    "Publishing requires the local computer and Codex app to be running and the platform session to remain usable.",
+    "Recheck platform upload, cover crop, audio, bilingual captions and AI labeling immediately before publishing."
+  ]
+}

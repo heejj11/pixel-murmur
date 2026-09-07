@@ -2,7 +2,7 @@ campaign:
   id: "2026-09-pilot-pm-013"
   object_id: "PM-013"
   phase: "pilot"
-  status: "ready-for-review"
+  status: "held-owner-prioritized-pm001"
   owner_approval_required: true
 
 object:
@@ -42,12 +42,14 @@ content:
 
 proposed_schedule:
   timezone: "Asia/Seoul"
-  status: "not-scheduled"
+  status: "superseded-by-pm001-retest-v04"
   posts:
     - slot: "instagram-reveal"
       at: "2026-09-08T18:30:00+09:00"
+      status: "held-do-not-publish"
     - slot: "x-reveal"
       at: "2026-09-08T18:45:00+09:00"
+      status: "native-schedule-cancelled"
   rationale: "PM-018과 같은 날 두 작품을 겹쳐 올리지 않고, 다음 날 같은 저녁 시간대에 새 동작 훅을 비교한다."
 
 measurement:
@@ -61,5 +63,5 @@ approval_gates:
   copy: "ready-for-review"
   design: "ready-for-review"
   video: "ready-for-review"
-  publish: "not-approved"
+  publish: "deferred-owner-prioritized-pm001"
   paid_media: "blocked"

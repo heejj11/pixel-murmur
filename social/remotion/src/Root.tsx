@@ -9,10 +9,68 @@ import { PM019Reel } from "./pm019/PM019Reel";
 import { PM013GridSafeCover } from "./pm013/PM013GridSafeCover";
 import { PM013Reel } from "./pm013/PM013Reel";
 import { PM013XLoop } from "./pm013/PM013XLoop";
+import {
+  PM001RetestCover,
+  PM001RetestReel,
+  PM001RetestX,
+} from "./pm001-retest/PM001Retest";
+import { SceneCharge } from "./pm001-retest/SceneCharge";
+import { SceneTake } from "./pm001-retest/SceneTake";
+import { SceneReturn } from "./pm001-retest/SceneReturn";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Folder name="PM001-Retest-v04">
+        <Composition
+          id="PM001-Retest-Reel"
+          component={PM001RetestReel}
+          durationInFrames={240}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="PM001-Retest-X"
+          component={PM001RetestX}
+          durationInFrames={180}
+          fps={30}
+          width={1080}
+          height={1350}
+        />
+        <Composition
+          id="PM001-Retest-Cover"
+          component={PM001RetestCover}
+          durationInFrames={1}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="PM001-Retest-Card-1"
+          component={SceneCharge}
+          durationInFrames={1}
+          fps={30}
+          width={1080}
+          height={1350}
+        />
+        <Composition
+          id="PM001-Retest-Card-2"
+          component={SceneTake}
+          durationInFrames={1}
+          fps={30}
+          width={1080}
+          height={1350}
+        />
+        <Composition
+          id="PM001-Retest-Card-3"
+          component={SceneReturn}
+          durationInFrames={1}
+          fps={30}
+          width={1080}
+          height={1350}
+        />
+      </Folder>
       <Folder name="PixelMurmur-PM-001">
         <Composition
           id="PM001-Reel"

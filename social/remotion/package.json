@@ -26,6 +26,7 @@
     "typescript": "5.9.3"
   },
   "scripts": {
+    "render:pm001:retest": "node scripts/render-pm001-retest.mjs",
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",

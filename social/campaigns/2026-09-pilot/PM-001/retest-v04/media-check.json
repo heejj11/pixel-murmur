@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-09-07T08:32:49.460Z",
+  "files": [
+    {
+      "file": "pm-001_ig_08s_v04.mp4",
+      "bytes": 1907750,
+      "sha256": "ceecb8f163c6708aa77f9a4f3e503d32b813c177cd30d3f43ead4355acfd42d7",
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "videoCodec": "h264",
+      "pixelFormat": "yuvj420p",
+      "audioCodec": "aac",
+      "faststart": true,
+      "loudnessLUFS": -18.56,
+      "truePeakDb": -7.06,
+      "silenceThresholdDb": -28.56,
+      "silentSegmentsAtLeastHalfSecond": 0,
+      "decodedWithoutError": true,
+      "extractedFrameTimes": [
+        0,
+        2.96,
+        3,
+        4.96,
+        5,
+        7.96
+      ]
+    },
+    {
+      "file": "pm-001_x_06s_v04.mp4",
+      "bytes": 1624079,
+      "sha256": "158b38a5bd11c068da3af7d488132cbe0b1204407a37ec060ef6e9f23bde0052",
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1350,
+      "fps": 30,
+      "videoCodec": "h264",
+      "pixelFormat": "yuvj420p",
+      "audioCodec": "aac",
+      "faststart": true,
+      "loudnessLUFS": -16.87,
+      "truePeakDb": -5.64,
+      "silenceThresholdDb": -26.87,
+      "silentSegmentsAtLeastHalfSecond": 0,
+      "decodedWithoutError": true,
+      "extractedFrameTimes": [
+        0,
+        1.96,
+        2,
+        3.96,
+        4,
+        5.96
+      ]
+    }
+  ]
+}

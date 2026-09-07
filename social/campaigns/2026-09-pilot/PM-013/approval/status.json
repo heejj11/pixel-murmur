@@ -1,14 +1,14 @@
 {
   "campaignId": "2026-09-pilot-pm-013",
   "objectId": "PM-013",
-  "state": "ready-for-review",
-  "updatedAt": "2026-09-07T16:27:00+09:00",
+  "state": "held-owner-prioritized-pm001",
+  "updatedAt": "2026-09-07T17:24:00+09:00",
   "approvals": {
     "reveal": "requested-by-owner",
-    "copy": "pending-owner-review",
-    "design": "pending-owner-review",
-    "video": "pending-owner-review",
-    "publish": "not-approved",
+    "copy": "approved-by-owner",
+    "design": "approved-by-owner",
+    "video": "approved-by-owner",
+    "publish": "deferred-owner-prioritized-pm001",
     "paidMedia": "blocked"
   },
   "outputs": {
@@ -19,12 +19,28 @@
     "analysis": "quality-checked"
   },
   "publication": {
-    "instagram": null,
-    "x": null
+    "instagram": {
+      "state": "held-do-not-publish",
+      "previouslyProposedAt": "2026-09-08T18:30:00+09:00",
+      "reason": "Owner selected PM-001 retest as the next publication; no account conversion is requested"
+    },
+    "x": {
+      "state": "native-schedule-cancelled",
+      "previouslyScheduledAt": "2026-09-08T18:45:00+09:00",
+      "cancellationVerifiedAt": "2026-09-07T17:24:00+09:00",
+      "asset": "video/renders/pm-013_x_square_06s_v01.mp4"
+    }
   },
   "externalActionsAllowed": false,
   "notes": [
-    "No post or schedule action is permitted until the owner confirms the final assets and timing.",
+    "Latest instruction: make the toast charger PM-001 the main item and publish its improved creative next.",
+    "The owner clarified that scheduling means Codex continuing this conversation at the agreed time, not platform-native scheduling.",
+    "Removed the mistaken PM-013 X native schedule and verified the scheduled list is empty. Media and captions remain in the repository.",
+    "The Instagram composer may still contain the old PM-013 draft; replace it with the PM-001 package before the next publication.",
+    "Earlier notes below are historical and superseded by the current held state.",
+    "The owner approved scheduling with the instruction '예약하고' on 2026-09-07.",
+    "X scheduling was verified in the scheduled-post list.",
+    "The Instagram draft includes the 9:16 video, grid-safe cover, bilingual caption, and AI label, but is not scheduled because professional-account conversion needs a separate owner decision.",
     "No paid media, subscription, or other spend is approved."
   ]
 }
