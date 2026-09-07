@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-001-retest-v04",
   "objectId": "PM-001",
   "state": "instagram-published-x-scheduled",
-  "updatedAt": "2026-09-07T20:51:00+09:00",
+  "updatedAt": "2026-09-07T20:59:00+09:00",
   "quality": "passed",
   "requestedByOwner": true,
   "approval": "organic-publication-authorized-after-quality-check",
@@ -37,12 +37,17 @@
   "site": {
     "objectUrl": "https://pixelmurmur.com/objects/pm-001",
     "requiredActionAfterPublication": "Keep PM-001 public and append every new post URL to the existing social-link arrays",
-    "state": "pending-admin-login",
+    "state": "instagram-linked-x-publication-pending",
     "objectPublicVerified": true,
-    "pendingInstagramUrls": [
+    "pendingInstagramUrls": [],
+    "linkedInstagramUrls": [
       "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/"
     ],
-    "blocker": "Site admin session expired. Separate private DB dashboard access was denied by automatic review; no workaround attempted. Owner asked to sign in to the existing admin page."
+    "linkVerifiedAt": "2026-09-07T20:59:00+09:00",
+    "timePrecision": "minute",
+    "existingLinksPreserved": true,
+    "updatedThrough": "owner-signed-in-pixelmurmur-admin-in-another-chrome-window",
+    "blocker": null
   },
   "platformNativeSchedulesCreated": false,
   "supersededNativeSchedule": {
