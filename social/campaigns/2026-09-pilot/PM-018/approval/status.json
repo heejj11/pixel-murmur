@@ -1,8 +1,8 @@
 {
   "campaignId": "2026-09-pilot-pm-018",
   "objectId": "PM-018",
-  "state": "published-instagram-x-pending",
-  "updatedAt": "2026-09-07T09:30:37+09:00",
+  "state": "published-both",
+  "updatedAt": "2026-09-07T09:36:30+09:00",
   "approvals": {
     "reveal": "pre-authorized-by-owner",
     "copy": "quality-check-passed",
@@ -28,8 +28,9 @@
       "observedAgeAt2026-09-07T09:30:37+09:00": "about-20-hours"
     },
     "x": {
-      "status": "pending",
-      "url": null
+      "status": "published",
+      "url": "https://x.com/pixelmurmur/status/2096759400325394940",
+      "publishedAt": "2026-09-07T09:36:00+09:00"
     }
   },
   "externalActionsAllowed": {
@@ -44,6 +45,7 @@
     "Crop, copy, disclosure, dimensions, color space, and asset integrity passed internal quality checks on 2026-09-04.",
     "The 2026-09-05 scheduled publication did not occur because the authenticated Codex browser was unavailable; no partial or duplicate post was created.",
     "Instagram publication completed on 2026-09-06 with four carousel cards, AI label, and per-card bilingual alt text. The X publication did not occur before the browser turn was interrupted.",
+    "X publication completed on 2026-09-07 with the 1:1 hero image, Korean alt text, and the AI-generated content disclosure enabled.",
     "Paid media, subscriptions, replies, DMs, mentions, and deletion remain blocked without separate owner approval."
   ]
 }

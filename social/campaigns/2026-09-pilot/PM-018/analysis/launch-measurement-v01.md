@@ -12,8 +12,8 @@
 | 형식 | 4장 4:5 작동 원리 캐러셀 | 1장 1:1 히어로 이미지 |
 | 소재 | `pm-018_ig_carousel_01_v01.png` ~ `04_v01.png` | `01-hero.webp` |
 | 첫 문장 | VHS를 누르면, 종이가 묶입니다. | VHS를 누르면, 종이가 묶입니다. |
-| 공개 상태 | published 2026-09-06, exact time not captured | not published |
-| 게시물 URL | https://www.instagram.com/pixelmurmur/p/Dc7rFxtEkAf/ | pending |
+| 공개 상태 | published 2026-09-06, exact time not captured | published 2026-09-07 09:36 |
+| 게시물 URL | https://www.instagram.com/pixelmurmur/p/Dc7rFxtEkAf/ | https://x.com/pixelmurmur/status/2096759400325394940 |
 | 유기/유료 | organic | organic |
 
 ## 관찰표
@@ -44,3 +44,11 @@
 - Instagram 웹의 `인사이트 보기` 링크는 사용할 수 없는 페이지로 연결되어 상세 분포를 수집하지 못했다.
 - X 게시물은 공개되지 않았다. 따라서 X의 24시간 성과값은 0이 아니라 `not published`다.
 - 현재 Instagram 판정은 `insufficient sample`이다. 분포값 없이 작품 매력이나 캐러셀 훅을 약점으로 단정하지 않는다.
+
+## X 공개 기준선 — 2026-09-07 09:36 KST
+
+- 사용자 승인 후 준비된 1:1 히어로 이미지와 한영 카피를 X에 공개했다.
+- 이미지의 제품과 손이 잘리지 않는 것을 게시 전 확인했다.
+- 한국어 대체 텍스트와 `AI로 제작됨` 콘텐츠 공개 문구를 적용했다.
+- 공개 직후 기준값은 조회·좋아요·답글·재게시·북마크 모두 0이다.
+- 24시간 비교 기준 시각은 2026-09-08 09:36 KST다.
