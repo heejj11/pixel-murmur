@@ -1,5 +1,34 @@
 {
   "checkedAt": "2026-09-07T08:32:49.460Z",
+  "xPublicationCheck": {
+    "checkedAt": "2026-09-08T18:52:00+09:00",
+    "sourceSha256Matches": true,
+    "decodedWithoutError": true,
+    "silentSegmentsAtLeastHalfSecond": 0,
+    "uploadReadyConfirmed": true,
+    "preview": {
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1350,
+      "playbackAdvanced": true,
+      "mutedAfterAudioCheck": false,
+      "firstFrameAndBilingualDisclosureVisible": true
+    },
+    "live": {
+      "url": "https://x.com/pixelmurmur/status/2097261297721319823",
+      "durationSeconds": 6.058666,
+      "width": 720,
+      "height": 900,
+      "playbackAdvanced": true,
+      "captionMatchesPreparedText": true,
+      "aiLabelVisible": true,
+      "productTitleAndDisclosureNotCropped": true,
+      "note": "Ordinary player controls briefly overlay the bottom edge; the source and displayed frame preserve the full 4:5 canvas. Live autoplay was muted by the platform; upload preview was explicitly unmuted and the source AAC track was validated."
+    },
+    "paidPartnershipEnabled": false,
+    "nativeScheduleCreated": false,
+    "altTextEntered": false
+  },
   "files": [
     {
       "file": "pm-001_ig_08s_v04.mp4",

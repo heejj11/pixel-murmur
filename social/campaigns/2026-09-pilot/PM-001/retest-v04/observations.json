@@ -4,6 +4,37 @@
   "timezone": "Asia/Seoul",
   "method": "manual-observation-of-logged-in-platform-ui",
   "unavailableMetricsAreNull": true,
+  "xObservations": [
+    {
+      "id": "x-publication-qa-20260908-1851",
+      "platform": "x",
+      "phase": "publication-quality-check-not-a-performance-checkpoint",
+      "capturedAt": "2026-09-08T18:51:00+09:00",
+      "timePrecision": "minute",
+      "accountSourceUrl": "https://x.com/pixelmurmur",
+      "account": { "username": "pixelmurmur", "followers": 0, "following": 6, "posts": 6 },
+      "posts": [
+        {
+          "url": "https://x.com/pixelmurmur/status/2097261297721319823",
+          "objectId": "PM-001",
+          "version": "v04",
+          "publishedAt": "2026-09-08T18:50:33+09:00",
+          "views": null,
+          "likes": 0,
+          "replies": 0,
+          "reposts": 0,
+          "bookmarks": 0,
+          "reach": null,
+          "profileVisits": null,
+          "linkClicks": null
+        }
+      ],
+      "assessment": "Publication succeeded and profile post count increased from five to six. No view count was displayed yet. This is immediate QA, not evidence for or against creative performance.",
+      "caveats": ["Owner-account playback occurred during QA; any subsequent views may include owner inspection."],
+      "paidMedia": "not-run",
+      "decision": "continue-to-scheduled-2045-check-without-reposting"
+    }
+  ],
   "observations": [
     {
       "id": "pre-publication-20260907",
@@ -111,6 +142,116 @@
         "The initial checkpoint runs are absent from the saved observations; the cause of their delay is not established.",
         "Owner-account playback occurred during publication QA and this read-only inspection; displayed views are not necessarily unique new audience.",
         "Counts on older posts have different elapsed durations and are not used as a like-for-like performance comparison."
+      ],
+      "paidMedia": "not-run",
+      "decision": "continue-without-editing-or-reposting"
+    },
+    {
+      "id": "owner-requested-check-20260908-0930",
+      "phase": "owner-requested-reaction-check",
+      "capturedAt": "2026-09-08T09:30:00+09:00",
+      "observationWindow": "2026-09-08 09:29–09:30 KST",
+      "timePrecision": "minute",
+      "elapsedSincePublicationSeconds": 46018,
+      "accountSourceUrl": "https://www.instagram.com/pixelmurmur/reels/",
+      "account": { "username": "pixelmurmur", "followers": 1, "following": 9, "posts": 6 },
+      "posts": [
+        {
+          "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/",
+          "objectId": "PM-001",
+          "version": "v04",
+          "views": 127,
+          "likes": 2,
+          "visibleAudienceComments": 0,
+          "reach": null,
+          "saves": null,
+          "shares": null,
+          "profileVisits": null,
+          "followersAttributedToPost": null
+        },
+        { "url": "https://www.instagram.com/pixelmurmur/reel/Dc3EINshz1E/", "objectId": "PM-019", "views": 78, "likes": null, "visibleAudienceComments": null, "reach": null, "saves": null, "shares": null, "profileVisits": null },
+        { "url": "https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/", "objectId": "PM-001", "version": "v03", "views": 148, "likes": null, "visibleAudienceComments": null, "reach": null, "saves": null, "shares": null, "profileVisits": null }
+      ],
+      "comparison": {
+        "observationId": "delayed-initial-check-20260908-0348",
+        "elapsedMinutes": 342,
+        "v04ViewsChange": 0,
+        "v04LikesChange": 0,
+        "visibleAudienceCommentsChange": 0,
+        "accountFollowersChange": 0
+      },
+      "assessment": "Displayed views and direct responses have not increased since 03:48 KST. Initial response exists, but there is no observed expansion over the subsequent approximately 5 hours 42 minutes. The small sample and unavailable reach/retention/deeper engagement do not establish the cause or product demand.",
+      "caveats": [
+        "Public UI counts may lag; views are not unique audience and may include owner-account inspection playback.",
+        "Account follower attribution to this reel remains unavailable."
+      ],
+      "paidMedia": "not-run",
+      "decision": "continue-without-editing-or-reposting"
+    },
+    {
+      "id": "owner-requested-check-20260908-1457",
+      "phase": "owner-requested-reaction-check",
+      "capturedAt": "2026-09-08T14:57:00+09:00",
+      "observationWindow": "2026-09-08 14:56–14:57 KST",
+      "timePrecision": "minute",
+      "elapsedSincePublicationSeconds": 65638,
+      "accountSourceUrl": "https://www.instagram.com/pixelmurmur/reels/",
+      "account": {
+        "username": "pixelmurmur",
+        "followers": 1,
+        "following": 9,
+        "posts": 6
+      },
+      "posts": [
+        {
+          "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/",
+          "objectId": "PM-001",
+          "version": "v04",
+          "views": 127,
+          "likes": 2,
+          "visibleAudienceComments": 0,
+          "reach": null,
+          "saves": null,
+          "shares": null,
+          "profileVisits": null,
+          "followersAttributedToPost": null
+        },
+        {
+          "url": "https://www.instagram.com/pixelmurmur/reel/Dc3EINshz1E/",
+          "objectId": "PM-019",
+          "views": 78,
+          "likes": null,
+          "visibleAudienceComments": null,
+          "reach": null,
+          "saves": null,
+          "shares": null,
+          "profileVisits": null
+        },
+        {
+          "url": "https://www.instagram.com/pixelmurmur/reel/Dcz_WGUJtuP/",
+          "objectId": "PM-001",
+          "version": "v03",
+          "views": 148,
+          "likes": null,
+          "visibleAudienceComments": null,
+          "reach": null,
+          "saves": null,
+          "shares": null,
+          "profileVisits": null
+        }
+      ],
+      "comparison": {
+        "observationId": "owner-requested-check-20260908-0930",
+        "elapsedMinutes": 327,
+        "v04ViewsChange": 0,
+        "v04LikesChange": 0,
+        "visibleAudienceCommentsChange": 0,
+        "accountFollowersChange": 0
+      },
+      "assessment": "Displayed Instagram counts remain unchanged from 09:30 KST and 03:48 KST. No additional growth is observed across approximately eleven hours since the earliest matching snapshot. This is a stalled observed trajectory, not proof of permanent suppression or lack of product demand.",
+      "caveats": [
+        "Public UI counts may lag; views are not unique audience and may include owner-account inspection playback.",
+        "Account follower attribution to this reel remains unavailable."
       ],
       "paidMedia": "not-run",
       "decision": "continue-without-editing-or-reposting"
