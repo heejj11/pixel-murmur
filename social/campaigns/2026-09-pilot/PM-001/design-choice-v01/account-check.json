@@ -18,5 +18,39 @@
   "contactInformationAdded": false,
   "paidActionTaken": false,
   "permissionQuestion": "Requested owner confirmation before converting to a professional Creator account; no selection or submission made.",
-  "caveat": "Green visible checks do not establish all recommendation eligibility. Personal account state does not prove the cause of low reach."
+  "caveat": "Green visible checks do not establish all recommendation eligibility. Personal account state does not prove the cause of low reach. The fields above preserve the pre-conversion audit; see conversionFollowUp for the current account type.",
+  "conversionFollowUp": {
+    "checkedAt": "2026-09-08T17:31:00+09:00",
+    "timePrecision": "minute; conversion and verification observed approximately 17:29–17:31 KST",
+    "ownerAuthorized": true,
+    "accountType": "professional-creator",
+    "category": "예술",
+    "displayCategoryOnProfile": false,
+    "contactInformationAdded": false,
+    "paidActionTaken": false,
+    "professionalConversionSubmitted": true,
+    "successEvidence": "Instagram displayed '이제 Instagram 크리에이터 계정을 사용할 수 있습니다'; the profile gained a professional dashboard link and account insights loaded successfully.",
+    "conversionNotice": "Instagram disclosed public profile/content, search-engine visibility, and automatic acceptance of pending follower requests. The brand account was already public. No separate search-engine privacy setting was inspected or changed.",
+    "pendingFollowerRequestsBeforeConversion": null,
+    "insightsUrl": "https://www.instagram.com/accounts/insights/?timeframe=30",
+    "initialInsights": {
+      "periodLabel": "최근 30일",
+      "views": 363,
+      "peopleWhoViewed": 291,
+      "displayedFollowerViewShare": 5.2,
+      "displayedNonFollowerViewShare": 94.8,
+      "interactions": 5,
+      "engagedAccounts": 6,
+      "profileActivity": 9,
+      "profileVisits": 9,
+      "followers": 1,
+      "caveats": [
+        "These are dashboard values immediately after conversion, not growth caused by conversion.",
+        "Interactions and engaged accounts are stored as separately displayed; no attempt was made to reconcile their different totals.",
+        "Dashboard post views differ from earlier public reel counts. Different surfaces, reporting windows, or update times may apply; the earlier observations remain unchanged."
+      ]
+    },
+    "apiConnectionCompletedInThisAction": false,
+    "contentPublishedInThisAction": false
+  }
 }

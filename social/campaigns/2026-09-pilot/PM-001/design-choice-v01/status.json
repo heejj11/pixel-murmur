@@ -1,0 +1,49 @@
+{
+  "campaignId": "2026-09-pilot-pm-001-design-choice-v01",
+  "objectId": "PM-001",
+  "state": "published-site-link-pending-admin-login",
+  "updatedAt": "2026-09-08T20:19:34+09:00",
+  "approval": "owner-requested-next-publication-after-quality-check",
+  "quality": "passed",
+  "publication": {
+    "instagram": {
+      "state": "published",
+      "format": "three-slide-still-carousel",
+      "url": "https://www.instagram.com/pixelmurmur/p/DdBjKhBkvkv/",
+      "publishedAt": "2026-09-08T20:11:38+09:00",
+      "publishedAtSource": "live-post-time-element",
+      "files": [
+        "renders/pm-001_choice_01_v01.png",
+        "renders/pm-001_choice_02_v01.png",
+        "renders/pm-001_choice_03_v01.png"
+      ],
+      "captionKey": "instagram",
+      "aiLabel": true,
+      "allThreeAltTextsEntered": true,
+      "cropMode": "original",
+      "liveQuality": "passed",
+      "audio": "not-applicable-still-carousel"
+    },
+    "x": { "state": "not-posted-for-this-creative", "note": "Existing X v04 video remains unchanged." }
+  },
+  "site": {
+    "objectUrl": "https://pixelmurmur.com/objects/pm-001",
+    "state": "pending-admin-login",
+    "requiredAction": "Append the new Instagram URL to PM-001's existing link array; also complete the pending X v04 URL from ../retest-v04/status.json. Preserve every existing link and the public state.",
+    "pendingInstagramUrls": ["https://www.instagram.com/pixelmurmur/p/DdBjKhBkvkv/"],
+    "blocker": "The in-app /admin/objects page shows its email login form. No site save or private DB access was attempted. Owner login is required.",
+    "savePerformed": false
+  },
+  "monitoring": {
+    "automationId": "v04",
+    "existingScheduleUpdated": true,
+    "savedFieldsVerifiedAt": "2026-09-08T20:19:34+09:00",
+    "nextCheckAt": "2026-09-08T20:45:00+09:00",
+    "nextCheckPurpose": "Approximately 33-minute initial observation only; not a performance verdict. Existing Instagram v04 24-hour and X early observations remain included.",
+    "futureExecutionVerified": false
+  },
+  "lastObservationId": "publication-qa-20260908-2019",
+  "preserveExistingPosts": true,
+  "platformNativeScheduleCreated": false,
+  "paidMediaAuthorized": false
+}

@@ -1,0 +1,37 @@
+{
+  "campaignId": "2026-09-pilot-pm-001-design-choice-v01",
+  "observations": [
+    {
+      "id": "publication-qa-20260908-2019",
+      "capturedAt": "2026-09-08T20:19:00+09:00",
+      "timePrecision": "minute",
+      "platform": "instagram",
+      "sourceUrl": "https://www.instagram.com/pixelmurmur/p/DdBjKhBkvkv/",
+      "source": "Logged-in live post and profile DOM, opened during publication QA and read again at 20:19; no page refresh or insights read at this checkpoint.",
+      "publishedAt": "2026-09-08T20:11:38+09:00",
+      "elapsedDescription": "approximately 7 minutes after publication; publication QA only",
+      "views": null,
+      "likes": 0,
+      "visibleAudienceComments": 0,
+      "saves": null,
+      "shares": null,
+      "reach": null,
+      "profileVisits": null,
+      "attributedFollows": null,
+      "accountFollowers": 1,
+      "accountFollowing": 9,
+      "accountPosts": 7,
+      "evidence": [
+        "Profile post count increased from 6 to 7 and contains this new permalink.",
+        "Live post shows the first-like prompt and no audience comment entries.",
+        "AI content label and prepared bilingual caption are visible."
+      ],
+      "caveats": [
+        "A non-refreshed QA view is not a fresh performance poll; do not infer zero current reach or engagement from unavailable metrics.",
+        "Self QA views are not evidence of external audience exposure.",
+        "This visual preference question is not a randomized A/B experiment or proof of demand."
+      ],
+      "decision": "publication-qa-only-too-early-to-assess"
+    }
+  ]
+}

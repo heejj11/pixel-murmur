@@ -39,8 +39,27 @@
     "generatedVariantCaveat": "Generative images preserve the intended product identity but are not pixel-identical controlled A/B test stimuli.",
     "finalCoverSource": "exec-5909f894-5b7d-411c-94fd-cb3e03caca20.png"
   },
-  "platformUploadChecked": false,
-  "published": false,
+  "platformUploadChecked": true,
+  "published": true,
   "scheduled": false,
-  "audio": "not-applicable-still-carousel"
+  "audio": "not-applicable-still-carousel",
+  "publicationReview": {
+    "recordedAt": "2026-09-08T20:19:34+09:00",
+    "url": "https://www.instagram.com/pixelmurmur/p/DdBjKhBkvkv/",
+    "sourceHashesReverified": true,
+    "initialCropIssue": "Instagram default square crop clipped title/footer; changed to Original portrait ratio before publication.",
+    "cropMode": "original",
+    "slideOrder": ["comparison", "A-with-screen", "B-without-screen"],
+    "allThreeUploadSlidesVisuallyChecked": true,
+    "allThreeLiveSlidesVisuallyChecked": true,
+    "profileGridThumbnailVisuallyChecked": true,
+    "titlesProductsLabelsAndDisclosureNotClipped": true,
+    "preparedCaptionUsedUnchanged": true,
+    "allThreeAltTextsEnteredAndVerified": true,
+    "aiLabelEnabledAndLiveVerified": true,
+    "singlePublishClick": true,
+    "shareSuccessDialogVerified": true,
+    "liveTimeElementUtc": "2026-09-08T11:11:38.000Z",
+    "earlierVisualReviewNote": "The initial visualReview describes pre-upload source QA; this publicationReview adds completed platform/live QA without rewriting that history."
+  }
 }

@@ -255,6 +255,57 @@
       ],
       "paidMedia": "not-run",
       "decision": "continue-without-editing-or-reposting"
+    },
+    {
+      "id": "creator-insights-check-20260908-1953",
+      "phase": "owner-requested-instagram-management-review",
+      "capturedAt": "2026-09-08T19:53:00+09:00",
+      "timePrecision": "minute; account and post insights read approximately 19:52–19:53 KST",
+      "elapsedSincePublicationSeconds": 83398,
+      "method": "logged-in-professional-account-and-post-insights-ui",
+      "accountSourceUrl": "https://www.instagram.com/accounts/insights/?timeframe=30",
+      "account": { "username": "pixelmurmur", "followers": 1, "following": null, "posts": null },
+      "accountInsights": {
+        "periodLabel": "최근 30일",
+        "views": 363,
+        "peopleWhoViewed": 291,
+        "nonFollowerViewSharePercent": 94.8,
+        "interactions": 5,
+        "profileVisits": 9
+      },
+      "posts": [
+        {
+          "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/",
+          "insightsSourceUrl": "https://www.instagram.com/insights/media/3980909121778849654/",
+          "objectId": "PM-001",
+          "version": "v04",
+          "views": 127,
+          "peopleWhoViewed": 109,
+          "peopleWhoViewedSourceLabel": "조회한 사람",
+          "followerViewSharePercent": 3.2,
+          "nonFollowerViewSharePercent": 96.8,
+          "likes": 2,
+          "comments": 0,
+          "saves": 0,
+          "shares": 0,
+          "engagedAccounts": 2,
+          "profileActivity": 0,
+          "followersAttributedToPost": 0,
+          "profileVisits": null,
+          "averageWatchTimeSeconds": null,
+          "retention": null
+        }
+      ],
+      "assessment": "The reel has reached viewers beyond followers, but displayed deeper responses remain weak: two likes and zero saves, shares, or attributed follows. This supports testing a more specific participation prompt; the small sample does not establish a cause, demand level, or early-drop-off diagnosis.",
+      "caveats": [
+        "Account recent-30-day content cards show 124 views for this reel, while the opened post-insights page shows 127. The surface/window discrepancy is preserved, not treated as lost views.",
+        "Watch time and retention were not shown in the inspected web panel and remain unknown.",
+        "The 20:45 KST checkpoint remains scheduled; this earlier owner-requested review does not replace it.",
+        "Owner inspection playback may contribute to counts. Historical unknown metrics remain unchanged."
+      ],
+      "externalChangesMade": false,
+      "paidMedia": "not-run",
+      "decision": "recommend-design-choice-content-without-changing-existing-reel"
     }
   ]
 }

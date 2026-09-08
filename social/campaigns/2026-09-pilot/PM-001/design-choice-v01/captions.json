@@ -7,10 +7,12 @@
   ],
   "publication": {
     "platform": "instagram",
-    "state": "prepared-not-scheduled",
+    "state": "published",
     "scheduledAt": null,
-    "url": null,
+    "url": "https://www.instagram.com/pixelmurmur/p/DdBjKhBkvkv/",
+    "publishedAt": "2026-09-08T20:11:38+09:00",
+    "publishedAtSource": "live-post-time-element",
     "existingXScheduleChanged": false,
-    "notes": "Preparation only. No post uploaded or published in this task. Do not replace the already-approved X v04 media with these files."
+    "notes": "Published at the owner's request after original-ratio upload QA. Prepared caption and all three alt texts used unchanged; AI label enabled. X v04 was already published separately and was not replaced."
   }
 }
