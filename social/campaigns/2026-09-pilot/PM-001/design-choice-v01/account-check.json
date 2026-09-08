@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-09-08T16:46:00+09:00",
+  "timePrecision": "minute; observed during approximately 16:44–16:46 KST",
+  "account": "pixelmurmur",
+  "method": "logged-in-instagram-settings-ui",
+  "accountStatusUrl": "https://www.instagram.com/settings/help/account_status/",
+  "accountTypeUrl": "https://www.instagram.com/accounts/account_type_and_tools/",
+  "visibleAccountStatusChecks": {
+    "removedContentAndMessages": "green-check",
+    "peopleUnder19Accessibility": "green-check",
+    "unavailableFeatures": "green-check"
+  },
+  "generalNonFollowerRecommendationEligibility": null,
+  "profileSuggestionsEnabled": true,
+  "accountTypeEvidence": "The account-type page offers '프로페셔널 계정으로 전환'; opening it shows Creator and Business choices, both unselected.",
+  "assessedCurrentType": "personal-inferred-from-professional-conversion-entry",
+  "professionalConversionSubmitted": false,
+  "contactInformationAdded": false,
+  "paidActionTaken": false,
+  "permissionQuestion": "Requested owner confirmation before converting to a professional Creator account; no selection or submission made.",
+  "caveat": "Green visible checks do not establish all recommendation eligibility. Personal account state does not prove the cause of low reach."
+}

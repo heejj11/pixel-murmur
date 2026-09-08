@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-09-08T16:49:41+09:00",
+  "files": [
+    {
+      "file": "pm-001_choice_01_v01.png",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 1577105,
+      "sha256": "69f106e30cffb694e7b6a8590c0276f3914fa1ea570828bc40334d3ec1fea2d8",
+      "decodedWithoutError": true
+    },
+    {
+      "file": "pm-001_choice_02_v01.png",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 1539261,
+      "sha256": "e680d52181a6ca6002a13589d3e57ebb51a1b882648626c2fe47011233552e76",
+      "decodedWithoutError": true
+    },
+    {
+      "file": "pm-001_choice_03_v01.png",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 1549291,
+      "sha256": "e1172a3bec0a2e6d6558520272683038998269b2f8e3c9a589bcbf8851c96a70",
+      "decodedWithoutError": true
+    }
+  ],
+  "consistentDimensions": true,
+  "visualReview": {
+    "koreanEnglishCopyLegible": true,
+    "bilingualConceptDisclosureOnEverySlide": true,
+    "footerAndTitlesInsideCanvas": true,
+    "productFullyVisible": true,
+    "coverPairEqualVisualScale": true,
+    "detailSlidesMatchingProductScaleAndPlacement": true,
+    "profileCrop": "Cover products moved inward in a second image-generation pass. Visual edge-margin assessment allows for a narrower centered 3:4 thumbnail; no actual crop render or Instagram upload preview has been tested.",
+    "size": "All outputs 1122 × 1402; portrait ratio is approximately 4:5, not claimed to be an exact 1080 × 1350 export.",
+    "generatedVariantCaveat": "Generative images preserve the intended product identity but are not pixel-identical controlled A/B test stimuli.",
+    "finalCoverSource": "exec-5909f894-5b7d-411c-94fd-cb3e03caca20.png"
+  },
+  "platformUploadChecked": false,
+  "published": false,
+  "scheduled": false,
+  "audio": "not-applicable-still-carousel"
+}
