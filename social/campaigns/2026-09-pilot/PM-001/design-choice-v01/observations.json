@@ -32,6 +32,47 @@
         "This visual preference question is not a randomized A/B experiment or proof of demand."
       ],
       "decision": "publication-qa-only-too-early-to-assess"
+    },
+    {
+      "id": "carousel-initial-check-20260908-2048",
+      "capturedAt": "2026-09-08T20:48:00+09:00",
+      "timePrecision": "minute; profile separately read around 20:49 KST",
+      "platform": "instagram",
+      "phase": "initial-observation-not-performance-verdict",
+      "sourceUrl": "https://www.instagram.com/pixelmurmur/p/DdBjKhBkvkv/",
+      "insightsSourceUrl": "https://www.instagram.com/insights/media/3981618199854774575/",
+      "source": "Freshly opened logged-in post, then its View insights button; separately opened profile.",
+      "publishedAt": "2026-09-08T20:11:38+09:00",
+      "elapsedSincePublicationSeconds": 2182,
+      "elapsedDescription": "approximately 36 minutes after publication",
+      "views": 1,
+      "peopleWhoViewed": null,
+      "peopleWhoViewedSourceLabel": "조회한 사람 --",
+      "followerViewSharePercent": 100,
+      "nonFollowerViewSharePercent": 0,
+      "homeViews": 1,
+      "likes": 0,
+      "visibleAudienceComments": 0,
+      "saves": 0,
+      "shares": 0,
+      "reach": null,
+      "postInteractions": 0,
+      "interactionsOverview": null,
+      "engagedAccounts": null,
+      "profileActivity": 0,
+      "profileVisits": 0,
+      "externalLinkClicks": 0,
+      "businessAddressClicks": 0,
+      "attributedFollows": 0,
+      "accountFollowers": 1,
+      "accountFollowing": 9,
+      "accountPosts": 7,
+      "caveats": [
+        "The displayed -- for people who viewed, overview interactions, and engaged accounts is missing data, not zero.",
+        "A single view and approximately 36 minutes are insufficient for a success/failure verdict; owner inspection and reporting lag may affect metrics.",
+        "This is a design-preference question, not a randomized A/B experiment or proof of demand."
+      ],
+      "decision": "continue-to-24h-check-without-editing-or-reposting"
     }
   ]
 }

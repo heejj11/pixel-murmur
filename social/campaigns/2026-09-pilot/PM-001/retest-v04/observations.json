@@ -33,6 +33,40 @@
       "caveats": ["Owner-account playback occurred during QA; any subsequent views may include owner inspection."],
       "paidMedia": "not-run",
       "decision": "continue-to-scheduled-2045-check-without-reposting"
+    },
+    {
+      "id": "x-early-check-20260908-2048",
+      "platform": "x",
+      "phase": "scheduled-early-check",
+      "capturedAt": "2026-09-08T20:48:00+09:00",
+      "timePrecision": "minute; post and profile inspected during 20:48–20:49 KST",
+      "elapsedSincePublicationSeconds": 7047,
+      "scheduledAt": "2026-09-08T20:45:00+09:00",
+      "triggeredAt": "2026-09-08T20:46:06.350+09:00",
+      "accountSourceUrl": "https://x.com/pixelmurmur",
+      "account": { "username": "pixelmurmur", "followers": 0, "following": 6, "posts": 6 },
+      "posts": [
+        {
+          "url": "https://x.com/pixelmurmur/status/2097261297721319823",
+          "objectId": "PM-001",
+          "version": "v04",
+          "views": 2,
+          "viewsSource": "post-detail-page",
+          "subsequentProfileViews": 3,
+          "subsequentProfileViewsAt": "2026-09-08T20:49:00+09:00",
+          "likes": 0,
+          "replies": 0,
+          "reposts": 0,
+          "bookmarks": 0,
+          "reach": null,
+          "profileVisits": null,
+          "linkClicks": null
+        }
+      ],
+      "assessment": "Two displayed views on the original post and three on the subsequent profile card, without direct engagement or account-follower growth. The source/timing difference is not evidence of new external reach.",
+      "caveats": ["Owner inspection autoplay occurred; the 2-to-3 count difference can include that inspection or reporting lag.", "Approximately 1 hour 57 minutes is too early and too small a sample for a creative-performance verdict."],
+      "paidMedia": "not-run",
+      "decision": "continue-to-24h-check-without-reposting"
     }
   ],
   "observations": [
@@ -306,6 +340,46 @@
       "externalChangesMade": false,
       "paidMedia": "not-run",
       "decision": "recommend-design-choice-content-without-changing-existing-reel"
+    },
+    {
+      "id": "instagram-24h-check-20260908-2047",
+      "phase": "scheduled-24h-check",
+      "capturedAt": "2026-09-08T20:47:00+09:00",
+      "timePrecision": "minute; profile separately read at approximately 20:49 KST",
+      "scheduledAt": "2026-09-08T20:45:00+09:00",
+      "triggeredAt": "2026-09-08T20:46:06.350+09:00",
+      "elapsedSincePublicationSeconds": 86638,
+      "method": "freshly-opened-logged-in-post-insights-ui",
+      "accountSourceUrl": "https://www.instagram.com/pixelmurmur/",
+      "account": { "username": "pixelmurmur", "followers": 1, "following": 9, "posts": 7 },
+      "posts": [
+        {
+          "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/",
+          "insightsSourceUrl": "https://www.instagram.com/insights/media/3980909121778849654/",
+          "objectId": "PM-001",
+          "version": "v04",
+          "views": 127,
+          "peopleWhoViewed": 109,
+          "peopleWhoViewedSourceLabel": "조회한 사람",
+          "followerViewSharePercent": 3.2,
+          "nonFollowerViewSharePercent": 96.8,
+          "likes": 2,
+          "comments": 0,
+          "saves": 0,
+          "shares": 0,
+          "engagedAccounts": 2,
+          "profileActivity": 0,
+          "followersAttributedToPost": 0,
+          "profileVisits": null,
+          "averageWatchTimeSeconds": null,
+          "retention": null
+        }
+      ],
+      "comparison": { "observationId": "creator-insights-check-20260908-1953", "viewsChange": 0, "likesChange": 0, "commentsChange": 0, "savesChange": 0, "sharesChange": 0, "attributedFollowsChange": 0 },
+      "assessment": "Displayed post insights remain unchanged at approximately 24 hours 4 minutes. No new meaningful reaction or distribution growth is observed; preserve the reel and proceed to the 72-hour checkpoint.",
+      "caveats": ["Small cumulative samples do not establish product demand or a suppression/retention cause.", "Account aggregate insights were not reread; existing historical aggregates remain unchanged.", "A player was loaded but playback was not initiated on the Instagram insights page."],
+      "paidMedia": "not-run",
+      "decision": "continue-to-72h-check-without-editing-or-reposting"
     }
   ]
 }

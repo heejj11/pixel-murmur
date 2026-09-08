@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-001-design-choice-v01",
   "objectId": "PM-001",
   "state": "published-site-link-pending-admin-login",
-  "updatedAt": "2026-09-08T20:19:34+09:00",
+  "updatedAt": "2026-09-08T20:50:48+09:00",
   "approval": "owner-requested-next-publication-after-quality-check",
   "quality": "passed",
   "publication": {
@@ -32,17 +32,22 @@
     "requiredAction": "Append the new Instagram URL to PM-001's existing link array; also complete the pending X v04 URL from ../retest-v04/status.json. Preserve every existing link and the public state.",
     "pendingInstagramUrls": ["https://www.instagram.com/pixelmurmur/p/DdBjKhBkvkv/"],
     "blocker": "The in-app /admin/objects page shows its email login form. No site save or private DB access was attempted. Owner login is required.",
-    "savePerformed": false
+    "savePerformed": false,
+    "lastSessionCheckAt": "2026-09-08T20:49:00+09:00",
+    "knownLoginBlockerNotNotifiedAgain": true
   },
   "monitoring": {
     "automationId": "v04",
     "existingScheduleUpdated": true,
-    "savedFieldsVerifiedAt": "2026-09-08T20:19:34+09:00",
-    "nextCheckAt": "2026-09-08T20:45:00+09:00",
-    "nextCheckPurpose": "Approximately 33-minute initial observation only; not a performance verdict. Existing Instagram v04 24-hour and X early observations remain included.",
+    "savedFieldsVerifiedAt": "2026-09-08T20:50:48+09:00",
+    "initialCheckCompletedAt": "2026-09-08T20:48:00+09:00",
+    "nextCheckAt": "2026-09-09T20:15:00+09:00",
+    "nextCheckPurpose": "Carousel approximately 24-hour observation; the same automation currently targets X 24h at 18:50 KST and will be updated for this slot after that run.",
+    "nextCheckState": "planned-reschedule-after-x-24h-run",
+    "currentlyScheduledAutomationAt": "2026-09-09T18:50:00+09:00",
     "futureExecutionVerified": false
   },
-  "lastObservationId": "publication-qa-20260908-2019",
+  "lastObservationId": "carousel-initial-check-20260908-2048",
   "preserveExistingPosts": true,
   "platformNativeScheduleCreated": false,
   "paidMediaAuthorized": false

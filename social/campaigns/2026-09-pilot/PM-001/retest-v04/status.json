@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-001-retest-v04",
   "objectId": "PM-001",
   "state": "both-published-site-x-link-pending-login",
-  "updatedAt": "2026-09-08T19:53:00+09:00",
+  "updatedAt": "2026-09-08T20:50:48+09:00",
   "quality": "passed",
   "requestedByOwner": true,
   "approval": "organic-publication-authorized-after-quality-check",
@@ -27,7 +27,9 @@
     "futureExecutionVerified": false,
     "firstRemainingSlotObservedAtUtc": "2026-09-08T09:45:38.136Z",
     "firstRemainingSlotCompleted": true,
-    "futureExecutionNote": "The 18:45 KST trigger was observed and X publication completed after upload/QA at 18:50:33 KST. The 20:45 KST run has not occurred yet.",
+    "futureExecutionNote": "Both Sep 8 remaining triggers were observed. The 20:45 run arrived at 20:46:06 KST and inspections completed around 20:49. The new Sep 9 follow-up is saved but has not executed.",
+    "secondRemainingSlotObservedAtUtc": "2026-09-08T11:46:06.350Z",
+    "secondRemainingSlotCompleted": true,
     "noFreshSocialObservation": true
   },
   "publication": {
@@ -79,8 +81,9 @@
     "pendingXUrls": [
       "https://x.com/pixelmurmur/status/2097261297721319823"
     ],
-    "lastLinkAttemptAt": "2026-09-08T18:52:00+09:00",
-    "blocker": "The in-app /admin/objects page shows the email login form. No existing Studio Desk window was identifiable in the current Chrome window inventory. No login request, DB-dashboard access, or site save was attempted; owner login is required."
+    "lastLinkAttemptAt": "2026-09-08T20:49:00+09:00",
+    "blocker": "The in-app /admin/objects page still shows the email login form. No login request, DB-dashboard access, or site save was attempted. Owner login is required and this known blocker was not notified again.",
+    "otherPendingCreativeStatus": "../design-choice-v01/status.json"
   },
   "platformNativeSchedulesCreated": false,
   "supersededNativeSchedule": {
@@ -93,12 +96,15 @@
     { "at": "2026-09-07T21:45:00+09:00", "action": "instagram-1h-check", "state": "missed-no-historical-measurement", "reviewedAt": "2026-09-08T03:48:00+09:00" },
     { "at": "2026-09-08T00:45:00+09:00", "action": "instagram-4h-check", "state": "checked-late", "observedAt": "2026-09-08T03:48:00+09:00", "observationId": "delayed-initial-check-20260908-0348" },
     { "at": "2026-09-08T18:45:00+09:00", "action": "x-publication", "state": "completed", "completedAt": "2026-09-08T18:50:33+09:00", "url": "https://x.com/pixelmurmur/status/2097261297721319823" },
-    { "at": "2026-09-08T20:45:00+09:00", "action": "instagram-24h-and-x-early-check" }
+    { "at": "2026-09-08T20:45:00+09:00", "action": "instagram-24h-and-x-early-check", "state": "completed", "completedAt": "2026-09-08T20:49:00+09:00", "observationIds": ["instagram-24h-check-20260908-2047", "x-early-check-20260908-2048"] },
+    { "at": "2026-09-09T18:50:00+09:00", "action": "x-24h-check", "state": "scheduled-next" },
+    { "at": "2026-09-09T20:15:00+09:00", "action": "design-choice-carousel-24h-check", "state": "planned-reschedule-after-next-run" },
+    { "at": "2026-09-10T20:45:00+09:00", "action": "instagram-v04-72h-check", "state": "planned-reschedule-after-carousel-check" }
   ],
   "lastObservation": {
-    "id": "creator-insights-check-20260908-1953",
-    "capturedAt": "2026-09-08T19:53:00+09:00",
-    "elapsedDescription": "approximately 23 hours 10 minutes after Instagram publication",
+    "id": "instagram-24h-check-20260908-2047",
+    "capturedAt": "2026-09-08T20:47:00+09:00",
+    "elapsedDescription": "approximately 24 hours 4 minutes after Instagram publication",
     "instagramViews": 127,
     "instagramLikes": 2,
     "visibleAudienceComments": 0,
@@ -109,19 +115,29 @@
     "saves": 0,
     "shares": 0,
     "insightsSourceUrl": "https://www.instagram.com/insights/media/3980909121778849654/",
-    "decision": "continue"
+    "decision": "continue-to-72h-check-without-editing-or-reposting"
   },
   "preserveExistingPosts": true,
   "lastXObservation": {
-    "id": "x-publication-qa-20260908-1851",
-    "capturedAt": "2026-09-08T18:51:00+09:00",
-    "views": null,
+    "id": "x-early-check-20260908-2048",
+    "capturedAt": "2026-09-08T20:48:00+09:00",
+    "views": 2,
+    "viewsSource": "post-detail-page",
+    "subsequentProfileViews": 3,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "bookmarks": 0,
     "accountFollowers": 0,
-    "decision": "publication-qa-only-too-early-to-assess"
+    "decision": "continue-to-24h-check-without-reposting"
+  },
+  "followUpSchedule": {
+    "automationId": "v04",
+    "updatedAndSavedFieldsVerifiedAt": "2026-09-08T20:50:48+09:00",
+    "nextAt": "2026-09-09T18:50:00+09:00",
+    "nextAtUtc": "2026-09-09T09:50:00Z",
+    "futureExecutionVerified": false,
+    "reschedulingPolicy": "One next checkpoint is active at a time. After X 24h, update the same automation for carousel 24h; then Instagram v04 72h, then delete it."
   },
   "paidMediaAuthorized": false,
   "notes": [
