@@ -67,6 +67,33 @@
       "caveats": ["Owner inspection autoplay occurred; the 2-to-3 count difference can include that inspection or reporting lag.", "Approximately 1 hour 57 minutes is too early and too small a sample for a creative-performance verdict."],
       "paidMedia": "not-run",
       "decision": "continue-to-24h-check-without-reposting"
+    },
+    {
+      "id": "x-owner-requested-check-20260909-1017",
+      "platform": "x",
+      "phase": "owner-requested-trend-review",
+      "capturedAt": "2026-09-09T10:17:00+09:00",
+      "timePrecision": "minute; inspection window approximately 10:16–10:17 KST",
+      "sourceUrl": "https://x.com/pixelmurmur/status/2097261297721319823",
+      "posts": [{ "url": "https://x.com/pixelmurmur/status/2097261297721319823", "objectId": "PM-001", "version": "v04", "views": 3, "likes": 0, "replies": 0, "reposts": 0, "bookmarks": 0, "reach": null, "profileVisits": null, "linkClicks": null }],
+      "comparison": { "observationId": "x-early-check-20260908-2048", "previousPostDetailViews": 2, "previousSubsequentProfileViews": 3, "currentPostDetailViews": 3, "directEngagementChange": 0 },
+      "assessment": "Current post-detail views match the previous profile-card count of three. There is no observed meaningful growth or direct engagement; do not treat the earlier source difference as new audience acquisition.",
+      "caveats": ["Owner inspection autoplay may contribute to view counts.", "The account profile was not reread, so no new follower count is asserted."],
+      "decision": "no-publication-or-account-change-from-this-read-only-review"
+    },
+    {
+      "id": "x-owner-requested-check-20260909-1446",
+      "platform": "x",
+      "phase": "owner-requested-trend-review",
+      "capturedAt": "2026-09-09T14:46:00+09:00",
+      "timePrecision": "minute; freshly opened UI during approximately 14:45–14:46 KST",
+      "sourceUrl": "https://x.com/pixelmurmur/status/2097261297721319823",
+      "posts": [{ "url": "https://x.com/pixelmurmur/status/2097261297721319823", "objectId": "PM-001", "version": "v04", "views": 4, "likes": 0, "replies": 0, "reposts": 0, "bookmarks": 0, "reach": null, "profileVisits": null, "linkClicks": null }],
+      "comparison": { "observationId": "x-owner-requested-check-20260909-1017", "viewsChange": 1, "directEngagementChange": 0 },
+      "assessment": "A single extra displayed view without engagement is not evidence of meaningful distribution growth. Owner inspection autoplay may be included.",
+      "accountProfileRechecked": false,
+      "externalChangesMade": false,
+      "decision": "no-meaningful-new-response"
     }
   ],
   "observations": [
@@ -380,6 +407,31 @@
       "caveats": ["Small cumulative samples do not establish product demand or a suppression/retention cause.", "Account aggregate insights were not reread; existing historical aggregates remain unchanged.", "A player was loaded but playback was not initiated on the Instagram insights page."],
       "paidMedia": "not-run",
       "decision": "continue-to-72h-check-without-editing-or-reposting"
+    },
+    {
+      "id": "instagram-owner-requested-check-20260909-1017",
+      "phase": "owner-requested-trend-review",
+      "capturedAt": "2026-09-09T10:17:00+09:00",
+      "timePrecision": "minute; inspection window approximately 10:16–10:17 KST",
+      "method": "freshly-opened-logged-in-post-insights-ui",
+      "posts": [{ "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/", "insightsSourceUrl": "https://www.instagram.com/insights/media/3980909121778849654/", "objectId": "PM-001", "version": "v04", "views": 127, "peopleWhoViewed": 109, "peopleWhoViewedSourceLabel": "조회한 사람", "followerViewSharePercent": 3.2, "nonFollowerViewSharePercent": 96.8, "likes": 2, "comments": 0, "saves": 0, "shares": 0, "engagedAccounts": 2, "profileActivity": 0, "followersAttributedToPost": 0, "profileVisits": null, "averageWatchTimeSeconds": null, "retention": null }],
+      "comparison": { "observationId": "instagram-24h-check-20260908-2047", "viewsChange": 0, "peopleWhoViewedChange": 0, "likesChange": 0, "commentsChange": 0, "savesChange": 0, "sharesChange": 0, "attributedFollowsChange": 0 },
+      "assessment": "Displayed reel metrics remain unchanged overnight. Exposure beyond followers exists historically, but no further expansion or deeper engagement is observed. This does not establish a retention cause, algorithmic restriction, or absence of product demand.",
+      "caveats": ["Owner inspection playback may contribute to counts.", "Account-wide insights and follower counts were not reread.", "Existing scheduled checkpoints remain unchanged; this review does not replace them."],
+      "decision": "recommend-a-different-work-or-process-format-rather-than-another-toast-copy-only-repost"
+    },
+    {
+      "id": "instagram-owner-requested-check-20260909-1446",
+      "phase": "owner-requested-trend-review",
+      "capturedAt": "2026-09-09T14:46:00+09:00",
+      "timePrecision": "minute; freshly opened UI during approximately 14:45–14:46 KST",
+      "posts": [{ "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/", "insightsSourceUrl": "https://www.instagram.com/insights/media/3980909121778849654/", "objectId": "PM-001", "version": "v04", "views": 127, "peopleWhoViewed": 109, "nonFollowerViewSharePercent": 96.8, "likes": 2, "comments": 0, "saves": 0, "shares": 0, "engagedAccounts": 2, "profileActivity": 0, "followersAttributedToPost": 0, "profileVisits": null, "averageWatchTimeSeconds": null, "retention": null }],
+      "comparison": { "observationId": "instagram-owner-requested-check-20260909-1017", "viewsChange": 0, "likesChange": 0, "commentsChange": 0, "savesChange": 0, "sharesChange": 0, "attributedFollowsChange": 0 },
+      "assessment": "No change since the morning or prior evening. Repeated copy/cover refinements have not yet produced observed growth; more toast-only variations are not justified by these observations. No causal attribution or product-demand verdict is made.",
+      "accountProfileRechecked": false,
+      "externalChangesMade": false,
+      "scheduledCheckpointsChanged": false,
+      "decision": "recommend-pausing-further-toast-variants-while-preserving-existing-posts"
     }
   ]
 }

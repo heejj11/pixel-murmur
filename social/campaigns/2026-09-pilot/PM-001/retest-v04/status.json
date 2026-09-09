@@ -2,7 +2,14 @@
   "campaignId": "2026-09-pilot-pm-001-retest-v04",
   "objectId": "PM-001",
   "state": "both-published-site-x-link-pending-login",
-  "updatedAt": "2026-09-08T20:50:48+09:00",
+  "updatedAt": "2026-09-09T15:03:00+09:00",
+  "additionalPublicationHold": {
+    "state": "owner-approved-hold",
+    "recordedAt": "2026-09-09T15:03:00+09:00",
+    "scope": "Further PM-001 creative variants, reposts and follow-up publication; existing posts and observation checkpoints remain unchanged.",
+    "reason": "Audit recommendation eligibility and discovery before further creative work. Instagram is eligible; X author-search absence remains unexplained.",
+    "resumeCondition": "Agree the next object, format and hypothesis with the owner; audit completion alone does not resume publication."
+  },
   "quality": "passed",
   "requestedByOwner": true,
   "approval": "organic-publication-authorized-after-quality-check",

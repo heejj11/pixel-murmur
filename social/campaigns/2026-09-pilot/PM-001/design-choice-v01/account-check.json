@@ -52,5 +52,59 @@
     },
     "apiConnectionCompletedInThisAction": false,
     "contentPublishedInThisAction": false
+  },
+  "discoveryAuditFollowUp": {
+    "checkedAt": "2026-09-09T15:03:00+09:00",
+    "timePrecision": "minute; Instagram UI observations approximately 14:51–14:57 KST, X settings checks through 15:03 KST",
+    "method": "logged-in-platform-settings-and-insights-ui",
+    "report": "../../../../DISCOVERY-AUDIT-2026-09-09.md",
+    "generalNonFollowerRecommendationEligibility": true,
+    "eligibilityEvidence": [
+      "계정 도달 범위에 제한이 없습니다",
+      "회원님을 팔로우하지 않는 사람: 탐색 탭, 릴스, 피드와 같은 위치에 회원님의 계정과 콘텐츠가 추천될 수 있습니다."
+    ],
+    "eligibilityUrl": "https://www.instagram.com/settings/help/account_status/limits_to_your_reach",
+    "visibleAccountStatusChecks": {
+      "removedContentAndMessages": "green-check",
+      "reachLimits": "green-check",
+      "unavailableFeatures": "green-check"
+    },
+    "privateAccount": false,
+    "searchEngineVisibilityEnabled": true,
+    "profileSuggestionsEnabled": true,
+    "storySharingEnabled": true,
+    "postsAndReelsToStoriesEnabled": true,
+    "repostingEnabled": true,
+    "websiteEmbeddingEnabled": false,
+    "accountInsights": {
+      "checkedAt": "2026-09-09T14:56:00+09:00",
+      "periodLabel": "최근 30일",
+      "views": 363,
+      "peopleWhoViewed": 291,
+      "displayedNonFollowerViewShare": 94.8,
+      "interactions": 5,
+      "engagedAccounts": 6,
+      "profileActivity": 9,
+      "profileVisits": 9,
+      "followers": 1,
+      "caveat": "Displayed 30-day totals are unchanged from Sep 8. Different reporting surfaces and update times must not be merged; interactions and engaged accounts retain their displayed values."
+    },
+    "xDiscovery": {
+      "authorLatestQuery": "from:pixelmurmur",
+      "authorLatestQueryReturnedPosts": false,
+      "peopleSearchQuery": "pixelmurmur",
+      "peopleSearchReturnedAccount": true,
+      "privatePosts": false,
+      "selfMarkedSensitiveMedia": false,
+      "viewerSearchHidesSensitiveContent": true,
+      "viewerSearchExcludesBlockedAndMuted": true,
+      "emailConfirmed": null,
+      "emailCheckBlocker": "Account information requires password reauthentication. No password entered or reset requested; owner handoff left open.",
+      "causeConfirmed": false
+    },
+    "settingsChanged": false,
+    "contentPublishedEditedOrDeleted": false,
+    "paidActionTaken": false,
+    "caveat": "Recommendation eligibility does not guarantee distribution. A single X author-search result is not proof of a platform penalty. Historical pre-conversion fields above are preserved."
   }
 }
