@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-001-retest-v04",
   "objectId": "PM-001",
   "state": "both-published-site-x-link-pending-login",
-  "updatedAt": "2026-09-09T15:03:00+09:00",
+  "updatedAt": "2026-09-09T18:55:05+09:00",
   "additionalPublicationHold": {
     "state": "owner-approved-hold",
     "recordedAt": "2026-09-09T15:03:00+09:00",
@@ -34,7 +34,7 @@
     "futureExecutionVerified": false,
     "firstRemainingSlotObservedAtUtc": "2026-09-08T09:45:38.136Z",
     "firstRemainingSlotCompleted": true,
-    "futureExecutionNote": "Both Sep 8 remaining triggers were observed. The 20:45 run arrived at 20:46:06 KST and inspections completed around 20:49. The new Sep 9 follow-up is saved but has not executed.",
+    "futureExecutionNote": "Both Sep 8 remaining triggers and the Sep 9 X checkpoint trigger were observed. Sep 9 arrived at 18:51:04 KST and inspection completed during 18:52. Remaining carousel and Instagram 72h executions are not yet verified.",
     "secondRemainingSlotObservedAtUtc": "2026-09-08T11:46:06.350Z",
     "secondRemainingSlotCompleted": true,
     "noFreshSocialObservation": true
@@ -88,7 +88,7 @@
     "pendingXUrls": [
       "https://x.com/pixelmurmur/status/2097261297721319823"
     ],
-    "lastLinkAttemptAt": "2026-09-08T20:49:00+09:00",
+    "lastLinkAttemptAt": "2026-09-09T18:52:00+09:00",
     "blocker": "The in-app /admin/objects page still shows the email login form. No login request, DB-dashboard access, or site save was attempted. Owner login is required and this known blocker was not notified again.",
     "otherPendingCreativeStatus": "../design-choice-v01/status.json"
   },
@@ -104,8 +104,8 @@
     { "at": "2026-09-08T00:45:00+09:00", "action": "instagram-4h-check", "state": "checked-late", "observedAt": "2026-09-08T03:48:00+09:00", "observationId": "delayed-initial-check-20260908-0348" },
     { "at": "2026-09-08T18:45:00+09:00", "action": "x-publication", "state": "completed", "completedAt": "2026-09-08T18:50:33+09:00", "url": "https://x.com/pixelmurmur/status/2097261297721319823" },
     { "at": "2026-09-08T20:45:00+09:00", "action": "instagram-24h-and-x-early-check", "state": "completed", "completedAt": "2026-09-08T20:49:00+09:00", "observationIds": ["instagram-24h-check-20260908-2047", "x-early-check-20260908-2048"] },
-    { "at": "2026-09-09T18:50:00+09:00", "action": "x-24h-check", "state": "scheduled-next" },
-    { "at": "2026-09-09T20:15:00+09:00", "action": "design-choice-carousel-24h-check", "state": "planned-reschedule-after-next-run" },
+    { "at": "2026-09-09T18:50:00+09:00", "action": "x-24h-check", "state": "completed", "triggeredAt": "2026-09-09T18:51:04.330+09:00", "completedAt": "2026-09-09T18:52:00+09:00", "observationId": "x-24h-check-20260909-1852" },
+    { "at": "2026-09-09T20:15:00+09:00", "action": "design-choice-carousel-24h-check", "state": "scheduled-next" },
     { "at": "2026-09-10T20:45:00+09:00", "action": "instagram-v04-72h-check", "state": "planned-reschedule-after-carousel-check" }
   ],
   "lastObservation": {
@@ -126,25 +126,27 @@
   },
   "preserveExistingPosts": true,
   "lastXObservation": {
-    "id": "x-early-check-20260908-2048",
-    "capturedAt": "2026-09-08T20:48:00+09:00",
-    "views": 2,
+    "id": "x-24h-check-20260909-1852",
+    "capturedAt": "2026-09-09T18:52:00+09:00",
+    "views": 5,
     "viewsSource": "post-detail-page",
-    "subsequentProfileViews": 3,
+    "subsequentProfileViews": 5,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "bookmarks": 0,
     "accountFollowers": 0,
-    "decision": "continue-to-24h-check-without-reposting"
+    "decision": "keep-additional-publication-on-hold-and-continue-remaining-observation-checkpoints"
   },
   "followUpSchedule": {
     "automationId": "v04",
-    "updatedAndSavedFieldsVerifiedAt": "2026-09-08T20:50:48+09:00",
-    "nextAt": "2026-09-09T18:50:00+09:00",
-    "nextAtUtc": "2026-09-09T09:50:00Z",
+    "updatedAndSavedFieldsVerifiedAt": "2026-09-09T18:55:05+09:00",
+    "previousTriggerObservedAtUtc": "2026-09-09T09:51:04.330Z",
+    "previousCheckpointCompletedAt": "2026-09-09T18:52:00+09:00",
+    "nextAt": "2026-09-09T20:15:00+09:00",
+    "nextAtUtc": "2026-09-09T11:15:00Z",
     "futureExecutionVerified": false,
-    "reschedulingPolicy": "One next checkpoint is active at a time. After X 24h, update the same automation for carousel 24h; then Instagram v04 72h, then delete it."
+    "reschedulingPolicy": "One next checkpoint is active at a time. X 24h is complete. Carousel 24h is scheduled next; then update the same automation for Instagram v04 72h and delete it after completion."
   },
   "paidMediaAuthorized": false,
   "notes": [

@@ -94,6 +94,28 @@
       "accountProfileRechecked": false,
       "externalChangesMade": false,
       "decision": "no-meaningful-new-response"
+    },
+    {
+      "id": "x-24h-check-20260909-1852",
+      "platform": "x",
+      "phase": "scheduled-24h-check",
+      "capturedAt": "2026-09-09T18:52:00+09:00",
+      "timePrecision": "minute; post detail, profile and admin session checked during 18:52 KST",
+      "scheduledAt": "2026-09-09T18:50:00+09:00",
+      "triggeredAt": "2026-09-09T18:51:04.330+09:00",
+      "elapsedSincePublicationSeconds": 86487,
+      "elapsedDescription": "approximately 24 hours 1 minute after publication; minute-precision observation",
+      "method": "freshly-opened-logged-in-post-detail-and-profile-ui",
+      "accountSourceUrl": "https://x.com/pixelmurmur",
+      "account": { "username": "pixelmurmur", "followers": 0, "following": 6, "posts": 6 },
+      "posts": [{ "url": "https://x.com/pixelmurmur/status/2097261297721319823", "objectId": "PM-001", "version": "v04", "views": 5, "viewsSource": "post-detail-page", "subsequentProfileViews": 5, "likes": 0, "replies": 0, "reposts": 0, "bookmarks": 0, "reach": null, "profileVisits": null, "linkClicks": null, "followersAttributedToPost": null, "averageWatchTimeSeconds": null, "retention": null }],
+      "comparison": { "observationId": "x-owner-requested-check-20260909-1446", "viewsChange": 1, "directEngagementChange": 0 },
+      "assessment": "Five displayed views and zero direct responses at approximately 24 hours. The one-view increase since 14:46 does not establish meaningful distribution growth, new external audience or product demand. Account followers remain zero.",
+      "caveats": ["Owner-account autoplay occurred on the post detail; counts may include inspection and reporting lag.", "Unique reach, profile visits, link clicks, watch time and retention were not exposed in these surfaces and remain null.", "Only the due X checkpoint was measured; Instagram checkpoints were not measured early or backfilled."],
+      "siteSession": { "url": "https://pixelmurmur.com/admin/objects", "checkedAt": "2026-09-09T18:52:00+09:00", "state": "email-login-form", "savePerformed": false, "knownLoginBlockerNotNotifiedAgain": true },
+      "paidMedia": "not-run",
+      "externalChangesMade": false,
+      "decision": "keep-additional-publication-on-hold-and-continue-remaining-observation-checkpoints"
     }
   ],
   "observations": [

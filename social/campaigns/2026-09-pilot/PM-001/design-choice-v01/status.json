@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-001-design-choice-v01",
   "objectId": "PM-001",
   "state": "published-site-link-pending-admin-login",
-  "updatedAt": "2026-09-09T15:03:00+09:00",
+  "updatedAt": "2026-09-09T18:55:05+09:00",
   "additionalPublicationHold": {
     "state": "owner-approved-hold",
     "recordedAt": "2026-09-09T15:03:00+09:00",
@@ -40,18 +40,18 @@
     "pendingInstagramUrls": ["https://www.instagram.com/pixelmurmur/p/DdBjKhBkvkv/"],
     "blocker": "The in-app /admin/objects page shows its email login form. No site save or private DB access was attempted. Owner login is required.",
     "savePerformed": false,
-    "lastSessionCheckAt": "2026-09-08T20:49:00+09:00",
+    "lastSessionCheckAt": "2026-09-09T18:52:00+09:00",
     "knownLoginBlockerNotNotifiedAgain": true
   },
   "monitoring": {
     "automationId": "v04",
     "existingScheduleUpdated": true,
-    "savedFieldsVerifiedAt": "2026-09-08T20:50:48+09:00",
+    "savedFieldsVerifiedAt": "2026-09-09T18:55:05+09:00",
     "initialCheckCompletedAt": "2026-09-08T20:48:00+09:00",
     "nextCheckAt": "2026-09-09T20:15:00+09:00",
-    "nextCheckPurpose": "Carousel approximately 24-hour observation; the same automation currently targets X 24h at 18:50 KST and will be updated for this slot after that run.",
-    "nextCheckState": "planned-reschedule-after-x-24h-run",
-    "currentlyScheduledAutomationAt": "2026-09-09T18:50:00+09:00",
+    "nextCheckPurpose": "Carousel approximately 24-hour observation. X 24h completed at 18:52 KST; the same automation now targets this carousel slot, then Instagram v04 72h.",
+    "nextCheckState": "scheduled-next",
+    "currentlyScheduledAutomationAt": "2026-09-09T20:15:00+09:00",
     "futureExecutionVerified": false
   },
   "lastObservationId": "carousel-initial-check-20260908-2048",
