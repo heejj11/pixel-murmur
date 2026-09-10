@@ -1,7 +1,7 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-10T11:03:20+09:00",
+  "updatedAt": "2026-09-10T12:04:22+09:00",
   "state": "published-and-site-linked-monitoring",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
@@ -90,19 +90,22 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-10T11:06:54+09:00",
-    "nextCheckAt": "2026-09-10T12:00:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-10T12:04:22+09:00",
+    "nextCheckAt": "2026-09-10T15:00:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
         "id": "pm013-1h",
         "at": "2026-09-10T12:00:00+09:00",
-        "state": "scheduled-next"
+        "state": "completed",
+        "triggeredAt": "2026-09-10T12:01:17.516+09:00",
+        "completedAt": "2026-09-10T12:02:00+09:00",
+        "observationId": "pm013-1h-check-20260910-1202"
       },
       {
         "id": "pm013-4h",
         "at": "2026-09-10T15:00:00+09:00",
-        "state": "queued"
+        "state": "scheduled-next"
       },
       {
         "id": "pm001-v04-72h",
@@ -130,7 +133,19 @@
         "at": "2026-09-17T11:00:00+09:00",
         "state": "queued"
       }
-    ]
+    ],
+    "lastTriggerObservedAt": "2026-09-10T12:01:17.516+09:00"
   },
-  "lastObservationId": "pm013-launch-qa-20260910"
+  "lastObservationId": "pm013-1h-check-20260910-1202",
+  "lastObservationSummary": {
+    "instagramViews": 116,
+    "instagramPeopleWhoViewed": 102,
+    "instagramLikes": 1,
+    "instagramSaves": 1,
+    "instagramAccountsEngaged": 1,
+    "instagramAttributedFollows": 0,
+    "xViews": 2,
+    "xDirectReactions": 0,
+    "decision": "continue-to-4h-without-editing-or-reposting"
+  }
 }
