@@ -1,8 +1,8 @@
 {
   "campaignId": "2026-09-pilot-pm-013",
   "objectId": "PM-013",
-  "state": "v02-prepared-awaiting-site-admin-login-v01-still-held",
-  "updatedAt": "2026-09-10T09:33:00+09:00",
+  "state": "v02-composers-ready-awaiting-admin-tab-handoff-v01-still-held",
+  "updatedAt": "2026-09-10T10:36:00+09:00",
   "nextCreativeStatus": "../explain-v02/status.json",
   "historicalApprovalScope": "The approvals and publication fields below describe v01. Do not reactivate its old draft or cancelled schedule.",
   "approvals": {
@@ -35,6 +35,7 @@
   },
   "externalActionsAllowed": false,
   "notes": [
+    "2026-09-10 10:36 KST: Owner requested continuation after personal-Chrome admin authentication. Prepared both v02 social composers, applied AI labels, verified IG 9:16 crop/custom cover/sound and X original 4:5/ALT/site URL. No public post or site save yet; waiting for owner to foreground the exact admin tab after a safety rejection of switching away from unrelated company content.",
     "2026-09-10: Owner requested the next stage if trends were unchanged. Fresh metrics showed no meaningful growth; prepared PM-013 explain-v02 video, cover, X still and bilingual copy. See nextCreativeStatus for current state.",
     "v02 is not published or scheduled. Site-admin access currently shows the operator-email login form; coordinated site reveal/link updates have not been made. PM-001 additional variations remain held.",
     "Latest instruction: make the toast charger PM-001 the main item and publish its improved creative next.",

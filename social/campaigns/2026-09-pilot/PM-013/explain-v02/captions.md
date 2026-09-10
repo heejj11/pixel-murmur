@@ -31,6 +31,8 @@ What if hanging up could cut the tape?
 PM-013 · AI 콘셉트, 미제작
 CONCEPT RENDER · NOT YET PRODUCED
 
+https://pixelmurmur.com/objects/pm-013
+
 ## X 이미지 대체 텍스트
 
 크림색 로터리 전화기 형태의 테이프 디스펜서 콘셉트. 수화기 아래 틈에서 갈색 테이프가 나오며, 한글과 영문으로 전화기 모양의 테이프 커터라고 소개한다. AI 콘셉트 렌더이며 아직 제작되지 않았다. A cream rotary-phone-shaped tape dispenser concept with tape emerging below the handset; not a produced object.

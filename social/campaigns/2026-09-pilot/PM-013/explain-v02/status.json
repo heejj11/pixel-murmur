@@ -1,11 +1,11 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-10T09:33:00+09:00",
-  "state": "creative-ready-awaiting-site-admin-login",
-  "ownerInstruction": "추이변화없으면 다음단계진행해보자",
+  "updatedAt": "2026-09-10T10:36:00+09:00",
+  "state": "composers-ready-awaiting-personal-chrome-admin-tab-handoff",
+  "ownerInstruction": "작업부탁해 — after confirming the authenticated administrator page in the personal Chrome profile",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
-  "nextStep": "Restore normal site-admin access, then complete coordinated object reveal and organic publication preflight",
+  "nextStep": "Owner foregrounds the authenticated PixelMurmur admin tab; then activate PM-013 and backfill existing links, publish the prepared v02 composers, append actual post URLs and verify public output",
   "creative": {
     "direction": "PM-013 design intention; not a working prototype demonstration",
     "copy": "ready-bilingual",
@@ -19,9 +19,9 @@
     "qaFile": "quality-check.md"
   },
   "publication": {
-    "instagram": { "state": "not-published", "scheduledAt": null, "url": null },
-    "x": { "state": "not-published", "scheduledAt": null, "url": null },
-    "site": { "state": "not-changed-admin-login-required", "url": "https://pixelmurmur.com/admin/objects", "sessionCheckedAt": "2026-09-10T09:32:00+09:00", "observedScreen": "operator-email-login-form", "savePerformed": false }
+    "instagram": { "state": "live-composer-ready-not-published", "scheduledAt": null, "url": null, "browserSurface": "existing-authenticated-in-app-browser", "aspectRatio": "9:16", "customCoverApplied": true, "soundEnabled": true, "aiLabelEnabled": true, "bilingualCaptionEntered": true, "shareClicked": false },
+    "x": { "state": "live-composer-ready-not-published", "scheduledAt": null, "url": null, "browserSurface": "existing-authenticated-in-app-browser", "imageAspectRatio": "original-4:5", "imageCropVerified": true, "altTextEntered": true, "aiLabelEnabled": true, "paidPartnershipEnabled": false, "websiteLinkEntered": "https://pixelmurmur.com/objects/pm-013", "postClicked": false },
+    "site": { "state": "authenticated-personal-chrome-awaiting-safe-tab-handoff-no-save", "url": "https://pixelmurmur.com/admin/objects", "priorLoggedOutCheckAt": "2026-09-10T09:32:00+09:00", "observedScreenBeforeCurrentTurn": "authenticated-object-publishing-page-in-personal-Chrome", "currentTurnBlocker": "Chrome foreground changed to unrelated company content. Automatic window switching was rejected by safety review; requested owner to foreground only the PixelMurmur admin tab. No workaround attempted.", "savePerformed": false }
   },
   "guards": {
     "pm001AdditionalVariantsAndReposts": "remain-on-hold",
@@ -38,7 +38,10 @@
   },
   "notes": [
     "Preparing v02 does not reactivate cancelled platform-native schedules or publish the old v01 draft.",
-    "Local creative QA is complete; upload preview, AI-label selection, duplicate-post check and live site/link QA must occur at actual publication.",
-    "No claim is made that a new publication or schedule was created."
+    "Local and upload preflight QA are complete. Instagram's initial square crop was corrected to 9:16; X original 4:5 image and both AI labels were checked. See publication-preflight-2026-09-10.md.",
+    "Both live composer tabs were marked for handoff. Do not open a duplicate composer; inspect and reuse the existing prepared tabs if still present. Reloading may lose unsaved composer data.",
+    "Authenticated profile baselines: Instagram seven existing posts and X six; no PM-013 duplicate found.",
+    "Public share/post buttons have not been clicked. No native schedule, new automation, site save, paid action or public post was made.",
+    "PM-001 existing Instagram carousel and X v04 links still require site backfill; preserve all existing links and public flags."
   ]
 }
