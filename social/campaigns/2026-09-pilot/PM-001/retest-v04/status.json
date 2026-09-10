@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-001-retest-v04",
   "objectId": "PM-001",
   "state": "both-published-and-site-linked",
-  "updatedAt": "2026-09-10T11:03:20+09:00",
+  "updatedAt": "2026-09-10T20:48:41+09:00",
   "additionalPublicationHold": {
     "state": "owner-approved-hold",
     "recordedAt": "2026-09-09T15:03:00+09:00",
@@ -34,7 +34,7 @@
     "futureExecutionVerified": false,
     "firstRemainingSlotObservedAtUtc": "2026-09-08T09:45:38.136Z",
     "firstRemainingSlotCompleted": true,
-    "futureExecutionNote": "Sep 8 checkpoints and both Sep 9 checkpoints have executed. Carousel trigger arrived at 20:16:04 KST and its inspection completed during 20:17. Only the Sep 10 Instagram v04 72h execution remains unverified.",
+    "futureExecutionNote": "Sep 10 20:45 KST trigger was observed at 20:46:19.468, but the 72h metric check could not run because the Mac was locked. No measurement or completion is claimed; retry at 23:00 KST.",
     "secondRemainingSlotObservedAtUtc": "2026-09-08T11:46:06.350Z",
     "secondRemainingSlotCompleted": true,
     "noFreshSocialObservation": true
@@ -157,7 +157,11 @@
     {
       "at": "2026-09-10T20:45:00+09:00",
       "action": "instagram-v04-72h-check",
-      "state": "scheduled-next"
+      "state": "blocked-awaiting-manual-mac-unlock",
+      "triggeredAt": "2026-09-10T20:46:19.468+09:00",
+      "attemptedAt": "2026-09-10T20:47:00+09:00",
+      "attemptId": "instagram-72h-attempt-20260910-2047",
+      "retryAt": "2026-09-10T23:00:00+09:00"
     }
   ],
   "lastObservation": {
@@ -192,17 +196,20 @@
   },
   "followUpSchedule": {
     "automationId": "v04",
-    "updatedAndSavedFieldsVerifiedAt": "2026-09-09T20:19:58+09:00",
-    "previousTriggerObservedAtUtc": "2026-09-09T11:16:04.584Z",
+    "updatedAndSavedFieldsVerifiedAt": "2026-09-10T20:48:41+09:00",
+    "previousTriggerObservedAtUtc": "2026-09-10T11:46:19.468Z",
     "previousCheckpointCompletedAt": "2026-09-09T20:17:00+09:00",
-    "nextAt": "2026-09-10T20:45:00+09:00",
-    "nextAtUtc": "2026-09-10T11:45:00Z",
+    "nextAt": "2026-09-10T23:00:00+09:00",
+    "nextAtUtc": "2026-09-10T14:00:00Z",
     "nextDateRestrictedTo": "2026-09-10",
     "futureExecutionVerified": false,
-    "reschedulingPolicy": "Follow PM-013/explain-v02/status.json combined queue. Complete PM-001 72h at Sep 10 20:45, then retain shared v04 until PM-013 remaining checkpoints end; do not delete early.",
-    "sharedAutomationNextAt": "2026-09-10T20:45:00+09:00",
-    "sharedAutomationNextPurpose": "PM-001 Instagram v04 72h. PM-013 4h completed at 15:05 KST; retain the shared queue for PM-013 12h at 23:00 and later checkpoints.",
-    "sharedAutomationSavedFieldsVerifiedAt": "2026-09-10T15:06:46+09:00"
+    "reschedulingPolicy": "Retry the pending PM-001 72h observation at the next shared future checkpoint, Sep 10 23:00 KST, alongside PM-013 12h. Preserve missing historical values and retain v04 for the remaining PM-013 queue; do not delete early.",
+    "sharedAutomationNextAt": "2026-09-10T23:00:00+09:00",
+    "sharedAutomationNextPurpose": "Pending PM-001 72h delayed retry and PM-013 12h. Manual Mac unlock is required before browser access.",
+    "sharedAutomationSavedFieldsVerifiedAt": "2026-09-10T20:48:41+09:00",
+    "lastAttemptAt": "2026-09-10T20:47:00+09:00",
+    "lastAttemptId": "instagram-72h-attempt-20260910-2047",
+    "state": "scheduled-with-pending-manual-mac-unlock"
   },
   "paidMediaAuthorized": false,
   "notes": [
@@ -211,5 +218,13 @@
     "Automation v04 now combines X publication and initial Instagram observations because only one heartbeat can be attached to this thread.",
     "Publishing requires the local computer and Codex app to be running and the platform session to remain usable.",
     "Recheck platform upload, cover crop, audio, bilingual captions and AI labeling immediately before publishing."
-  ]
+  ],
+  "lastCheckAttempt": {
+    "id": "instagram-72h-attempt-20260910-2047",
+    "attemptedAt": "2026-09-10T20:47:00+09:00",
+    "state": "blocked-before-platform-ui-access",
+    "reason": "mac-locked-manual-unlock-required",
+    "latestMetricsUpdated": false,
+    "retryAt": "2026-09-10T23:00:00+09:00"
+  }
 }

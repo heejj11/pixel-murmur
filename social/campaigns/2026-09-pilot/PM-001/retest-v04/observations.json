@@ -484,5 +484,36 @@
       "scheduledCheckpointsChanged": false,
       "decision": "prepare-pm013-design-intention-creative-without-restarting-pm001-variants"
     }
+  ],
+  "checkAttempts": [
+    {
+      "id": "instagram-72h-attempt-20260910-2047",
+      "phase": "scheduled-72h-check-attempt",
+      "scheduledAt": "2026-09-10T20:45:00+09:00",
+      "triggeredAt": "2026-09-10T20:46:19.468+09:00",
+      "attemptedAt": "2026-09-10T20:47:00+09:00",
+      "timePrecision": "minute",
+      "capturedAt": null,
+      "publishedAt": "2026-09-07T20:43:02+09:00",
+      "elapsedSincePublicationAtAttemptSeconds": 259438,
+      "sourceUrl": "https://www.instagram.com/insights/media/3980909121778849654/",
+      "postUrl": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/",
+      "state": "blocked-before-platform-ui-access",
+      "reason": "mac-locked-manual-unlock-required",
+      "platformUiRead": false,
+      "freshMetrics": null,
+      "metricValuesAtTarget": null,
+      "lastActualObservationId": "instagram-owner-requested-check-20260910-0925",
+      "checkpointComparisonBaselineId": "instagram-24h-check-20260908-2047",
+      "assessment": "No new measurement was possible because the Mac was locked before browser UI access. Do not infer unchanged metrics or copy historical values into this attempt.",
+      "retryAt": "2026-09-10T23:00:00+09:00",
+      "checkpointCompleted": false,
+      "notificationDecision": "NOTIFY",
+      "requiredUserAction": "Unlock the Mac manually before the next observation attempt.",
+      "userNotificationPlanned": true,
+      "newBrowserTabsCreated": false,
+      "externalChangesMade": false,
+      "decision": "retain-pending-checkpoint-and-retry-at-next-existing-slot"
+    }
   ]
 }
