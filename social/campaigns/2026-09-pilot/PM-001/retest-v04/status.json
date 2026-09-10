@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-001-retest-v04",
   "objectId": "PM-001",
   "state": "both-published-and-site-linked",
-  "updatedAt": "2026-09-10T20:48:41+09:00",
+  "updatedAt": "2026-09-10T23:04:24+09:00",
   "additionalPublicationHold": {
     "state": "owner-approved-hold",
     "recordedAt": "2026-09-09T15:03:00+09:00",
@@ -34,7 +34,7 @@
     "futureExecutionVerified": false,
     "firstRemainingSlotObservedAtUtc": "2026-09-08T09:45:38.136Z",
     "firstRemainingSlotCompleted": true,
-    "futureExecutionNote": "Sep 10 20:45 KST trigger was observed at 20:46:19.468, but the 72h metric check could not run because the Mac was locked. No measurement or completion is claimed; retry at 23:00 KST.",
+    "futureExecutionNote": "The Sep 10 20:45 and 23:00 triggers arrived, but both UI attempts were blocked by the Mac lock. The 72h metric checkpoint remains incomplete; retry at Sep 11 11:00 KST.",
     "secondRemainingSlotObservedAtUtc": "2026-09-08T11:46:06.350Z",
     "secondRemainingSlotCompleted": true,
     "noFreshSocialObservation": true
@@ -161,7 +161,10 @@
       "triggeredAt": "2026-09-10T20:46:19.468+09:00",
       "attemptedAt": "2026-09-10T20:47:00+09:00",
       "attemptId": "instagram-72h-attempt-20260910-2047",
-      "retryAt": "2026-09-10T23:00:00+09:00"
+      "retryAt": "2026-09-11T11:00:00+09:00",
+      "lastAttemptedAt": "2026-09-10T23:03:00+09:00",
+      "lastTriggerObservedAt": "2026-09-10T23:02:19.959+09:00",
+      "lastAttemptId": "instagram-72h-retry-20260910-2303"
     }
   ],
   "lastObservation": {
@@ -196,19 +199,19 @@
   },
   "followUpSchedule": {
     "automationId": "v04",
-    "updatedAndSavedFieldsVerifiedAt": "2026-09-10T20:48:41+09:00",
-    "previousTriggerObservedAtUtc": "2026-09-10T11:46:19.468Z",
+    "updatedAndSavedFieldsVerifiedAt": "2026-09-10T23:04:24+09:00",
+    "previousTriggerObservedAtUtc": "2026-09-10T14:02:19.959Z",
     "previousCheckpointCompletedAt": "2026-09-09T20:17:00+09:00",
-    "nextAt": "2026-09-10T23:00:00+09:00",
-    "nextAtUtc": "2026-09-10T14:00:00Z",
-    "nextDateRestrictedTo": "2026-09-10",
+    "nextAt": "2026-09-11T11:00:00+09:00",
+    "nextAtUtc": "2026-09-11T02:00:00Z",
+    "nextDateRestrictedTo": "2026-09-11",
     "futureExecutionVerified": false,
-    "reschedulingPolicy": "Retry the pending PM-001 72h observation at the next shared future checkpoint, Sep 10 23:00 KST, alongside PM-013 12h. Preserve missing historical values and retain v04 for the remaining PM-013 queue; do not delete early.",
-    "sharedAutomationNextAt": "2026-09-10T23:00:00+09:00",
-    "sharedAutomationNextPurpose": "Pending PM-001 72h delayed retry and PM-013 12h. Manual Mac unlock is required before browser access.",
-    "sharedAutomationSavedFieldsVerifiedAt": "2026-09-10T20:48:41+09:00",
-    "lastAttemptAt": "2026-09-10T20:47:00+09:00",
-    "lastAttemptId": "instagram-72h-attempt-20260910-2047",
+    "reschedulingPolicy": "Retry pending PM-001 72h at the next future shared checkpoint, Sep 11 11:00 KST, alongside PM-013 delayed 12h and due 24h. Preserve unavailable historical values and retain v04 for later PM-013 checkpoints.",
+    "sharedAutomationNextAt": "2026-09-11T11:00:00+09:00",
+    "sharedAutomationNextPurpose": "Pending PM-001 72h retry and PM-013 current snapshot for delayed 12h / due 24h; do not duplicate a current snapshot as historical metrics.",
+    "sharedAutomationSavedFieldsVerifiedAt": "2026-09-10T23:04:24+09:00",
+    "lastAttemptAt": "2026-09-10T23:03:00+09:00",
+    "lastAttemptId": "instagram-72h-retry-20260910-2303",
     "state": "scheduled-with-pending-manual-mac-unlock"
   },
   "paidMediaAuthorized": false,
@@ -220,11 +223,12 @@
     "Recheck platform upload, cover crop, audio, bilingual captions and AI labeling immediately before publishing."
   ],
   "lastCheckAttempt": {
-    "id": "instagram-72h-attempt-20260910-2047",
-    "attemptedAt": "2026-09-10T20:47:00+09:00",
+    "id": "instagram-72h-retry-20260910-2303",
+    "attemptedAt": "2026-09-10T23:03:00+09:00",
     "state": "blocked-before-platform-ui-access",
     "reason": "mac-locked-manual-unlock-required",
     "latestMetricsUpdated": false,
-    "retryAt": "2026-09-10T23:00:00+09:00"
+    "retryAt": "2026-09-11T11:00:00+09:00",
+    "knownBlockerAlreadyNotified": true
   }
 }
