@@ -1,0 +1,54 @@
+{
+  "campaignId": "2026-09-pilot-pm-013-explain-v02",
+  "observations": [
+    {
+      "id": "pm013-launch-qa-20260910",
+      "kind": "post-publication-qa-baseline-not-clean-organic-sample",
+      "instagram": {
+        "capturedAt": "2026-09-10T11:03:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 533,
+        "sourceUrl": "https://www.instagram.com/insights/media/3982787018227848473/",
+        "publishedAt": "2026-09-10T10:54:07+09:00",
+        "url": "https://www.instagram.com/pixelmurmur/reel/DdFs7D9ghUZ/",
+        "views": 5,
+        "peopleWhoViewed": null,
+        "nonFollowerViewSharePercent": 100,
+        "followerViewSharePercent": 0,
+        "reactions": null,
+        "reelInteractions": 0,
+        "likes": 0,
+        "comments": 0,
+        "saves": 0,
+        "shares": 0,
+        "accountsEngaged": null,
+        "profileActivity": 0,
+        "attributedFollows": 0,
+        "retention": null,
+        "watchTime": null,
+        "nullReason": "Not displayed or shown as --; not zero"
+      },
+      "x": {
+        "capturedAt": "2026-09-10T11:01:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 90,
+        "sourceUrl": "https://x.com/pixelmurmur/status/2097867530564182356",
+        "publishedAt": "2026-09-10T10:59:30+09:00",
+        "views": null,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "bookmarks": 0,
+        "nullReason": "View count not displayed on post detail at observation; no paid analytics opened"
+      },
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "decision": "collect-later-checkpoints-no-repost",
+      "caveats": [
+        "Operator post/profile/playback QA can contribute views; no fresh external audience can be inferred from these counts.",
+        "A non-follower view share is not unique reach or proof of recommendation distribution.",
+        "Tiny sample and no retention data do not support creative success/failure or product demand conclusions."
+      ]
+    }
+  ]
+}

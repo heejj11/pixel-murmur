@@ -1,11 +1,11 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-10T10:36:00+09:00",
-  "state": "composers-ready-awaiting-personal-chrome-admin-tab-handoff",
-  "ownerInstruction": "작업부탁해 — after confirming the authenticated administrator page in the personal Chrome profile",
+  "updatedAt": "2026-09-10T11:03:20+09:00",
+  "state": "published-and-site-linked-monitoring",
+  "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
-  "nextStep": "Owner foregrounds the authenticated PixelMurmur admin tab; then activate PM-013 and backfill existing links, publish the prepared v02 composers, append actual post URLs and verify public output",
+  "nextStep": "Observe the shared v04 checkpoint queue; do not republish or reactivate v01",
   "creative": {
     "direction": "PM-013 design intention; not a working prototype demonstration",
     "copy": "ready-bilingual",
@@ -19,9 +19,49 @@
     "qaFile": "quality-check.md"
   },
   "publication": {
-    "instagram": { "state": "live-composer-ready-not-published", "scheduledAt": null, "url": null, "browserSurface": "existing-authenticated-in-app-browser", "aspectRatio": "9:16", "customCoverApplied": true, "soundEnabled": true, "aiLabelEnabled": true, "bilingualCaptionEntered": true, "shareClicked": false },
-    "x": { "state": "live-composer-ready-not-published", "scheduledAt": null, "url": null, "browserSurface": "existing-authenticated-in-app-browser", "imageAspectRatio": "original-4:5", "imageCropVerified": true, "altTextEntered": true, "aiLabelEnabled": true, "paidPartnershipEnabled": false, "websiteLinkEntered": "https://pixelmurmur.com/objects/pm-013", "postClicked": false },
-    "site": { "state": "authenticated-personal-chrome-awaiting-safe-tab-handoff-no-save", "url": "https://pixelmurmur.com/admin/objects", "priorLoggedOutCheckAt": "2026-09-10T09:32:00+09:00", "observedScreenBeforeCurrentTurn": "authenticated-object-publishing-page-in-personal-Chrome", "currentTurnBlocker": "Chrome foreground changed to unrelated company content. Automatic window switching was rejected by safety review; requested owner to foreground only the PixelMurmur admin tab. No workaround attempted.", "savePerformed": false }
+    "instagram": {
+      "state": "published",
+      "scheduledAt": null,
+      "url": "https://www.instagram.com/pixelmurmur/reel/DdFs7D9ghUZ/",
+      "browserSurface": "existing-authenticated-in-app-browser",
+      "aspectRatio": "9:16",
+      "customCoverApplied": true,
+      "soundEnabled": true,
+      "aiLabelEnabled": true,
+      "bilingualCaptionEntered": true,
+      "shareClicked": true,
+      "publishedAt": "2026-09-10T10:54:07+09:00",
+      "publishedAtSource": "live-post-time-element",
+      "insightsUrl": "https://www.instagram.com/insights/media/3982787018227848473/",
+      "liveQuality": "passed-profile-grid-and-post-video",
+      "originalAudioPresent": true
+    },
+    "x": {
+      "state": "published",
+      "scheduledAt": null,
+      "url": "https://x.com/pixelmurmur/status/2097867530564182356",
+      "browserSurface": "existing-authenticated-in-app-browser",
+      "imageAspectRatio": "original-4:5",
+      "imageCropVerified": true,
+      "altTextEntered": true,
+      "aiLabelEnabled": true,
+      "paidPartnershipEnabled": false,
+      "websiteLinkEntered": "https://pixelmurmur.com/objects/pm-013",
+      "postClicked": true,
+      "publishedAt": "2026-09-10T10:59:30+09:00",
+      "publishedAtSource": "live-post-time-element",
+      "liveQuality": "passed-post-and-expanded-image"
+    },
+    "site": {
+      "state": "public-and-both-posts-linked",
+      "url": "https://pixelmurmur.com/objects/pm-013",
+      "adminUrl": "https://pixelmurmur.com/admin/objects",
+      "savePerformed": true,
+      "publicFlagSavedWindowKst": "2026-09-10 10:44–10:45",
+      "socialLinksSavedWindowKst": "2026-09-10 11:01–11:02",
+      "publicLinksVerified": true,
+      "existingOtherObjectsAndLinksPreserved": true
+    }
   },
   "guards": {
     "pm001AdditionalVariantsAndReposts": "remain-on-hold",
@@ -32,16 +72,65 @@
     "obsidian": "do-not-write"
   },
   "existingObservationSchedule": {
+    "automationId": "v04",
     "pm001InstagramV04Final72h": "2026-09-10T20:45:00+09:00",
-    "changedThisTurn": false,
-    "isPm013PublicationSchedule": false
+    "changedThisTurn": true,
+    "isPm013PublicationSchedule": false,
+    "note": "Existing heartbeat expanded to a bounded combined observation queue, not another publication schedule"
   },
   "notes": [
-    "Preparing v02 does not reactivate cancelled platform-native schedules or publish the old v01 draft.",
-    "Local and upload preflight QA are complete. Instagram's initial square crop was corrected to 9:16; X original 4:5 image and both AI labels were checked. See publication-preflight-2026-09-10.md.",
-    "Both live composer tabs were marked for handoff. Do not open a duplicate composer; inspect and reuse the existing prepared tabs if still present. Reloading may lose unsaved composer data.",
-    "Authenticated profile baselines: Instagram seven existing posts and X six; no PM-013 duplicate found.",
-    "Public share/post buttons have not been clicked. No native schedule, new automation, site save, paid action or public post was made.",
-    "PM-001 existing Instagram carousel and X v04 links still require site backfill; preserve all existing links and public flags."
-  ]
+    "Published v02 only, with no native schedule, paid media, security change, unsolicited outreach or Obsidian record.",
+    "Prior unsent composers were absent after session cleanup. Deduplicated against Instagram 7 and X 6 existing posts, re-uploaded and clicked each public submission once.",
+    "Instagram initial square crop was corrected to 9:16. Custom cover, full 0–9s video, sound and AI label checked; published grid and post preserve titles/product/disclosure.",
+    "X original 4:5 image, bilingual ALT, AI label and live website link were verified; paid partnership remained off.",
+    "Admin success message and independent public detail pages confirm PM-013 publication/links and PM-001 missing carousel/X-v04 backfill.",
+    "Instagram launch QA shows 5 views, 100% non-follower views, people who viewed and interacting accounts unavailable, and zero displayed likes/comments/saves/shares/follows. Repeated operator QA is a confounder, not proof of organic growth.",
+    "Previous handoff/blocker history remains in publication-preflight-2026-09-10.md and Git history."
+  ],
+  "monitoring": {
+    "automationId": "v04",
+    "state": "scheduled",
+    "savedFieldsVerifiedAt": "2026-09-10T11:06:54+09:00",
+    "nextCheckAt": "2026-09-10T12:00:00+09:00",
+    "futureExecutionVerified": false,
+    "checkpoints": [
+      {
+        "id": "pm013-1h",
+        "at": "2026-09-10T12:00:00+09:00",
+        "state": "scheduled-next"
+      },
+      {
+        "id": "pm013-4h",
+        "at": "2026-09-10T15:00:00+09:00",
+        "state": "queued"
+      },
+      {
+        "id": "pm001-v04-72h",
+        "at": "2026-09-10T20:45:00+09:00",
+        "state": "queued",
+        "recordIn": "../../PM-001/retest-v04/"
+      },
+      {
+        "id": "pm013-12h",
+        "at": "2026-09-10T23:00:00+09:00",
+        "state": "queued"
+      },
+      {
+        "id": "pm013-24h",
+        "at": "2026-09-11T11:00:00+09:00",
+        "state": "queued"
+      },
+      {
+        "id": "pm013-72h",
+        "at": "2026-09-13T11:00:00+09:00",
+        "state": "queued"
+      },
+      {
+        "id": "pm013-7d",
+        "at": "2026-09-17T11:00:00+09:00",
+        "state": "queued"
+      }
+    ]
+  },
+  "lastObservationId": "pm013-launch-qa-20260910"
 }
