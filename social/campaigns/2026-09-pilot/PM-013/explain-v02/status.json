@@ -1,0 +1,44 @@
+{
+  "campaignId": "2026-09-pilot-pm-013-explain-v02",
+  "objectId": "PM-013",
+  "updatedAt": "2026-09-10T09:33:00+09:00",
+  "state": "creative-ready-awaiting-site-admin-login",
+  "ownerInstruction": "추이변화없으면 다음단계진행해보자",
+  "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
+  "nextStep": "Restore normal site-admin access, then complete coordinated object reveal and organic publication preflight",
+  "creative": {
+    "direction": "PM-013 design intention; not a working prototype demonstration",
+    "copy": "ready-bilingual",
+    "video": "rendered-and-technically-checked",
+    "cover": "rendered-center-crop-geometry-checked",
+    "xImage": "rendered-and-visually-checked",
+    "instagramVideo": "renders/pm-013_ig_09s_v02.mp4",
+    "instagramCover": "renders/pm-013_cover_v02.png",
+    "xImageFile": "renders/pm-013_x_card_v02.png",
+    "copyFile": "captions.md",
+    "qaFile": "quality-check.md"
+  },
+  "publication": {
+    "instagram": { "state": "not-published", "scheduledAt": null, "url": null },
+    "x": { "state": "not-published", "scheduledAt": null, "url": null },
+    "site": { "state": "not-changed-admin-login-required", "url": "https://pixelmurmur.com/admin/objects", "sessionCheckedAt": "2026-09-10T09:32:00+09:00", "observedScreen": "operator-email-login-form", "savePerformed": false }
+  },
+  "guards": {
+    "pm001AdditionalVariantsAndReposts": "remain-on-hold",
+    "pm013OldV01DraftAndNativeSchedule": "do-not-reactivate",
+    "paidMedia": "not-approved-not-run",
+    "accountSecurityChanges": "not-authorized-not-made",
+    "unsolicitedOutreach": "prohibited",
+    "obsidian": "do-not-write"
+  },
+  "existingObservationSchedule": {
+    "pm001InstagramV04Final72h": "2026-09-10T20:45:00+09:00",
+    "changedThisTurn": false,
+    "isPm013PublicationSchedule": false
+  },
+  "notes": [
+    "Preparing v02 does not reactivate cancelled platform-native schedules or publish the old v01 draft.",
+    "Local creative QA is complete; upload preview, AI-label selection, duplicate-post check and live site/link QA must occur at actual publication.",
+    "No claim is made that a new publication or schedule was created."
+  ]
+}

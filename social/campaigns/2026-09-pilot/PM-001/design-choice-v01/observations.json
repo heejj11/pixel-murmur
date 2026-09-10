@@ -182,6 +182,38 @@
       "siteSession": { "url": "https://pixelmurmur.com/admin/objects", "checkedAt": "2026-09-09T20:17:00+09:00", "state": "email-login-form", "savePerformed": false, "knownLoginBlockerNotNotifiedAgain": true },
       "externalChangesMade": false,
       "decision": "keep-additional-publication-on-hold-and-complete-remaining-v04-72h-observation"
+    },
+    {
+      "id": "carousel-owner-requested-check-20260910-0925",
+      "capturedAt": "2026-09-10T09:25:00+09:00",
+      "timePrecision": "minute; freshly opened insights during 09:24–09:25 KST",
+      "platform": "instagram",
+      "phase": "owner-requested-trend-review",
+      "sourceUrl": "https://www.instagram.com/pixelmurmur/p/DdBjKhBkvkv/",
+      "insightsSourceUrl": "https://www.instagram.com/insights/media/3981618199854774575/",
+      "views": 3,
+      "peopleWhoViewed": 1,
+      "followerViewSharePercent": 100,
+      "nonFollowerViewSharePercent": 0,
+      "homeViews": 3,
+      "likes": 1,
+      "comments": 0,
+      "saves": 0,
+      "shares": 0,
+      "reach": null,
+      "postInteractions": 1,
+      "interactionsOverview": 1,
+      "engagedAccounts": 1,
+      "profileActivity": 0,
+      "profileVisits": 0,
+      "externalLinkClicks": 0,
+      "businessAddressClicks": 0,
+      "attributedFollows": 0,
+      "comparison": { "observationId": "carousel-24h-check-20260909-2017", "viewsChange": 0, "likesChange": 0, "commentsChange": 0, "savesChange": 0, "sharesChange": 0, "attributedFollowsChange": 0 },
+      "assessment": "Unchanged from the 24-hour checkpoint. Too little exposure to infer design preference or product demand; prepare another object's design-intention presentation rather than another toast variation.",
+      "accountProfileRechecked": false,
+      "externalChangesMade": false,
+      "decision": "preserve-post-and-pm001-additional-publication-hold"
     }
   ]
 }

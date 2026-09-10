@@ -17,10 +17,41 @@ import {
 import { SceneCharge } from "./pm001-retest/SceneCharge";
 import { SceneTake } from "./pm001-retest/SceneTake";
 import { SceneReturn } from "./pm001-retest/SceneReturn";
+import {
+  PM013ExplainReel,
+  PM013ExplainCover,
+  PM013ExplainCard,
+} from "./pm013-explain/PM013Explain";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Folder name="PM013-Explain-v02">
+        <Composition
+          id="PM013-Explain-Reel"
+          component={PM013ExplainReel}
+          durationInFrames={270}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="PM013-Explain-Cover"
+          component={PM013ExplainCover}
+          durationInFrames={1}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="PM013-Explain-X-Card"
+          component={PM013ExplainCard}
+          durationInFrames={1}
+          fps={30}
+          width={1080}
+          height={1350}
+        />
+      </Folder>
       <Folder name="PM001-Retest-v04">
         <Composition
           id="PM001-Retest-Reel"

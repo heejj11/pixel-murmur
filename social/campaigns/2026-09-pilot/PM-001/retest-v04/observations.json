@@ -116,6 +116,21 @@
       "paidMedia": "not-run",
       "externalChangesMade": false,
       "decision": "keep-additional-publication-on-hold-and-continue-remaining-observation-checkpoints"
+    },
+    {
+      "id": "x-owner-requested-check-20260910-0925",
+      "platform": "x",
+      "phase": "owner-requested-trend-review",
+      "capturedAt": "2026-09-10T09:25:00+09:00",
+      "timePrecision": "minute; post inspection within 09:24–09:25 KST",
+      "sourceUrl": "https://x.com/pixelmurmur/status/2097261297721319823",
+      "posts": [{ "url": "https://x.com/pixelmurmur/status/2097261297721319823", "objectId": "PM-001", "version": "v04", "views": 6, "likes": 0, "replies": 0, "reposts": 0, "bookmarks": 0, "reach": null, "profileVisits": null, "linkClicks": null }],
+      "comparison": { "observationId": "x-24h-check-20260909-1852", "viewsChange": 1, "directEngagementChange": 0 },
+      "assessment": "One extra displayed view without direct engagement is not meaningful growth or proof of a new outside viewer.",
+      "caveats": ["Owner-account autoplay occurred during inspection; view counts can include inspection.", "Account profile and unavailable private metrics were not rechecked."],
+      "accountProfileRechecked": false,
+      "externalChangesMade": false,
+      "decision": "preserve-pm001-hold-and-prepare-a-different-object-design-note"
     }
   ],
   "observations": [
@@ -454,6 +469,20 @@
       "externalChangesMade": false,
       "scheduledCheckpointsChanged": false,
       "decision": "recommend-pausing-further-toast-variants-while-preserving-existing-posts"
+    },
+    {
+      "id": "instagram-owner-requested-check-20260910-0925",
+      "phase": "owner-requested-trend-review",
+      "capturedAt": "2026-09-10T09:25:00+09:00",
+      "timePrecision": "minute; insights inspection window 09:24–09:25 KST",
+      "method": "freshly-opened-logged-in-post-insights-ui",
+      "posts": [{ "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/", "insightsSourceUrl": "https://www.instagram.com/insights/media/3980909121778849654/", "objectId": "PM-001", "version": "v04", "views": 127, "peopleWhoViewed": 109, "followerViewSharePercent": 3.2, "nonFollowerViewSharePercent": 96.8, "likes": 2, "comments": 0, "saves": 0, "shares": 0, "interactionsOverview": 2, "engagedAccounts": 2, "profileActivity": 0, "followersAttributedToPost": 0, "profileVisits": null, "averageWatchTimeSeconds": null, "retention": null }],
+      "comparison": { "observationId": "instagram-owner-requested-check-20260909-1446", "viewsChange": 0, "likesChange": 0, "commentsChange": 0, "savesChange": 0, "sharesChange": 0, "attributedFollowsChange": 0 },
+      "assessment": "Reel insights remain unchanged. The owner's condition for progressing to the next preparation stage is met; this is not a causal verdict about the creative or product demand.",
+      "accountProfileRechecked": false,
+      "externalChangesMade": false,
+      "scheduledCheckpointsChanged": false,
+      "decision": "prepare-pm013-design-intention-creative-without-restarting-pm001-variants"
     }
   ]
 }
