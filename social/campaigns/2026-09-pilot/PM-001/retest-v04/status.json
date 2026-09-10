@@ -157,7 +157,7 @@
     {
       "at": "2026-09-10T20:45:00+09:00",
       "action": "instagram-v04-72h-check",
-      "state": "queued-in-shared-monitor"
+      "state": "scheduled-next"
     }
   ],
   "lastObservation": {
@@ -200,8 +200,9 @@
     "nextDateRestrictedTo": "2026-09-10",
     "futureExecutionVerified": false,
     "reschedulingPolicy": "Follow PM-013/explain-v02/status.json combined queue. Complete PM-001 72h at Sep 10 20:45, then retain shared v04 until PM-013 remaining checkpoints end; do not delete early.",
-    "sharedAutomationNextAt": "2026-09-10T15:00:00+09:00",
-    "sharedAutomationNextPurpose": "PM-013 about 4h; its 1h check completed at 12:02 KST. PM-001 72h remains 20:45 KST."
+    "sharedAutomationNextAt": "2026-09-10T20:45:00+09:00",
+    "sharedAutomationNextPurpose": "PM-001 Instagram v04 72h. PM-013 4h completed at 15:05 KST; retain the shared queue for PM-013 12h at 23:00 and later checkpoints.",
+    "sharedAutomationSavedFieldsVerifiedAt": "2026-09-10T15:06:46+09:00"
   },
   "paidMediaAuthorized": false,
   "notes": [

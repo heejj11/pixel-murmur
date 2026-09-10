@@ -114,6 +114,80 @@
         "No retention or watch-time data is displayed; no early-drop-off diagnosis is made.",
         "Existing PM-001 72h checkpoint was not performed early."
       ]
+    },
+    {
+      "id": "pm013-4h-check-20260910-1505",
+      "kind": "scheduled-4h-check",
+      "scheduledAt": "2026-09-10T15:00:00+09:00",
+      "triggeredAt": "2026-09-10T15:00:46.324+09:00",
+      "instagram": {
+        "capturedAt": "2026-09-10T15:05:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 15053,
+        "sourceUrl": "https://www.instagram.com/insights/media/3982787018227848473/",
+        "publishedAt": "2026-09-10T10:54:07+09:00",
+        "url": "https://www.instagram.com/pixelmurmur/reel/DdFs7D9ghUZ/",
+        "views": 122,
+        "peopleWhoViewed": 106,
+        "peopleWhoViewedSourceLabel": "조회한 사람",
+        "nonFollowerViewSharePercent": 96.6,
+        "followerViewSharePercent": 3.4,
+        "reactions": 2,
+        "reelInteractions": 2,
+        "likes": 1,
+        "comments": 0,
+        "saves": 1,
+        "shares": 0,
+        "accountsEngaged": 1,
+        "profileActivity": 0,
+        "attributedFollows": 0,
+        "profileVisits": null,
+        "retention": null,
+        "watchTime": null
+      },
+      "x": {
+        "capturedAt": "2026-09-10T15:05:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 14730,
+        "sourceUrl": "https://x.com/pixelmurmur/status/2097867530564182356",
+        "publishedAt": "2026-09-10T10:59:30+09:00",
+        "views": 4,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "bookmarks": 0
+      },
+      "comparison": {
+        "observationId": "pm013-1h-check-20260910-1202",
+        "instagramViewsChange": 6,
+        "instagramPeopleWhoViewedChange": 4,
+        "instagramLikesChange": 0,
+        "instagramSavesChange": 0,
+        "instagramCommentsChange": 0,
+        "instagramSharesChange": 0,
+        "instagramAccountsEngagedChange": 0,
+        "instagramAttributedFollowsChange": 0,
+        "xViewsChange": 2,
+        "xLikesChange": 0,
+        "xRepliesChange": 0,
+        "xRepostsChange": 0,
+        "xBookmarksChange": 0
+      },
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "externalChangesMade": false,
+      "decision": "continue-scheduled-monitoring-without-editing-or-reposting",
+      "notificationDecision": "DONT_NOTIFY",
+      "assessment": "Only small displayed-view increases since the 1h observation, with no new direct engagement on either platform. The sample does not support a new action or causal diagnosis; preserve both posts and continue the existing observation queue.",
+      "caveats": [
+        "The final displayed values were reconfirmed at 15:05 KST after the earlier UI read in this run; timestamps are minute precision, not historical snapshots reconstructed at exactly 4h.",
+        "Owner inspection and platform autoplay may contribute views. No manual play, like, follow, comment, share, bookmark, or other engagement action was performed.",
+        "Instagram labels views and people who viewed separately. The 96.6% figure is the non-follower share of views, not unique people or proof of a recommendation source.",
+        "The identity of the one engaging account was not checked; no external audience or product-demand inference is made.",
+        "Watch time, retention, profile visits and website conversion were not displayed or measured, so they remain null.",
+        "The old X tab initially displayed a stale 2 views; 4 is the fresh post-detail value after reload. No paid analytics were opened.",
+        "PM-001 72h is not due until 20:45 KST and was not performed early."
+      ]
     }
   ]
 }
