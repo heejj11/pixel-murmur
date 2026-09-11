@@ -1,11 +1,11 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-11T11:25:14+09:00",
+  "updatedAt": "2026-09-11T03:39:09Z",
   "state": "published-and-site-linked-monitoring",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
-  "nextStep": "Observe the shared v04 queue for explain-v02 and x-casual-v03 separately; preserve both published X posts and do not reactivate v01.",
+  "nextStep": "Observe the shared v04 queue for explain-v02, x-casual-v03 and ig-reveal-v03 separately; preserve all published posts. No further automatic variants.",
   "creative": {
     "direction": "PM-013 design intention; not a working prototype demonstration",
     "copy": "ready-bilingual",
@@ -90,8 +90,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T11:25:14+09:00",
-    "nextCheckAt": "2026-09-11T12:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-11T03:39:09Z",
+    "nextCheckAt": "2026-09-11T13:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -152,8 +152,27 @@
       {
         "id": "pm013-x-casual-v03-1h",
         "at": "2026-09-11T12:25:00+09:00",
+        "state": "completed",
+        "recordIn": "../x-casual-v03/",
+        "triggeredAt": null,
+        "triggeredBy": "integrated-owner-publication-work-due-check",
+        "completedAt": "2026-09-11T12:29:00+09:00",
+        "observationId": "x-casual-v03-1h-check-20260911-1229",
+        "metricValuesAtTarget": null
+      },
+      {
+        "id": "pm013-ig-feed-v03-1h",
+        "at": "2026-09-11T13:25:00+09:00",
         "state": "scheduled-next",
-        "recordIn": "../x-casual-v03/"
+        "format": "feed",
+        "recordIn": "../ig-reveal-v03/"
+      },
+      {
+        "id": "pm013-ig-reel-v03-1h",
+        "at": "2026-09-11T13:40:00+09:00",
+        "state": "queued",
+        "format": "reel",
+        "recordIn": "../ig-reveal-v03/"
       },
       {
         "id": "pm013-x-casual-v03-4h",
@@ -162,16 +181,58 @@
         "recordIn": "../x-casual-v03/"
       },
       {
+        "id": "pm013-ig-feed-v03-4h",
+        "at": "2026-09-11T16:25:00+09:00",
+        "state": "queued",
+        "format": "feed",
+        "recordIn": "../ig-reveal-v03/"
+      },
+      {
+        "id": "pm013-ig-reel-v03-4h",
+        "at": "2026-09-11T16:40:00+09:00",
+        "state": "queued",
+        "format": "reel",
+        "recordIn": "../ig-reveal-v03/"
+      },
+      {
         "id": "pm013-x-casual-v03-12h",
         "at": "2026-09-11T23:25:00+09:00",
         "state": "queued",
         "recordIn": "../x-casual-v03/"
       },
       {
+        "id": "pm013-ig-feed-v03-12h",
+        "at": "2026-09-12T00:25:00+09:00",
+        "state": "queued",
+        "format": "feed",
+        "recordIn": "../ig-reveal-v03/"
+      },
+      {
+        "id": "pm013-ig-reel-v03-12h",
+        "at": "2026-09-12T00:40:00+09:00",
+        "state": "queued",
+        "format": "reel",
+        "recordIn": "../ig-reveal-v03/"
+      },
+      {
         "id": "pm013-x-casual-v03-24h",
         "at": "2026-09-12T11:25:00+09:00",
         "state": "queued",
         "recordIn": "../x-casual-v03/"
+      },
+      {
+        "id": "pm013-ig-feed-v03-24h",
+        "at": "2026-09-12T12:25:00+09:00",
+        "state": "queued",
+        "format": "feed",
+        "recordIn": "../ig-reveal-v03/"
+      },
+      {
+        "id": "pm013-ig-reel-v03-24h",
+        "at": "2026-09-12T12:40:00+09:00",
+        "state": "queued",
+        "format": "reel",
+        "recordIn": "../ig-reveal-v03/"
       },
       {
         "id": "pm013-72h",
@@ -185,6 +246,20 @@
         "recordIn": "../x-casual-v03/"
       },
       {
+        "id": "pm013-ig-feed-v03-72h",
+        "at": "2026-09-14T12:25:00+09:00",
+        "state": "queued",
+        "format": "feed",
+        "recordIn": "../ig-reveal-v03/"
+      },
+      {
+        "id": "pm013-ig-reel-v03-72h",
+        "at": "2026-09-14T12:40:00+09:00",
+        "state": "queued",
+        "format": "reel",
+        "recordIn": "../ig-reveal-v03/"
+      },
+      {
         "id": "pm013-7d",
         "at": "2026-09-17T11:00:00+09:00",
         "state": "queued"
@@ -194,10 +269,24 @@
         "at": "2026-09-18T11:25:00+09:00",
         "state": "queued",
         "recordIn": "../x-casual-v03/"
+      },
+      {
+        "id": "pm013-ig-feed-v03-7d",
+        "at": "2026-09-18T12:25:00+09:00",
+        "state": "queued",
+        "format": "feed",
+        "recordIn": "../ig-reveal-v03/"
+      },
+      {
+        "id": "pm013-ig-reel-v03-7d",
+        "at": "2026-09-18T12:40:00+09:00",
+        "state": "queued",
+        "format": "reel",
+        "recordIn": "../ig-reveal-v03/"
       }
     ],
     "lastTriggerObservedAt": "2026-09-11T11:00:23.151+09:00",
-    "nextCheckPurpose": "PM-013 X casual-v03 approximately 1h; original explain-v02 72h remains Sep 13 11:00 KST.",
+    "nextCheckPurpose": "PM-013 new Instagram feed approximately 1h; Reel 1h at 13:40 KST. Existing v02 and new X remain separately queued.",
     "lastManualCheckAt": "2026-09-11T09:58:00+09:00"
   },
   "lastObservationId": "pm013-24h-check-20260911-1105",
@@ -226,6 +315,12 @@
     "statusFile": "../x-casual-v03/status.json",
     "url": "https://x.com/pixelmurmur/status/2098235834885619956",
     "publishedAt": "2026-09-11T11:23:01+09:00",
+    "existingV02PostPreserved": true
+  },
+  "relatedInstagramTest": {
+    "statusFile": "../ig-reveal-v03/status.json",
+    "feedUrl": "https://www.instagram.com/p/DdIb9WakiVz/",
+    "reelUrl": "https://www.instagram.com/pixelmurmur/reel/DdIdUnXPdEX/",
     "existingV02PostPreserved": true
   }
 }

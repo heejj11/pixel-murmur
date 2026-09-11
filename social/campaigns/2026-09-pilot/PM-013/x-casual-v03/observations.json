@@ -37,6 +37,32 @@
       "websiteConversion": null,
       "paidMediaRun": false,
       "assessment": "Initial verification snapshot only. No verified external discovery or audience demand. Site-link backfill remains pending authenticated admin handoff."
+    },
+    {
+      "id": "x-casual-v03-1h-check-20260911-1229",
+      "kind": "1h-check",
+      "triggeredBy": "integrated-owner-publication-work-due-check",
+      "triggeredAt": null,
+      "x": {
+        "capturedAt": "2026-09-11T12:29:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 3959,
+        "sourceUrl": "https://x.com/pixelmurmur/status/2098235834885619956",
+        "publishedAt": "2026-09-11T11:23:01+09:00",
+        "views": 2,
+        "viewsSourceLabel": "조회수",
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "bookmarks": 0,
+        "profileVisits": null,
+        "linkClicks": null,
+        "uniqueViewers": null
+      },
+      "accountFollowers": null,
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "assessment": "One additional displayed view since launch QA; direct reactions remain zero. Operator checks may be included. No evidence yet of meaningful external response."
     }
   ],
   "checkAttempts": []

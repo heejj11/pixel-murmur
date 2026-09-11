@@ -1,4 +1,5 @@
 import "./index.css";
+import { PM013RevealReel, PM013RevealCover } from "./pm013-reveal/PM013Reveal";
 import { Composition, Folder } from "remotion";
 import { PM001Loop } from "./pm001/PM001Loop";
 import { PM001Reel } from "./pm001/PM001Reel";
@@ -26,6 +27,24 @@ import {
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Folder name="PM013-Reveal-v03">
+        <Composition
+          id="PM013-Reveal-Reel"
+          component={PM013RevealReel}
+          durationInFrames={210}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="PM013-Reveal-Cover"
+          component={PM013RevealCover}
+          durationInFrames={1}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+      </Folder>
       <Folder name="PM013-Explain-v02">
         <Composition
           id="PM013-Explain-Reel"

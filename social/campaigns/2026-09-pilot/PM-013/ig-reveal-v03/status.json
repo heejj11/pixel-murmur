@@ -1,0 +1,160 @@
+{
+  "campaignId": "2026-09-pilot-pm-013-ig-reveal-v03",
+  "objectId": "PM-013",
+  "state": "published-site-links-pending",
+  "ownerInstruction": "그렇게해서 해보자",
+  "approvalScope": "One short-caption Instagram photo post plus one separately designed phone-to-tape reveal Reel after quality checks; preserve existing posts.",
+  "feed": {
+    "state": "published",
+    "image": "../explain-v02/renders/pm-013_x_card_v02.png",
+    "aspectRatio": "4:5",
+    "cropVerified": true,
+    "bilingualCaptionEntered": true,
+    "altTextEntered": true,
+    "aiLabelEnabled": true,
+    "url": "https://www.instagram.com/p/DdIb9WakiVz/",
+    "publishedAt": "2026-09-11T12:23:21+09:00",
+    "publishedAtSource": "live-post-time-element",
+    "liveQuality": "passed-full-post-image-caption-alt-ai-label-and-profile-grid",
+    "profileGridCropVerified": true,
+    "insightsUrl": "https://www.instagram.com/insights/media/3983556833621190003/"
+  },
+  "reel": {
+    "state": "published",
+    "url": "https://www.instagram.com/pixelmurmur/reel/DdIdUnXPdEX/",
+    "publishedAt": "2026-09-11T12:35:28+09:00",
+    "publishedAtSource": "live-post-time-element",
+    "insightsUrl": "https://www.instagram.com/insights/media/3983562830413418775/",
+    "video": "renders/pm-013_ig_reveal_07s_v03.mp4",
+    "cover": "renders/pm-013_reveal_cover_v03.png",
+    "aspectRatio": "9:16",
+    "durationSeconds": 7,
+    "customCoverApplied": true,
+    "soundEnabled": true,
+    "aiLabelEnabled": true,
+    "originalAudioPresent": true,
+    "bilingualCaptionEntered": true,
+    "shareClickedOnce": true,
+    "liveQuality": "passed-full-post-video-caption-ai-label-original-audio-and-profile-grid",
+    "profileGridCropVerified": true,
+    "liveVideo": {
+      "width": 720,
+      "height": 1280,
+      "duration": 7.018666,
+      "readyState": 4,
+      "error": null,
+      "advancingPlaybackVerified": true,
+      "unmutedVerified": true
+    }
+  },
+  "site": {
+    "objectUrl": "https://pixelmurmur.com/objects/pm-013",
+    "state": "awaiting-authenticated-admin-handoff",
+    "savePerformed": false,
+    "pendingInstagramUrls": [
+      "https://www.instagram.com/p/DdIb9WakiVz/",
+      "https://www.instagram.com/pixelmurmur/reel/DdIdUnXPdEX/"
+    ],
+    "existingLinksMustBePreserved": true
+  },
+  "guards": {
+    "existingPosts": "preserve",
+    "pm001AdditionalVariantsAndReposts": "remain-on-hold",
+    "paidMedia": "not-approved-not-run",
+    "unsolicitedOutreach": "prohibited",
+    "obsidian": "do-not-write"
+  },
+  "updatedAt": "2026-09-11T03:39:09Z",
+  "monitoring": {
+    "automationId": "v04",
+    "state": "scheduled",
+    "savedFieldsVerifiedAt": "2026-09-11T03:39:09Z",
+    "nextCheckAt": "2026-09-11T13:25:00+09:00",
+    "futureExecutionVerified": false,
+    "sharedQueueIn": "../explain-v02/status.json",
+    "checkpoints": [
+      {
+        "id": "pm013-ig-feed-v03-1h",
+        "at": "2026-09-11T13:25:00+09:00",
+        "state": "scheduled-next",
+        "format": "feed"
+      },
+      {
+        "id": "pm013-ig-feed-v03-4h",
+        "at": "2026-09-11T16:25:00+09:00",
+        "state": "queued",
+        "format": "feed"
+      },
+      {
+        "id": "pm013-ig-feed-v03-12h",
+        "at": "2026-09-12T00:25:00+09:00",
+        "state": "queued",
+        "format": "feed"
+      },
+      {
+        "id": "pm013-ig-feed-v03-24h",
+        "at": "2026-09-12T12:25:00+09:00",
+        "state": "queued",
+        "format": "feed"
+      },
+      {
+        "id": "pm013-ig-feed-v03-72h",
+        "at": "2026-09-14T12:25:00+09:00",
+        "state": "queued",
+        "format": "feed"
+      },
+      {
+        "id": "pm013-ig-feed-v03-7d",
+        "at": "2026-09-18T12:25:00+09:00",
+        "state": "queued",
+        "format": "feed"
+      },
+      {
+        "id": "pm013-ig-reel-v03-1h",
+        "at": "2026-09-11T13:40:00+09:00",
+        "state": "queued",
+        "format": "reel"
+      },
+      {
+        "id": "pm013-ig-reel-v03-4h",
+        "at": "2026-09-11T16:40:00+09:00",
+        "state": "queued",
+        "format": "reel"
+      },
+      {
+        "id": "pm013-ig-reel-v03-12h",
+        "at": "2026-09-12T00:40:00+09:00",
+        "state": "queued",
+        "format": "reel"
+      },
+      {
+        "id": "pm013-ig-reel-v03-24h",
+        "at": "2026-09-12T12:40:00+09:00",
+        "state": "queued",
+        "format": "reel"
+      },
+      {
+        "id": "pm013-ig-reel-v03-72h",
+        "at": "2026-09-14T12:40:00+09:00",
+        "state": "queued",
+        "format": "reel"
+      },
+      {
+        "id": "pm013-ig-reel-v03-7d",
+        "at": "2026-09-18T12:40:00+09:00",
+        "state": "queued",
+        "format": "reel"
+      }
+    ]
+  },
+  "lastObservationIds": {
+    "feed": "ig-feed-v03-launch-qa-20260911-1228",
+    "reel": "ig-reel-v03-launch-qa-20260911-1240"
+  },
+  "experiment": {
+    "mandatoryFormatPair": false,
+    "controlledABTest": false,
+    "compareSameElapsedTime": true,
+    "additionalVariants": "not-auto-authorized"
+  }
+}

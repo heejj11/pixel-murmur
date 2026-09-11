@@ -39,12 +39,12 @@
   "guards": {
     "existingPosts": "preserve",
     "pm001AdditionalVariantsAndReposts": "remain-on-hold",
-    "instagramRepost": "not-requested",
+    "instagramRepost": "not-in-this-x-approval-scope-separate-ig-v03-owner-approval-recorded",
     "paidMedia": "not-approved-not-run",
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-11T11:25:14+09:00",
+  "updatedAt": "2026-09-11T03:39:09Z",
   "imageSha256": "bc6f08162166309a2642992848a828632fa8531bdf673d64fde5ad01529fe42f",
   "hypothesis": "A casual maker-thought hook may elicit more voluntary response than the explanatory caption; exploratory comparison, not a controlled causal test.",
   "comparisonBaseline": {
@@ -62,14 +62,19 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T11:25:14+09:00",
-    "nextCheckAt": "2026-09-11T12:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-11T03:39:09Z",
+    "nextCheckAt": "2026-09-11T15:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
         "id": "pm013-x-casual-v03-1h",
         "at": "2026-09-11T12:25:00+09:00",
-        "state": "scheduled-next"
+        "state": "completed",
+        "triggeredAt": null,
+        "triggeredBy": "integrated-owner-publication-work-due-check",
+        "completedAt": "2026-09-11T12:29:00+09:00",
+        "observationId": "x-casual-v03-1h-check-20260911-1229",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-x-casual-v03-4h",
@@ -97,18 +102,19 @@
         "state": "queued"
       }
     ],
-    "sharedQueueIn": "../explain-v02/status.json"
+    "sharedQueueIn": "../explain-v02/status.json",
+    "sharedAutomationNextAt": "2026-09-11T13:25:00+09:00"
   },
-  "lastObservationId": "x-casual-v03-launch-qa-20260911-1124",
+  "lastObservationId": "x-casual-v03-1h-check-20260911-1229",
   "lastObservation": {
-    "id": "x-casual-v03-launch-qa-20260911-1124",
-    "capturedAt": "2026-09-11T11:24:00+09:00",
-    "views": 1,
+    "id": "x-casual-v03-1h-check-20260911-1229",
+    "capturedAt": "2026-09-11T12:29:00+09:00",
+    "views": 2,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "bookmarks": 0,
-    "assessment": "Launch QA only; operator inspection can be included. Not evidence of external distribution."
+    "assessment": "One additional displayed view since launch QA; no direct reaction. Operator QA may be included."
   },
   "additionalVariants": "not-auto-authorized"
 }
