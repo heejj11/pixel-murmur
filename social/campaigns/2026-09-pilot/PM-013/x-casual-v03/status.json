@@ -62,7 +62,7 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T07:28:30Z",
+    "savedFieldsVerifiedAt": "2026-09-11T07:43:35Z",
     "nextCheckAt": "2026-09-11T23:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
@@ -89,7 +89,7 @@
       {
         "id": "pm013-x-casual-v03-12h",
         "at": "2026-09-11T23:25:00+09:00",
-        "state": "queued"
+        "state": "scheduled-next"
       },
       {
         "id": "pm013-x-casual-v03-24h",
@@ -108,7 +108,7 @@
       }
     ],
     "sharedQueueIn": "../explain-v02/status.json",
-    "sharedAutomationNextAt": "2026-09-11T16:40:00+09:00",
+    "sharedAutomationNextAt": "2026-09-11T23:25:00+09:00",
     "lastTriggerObservedAt": "2026-09-11T15:26:11.939+09:00"
   },
   "lastObservationId": "x-casual-v03-4h-check-20260911-1528",
