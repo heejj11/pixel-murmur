@@ -62,7 +62,7 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T03:39:09Z",
+    "savedFieldsVerifiedAt": "2026-09-11T04:30:56Z",
     "nextCheckAt": "2026-09-11T15:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
@@ -103,7 +103,7 @@
       }
     ],
     "sharedQueueIn": "../explain-v02/status.json",
-    "sharedAutomationNextAt": "2026-09-11T13:25:00+09:00"
+    "sharedAutomationNextAt": "2026-09-11T13:40:00+09:00"
   },
   "lastObservationId": "x-casual-v03-1h-check-20260911-1229",
   "lastObservation": {
