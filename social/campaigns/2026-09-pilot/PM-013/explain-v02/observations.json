@@ -188,6 +188,83 @@
         "The old X tab initially displayed a stale 2 views; 4 is the fresh post-detail value after reload. No paid analytics were opened.",
         "PM-001 72h is not due until 20:45 KST and was not performed early."
       ]
+    },
+    {
+      "id": "pm013-12h-delayed-check-20260911-0958",
+      "kind": "owner-requested-delayed-12h-check",
+      "scheduledAt": "2026-09-10T23:00:00+09:00",
+      "triggeredBy": "owner-requested-retry",
+      "triggeredAt": null,
+      "metricValuesAtTarget": null,
+      "resolvesAttemptIds": [
+        "pm013-12h-attempt-20260910-2303"
+      ],
+      "instagram": {
+        "capturedAt": "2026-09-11T09:58:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 83033,
+        "sourceUrl": "https://www.instagram.com/insights/media/3982787018227848473/",
+        "publishedAt": "2026-09-10T10:54:07+09:00",
+        "url": "https://www.instagram.com/pixelmurmur/reel/DdFs7D9ghUZ/",
+        "views": 128,
+        "peopleWhoViewed": 112,
+        "peopleWhoViewedSourceLabel": "조회한 사람",
+        "nonFollowerViewSharePercent": 96.8,
+        "followerViewSharePercent": 3.2,
+        "reactions": 2,
+        "reelInteractions": 2,
+        "likes": 1,
+        "comments": 0,
+        "saves": 1,
+        "shares": 0,
+        "accountsEngaged": 1,
+        "profileActivity": 0,
+        "attributedFollows": 0,
+        "profileVisits": null,
+        "retention": null,
+        "watchTime": null,
+        "reach": null
+      },
+      "x": {
+        "capturedAt": "2026-09-11T09:58:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 82710,
+        "sourceUrl": "https://x.com/pixelmurmur/status/2097867530564182356",
+        "publishedAt": "2026-09-10T10:59:30+09:00",
+        "views": 5,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "bookmarks": 0
+      },
+      "comparison": {
+        "observationId": "pm013-4h-check-20260910-1505",
+        "instagramViewsChange": 6,
+        "instagramPeopleWhoViewedChange": 6,
+        "instagramLikesChange": 0,
+        "instagramSavesChange": 0,
+        "instagramCommentsChange": 0,
+        "instagramSharesChange": 0,
+        "instagramAccountsEngagedChange": 0,
+        "instagramAttributedFollowsChange": 0,
+        "xViewsChange": 1,
+        "xLikesChange": 0,
+        "xRepliesChange": 0,
+        "xRepostsChange": 0,
+        "xBookmarksChange": 0
+      },
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "externalChangesMade": false,
+      "decision": "complete-delayed-12h-follow-up-and-keep-11am-24h-check",
+      "assessment": "Small view growth since the 4h observation, but one like, one save and one engaged account remain unchanged; X has five views and no direct response. This is a current late follow-up, not a reconstructed 12h measurement or an early completion of the 24h checkpoint.",
+      "caveats": [
+        "The actual observation is about 23h04m after Instagram and 22h59m after X publication; the 11:00 KST 24h check remains scheduled.",
+        "No new reactions, shares, comments or attributed follows are displayed.",
+        "Owner inspection and platform autoplay may affect views; views are not unique external audience.",
+        "Watch time, retention, profile visits, separate reach and website conversion are unavailable or unmeasured.",
+        "Mac access succeeded without security/account changes. Failed attempts and historical nulls are preserved."
+      ]
     }
   ],
   "checkAttempts": [

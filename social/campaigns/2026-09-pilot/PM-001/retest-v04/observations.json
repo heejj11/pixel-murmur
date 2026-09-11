@@ -483,6 +483,73 @@
       "externalChangesMade": false,
       "scheduledCheckpointsChanged": false,
       "decision": "prepare-pm013-design-intention-creative-without-restarting-pm001-variants"
+    },
+    {
+      "id": "instagram-72h-delayed-check-20260911-0958",
+      "phase": "owner-requested-delayed-72h-check",
+      "capturedAt": "2026-09-11T09:58:00+09:00",
+      "timePrecision": "minute",
+      "scheduledAt": "2026-09-10T20:45:00+09:00",
+      "triggeredBy": "owner-requested-retry",
+      "triggeredAt": null,
+      "publishedAt": "2026-09-07T20:43:02+09:00",
+      "elapsedSincePublicationSeconds": 306898,
+      "elapsedDescription": "approximately 85 hours 14 minutes 58 seconds after publication; minute-precision observation",
+      "method": "freshly-opened-logged-in-post-insights-ui",
+      "metricValuesAtTarget": null,
+      "resolvesAttemptIds": [
+        "instagram-72h-attempt-20260910-2047",
+        "instagram-72h-retry-20260910-2303"
+      ],
+      "posts": [
+        {
+          "url": "https://www.instagram.com/pixelmurmur/reel/Dc_B8EmvZd2/",
+          "insightsSourceUrl": "https://www.instagram.com/insights/media/3980909121778849654/",
+          "objectId": "PM-001",
+          "version": "v04",
+          "views": 129,
+          "peopleWhoViewed": 109,
+          "followerViewSharePercent": 4.8,
+          "nonFollowerViewSharePercent": 95.2,
+          "likes": 2,
+          "comments": 0,
+          "saves": 0,
+          "shares": 0,
+          "interactionsOverview": 2,
+          "engagedAccounts": 2,
+          "profileActivity": 0,
+          "followersAttributedToPost": 0,
+          "profileVisits": null,
+          "averageWatchTimeSeconds": null,
+          "retention": null,
+          "peopleWhoViewedSourceLabel": "조회한 사람",
+          "reactions": 2,
+          "reelInteractions": 2,
+          "reach": null
+        }
+      ],
+      "comparison": {
+        "observationId": "instagram-owner-requested-check-20260910-0925",
+        "checkpointBaselineObservationId": "instagram-24h-check-20260908-2047",
+        "viewsChange": 2,
+        "peopleWhoViewedChange": 0,
+        "likesChange": 0,
+        "commentsChange": 0,
+        "savesChange": 0,
+        "sharesChange": 0,
+        "attributedFollowsChange": 0
+      },
+      "assessment": "Two additional displayed views since the prior actual observation, with the same 109 people who viewed and no new direct engagement. Complete the late follow-up without backfilling the missed 72h values; keep the existing PM-001 publication hold.",
+      "caveats": [
+        "Mac and existing platform sessions were accessible on this retry; no credential or security settings were changed.",
+        "Owner inspection or autoplay may contribute views; two extra views do not establish two new people.",
+        "Watch time, retention, separate reach and profile visits were not displayed; no causal diagnosis is made.",
+        "Account profile/follower totals and X v04 were not rechecked. Prior failed attempts remain unchanged."
+      ],
+      "accountProfileRechecked": false,
+      "externalChangesMade": false,
+      "paidMedia": "not-run",
+      "decision": "complete-delayed-check-preserve-existing-posts-and-pm001-hold"
     }
   ],
   "checkAttempts": [

@@ -1,7 +1,7 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-10T23:04:24+09:00",
+  "updatedAt": "2026-09-11T09:59:59+09:00",
   "state": "published-and-site-linked-monitoring",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
@@ -90,7 +90,7 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-10T23:04:24+09:00",
+    "savedFieldsVerifiedAt": "2026-09-11T09:59:59+09:00",
     "nextCheckAt": "2026-09-11T11:00:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
@@ -113,25 +113,32 @@
       {
         "id": "pm001-v04-72h",
         "at": "2026-09-10T20:45:00+09:00",
-        "state": "blocked-awaiting-manual-mac-unlock",
+        "state": "completed",
         "recordIn": "../../PM-001/retest-v04/",
         "triggeredAt": "2026-09-10T20:46:19.468+09:00",
         "attemptedAt": "2026-09-10T20:47:00+09:00",
         "attemptId": "instagram-72h-attempt-20260910-2047",
-        "retryAt": "2026-09-11T11:00:00+09:00",
+        "retryAt": null,
         "lastAttemptedAt": "2026-09-10T23:03:00+09:00",
         "lastTriggerObservedAt": "2026-09-10T23:02:19.959+09:00",
-        "lastAttemptId": "instagram-72h-retry-20260910-2303"
+        "lastAttemptId": "instagram-72h-retry-20260910-2303",
+        "completionTiming": "delayed-owner-requested-retry",
+        "completedAt": "2026-09-11T09:58:00+09:00",
+        "observationId": "instagram-72h-delayed-check-20260911-0958",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-12h",
         "at": "2026-09-10T23:00:00+09:00",
-        "state": "blocked-awaiting-manual-mac-unlock",
+        "state": "completed",
         "triggeredAt": "2026-09-10T23:02:19.959+09:00",
         "attemptedAt": "2026-09-10T23:03:00+09:00",
         "attemptId": "pm013-12h-attempt-20260910-2303",
-        "retryAt": "2026-09-11T11:00:00+09:00",
-        "metricValuesAtTarget": null
+        "retryAt": null,
+        "metricValuesAtTarget": null,
+        "completionTiming": "delayed-owner-requested-retry",
+        "completedAt": "2026-09-11T09:58:00+09:00",
+        "observationId": "pm013-12h-delayed-check-20260911-0958"
       },
       {
         "id": "pm013-24h",
@@ -150,27 +157,29 @@
       }
     ],
     "lastTriggerObservedAt": "2026-09-10T23:02:19.959+09:00",
-    "nextCheckPurpose": "PM-013 due 24h plus delayed 12h follow-up in one actual snapshot; pending PM-001 72h retry after manual Mac unlock."
+    "nextCheckPurpose": "PM-013 approximately 24h only; delayed PM-001 72h and PM-013 12h completed at 09:58 KST.",
+    "lastManualCheckAt": "2026-09-11T09:58:00+09:00"
   },
-  "lastObservationId": "pm013-4h-check-20260910-1505",
+  "lastObservationId": "pm013-12h-delayed-check-20260911-0958",
   "lastObservationSummary": {
-    "instagramViews": 122,
-    "instagramPeopleWhoViewed": 106,
+    "instagramViews": 128,
+    "instagramPeopleWhoViewed": 112,
     "instagramLikes": 1,
     "instagramSaves": 1,
     "instagramAccountsEngaged": 1,
     "instagramAttributedFollows": 0,
-    "xViews": 4,
+    "xViews": 5,
     "xDirectReactions": 0,
-    "decision": "continue-scheduled-monitoring-without-editing-or-reposting"
+    "decision": "complete-delayed-12h-follow-up-and-keep-11am-24h-check"
   },
   "lastCheckAttempt": {
-    "id": "pm013-12h-attempt-20260910-2303",
-    "attemptedAt": "2026-09-10T23:03:00+09:00",
-    "state": "blocked-before-platform-ui-access",
-    "reason": "mac-locked-manual-unlock-required",
-    "latestMetricsUpdated": false,
-    "retryAt": "2026-09-11T11:00:00+09:00",
-    "knownBlockerAlreadyNotified": true
+    "id": "pm013-12h-delayed-check-20260911-0958",
+    "state": "completed",
+    "completedAt": "2026-09-11T09:58:00+09:00",
+    "observationId": "pm013-12h-delayed-check-20260911-0958",
+    "triggeredBy": "owner-requested-retry",
+    "blockerResolved": true,
+    "latestMetricsUpdated": true,
+    "retryAt": null
   }
 }

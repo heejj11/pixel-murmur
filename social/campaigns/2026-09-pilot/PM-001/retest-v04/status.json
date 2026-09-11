@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-001-retest-v04",
   "objectId": "PM-001",
   "state": "both-published-and-site-linked",
-  "updatedAt": "2026-09-10T23:04:24+09:00",
+  "updatedAt": "2026-09-11T09:59:59+09:00",
   "additionalPublicationHold": {
     "state": "owner-approved-hold",
     "recordedAt": "2026-09-09T15:03:00+09:00",
@@ -34,10 +34,10 @@
     "futureExecutionVerified": false,
     "firstRemainingSlotObservedAtUtc": "2026-09-08T09:45:38.136Z",
     "firstRemainingSlotCompleted": true,
-    "futureExecutionNote": "The Sep 10 20:45 and 23:00 triggers arrived, but both UI attempts were blocked by the Mac lock. The 72h metric checkpoint remains incomplete; retry at Sep 11 11:00 KST.",
+    "futureExecutionNote": "The blocked 72h follow-up was completed late by owner-requested retry at Sep 11 09:58 KST. Historical target-time values remain unmeasured. Only PM-013 future checks remain in shared v04.",
     "secondRemainingSlotObservedAtUtc": "2026-09-08T11:46:06.350Z",
     "secondRemainingSlotCompleted": true,
-    "noFreshSocialObservation": true
+    "noFreshSocialObservation": false
   },
   "publication": {
     "instagram": {
@@ -157,31 +157,36 @@
     {
       "at": "2026-09-10T20:45:00+09:00",
       "action": "instagram-v04-72h-check",
-      "state": "blocked-awaiting-manual-mac-unlock",
+      "state": "completed",
       "triggeredAt": "2026-09-10T20:46:19.468+09:00",
       "attemptedAt": "2026-09-10T20:47:00+09:00",
       "attemptId": "instagram-72h-attempt-20260910-2047",
-      "retryAt": "2026-09-11T11:00:00+09:00",
+      "retryAt": null,
       "lastAttemptedAt": "2026-09-10T23:03:00+09:00",
       "lastTriggerObservedAt": "2026-09-10T23:02:19.959+09:00",
-      "lastAttemptId": "instagram-72h-retry-20260910-2303"
+      "lastAttemptId": "instagram-72h-retry-20260910-2303",
+      "completionTiming": "delayed-owner-requested-retry",
+      "completedAt": "2026-09-11T09:58:00+09:00",
+      "observationId": "instagram-72h-delayed-check-20260911-0958",
+      "metricValuesAtTarget": null
     }
   ],
   "lastObservation": {
-    "id": "instagram-24h-check-20260908-2047",
-    "capturedAt": "2026-09-08T20:47:00+09:00",
-    "elapsedDescription": "approximately 24 hours 4 minutes after Instagram publication",
-    "instagramViews": 127,
+    "id": "instagram-72h-delayed-check-20260911-0958",
+    "capturedAt": "2026-09-11T09:58:00+09:00",
+    "elapsedDescription": "approximately 85 hours 14 minutes 58 seconds after publication; minute-precision observation",
+    "instagramViews": 129,
     "instagramLikes": 2,
     "visibleAudienceComments": 0,
-    "accountFollowers": 1,
+    "accountFollowers": null,
+    "accountFollowersNote": "Account profile not reread in this observation",
     "followerAttributionToPost": 0,
     "peopleWhoViewed": 109,
-    "nonFollowerViewSharePercent": 96.8,
+    "nonFollowerViewSharePercent": 95.2,
     "saves": 0,
     "shares": 0,
     "insightsSourceUrl": "https://www.instagram.com/insights/media/3980909121778849654/",
-    "decision": "continue-to-72h-check-without-editing-or-reposting"
+    "decision": "complete-delayed-check-preserve-existing-posts-and-pm001-hold"
   },
   "preserveExistingPosts": true,
   "lastXObservation": {
@@ -199,20 +204,21 @@
   },
   "followUpSchedule": {
     "automationId": "v04",
-    "updatedAndSavedFieldsVerifiedAt": "2026-09-10T23:04:24+09:00",
+    "updatedAndSavedFieldsVerifiedAt": "2026-09-11T09:59:59+09:00",
     "previousTriggerObservedAtUtc": "2026-09-10T14:02:19.959Z",
-    "previousCheckpointCompletedAt": "2026-09-09T20:17:00+09:00",
-    "nextAt": "2026-09-11T11:00:00+09:00",
-    "nextAtUtc": "2026-09-11T02:00:00Z",
-    "nextDateRestrictedTo": "2026-09-11",
+    "previousCheckpointCompletedAt": "2026-09-11T09:58:00+09:00",
+    "nextAt": null,
+    "nextAtUtc": null,
+    "nextDateRestrictedTo": null,
     "futureExecutionVerified": false,
-    "reschedulingPolicy": "Retry pending PM-001 72h at the next future shared checkpoint, Sep 11 11:00 KST, alongside PM-013 delayed 12h and due 24h. Preserve unavailable historical values and retain v04 for later PM-013 checkpoints.",
+    "reschedulingPolicy": "PM-001 72h follow-up completed late on Sep 11 09:58. Do not repeat it; retain shared v04 for PM-013 24h / 72h / 7d only.",
     "sharedAutomationNextAt": "2026-09-11T11:00:00+09:00",
-    "sharedAutomationNextPurpose": "Pending PM-001 72h retry and PM-013 current snapshot for delayed 12h / due 24h; do not duplicate a current snapshot as historical metrics.",
-    "sharedAutomationSavedFieldsVerifiedAt": "2026-09-10T23:04:24+09:00",
+    "sharedAutomationNextPurpose": "PM-013 approximately 24h only; PM-001 follow-up and PM-013 delayed 12h are complete.",
+    "sharedAutomationSavedFieldsVerifiedAt": "2026-09-11T09:59:59+09:00",
     "lastAttemptAt": "2026-09-10T23:03:00+09:00",
     "lastAttemptId": "instagram-72h-retry-20260910-2303",
-    "state": "scheduled-with-pending-manual-mac-unlock"
+    "state": "pm001-checkpoints-finished-shared-monitor-retained",
+    "lastManualCheckAt": "2026-09-11T09:58:00+09:00"
   },
   "paidMediaAuthorized": false,
   "notes": [
@@ -223,12 +229,13 @@
     "Recheck platform upload, cover crop, audio, bilingual captions and AI labeling immediately before publishing."
   ],
   "lastCheckAttempt": {
-    "id": "instagram-72h-retry-20260910-2303",
-    "attemptedAt": "2026-09-10T23:03:00+09:00",
-    "state": "blocked-before-platform-ui-access",
-    "reason": "mac-locked-manual-unlock-required",
-    "latestMetricsUpdated": false,
-    "retryAt": "2026-09-11T11:00:00+09:00",
-    "knownBlockerAlreadyNotified": true
+    "id": "instagram-72h-delayed-check-20260911-0958",
+    "state": "completed",
+    "completedAt": "2026-09-11T09:58:00+09:00",
+    "observationId": "instagram-72h-delayed-check-20260911-0958",
+    "triggeredBy": "owner-requested-retry",
+    "blockerResolved": true,
+    "latestMetricsUpdated": true,
+    "retryAt": null
   }
 }
