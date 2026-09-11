@@ -1,7 +1,7 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-11T04:30:56Z",
+  "updatedAt": "2026-09-11T04:44:08Z",
   "state": "published-and-site-linked-monitoring",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
@@ -90,8 +90,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T04:30:56Z",
-    "nextCheckAt": "2026-09-11T13:40:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-11T04:44:08Z",
+    "nextCheckAt": "2026-09-11T15:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -175,14 +175,19 @@
       {
         "id": "pm013-ig-reel-v03-1h",
         "at": "2026-09-11T13:40:00+09:00",
-        "state": "scheduled-next",
+        "state": "completed",
         "format": "reel",
-        "recordIn": "../ig-reveal-v03/"
+        "recordIn": "../ig-reveal-v03/",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-11T13:40:38.082+09:00",
+        "completedAt": "2026-09-11T13:41:00+09:00",
+        "observationId": "ig-reel-v03-1h-check-20260911-1341",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-x-casual-v03-4h",
         "at": "2026-09-11T15:25:00+09:00",
-        "state": "queued",
+        "state": "scheduled-next",
         "recordIn": "../x-casual-v03/"
       },
       {
@@ -290,8 +295,8 @@
         "recordIn": "../ig-reveal-v03/"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-11T13:27:08.053+09:00",
-    "nextCheckPurpose": "PM-013 new Instagram reveal Reel approximately 1h. Feed 1h complete; X and original v02 remain separately queued.",
+    "lastTriggerObservedAt": "2026-09-11T13:40:38.082+09:00",
+    "nextCheckPurpose": "PM-013 X casual-v03 approximately 4h; Instagram feed 4h at 16:25 and Reel 4h at 16:40 KST.",
     "lastManualCheckAt": "2026-09-11T09:58:00+09:00"
   },
   "lastObservationId": "pm013-24h-check-20260911-1105",

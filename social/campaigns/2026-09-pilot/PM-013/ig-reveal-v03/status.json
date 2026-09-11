@@ -64,12 +64,12 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-11T04:30:56Z",
+  "updatedAt": "2026-09-11T04:44:08Z",
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T04:30:56Z",
-    "nextCheckAt": "2026-09-11T13:40:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-11T04:44:08Z",
+    "nextCheckAt": "2026-09-11T16:25:00+09:00",
     "futureExecutionVerified": false,
     "sharedQueueIn": "../explain-v02/status.json",
     "checkpoints": [
@@ -117,8 +117,13 @@
       {
         "id": "pm013-ig-reel-v03-1h",
         "at": "2026-09-11T13:40:00+09:00",
-        "state": "scheduled-next",
-        "format": "reel"
+        "state": "completed",
+        "format": "reel",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-11T13:40:38.082+09:00",
+        "completedAt": "2026-09-11T13:41:00+09:00",
+        "observationId": "ig-reel-v03-1h-check-20260911-1341",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-ig-reel-v03-4h",
@@ -151,12 +156,13 @@
         "format": "reel"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-11T13:27:08.053+09:00",
-    "nextCheckPurpose": "PM-013 new Instagram reveal Reel approximately 1h. Feed 1h complete; X and original v02 remain separately queued."
+    "lastTriggerObservedAt": "2026-09-11T13:40:38.082+09:00",
+    "nextCheckPurpose": "Instagram feed approximately 4h at 16:25 KST, then Reel 4h at 16:40; shared automation first checks X at 15:25.",
+    "sharedAutomationNextAt": "2026-09-11T15:25:00+09:00"
   },
   "lastObservationIds": {
     "feed": "ig-feed-v03-1h-check-20260911-1328",
-    "reel": "ig-reel-v03-launch-qa-20260911-1240"
+    "reel": "ig-reel-v03-1h-check-20260911-1341"
   },
   "experiment": {
     "mandatoryFormatPair": false,
@@ -178,15 +184,30 @@
       "profileActivity": 0,
       "attributedFollows": 0,
       "decision": "preserve-post-continue-to-4h-small-follower-only-sample"
+    },
+    "reel": {
+      "id": "ig-reel-v03-1h-check-20260911-1341",
+      "capturedAt": "2026-09-11T13:41:00+09:00",
+      "views": 72,
+      "peopleWhoViewed": 57,
+      "nonFollowerViewSharePercent": 100,
+      "likes": 0,
+      "comments": 0,
+      "saves": 0,
+      "shares": 0,
+      "accountsEngaged": null,
+      "profileActivity": 0,
+      "attributedFollows": 0,
+      "decision": "preserve-reel-continue-to-4h-distribution-without-direct-engagement"
     }
   },
   "lastCheckAttempt": {
-    "id": "ig-feed-v03-1h-check-20260911-1328",
+    "id": "ig-reel-v03-1h-check-20260911-1341",
     "state": "completed",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-11T13:27:08.053+09:00",
-    "completedAt": "2026-09-11T13:28:00+09:00",
-    "observationId": "ig-feed-v03-1h-check-20260911-1328",
+    "triggeredAt": "2026-09-11T13:40:38.082+09:00",
+    "completedAt": "2026-09-11T13:41:00+09:00",
+    "observationId": "ig-reel-v03-1h-check-20260911-1341",
     "latestMetricsUpdated": true,
     "retryAt": null
   }

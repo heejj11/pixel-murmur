@@ -44,7 +44,7 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-11T03:39:09Z",
+  "updatedAt": "2026-09-11T04:44:08Z",
   "imageSha256": "bc6f08162166309a2642992848a828632fa8531bdf673d64fde5ad01529fe42f",
   "hypothesis": "A casual maker-thought hook may elicit more voluntary response than the explanatory caption; exploratory comparison, not a controlled causal test.",
   "comparisonBaseline": {
@@ -62,7 +62,7 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T04:30:56Z",
+    "savedFieldsVerifiedAt": "2026-09-11T04:44:08Z",
     "nextCheckAt": "2026-09-11T15:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
@@ -79,7 +79,7 @@
       {
         "id": "pm013-x-casual-v03-4h",
         "at": "2026-09-11T15:25:00+09:00",
-        "state": "queued"
+        "state": "scheduled-next"
       },
       {
         "id": "pm013-x-casual-v03-12h",
@@ -103,7 +103,7 @@
       }
     ],
     "sharedQueueIn": "../explain-v02/status.json",
-    "sharedAutomationNextAt": "2026-09-11T13:40:00+09:00"
+    "sharedAutomationNextAt": "2026-09-11T15:25:00+09:00"
   },
   "lastObservationId": "x-casual-v03-1h-check-20260911-1229",
   "lastObservation": {
