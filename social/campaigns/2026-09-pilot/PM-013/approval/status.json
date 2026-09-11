@@ -1,8 +1,8 @@
 {
   "campaignId": "2026-09-pilot-pm-013",
   "objectId": "PM-013",
-  "state": "v02-published-and-linked-v01-still-held",
-  "updatedAt": "2026-09-10T11:03:20+09:00",
+  "state": "v02-published-and-linked-v03-x-published-link-pending-v01-held",
+  "updatedAt": "2026-09-11T11:25:14+09:00",
   "nextCreativeStatus": "../explain-v02/status.json",
   "historicalApprovalScope": "The approvals and publication fields below describe v01. Do not reactivate its old draft or cancelled schedule.",
   "approvals": {
@@ -35,6 +35,7 @@
   },
   "externalActionsAllowed": false,
   "notes": [
+    "2026-09-11: Owner approved the casual X copy experiment with “그렇게 해보자”. One new PM-013 X post published at 11:23:01 KST with unchanged v02 image, bilingual copy/ALT and AI/unproduced disclosure. Existing posts preserved. App admin is signed out; the new site link awaits owner handoff. See latestXCreativeStatus. Historical v01 remains held.",
     "2026-09-10: Owner foregrounded the authenticated administrator tab. PM-013 explain-v02 published to Instagram at 10:54:07 KST and X at 10:59:30 KST; site public and both actual links verified. See nextCreativeStatus. Remaining v01 fields below stay historical and held.",
     "2026-09-10 10:36 KST: Owner requested continuation after personal-Chrome admin authentication. Prepared both v02 social composers, applied AI labels, verified IG 9:16 crop/custom cover/sound and X original 4:5/ALT/site URL. No public post or site save yet; waiting for owner to foreground the exact admin tab after a safety rejection of switching away from unrelated company content.",
     "2026-09-10: Owner requested the next stage if trends were unchanged. Fresh metrics showed no meaningful growth; prepared PM-013 explain-v02 video, cover, X still and bilingual copy. See nextCreativeStatus for current state.",
@@ -48,5 +49,6 @@
     "X scheduling was verified in the scheduled-post list.",
     "The Instagram draft includes the 9:16 video, grid-safe cover, bilingual caption, and AI label, but is not scheduled because professional-account conversion needs a separate owner decision.",
     "No paid media, subscription, or other spend is approved."
-  ]
+  ],
+  "latestXCreativeStatus": "../x-casual-v03/status.json"
 }

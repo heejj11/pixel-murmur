@@ -1,0 +1,114 @@
+{
+  "campaignId": "2026-09-pilot-pm-013-x-casual-v03",
+  "objectId": "PM-013",
+  "state": "published-site-link-pending",
+  "ownerInstruction": "그렇게 해보자",
+  "approvalScope": "One new organic X post with the agreed casual hook and the unchanged v02 image; preserve existing posts and append the actual URL to the site.",
+  "changedVariable": "post-copy-tone-and-length",
+  "image": "../explain-v02/renders/pm-013_x_card_v02.png",
+  "copyFile": "captions.md",
+  "publication": {
+    "platform": "x",
+    "state": "published",
+    "url": "https://x.com/pixelmurmur/status/2098235834885619956",
+    "publishedAt": "2026-09-11T11:23:01+09:00",
+    "publishedAtSource": "live-post-time-element",
+    "postClickedOnce": true,
+    "account": "pixelmurmur",
+    "imageAspectRatio": "original-4:5",
+    "imageCropVerified": true,
+    "aiLabelEnabled": true,
+    "paidPartnershipEnabled": false,
+    "bilingualCaptionEntered": true,
+    "altTextEntered": true,
+    "websiteLinkEntered": "https://pixelmurmur.com/objects/pm-013",
+    "liveQuality": "passed-full-post-image-and-disclosure"
+  },
+  "site": {
+    "objectUrl": "https://pixelmurmur.com/objects/pm-013",
+    "adminUrl": "https://pixelmurmur.com/admin/objects",
+    "state": "pending-authenticated-admin-handoff",
+    "pendingXUrls": [
+      "https://x.com/pixelmurmur/status/2098235834885619956"
+    ],
+    "existingLinksMustBePreserved": true,
+    "savePerformed": false,
+    "blocker": "In-app admin shows email login form. Asked owner to foreground the signed-in personal Chrome admin tab; no authentication bypass or company-profile use.",
+    "existingObjectWasAlreadyPublic": true
+  },
+  "guards": {
+    "existingPosts": "preserve",
+    "pm001AdditionalVariantsAndReposts": "remain-on-hold",
+    "instagramRepost": "not-requested",
+    "paidMedia": "not-approved-not-run",
+    "unsolicitedOutreach": "prohibited",
+    "obsidian": "do-not-write"
+  },
+  "updatedAt": "2026-09-11T11:25:14+09:00",
+  "imageSha256": "bc6f08162166309a2642992848a828632fa8531bdf673d64fde5ad01529fe42f",
+  "hypothesis": "A casual maker-thought hook may elicit more voluntary response than the explanatory caption; exploratory comparison, not a controlled causal test.",
+  "comparisonBaseline": {
+    "statusFile": "../explain-v02/status.json",
+    "observationsFile": "../explain-v02/observations.json",
+    "url": "https://x.com/pixelmurmur/status/2097867530564182356",
+    "sameElapsedTimeRequired": true,
+    "confounders": [
+      "publication-time",
+      "audience-delivery",
+      "repeat-exposure",
+      "operator-QA-views"
+    ]
+  },
+  "monitoring": {
+    "automationId": "v04",
+    "state": "scheduled",
+    "savedFieldsVerifiedAt": "2026-09-11T11:25:14+09:00",
+    "nextCheckAt": "2026-09-11T12:25:00+09:00",
+    "futureExecutionVerified": false,
+    "checkpoints": [
+      {
+        "id": "pm013-x-casual-v03-1h",
+        "at": "2026-09-11T12:25:00+09:00",
+        "state": "scheduled-next"
+      },
+      {
+        "id": "pm013-x-casual-v03-4h",
+        "at": "2026-09-11T15:25:00+09:00",
+        "state": "queued"
+      },
+      {
+        "id": "pm013-x-casual-v03-12h",
+        "at": "2026-09-11T23:25:00+09:00",
+        "state": "queued"
+      },
+      {
+        "id": "pm013-x-casual-v03-24h",
+        "at": "2026-09-12T11:25:00+09:00",
+        "state": "queued"
+      },
+      {
+        "id": "pm013-x-casual-v03-72h",
+        "at": "2026-09-14T11:25:00+09:00",
+        "state": "queued"
+      },
+      {
+        "id": "pm013-x-casual-v03-7d",
+        "at": "2026-09-18T11:25:00+09:00",
+        "state": "queued"
+      }
+    ],
+    "sharedQueueIn": "../explain-v02/status.json"
+  },
+  "lastObservationId": "x-casual-v03-launch-qa-20260911-1124",
+  "lastObservation": {
+    "id": "x-casual-v03-launch-qa-20260911-1124",
+    "capturedAt": "2026-09-11T11:24:00+09:00",
+    "views": 1,
+    "likes": 0,
+    "replies": 0,
+    "reposts": 0,
+    "bookmarks": 0,
+    "assessment": "Launch QA only; operator inspection can be included. Not evidence of external distribution."
+  },
+  "additionalVariants": "not-auto-authorized"
+}

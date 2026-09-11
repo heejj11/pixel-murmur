@@ -1,0 +1,43 @@
+{
+  "campaignId": "2026-09-pilot-pm-013-x-casual-v03",
+  "objectId": "PM-013",
+  "platform": "x",
+  "publication": {
+    "url": "https://x.com/pixelmurmur/status/2098235834885619956",
+    "publishedAt": "2026-09-11T11:23:01+09:00"
+  },
+  "measurementPolicy": {
+    "unavailableValues": null,
+    "excludePaid": true,
+    "operatorViewsMayBeIncluded": true,
+    "compareSameElapsedTime": true,
+    "notControlledABTest": true
+  },
+  "observations": [
+    {
+      "id": "x-casual-v03-launch-qa-20260911-1124",
+      "kind": "launch-qa",
+      "x": {
+        "capturedAt": "2026-09-11T11:24:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 59,
+        "sourceUrl": "https://x.com/pixelmurmur/status/2098235834885619956",
+        "publishedAt": "2026-09-11T11:23:01+09:00",
+        "views": 1,
+        "viewsSourceLabel": "조회수",
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "bookmarks": 0,
+        "profileVisits": null,
+        "linkClicks": null,
+        "uniqueViewers": null
+      },
+      "accountFollowers": 0,
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "assessment": "Initial verification snapshot only. No verified external discovery or audience demand. Site-link backfill remains pending authenticated admin handoff."
+    }
+  ],
+  "checkAttempts": []
+}
