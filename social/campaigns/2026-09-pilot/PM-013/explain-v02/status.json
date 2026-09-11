@@ -1,7 +1,7 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-11T06:30:19Z",
+  "updatedAt": "2026-09-11T07:28:30Z",
   "state": "published-and-site-linked-monitoring",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
@@ -90,8 +90,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T06:30:19Z",
-    "nextCheckAt": "2026-09-11T16:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-11T07:28:30Z",
+    "nextCheckAt": "2026-09-11T16:40:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -198,14 +198,19 @@
       {
         "id": "pm013-ig-feed-v03-4h",
         "at": "2026-09-11T16:25:00+09:00",
-        "state": "scheduled-next",
+        "state": "completed",
         "format": "feed",
-        "recordIn": "../ig-reveal-v03/"
+        "recordIn": "../ig-reveal-v03/",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-11T16:25:12.238+09:00",
+        "completedAt": "2026-09-11T16:26:00+09:00",
+        "observationId": "ig-feed-v03-4h-check-20260911-1626",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-ig-reel-v03-4h",
         "at": "2026-09-11T16:40:00+09:00",
-        "state": "queued",
+        "state": "scheduled-next",
         "format": "reel",
         "recordIn": "../ig-reveal-v03/"
       },
@@ -300,8 +305,8 @@
         "recordIn": "../ig-reveal-v03/"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-11T15:26:11.939+09:00",
-    "nextCheckPurpose": "PM-013 Instagram feed approximately 4h, followed by Reel 4h at 16:40 KST. X 4h is complete; X 12h remains 23:25.",
+    "lastTriggerObservedAt": "2026-09-11T16:25:12.238+09:00",
+    "nextCheckPurpose": "PM-013 Instagram reveal Reel approximately 4h at 16:40 KST. Feed 4h is complete; X 12h remains 23:25.",
     "lastManualCheckAt": "2026-09-11T09:58:00+09:00"
   },
   "lastObservationId": "pm013-24h-check-20260911-1105",
