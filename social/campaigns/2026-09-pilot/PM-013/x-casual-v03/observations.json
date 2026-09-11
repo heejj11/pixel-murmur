@@ -108,6 +108,52 @@
         "Views may include operator checks; unique viewers, profile visits and link clicks were not displayed.",
         "The scheduled target-time value was not measured. Actual observation is recorded with minute rounding."
       ]
+    },
+    {
+      "id": "x-casual-v03-12h-check-20260911-2327",
+      "kind": "scheduled-12h-check",
+      "scheduledAt": "2026-09-11T23:25:00+09:00",
+      "triggeredBy": "heartbeat-v04",
+      "triggeredAt": "2026-09-11T23:26:30.815+09:00",
+      "metricValuesAtTarget": null,
+      "x": {
+        "capturedAt": "2026-09-11T23:27:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 43439,
+        "sourceUrl": "https://x.com/pixelmurmur/status/2098235834885619956",
+        "publishedAt": "2026-09-11T11:23:01+09:00",
+        "views": 4,
+        "viewsSourceLabel": "조회수",
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "bookmarks": 0,
+        "profileVisits": null,
+        "linkClicks": null,
+        "uniqueViewers": null,
+        "observationWindow": "2026-09-11 23:27 KST"
+      },
+      "comparison": {
+        "observationId": "x-casual-v03-4h-check-20260911-1528",
+        "viewsChange": 1,
+        "likesChange": 0,
+        "repliesChange": 0,
+        "repostsChange": 0,
+        "bookmarksChange": 0
+      },
+      "accountFollowers": null,
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "externalChangesMade": false,
+      "notificationDecision": "DONT_NOTIFY",
+      "assessment": "One additional displayed view since the 4h snapshot, with likes, replies, reposts and bookmarks still zero. The tiny change may include operator inspection and does not establish meaningful external distribution, product demand or a copy effect. Preserve the post and continue to 24h.",
+      "caveats": [
+        "A freshly opened logged-in in-app-browser post detail displayed 4 views and zero replies, reposts, likes and bookmarks. This is a new observation, not reused historical data.",
+        "Only the due X casual-v03 checkpoint was measured. Instagram, old v02 and PM001 metrics were not reread.",
+        "No paid analytics, account profile inspection, engagement or extra manual refresh was performed; the temporary result tab was closed.",
+        "Views may include operator checks. Unique viewers, profile visits, link clicks and website conversion remain unavailable or unmeasured.",
+        "Exact scheduled target-time values remain unmeasured; the actual observation has minute precision."
+      ]
     }
   ],
   "checkAttempts": []

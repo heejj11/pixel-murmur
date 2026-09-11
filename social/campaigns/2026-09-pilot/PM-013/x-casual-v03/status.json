@@ -44,7 +44,7 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-11T06:30:19Z",
+  "updatedAt": "2026-09-11T14:28:53Z",
   "imageSha256": "bc6f08162166309a2642992848a828632fa8531bdf673d64fde5ad01529fe42f",
   "hypothesis": "A casual maker-thought hook may elicit more voluntary response than the explanatory caption; exploratory comparison, not a controlled causal test.",
   "comparisonBaseline": {
@@ -62,8 +62,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T07:43:35Z",
-    "nextCheckAt": "2026-09-11T23:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-11T14:28:53Z",
+    "nextCheckAt": "2026-09-12T11:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -89,7 +89,12 @@
       {
         "id": "pm013-x-casual-v03-12h",
         "at": "2026-09-11T23:25:00+09:00",
-        "state": "scheduled-next"
+        "state": "completed",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-11T23:26:30.815+09:00",
+        "completedAt": "2026-09-11T23:27:00+09:00",
+        "observationId": "x-casual-v03-12h-check-20260911-2327",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-x-casual-v03-24h",
@@ -108,28 +113,28 @@
       }
     ],
     "sharedQueueIn": "../explain-v02/status.json",
-    "sharedAutomationNextAt": "2026-09-11T23:25:00+09:00",
-    "lastTriggerObservedAt": "2026-09-11T15:26:11.939+09:00"
+    "sharedAutomationNextAt": "2026-09-12T00:25:00+09:00",
+    "lastTriggerObservedAt": "2026-09-11T23:26:30.815+09:00"
   },
-  "lastObservationId": "x-casual-v03-4h-check-20260911-1528",
+  "lastObservationId": "x-casual-v03-12h-check-20260911-2327",
   "lastObservation": {
-    "id": "x-casual-v03-4h-check-20260911-1528",
-    "capturedAt": "2026-09-11T15:28:00+09:00",
-    "views": 3,
+    "id": "x-casual-v03-12h-check-20260911-2327",
+    "capturedAt": "2026-09-11T23:27:00+09:00",
+    "views": 4,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "bookmarks": 0,
-    "assessment": "One additional displayed view since the 1h snapshot, with no direct reactions. This tiny change is not evidence of meaningful external distribution, product demand or copy effectiveness. Preserve the post and continue the remaining checkpoints."
+    "assessment": "One additional displayed view since the 4h snapshot, with likes, replies, reposts and bookmarks still zero. The tiny change may include operator inspection and does not establish meaningful external distribution, product demand or a copy effect. Preserve the post and continue to 24h."
   },
   "additionalVariants": "not-auto-authorized",
   "lastCheckAttempt": {
-    "id": "x-casual-v03-4h-check-20260911-1528",
+    "id": "x-casual-v03-12h-check-20260911-2327",
     "state": "completed",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-11T15:26:11.939+09:00",
-    "completedAt": "2026-09-11T15:28:00+09:00",
-    "observationId": "x-casual-v03-4h-check-20260911-1528",
+    "triggeredAt": "2026-09-11T23:26:30.815+09:00",
+    "completedAt": "2026-09-11T23:27:00+09:00",
+    "observationId": "x-casual-v03-12h-check-20260911-2327",
     "latestMetricsUpdated": true,
     "retryAt": null
   }

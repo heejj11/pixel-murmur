@@ -1,7 +1,7 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-11T07:43:35Z",
+  "updatedAt": "2026-09-11T14:28:53Z",
   "state": "published-and-site-linked-monitoring",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
@@ -90,8 +90,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T07:43:35Z",
-    "nextCheckAt": "2026-09-11T23:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-11T14:28:53Z",
+    "nextCheckAt": "2026-09-12T00:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -222,13 +222,18 @@
       {
         "id": "pm013-x-casual-v03-12h",
         "at": "2026-09-11T23:25:00+09:00",
-        "state": "scheduled-next",
-        "recordIn": "../x-casual-v03/"
+        "state": "completed",
+        "recordIn": "../x-casual-v03/",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-11T23:26:30.815+09:00",
+        "completedAt": "2026-09-11T23:27:00+09:00",
+        "observationId": "x-casual-v03-12h-check-20260911-2327",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-ig-feed-v03-12h",
         "at": "2026-09-12T00:25:00+09:00",
-        "state": "queued",
+        "state": "scheduled-next",
         "format": "feed",
         "recordIn": "../ig-reveal-v03/"
       },
@@ -310,8 +315,8 @@
         "recordIn": "../ig-reveal-v03/"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-11T16:40:42.476+09:00",
-    "nextCheckPurpose": "PM-013 X casual-v03 approximately 12h at 23:25 KST. Instagram feed and Reel 4h are complete; their 12h checks follow September 12 at 00:25 and 00:40 KST.",
+    "lastTriggerObservedAt": "2026-09-11T23:26:30.815+09:00",
+    "nextCheckPurpose": "PM-013 Instagram feed approximately 12h on September 12 at 00:25 KST, followed by Reel 12h at 00:40. X 12h is complete; X 24h remains September 12 at 11:25 KST.",
     "lastManualCheckAt": "2026-09-11T09:58:00+09:00"
   },
   "lastObservationId": "pm013-24h-check-20260911-1105",
