@@ -63,6 +63,51 @@
       "websiteConversion": null,
       "paidMediaRun": false,
       "assessment": "One additional displayed view since launch QA; direct reactions remain zero. Operator checks may be included. No evidence yet of meaningful external response."
+    },
+    {
+      "id": "x-casual-v03-4h-check-20260911-1528",
+      "kind": "scheduled-4h-check",
+      "scheduledAt": "2026-09-11T15:25:00+09:00",
+      "triggeredBy": "heartbeat-v04",
+      "triggeredAt": "2026-09-11T15:26:11.939+09:00",
+      "metricValuesAtTarget": null,
+      "x": {
+        "capturedAt": "2026-09-11T15:28:00+09:00",
+        "timePrecision": "minute-rounded",
+        "elapsedSecondsApprox": 14699,
+        "sourceUrl": "https://x.com/pixelmurmur/status/2098235834885619956",
+        "publishedAt": "2026-09-11T11:23:01+09:00",
+        "views": 3,
+        "viewsSourceLabel": "조회수",
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "bookmarks": 0,
+        "profileVisits": null,
+        "linkClicks": null,
+        "uniqueViewers": null,
+        "observationWindow": "2026-09-11 15:27–15:28 KST"
+      },
+      "comparison": {
+        "observationId": "x-casual-v03-1h-check-20260911-1229",
+        "viewsChange": 1,
+        "likesChange": 0,
+        "repliesChange": 0,
+        "repostsChange": 0,
+        "bookmarksChange": 0
+      },
+      "accountFollowers": null,
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "externalChangesMade": false,
+      "notificationDecision": "DONT_NOTIFY",
+      "assessment": "One additional displayed view since the 1h snapshot, with no direct reactions. This tiny change is not evidence of meaningful external distribution, product demand or copy effectiveness. Preserve the post and continue the remaining checkpoints.",
+      "caveats": [
+        "The prior result tab was no longer available; a fresh tab was opened directly to the known post and displayed 3 views. No stale two-view value was reused.",
+        "No interaction, manual refresh after reading, paid analytics, profile inspection or other-post measurement was performed.",
+        "Views may include operator checks; unique viewers, profile visits and link clicks were not displayed.",
+        "The scheduled target-time value was not measured. Actual observation is recorded with minute rounding."
+      ]
     }
   ],
   "checkAttempts": []

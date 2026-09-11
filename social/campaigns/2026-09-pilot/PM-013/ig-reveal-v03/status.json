@@ -68,7 +68,7 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T04:44:08Z",
+    "savedFieldsVerifiedAt": "2026-09-11T06:30:19Z",
     "nextCheckAt": "2026-09-11T16:25:00+09:00",
     "futureExecutionVerified": false,
     "sharedQueueIn": "../explain-v02/status.json",
@@ -87,7 +87,7 @@
       {
         "id": "pm013-ig-feed-v03-4h",
         "at": "2026-09-11T16:25:00+09:00",
-        "state": "queued",
+        "state": "scheduled-next",
         "format": "feed"
       },
       {
@@ -157,8 +157,8 @@
       }
     ],
     "lastTriggerObservedAt": "2026-09-11T13:40:38.082+09:00",
-    "nextCheckPurpose": "Instagram feed approximately 4h at 16:25 KST, then Reel 4h at 16:40; shared automation first checks X at 15:25.",
-    "sharedAutomationNextAt": "2026-09-11T15:25:00+09:00"
+    "nextCheckPurpose": "Instagram feed approximately 4h at 16:25 KST, then Reel 4h at 16:40. X 4h has completed without changing Instagram observations.",
+    "sharedAutomationNextAt": "2026-09-11T16:25:00+09:00"
   },
   "lastObservationIds": {
     "feed": "ig-feed-v03-1h-check-20260911-1328",

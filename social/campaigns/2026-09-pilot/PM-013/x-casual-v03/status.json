@@ -44,7 +44,7 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-11T04:44:08Z",
+  "updatedAt": "2026-09-11T06:30:19Z",
   "imageSha256": "bc6f08162166309a2642992848a828632fa8531bdf673d64fde5ad01529fe42f",
   "hypothesis": "A casual maker-thought hook may elicit more voluntary response than the explanatory caption; exploratory comparison, not a controlled causal test.",
   "comparisonBaseline": {
@@ -62,8 +62,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T04:44:08Z",
-    "nextCheckAt": "2026-09-11T15:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-11T06:30:19Z",
+    "nextCheckAt": "2026-09-11T23:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -79,7 +79,12 @@
       {
         "id": "pm013-x-casual-v03-4h",
         "at": "2026-09-11T15:25:00+09:00",
-        "state": "scheduled-next"
+        "state": "completed",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-11T15:26:11.939+09:00",
+        "completedAt": "2026-09-11T15:28:00+09:00",
+        "observationId": "x-casual-v03-4h-check-20260911-1528",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-x-casual-v03-12h",
@@ -103,18 +108,29 @@
       }
     ],
     "sharedQueueIn": "../explain-v02/status.json",
-    "sharedAutomationNextAt": "2026-09-11T15:25:00+09:00"
+    "sharedAutomationNextAt": "2026-09-11T16:25:00+09:00",
+    "lastTriggerObservedAt": "2026-09-11T15:26:11.939+09:00"
   },
-  "lastObservationId": "x-casual-v03-1h-check-20260911-1229",
+  "lastObservationId": "x-casual-v03-4h-check-20260911-1528",
   "lastObservation": {
-    "id": "x-casual-v03-1h-check-20260911-1229",
-    "capturedAt": "2026-09-11T12:29:00+09:00",
-    "views": 2,
+    "id": "x-casual-v03-4h-check-20260911-1528",
+    "capturedAt": "2026-09-11T15:28:00+09:00",
+    "views": 3,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "bookmarks": 0,
-    "assessment": "One additional displayed view since launch QA; no direct reaction. Operator QA may be included."
+    "assessment": "One additional displayed view since the 1h snapshot, with no direct reactions. This tiny change is not evidence of meaningful external distribution, product demand or copy effectiveness. Preserve the post and continue the remaining checkpoints."
   },
-  "additionalVariants": "not-auto-authorized"
+  "additionalVariants": "not-auto-authorized",
+  "lastCheckAttempt": {
+    "id": "x-casual-v03-4h-check-20260911-1528",
+    "state": "completed",
+    "triggeredBy": "heartbeat-v04",
+    "triggeredAt": "2026-09-11T15:26:11.939+09:00",
+    "completedAt": "2026-09-11T15:28:00+09:00",
+    "observationId": "x-casual-v03-4h-check-20260911-1528",
+    "latestMetricsUpdated": true,
+    "retryAt": null
+  }
 }
