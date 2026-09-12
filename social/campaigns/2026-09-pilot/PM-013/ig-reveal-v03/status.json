@@ -64,12 +64,12 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-12T03:36:01Z",
+  "updatedAt": "2026-09-12T03:46:09Z",
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-12T03:36:01Z",
-    "nextCheckAt": "2026-09-12T12:40:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-12T03:46:09Z",
+    "nextCheckAt": "2026-09-13T11:00:00+09:00",
     "futureExecutionVerified": false,
     "sharedQueueIn": "../explain-v02/status.json",
     "checkpoints": [
@@ -115,8 +115,11 @@
         "triggeredAt": "2026-09-12T12:25:35.603+09:00",
         "attemptCompletedAndRecordedAt": "2026-09-12T12:34:21+09:00",
         "attemptId": "ig-feed-v03-24h-attempt-20260912-1234",
-        "retryAt": "2026-09-12T12:40:00+09:00",
-        "metricValuesAtTarget": null
+        "retryAt": "2026-09-13T11:00:00+09:00",
+        "metricValuesAtTarget": null,
+        "lastTriggerObservedAt": "2026-09-12T12:42:35.652+09:00",
+        "lastAttemptedAt": "2026-09-12T12:44:00+09:00",
+        "lastAttemptId": "ig-feed-v03-24h-retry-20260912-1244"
       },
       {
         "id": "pm013-ig-feed-v03-72h",
@@ -166,8 +169,13 @@
       {
         "id": "pm013-ig-reel-v03-24h",
         "at": "2026-09-12T12:40:00+09:00",
-        "state": "scheduled-next",
-        "format": "reel"
+        "state": "completed",
+        "format": "reel",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-12T12:42:35.652+09:00",
+        "completedAt": "2026-09-12T12:44:00+09:00",
+        "observationId": "ig-reel-v03-24h-check-20260912-1244",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-ig-reel-v03-72h",
@@ -182,13 +190,13 @@
         "format": "reel"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-12T12:25:35.603+09:00",
-    "nextCheckPurpose": "September 12 at 12:40 KST: Instagram Reel 24h and unavailable feed 24h retry. If owner confirms intentional feed archive/deletion, hold feed checks without restore/repost; retain other checkpoints.",
-    "sharedAutomationNextAt": "2026-09-12T12:40:00+09:00"
+    "lastTriggerObservedAt": "2026-09-12T12:42:35.652+09:00",
+    "nextCheckPurpose": "September 13 at 11:00 KST: PM-013 explain-v02 72h and one unavailable feed 24h retry, conditional on owner intent. New Reel 24h is complete; do not repeat it or X24h.",
+    "sharedAutomationNextAt": "2026-09-13T11:00:00+09:00"
   },
   "lastObservationIds": {
     "feed": "ig-feed-v03-12h-check-20260912-0028",
-    "reel": "ig-reel-v03-12h-check-20260912-0042"
+    "reel": "ig-reel-v03-24h-check-20260912-1244"
   },
   "experiment": {
     "mandatoryFormatPair": false,
@@ -212,38 +220,42 @@
       "decision": "unchanged-small-follower-only-sample-preserve-feed-continue-to-24h"
     },
     "reel": {
-      "id": "ig-reel-v03-12h-check-20260912-0042",
-      "capturedAt": "2026-09-12T00:42:00+09:00",
-      "views": 73,
-      "peopleWhoViewed": 63,
-      "nonFollowerViewSharePercent": 100,
-      "likes": 0,
+      "id": "ig-reel-v03-24h-check-20260912-1244",
+      "capturedAt": "2026-09-12T12:44:00+09:00",
+      "views": 74,
+      "peopleWhoViewed": 64,
+      "nonFollowerViewSharePercent": 98.6,
+      "likes": 1,
       "comments": 0,
       "saves": 0,
       "shares": 0,
-      "accountsEngaged": null,
+      "accountsEngaged": 1,
       "profileActivity": 0,
       "attributedFollows": 0,
-      "decision": "tiny-count-change-without-direct-engagement-preserve-reel-continue-to-24h"
+      "decision": "one-unattributed-like-with-small-count-change-preserve-reel-continue-to-72h",
+      "followerViewSharePercent": 1.4
     }
   },
   "lastCheckAttempt": {
-    "id": "ig-feed-v03-24h-attempt-20260912-1234",
-    "state": "post-and-insights-unavailable",
+    "id": "ig-feed-v03-24h-retry-20260912-1244",
+    "state": "insights-still-unavailable",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-12T12:25:35.603+09:00",
-    "attemptCompletedAndRecordedAt": "2026-09-12T12:34:21+09:00",
+    "triggeredAt": "2026-09-12T12:42:35.652+09:00",
+    "attemptedAt": "2026-09-12T12:44:00+09:00",
     "capturedAt": null,
     "latestMetricsUpdated": false,
-    "retryAt": "2026-09-12T12:40:00+09:00",
+    "retryAt": "2026-09-13T11:00:00+09:00",
     "checkpointCompleted": false
   },
   "lastAvailabilityCheck": {
-    "attemptId": "ig-feed-v03-24h-attempt-20260912-1234",
+    "attemptId": "ig-feed-v03-24h-retry-20260912-1244",
     "format": "feed",
-    "state": "post-and-insights-unavailable",
+    "state": "insights-still-unavailable",
     "rootCause": null,
-    "diagnosedBy": "2026-09-12T12:34:21+09:00",
-    "ownerClarificationPending": true
+    "diagnosedBy": "2026-09-12T12:44:00+09:00",
+    "ownerClarificationPending": true,
+    "priorDiagnosticAttemptId": "ig-feed-v03-24h-attempt-20260912-1234",
+    "publicPostRechecked": false,
+    "profileRechecked": false
   }
 }
