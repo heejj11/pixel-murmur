@@ -64,12 +64,12 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-11T15:43:22Z",
+  "updatedAt": "2026-09-12T03:36:01Z",
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T15:43:22Z",
-    "nextCheckAt": "2026-09-12T12:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-12T03:36:01Z",
+    "nextCheckAt": "2026-09-12T12:40:00+09:00",
     "futureExecutionVerified": false,
     "sharedQueueIn": "../explain-v02/status.json",
     "checkpoints": [
@@ -109,8 +109,14 @@
       {
         "id": "pm013-ig-feed-v03-24h",
         "at": "2026-09-12T12:25:00+09:00",
-        "state": "queued",
-        "format": "feed"
+        "state": "pending-retry",
+        "format": "feed",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-12T12:25:35.603+09:00",
+        "attemptCompletedAndRecordedAt": "2026-09-12T12:34:21+09:00",
+        "attemptId": "ig-feed-v03-24h-attempt-20260912-1234",
+        "retryAt": "2026-09-12T12:40:00+09:00",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-ig-feed-v03-72h",
@@ -160,7 +166,7 @@
       {
         "id": "pm013-ig-reel-v03-24h",
         "at": "2026-09-12T12:40:00+09:00",
-        "state": "queued",
+        "state": "scheduled-next",
         "format": "reel"
       },
       {
@@ -176,9 +182,9 @@
         "format": "reel"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-12T00:41:02.845+09:00",
-    "nextCheckPurpose": "Next Instagram check: feed 24h on September 12 at 12:25 KST, then Reel 24h at 12:40. Shared monitor first checks X 24h at 11:25 KST.",
-    "sharedAutomationNextAt": "2026-09-12T11:25:00+09:00"
+    "lastTriggerObservedAt": "2026-09-12T12:25:35.603+09:00",
+    "nextCheckPurpose": "September 12 at 12:40 KST: Instagram Reel 24h and unavailable feed 24h retry. If owner confirms intentional feed archive/deletion, hold feed checks without restore/repost; retain other checkpoints.",
+    "sharedAutomationNextAt": "2026-09-12T12:40:00+09:00"
   },
   "lastObservationIds": {
     "feed": "ig-feed-v03-12h-check-20260912-0028",
@@ -222,13 +228,22 @@
     }
   },
   "lastCheckAttempt": {
-    "id": "ig-reel-v03-12h-check-20260912-0042",
-    "state": "completed",
+    "id": "ig-feed-v03-24h-attempt-20260912-1234",
+    "state": "post-and-insights-unavailable",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-12T00:41:02.845+09:00",
-    "completedAt": "2026-09-12T00:42:00+09:00",
-    "observationId": "ig-reel-v03-12h-check-20260912-0042",
-    "latestMetricsUpdated": true,
-    "retryAt": null
+    "triggeredAt": "2026-09-12T12:25:35.603+09:00",
+    "attemptCompletedAndRecordedAt": "2026-09-12T12:34:21+09:00",
+    "capturedAt": null,
+    "latestMetricsUpdated": false,
+    "retryAt": "2026-09-12T12:40:00+09:00",
+    "checkpointCompleted": false
+  },
+  "lastAvailabilityCheck": {
+    "attemptId": "ig-feed-v03-24h-attempt-20260912-1234",
+    "format": "feed",
+    "state": "post-and-insights-unavailable",
+    "rootCause": null,
+    "diagnosedBy": "2026-09-12T12:34:21+09:00",
+    "ownerClarificationPending": true
   }
 }

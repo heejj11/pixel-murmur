@@ -1,7 +1,7 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-11T15:43:22Z",
+  "updatedAt": "2026-09-12T03:36:01Z",
   "state": "published-and-site-linked-monitoring",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
@@ -90,8 +90,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T15:43:22Z",
-    "nextCheckAt": "2026-09-12T11:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-12T03:36:01Z",
+    "nextCheckAt": "2026-09-12T12:40:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -257,20 +257,39 @@
       {
         "id": "pm013-x-casual-v03-24h",
         "at": "2026-09-12T11:25:00+09:00",
-        "state": "scheduled-next",
-        "recordIn": "../x-casual-v03/"
+        "state": "completed",
+        "recordIn": "../x-casual-v03/",
+        "triggeredAt": "2026-09-12T11:26:35.431+09:00",
+        "attemptedAt": "2026-09-12T11:29:00+09:00",
+        "attemptId": "x-casual-v03-24h-attempt-20260912-1129",
+        "retryAt": null,
+        "metricValuesAtTarget": null,
+        "triggeredBy": "heartbeat-v04",
+        "lastTriggerObservedAt": "2026-09-12T12:25:35.603+09:00",
+        "completionTiming": "delayed-after-environment-failure",
+        "completedAt": "2026-09-12T12:29:00+09:00",
+        "observationId": "x-casual-v03-24h-delayed-check-20260912-1229",
+        "resolvesAttemptIds": [
+          "x-casual-v03-24h-attempt-20260912-1129"
+        ]
       },
       {
         "id": "pm013-ig-feed-v03-24h",
         "at": "2026-09-12T12:25:00+09:00",
-        "state": "queued",
+        "state": "pending-retry",
         "format": "feed",
-        "recordIn": "../ig-reveal-v03/"
+        "recordIn": "../ig-reveal-v03/",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-12T12:25:35.603+09:00",
+        "attemptCompletedAndRecordedAt": "2026-09-12T12:34:21+09:00",
+        "attemptId": "ig-feed-v03-24h-attempt-20260912-1234",
+        "retryAt": "2026-09-12T12:40:00+09:00",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-ig-reel-v03-24h",
         "at": "2026-09-12T12:40:00+09:00",
-        "state": "queued",
+        "state": "scheduled-next",
         "format": "reel",
         "recordIn": "../ig-reveal-v03/"
       },
@@ -325,9 +344,10 @@
         "recordIn": "../ig-reveal-v03/"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-12T00:41:02.845+09:00",
-    "nextCheckPurpose": "PM-013 X casual-v03 approximately 24h on September 12 at 11:25 KST. All new-post 12h checks are complete; Instagram feed and Reel 24h follow at 12:25 and 12:40 KST.",
-    "lastManualCheckAt": "2026-09-11T09:58:00+09:00"
+    "lastTriggerObservedAt": "2026-09-12T12:25:35.603+09:00",
+    "nextCheckPurpose": "September 12 at 12:40 KST: Instagram Reel 24h and unavailable feed 24h retry. If owner confirms intentional feed archive/deletion, hold feed checks without restore/repost; retain other checkpoints.",
+    "lastManualCheckAt": "2026-09-11T09:58:00+09:00",
+    "sharedAutomationNextAt": "2026-09-12T12:40:00+09:00"
   },
   "lastObservationId": "pm013-24h-check-20260911-1105",
   "lastObservationSummary": {

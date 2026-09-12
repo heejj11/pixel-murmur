@@ -427,5 +427,47 @@
       ]
     }
   ],
-  "checkAttempts": []
+  "checkAttempts": [
+    {
+      "id": "ig-feed-v03-24h-attempt-20260912-1234",
+      "phase": "scheduled-24h-check-attempt",
+      "format": "feed",
+      "scheduledAt": "2026-09-12T12:25:00+09:00",
+      "triggeredBy": "heartbeat-v04",
+      "triggeredAt": "2026-09-12T12:25:35.603+09:00",
+      "attemptCompletedAndRecordedAt": "2026-09-12T12:34:21+09:00",
+      "timeBasis": "Clock read after direct insights, original-post and visible profile diagnostics; not a metrics capture time.",
+      "capturedAt": null,
+      "state": "post-and-insights-unavailable",
+      "reason": "post-and-insights-unavailable-profile-entry-missing",
+      "rootCause": null,
+      "platformUiRead": true,
+      "freshMetrics": null,
+      "metricValuesAtTarget": null,
+      "sourceUrl": "https://www.instagram.com/insights/media/3983556833621190003/",
+      "postUrl": "https://www.instagram.com/p/DdIb9WakiVz/",
+      "publishedAt": "2026-09-11T12:23:21+09:00",
+      "diagnostics": {
+        "uiMessage": "페이지를 사용할 수 없습니다",
+        "publicPostUnavailable": true,
+        "insightsUnavailable": true,
+        "profileUrl": "https://www.instagram.com/pixelmurmur/",
+        "profilePostCount": 9,
+        "visiblePostLinksInspected": 9,
+        "targetPostPresent": false,
+        "newReelPresent": true,
+        "previousReelPresent": true,
+        "deletionOrArchiveConfirmed": false
+      },
+      "lastActualObservationId": "ig-feed-v03-12h-check-20260912-0028",
+      "checkpointCompleted": false,
+      "retryAt": "2026-09-12T12:40:00+09:00",
+      "ownerQuestionAsked": true,
+      "ownerAnswer": "pending",
+      "notificationDecision": "NOTIFY",
+      "notificationReason": "New post availability issue requires clarification of whether the owner intentionally archived or deleted the feed.",
+      "externalChangesMade": false,
+      "assessment": "No fresh feed metrics are available. The original post and recorded insights are unavailable, and the exact post is absent from the nine rendered profile entries. This does not establish deletion, archive, account restriction or platform failure. Ask owner intent and do not restore or repost."
+    }
+  ]
 }

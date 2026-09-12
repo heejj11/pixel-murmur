@@ -44,7 +44,7 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-11T14:28:53Z",
+  "updatedAt": "2026-09-12T03:36:01Z",
   "imageSha256": "bc6f08162166309a2642992848a828632fa8531bdf673d64fde5ad01529fe42f",
   "hypothesis": "A casual maker-thought hook may elicit more voluntary response than the explanatory caption; exploratory comparison, not a controlled causal test.",
   "comparisonBaseline": {
@@ -62,8 +62,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-11T15:43:22Z",
-    "nextCheckAt": "2026-09-12T11:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-12T03:36:01Z",
+    "nextCheckAt": "2026-09-14T11:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -99,7 +99,20 @@
       {
         "id": "pm013-x-casual-v03-24h",
         "at": "2026-09-12T11:25:00+09:00",
-        "state": "scheduled-next"
+        "state": "completed",
+        "triggeredAt": "2026-09-12T11:26:35.431+09:00",
+        "attemptedAt": "2026-09-12T11:29:00+09:00",
+        "attemptId": "x-casual-v03-24h-attempt-20260912-1129",
+        "retryAt": null,
+        "metricValuesAtTarget": null,
+        "triggeredBy": "heartbeat-v04",
+        "lastTriggerObservedAt": "2026-09-12T12:25:35.603+09:00",
+        "completionTiming": "delayed-after-environment-failure",
+        "completedAt": "2026-09-12T12:29:00+09:00",
+        "observationId": "x-casual-v03-24h-delayed-check-20260912-1229",
+        "resolvesAttemptIds": [
+          "x-casual-v03-24h-attempt-20260912-1129"
+        ]
       },
       {
         "id": "pm013-x-casual-v03-72h",
@@ -113,29 +126,33 @@
       }
     ],
     "sharedQueueIn": "../explain-v02/status.json",
-    "sharedAutomationNextAt": "2026-09-12T11:25:00+09:00",
-    "lastTriggerObservedAt": "2026-09-11T23:26:30.815+09:00"
+    "sharedAutomationNextAt": "2026-09-12T12:40:00+09:00",
+    "lastTriggerObservedAt": "2026-09-12T12:25:35.603+09:00",
+    "nextCheckPurpose": "X casual-v03 72h. The delayed 24h retry is complete; shared monitor next checks Instagram at September 12 12:40 KST."
   },
-  "lastObservationId": "x-casual-v03-12h-check-20260911-2327",
+  "lastObservationId": "x-casual-v03-24h-delayed-check-20260912-1229",
   "lastObservation": {
-    "id": "x-casual-v03-12h-check-20260911-2327",
-    "capturedAt": "2026-09-11T23:27:00+09:00",
-    "views": 4,
+    "id": "x-casual-v03-24h-delayed-check-20260912-1229",
+    "capturedAt": "2026-09-12T12:29:00+09:00",
+    "views": 5,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "bookmarks": 0,
-    "assessment": "One additional displayed view since the 4h snapshot, with likes, replies, reposts and bookmarks still zero. The tiny change may include operator inspection and does not establish meaningful external distribution, product demand or a copy effect. Preserve the post and continue to 24h."
+    "assessment": "The local execution environment recovered. A fresh delayed observation shows 5 views and zero direct reactions, one view above the 12h snapshot. Operator inspection may contribute; this is not evidence of meaningful external response, demand or a copy effect. Preserve the post and continue to 72h."
   },
   "additionalVariants": "not-auto-authorized",
   "lastCheckAttempt": {
-    "id": "x-casual-v03-12h-check-20260911-2327",
+    "id": "x-casual-v03-24h-delayed-check-20260912-1229",
     "state": "completed",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-11T23:26:30.815+09:00",
-    "completedAt": "2026-09-11T23:27:00+09:00",
-    "observationId": "x-casual-v03-12h-check-20260911-2327",
+    "triggeredAt": "2026-09-12T12:25:35.603+09:00",
+    "completedAt": "2026-09-12T12:29:00+09:00",
+    "observationId": "x-casual-v03-24h-delayed-check-20260912-1229",
     "latestMetricsUpdated": true,
-    "retryAt": null
+    "retryAt": null,
+    "resolvesAttemptIds": [
+      "x-casual-v03-24h-attempt-20260912-1129"
+    ]
   }
 }

@@ -154,7 +154,85 @@
         "Views may include operator checks. Unique viewers, profile visits, link clicks and website conversion remain unavailable or unmeasured.",
         "Exact scheduled target-time values remain unmeasured; the actual observation has minute precision."
       ]
+    },
+    {
+      "id": "x-casual-v03-24h-delayed-check-20260912-1229",
+      "kind": "scheduled-24h-delayed-retry",
+      "scheduledAt": "2026-09-12T11:25:00+09:00",
+      "triggeredBy": "heartbeat-v04",
+      "triggeredAt": "2026-09-12T12:25:35.603+09:00",
+      "metricValuesAtTarget": null,
+      "x": {
+        "capturedAt": "2026-09-12T12:29:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 90359,
+        "sourceUrl": "https://x.com/pixelmurmur/status/2098235834885619956",
+        "publishedAt": "2026-09-11T11:23:01+09:00",
+        "views": 5,
+        "viewsSourceLabel": "조회수",
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "bookmarks": 0,
+        "profileVisits": null,
+        "linkClicks": null,
+        "uniqueViewers": null,
+        "observationWindow": "2026-09-12 12:29 KST"
+      },
+      "comparison": {
+        "observationId": "x-casual-v03-12h-check-20260911-2327",
+        "viewsChange": 1,
+        "likesChange": 0,
+        "repliesChange": 0,
+        "repostsChange": 0,
+        "bookmarksChange": 0
+      },
+      "accountFollowers": null,
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "externalChangesMade": false,
+      "notificationDecision": "DONT_NOTIFY",
+      "assessment": "The local execution environment recovered. A fresh delayed observation shows 5 views and zero direct reactions, one view above the 12h snapshot. Operator inspection may contribute; this is not evidence of meaningful external response, demand or a copy effect. Preserve the post and continue to 72h.",
+      "caveats": [
+        "The exact 24h target-time values were never measured and remain null. This retry is a separate actual observation at 12:29 KST, not backdated.",
+        "Logged-in original-post UI displayed 5 views and zero likes, replies, reposts and bookmarks. No paid analytics or engagement action was used.",
+        "Unique viewers, profile visits, link clicks and website conversion remain unavailable. Operator checks may contribute to views.",
+        "The prior failed attempt is preserved. Instagram feed metrics could not be read; Reel, old v02 and PM001 metrics were not remeasured."
+      ],
+      "retryScheduledAt": "2026-09-12T12:25:00+09:00",
+      "resolvesAttemptIds": [
+        "x-casual-v03-24h-attempt-20260912-1129"
+      ]
     }
   ],
-  "checkAttempts": []
+  "checkAttempts": [
+    {
+      "id": "x-casual-v03-24h-attempt-20260912-1129",
+      "phase": "scheduled-24h-check-attempt",
+      "scheduledAt": "2026-09-12T11:25:00+09:00",
+      "triggeredAt": "2026-09-12T11:26:35.431+09:00",
+      "attemptedAt": "2026-09-12T11:29:00+09:00",
+      "timePrecision": "minute",
+      "capturedAt": null,
+      "state": "blocked-before-platform-ui-read",
+      "reason": "local-process-resource-unavailable",
+      "platformUiRead": false,
+      "freshMetrics": null,
+      "metricValuesAtTarget": null,
+      "publishedAt": "2026-09-11T11:23:01+09:00",
+      "elapsedSincePublicationAtAttemptSeconds": 86759,
+      "sourceUrl": "https://x.com/pixelmurmur/status/2098235834885619956",
+      "lastActualObservationId": "x-casual-v03-12h-check-20260911-2327",
+      "checkpointCompleted": false,
+      "retryAt": "2026-09-12T12:25:00+09:00",
+      "notificationDecision": "NOTIFY",
+      "userNotified": true,
+      "notificationReason": "New local execution failure prevented both metrics and verified Git recording.",
+      "recordingRecoveredAt": "2026-09-12T03:36:01Z",
+      "recoveredFrom": "check-attempt-20260912-112635431.md and prior heartbeat tool evidence",
+      "tabCreationAndCleanupVerified": false,
+      "externalChangesMade": false,
+      "assessment": "No X metrics were read. Local process creation failed on three command attempts, browser opening timed out and browser state recovery also failed. Do not diagnose the platform or copy last actual counts into this attempt."
+    }
+  ]
 }
