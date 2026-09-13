@@ -62,7 +62,7 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-12T03:46:09Z",
+    "savedFieldsVerifiedAt": "2026-09-13T02:07:43Z",
     "nextCheckAt": "2026-09-14T11:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
@@ -117,7 +117,7 @@
       {
         "id": "pm013-x-casual-v03-72h",
         "at": "2026-09-14T11:25:00+09:00",
-        "state": "queued"
+        "state": "scheduled-next"
       },
       {
         "id": "pm013-x-casual-v03-7d",
@@ -126,9 +126,9 @@
       }
     ],
     "sharedQueueIn": "../explain-v02/status.json",
-    "sharedAutomationNextAt": "2026-09-13T11:00:00+09:00",
+    "sharedAutomationNextAt": "2026-09-14T11:25:00+09:00",
     "lastTriggerObservedAt": "2026-09-12T12:25:35.603+09:00",
-    "nextCheckPurpose": "X casual-v03 72h on September 14 at 11:25 KST. Shared monitor next checks explain-v02 72h and a feed retry on September 13 at 11:00 KST."
+    "nextCheckPurpose": "X casual-v03 72h on September 14 at 11:25 KST; shared monitor also retries the unavailable Instagram feed once."
   },
   "lastObservationId": "x-casual-v03-24h-delayed-check-20260912-1229",
   "lastObservation": {

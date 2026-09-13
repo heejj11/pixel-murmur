@@ -1,7 +1,7 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-12T03:46:09Z",
+  "updatedAt": "2026-09-13T02:07:43Z",
   "state": "published-and-site-linked-monitoring",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
@@ -90,8 +90,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-12T03:46:09Z",
-    "nextCheckAt": "2026-09-13T11:00:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-13T02:07:43Z",
+    "nextCheckAt": "2026-09-14T11:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -283,11 +283,11 @@
         "triggeredAt": "2026-09-12T12:25:35.603+09:00",
         "attemptCompletedAndRecordedAt": "2026-09-12T12:34:21+09:00",
         "attemptId": "ig-feed-v03-24h-attempt-20260912-1234",
-        "retryAt": "2026-09-13T11:00:00+09:00",
+        "retryAt": "2026-09-14T11:25:00+09:00",
         "metricValuesAtTarget": null,
-        "lastTriggerObservedAt": "2026-09-12T12:42:35.652+09:00",
-        "lastAttemptedAt": "2026-09-12T12:44:00+09:00",
-        "lastAttemptId": "ig-feed-v03-24h-retry-20260912-1244"
+        "lastTriggerObservedAt": "2026-09-13T11:02:11.071+09:00",
+        "lastAttemptedAt": "2026-09-13T11:05:00+09:00",
+        "lastAttemptId": "ig-feed-v03-24h-retry-20260913-1105"
       },
       {
         "id": "pm013-ig-reel-v03-24h",
@@ -304,12 +304,17 @@
       {
         "id": "pm013-72h",
         "at": "2026-09-13T11:00:00+09:00",
-        "state": "scheduled-next"
+        "state": "completed",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-13T11:02:11.071+09:00",
+        "completedAt": "2026-09-13T11:04:00+09:00",
+        "observationId": "pm013-72h-check-20260913-1104",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-x-casual-v03-72h",
         "at": "2026-09-14T11:25:00+09:00",
-        "state": "queued",
+        "state": "scheduled-next",
         "recordIn": "../x-casual-v03/"
       },
       {
@@ -352,30 +357,30 @@
         "recordIn": "../ig-reveal-v03/"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-12T12:42:35.652+09:00",
-    "nextCheckPurpose": "September 13 at 11:00 KST: PM-013 explain-v02 72h and one unavailable feed 24h retry, conditional on owner intent. New Reel 24h is complete; do not repeat it or X24h.",
+    "lastTriggerObservedAt": "2026-09-13T11:02:11.071+09:00",
+    "nextCheckPurpose": "September 14 at 11:25 KST: X casual-v03 72h and one unavailable feed 24h retry, conditional on owner intent. Explain-v02 72h is complete; its next own check is September 17 at 11:00 KST (7d).",
     "lastManualCheckAt": "2026-09-11T09:58:00+09:00",
-    "sharedAutomationNextAt": "2026-09-13T11:00:00+09:00"
+    "sharedAutomationNextAt": "2026-09-14T11:25:00+09:00"
   },
-  "lastObservationId": "pm013-24h-check-20260911-1105",
+  "lastObservationId": "pm013-72h-check-20260913-1104",
   "lastObservationSummary": {
-    "instagramViews": 128,
+    "instagramViews": 129,
     "instagramPeopleWhoViewed": 112,
     "instagramLikes": 1,
     "instagramSaves": 1,
     "instagramAccountsEngaged": 1,
     "instagramAttributedFollows": 0,
-    "xViews": 7,
+    "xViews": 9,
     "xDirectReactions": 0,
-    "decision": "complete-24h-check-keep-posts-unchanged-and-continue-to-72h"
+    "decision": "complete-72h-check-keep-posts-unchanged-and-continue-to-7d"
   },
   "lastCheckAttempt": {
-    "id": "pm013-24h-check-20260911-1105",
+    "id": "pm013-72h-check-20260913-1104",
     "state": "completed",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-11T11:00:23.151+09:00",
-    "completedAt": "2026-09-11T11:05:00+09:00",
-    "observationId": "pm013-24h-check-20260911-1105",
+    "triggeredAt": "2026-09-13T11:02:11.071+09:00",
+    "completedAt": "2026-09-13T11:04:00+09:00",
+    "observationId": "pm013-72h-check-20260913-1104",
     "latestMetricsUpdated": true,
     "retryAt": null
   },

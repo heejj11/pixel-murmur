@@ -568,6 +568,47 @@
       "notificationReason": "The same availability issue and pending owner question were already reported; no new required action.",
       "externalChangesMade": false,
       "assessment": "One retry of the known feed-insights URL still displays the same unavailable-page message. No metrics were available. Preserve the prior diagnostic and last actual feed observation, do not infer deletion or restore/repost, and retry once alongside the next scheduled checkpoint unless owner confirms intentional removal."
+    },
+    {
+      "id": "ig-feed-v03-24h-retry-20260913-1105",
+      "phase": "scheduled-24h-delayed-retry-attempt",
+      "format": "feed",
+      "scheduledAt": "2026-09-12T12:25:00+09:00",
+      "retryScheduledAt": "2026-09-13T11:00:00+09:00",
+      "triggeredBy": "heartbeat-v04",
+      "triggeredAt": "2026-09-13T11:02:11.071+09:00",
+      "attemptedAt": "2026-09-13T11:05:00+09:00",
+      "timePrecision": "minute",
+      "capturedAt": null,
+      "state": "insights-still-unavailable",
+      "reason": "same-insights-page-unavailable",
+      "rootCause": null,
+      "platformUiRead": true,
+      "freshMetrics": null,
+      "metricValuesAtTarget": null,
+      "sourceUrl": "https://www.instagram.com/insights/media/3983556833621190003/",
+      "postUrl": "https://www.instagram.com/p/DdIb9WakiVz/",
+      "publishedAt": "2026-09-11T12:23:21+09:00",
+      "elapsedSincePublicationAtAttemptSeconds": 168099,
+      "diagnostics": {
+        "uiMessage": "페이지를 사용할 수 없습니다",
+        "insightsUnavailable": true,
+        "publicPostRechecked": false,
+        "profileRechecked": false,
+        "priorDiagnosticAttemptId": "ig-feed-v03-24h-attempt-20260912-1234",
+        "deletionOrArchiveConfirmed": false
+      },
+      "lastActualObservationId": "ig-feed-v03-12h-check-20260912-0028",
+      "checkpointCompleted": false,
+      "retryAt": "2026-09-14T11:25:00+09:00",
+      "ownerQuestionPreviouslyAsked": true,
+      "ownerQuestionRepeated": false,
+      "ownerAnswer": "pending",
+      "notificationDecision": "DONT_NOTIFY",
+      "notificationReason": "The same availability issue and pending owner question were already reported; no new required action.",
+      "externalChangesMade": false,
+      "assessment": "A single fresh retry of the recorded feed-insights URL still shows the same unavailable-page message. No metrics were read and the 24h checkpoint remains unmeasured. The owner has not answered the prior archive/deletion question. Preserve the last actual observation and all failed attempts; do not restore/repost or repeat the same alert.",
+      "previousAttemptId": "ig-feed-v03-24h-retry-20260912-1244"
     }
   ]
 }
