@@ -1,7 +1,7 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-14T01:04:27Z",
+  "updatedAt": "2026-09-14T02:34:08Z",
   "state": "published-and-site-linked-monitoring",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
@@ -90,8 +90,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-14T01:04:27Z",
-    "nextCheckAt": "2026-09-14T11:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-14T02:34:08Z",
+    "nextCheckAt": "2026-09-14T12:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -283,11 +283,11 @@
         "triggeredAt": "2026-09-12T12:25:35.603+09:00",
         "attemptCompletedAndRecordedAt": "2026-09-12T12:34:21+09:00",
         "attemptId": "ig-feed-v03-24h-attempt-20260912-1234",
-        "retryAt": "2026-09-14T11:25:00+09:00",
+        "retryAt": "2026-09-14T12:25:00+09:00",
         "metricValuesAtTarget": null,
-        "lastTriggerObservedAt": "2026-09-13T11:02:11.071+09:00",
-        "lastAttemptedAt": "2026-09-13T11:05:00+09:00",
-        "lastAttemptId": "ig-feed-v03-24h-retry-20260913-1105"
+        "lastTriggerObservedAt": "2026-09-14T11:27:14.771+09:00",
+        "lastAttemptedAt": "2026-09-14T11:29:00+09:00",
+        "lastAttemptId": "ig-feed-v03-24h-retry-20260914-1129"
       },
       {
         "id": "pm013-ig-reel-v03-24h",
@@ -314,8 +314,13 @@
       {
         "id": "pm013-x-casual-v03-72h",
         "at": "2026-09-14T11:25:00+09:00",
-        "state": "scheduled-next",
-        "recordIn": "../x-casual-v03/"
+        "state": "completed",
+        "recordIn": "../x-casual-v03/",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-14T11:27:14.771+09:00",
+        "completedAt": "2026-09-14T11:29:00+09:00",
+        "observationId": "x-casual-v03-72h-check-20260914-1129",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-ig-feed-v03-72h",
@@ -378,10 +383,10 @@
         "recordIn": "../../PM-015/planner-v01/"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-13T11:02:11.071+09:00",
-    "nextCheckPurpose": "September 14 at 11:25 KST: X casual-v03 72h and one unavailable feed 24h retry, conditional on owner intent. Explain-v02 72h is complete; its next own check is September 17 at 11:00 KST (7d).",
+    "lastTriggerObservedAt": "2026-09-14T11:27:14.771+09:00",
+    "nextCheckPurpose": "September 14 at 12:25 KST: one Instagram feed 72h attempt; the earlier 24h remains unmeasured because the same insights page is unavailable. Reel72h follows at 12:40. X casual-v03 72h is complete.",
     "lastManualCheckAt": "2026-09-11T09:58:00+09:00",
-    "sharedAutomationNextAt": "2026-09-14T11:25:00+09:00"
+    "sharedAutomationNextAt": "2026-09-14T12:25:00+09:00"
   },
   "lastObservationId": "pm013-72h-check-20260913-1104",
   "lastObservationSummary": {

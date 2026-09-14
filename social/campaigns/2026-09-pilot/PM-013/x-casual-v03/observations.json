@@ -203,6 +203,52 @@
       "resolvesAttemptIds": [
         "x-casual-v03-24h-attempt-20260912-1129"
       ]
+    },
+    {
+      "id": "x-casual-v03-72h-check-20260914-1129",
+      "kind": "scheduled-72h-check",
+      "scheduledAt": "2026-09-14T11:25:00+09:00",
+      "triggeredBy": "heartbeat-v04",
+      "triggeredAt": "2026-09-14T11:27:14.771+09:00",
+      "metricValuesAtTarget": null,
+      "x": {
+        "capturedAt": "2026-09-14T11:29:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 259559,
+        "sourceUrl": "https://x.com/pixelmurmur/status/2098235834885619956",
+        "publishedAt": "2026-09-11T11:23:01+09:00",
+        "views": 6,
+        "viewsSourceLabel": "조회수",
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "bookmarks": 0,
+        "profileVisits": null,
+        "linkClicks": null,
+        "uniqueViewers": null,
+        "observationWindow": "2026-09-14 11:29 KST"
+      },
+      "comparison": {
+        "observationId": "x-casual-v03-24h-delayed-check-20260912-1229",
+        "viewsChange": 1,
+        "likesChange": 0,
+        "repliesChange": 0,
+        "repostsChange": 0,
+        "bookmarksChange": 0
+      },
+      "accountFollowers": null,
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "externalChangesMade": false,
+      "notificationDecision": "DONT_NOTIFY",
+      "assessment": "The fresh 72h observation shows 6 views and zero direct reactions, one view above the delayed 24h observation. The tiny change may include operator inspection and does not establish meaningful external distribution, product demand or a copy effect. Preserve the post and continue to 7d.",
+      "caveats": [
+        "A freshly opened logged-in in-app-browser post detail displayed 6 views and zero replies, reposts, likes and bookmarks. This is a new observation, not a reused historical value.",
+        "The scheduled target-time value was not measured. Actual observation is recorded at 11:29 KST with minute precision.",
+        "No paid analytics, account profile inspection, engagement or additional refresh was performed; the temporary result tab was closed.",
+        "Views may include operator checks. Unique viewers, profile visits, link clicks and website conversion remain unavailable or unmeasured.",
+        "The known Instagram feed insights URL was retried separately and remained unavailable; Reel, old v02, PM001 and PM015 were not remeasured."
+      ]
     }
   ],
   "checkAttempts": [

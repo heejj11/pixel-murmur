@@ -44,7 +44,7 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-12T03:36:01Z",
+  "updatedAt": "2026-09-14T02:34:08Z",
   "imageSha256": "bc6f08162166309a2642992848a828632fa8531bdf673d64fde5ad01529fe42f",
   "hypothesis": "A casual maker-thought hook may elicit more voluntary response than the explanatory caption; exploratory comparison, not a controlled causal test.",
   "comparisonBaseline": {
@@ -62,8 +62,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-13T02:07:43Z",
-    "nextCheckAt": "2026-09-14T11:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-14T02:34:08Z",
+    "nextCheckAt": "2026-09-18T11:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -117,7 +117,12 @@
       {
         "id": "pm013-x-casual-v03-72h",
         "at": "2026-09-14T11:25:00+09:00",
-        "state": "scheduled-next"
+        "state": "completed",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-14T11:27:14.771+09:00",
+        "completedAt": "2026-09-14T11:29:00+09:00",
+        "observationId": "x-casual-v03-72h-check-20260914-1129",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-x-casual-v03-7d",
@@ -126,33 +131,30 @@
       }
     ],
     "sharedQueueIn": "../explain-v02/status.json",
-    "sharedAutomationNextAt": "2026-09-14T11:25:00+09:00",
-    "lastTriggerObservedAt": "2026-09-12T12:25:35.603+09:00",
-    "nextCheckPurpose": "X casual-v03 72h on September 14 at 11:25 KST; shared monitor also retries the unavailable Instagram feed once."
+    "sharedAutomationNextAt": "2026-09-14T12:25:00+09:00",
+    "lastTriggerObservedAt": "2026-09-14T11:27:14.771+09:00",
+    "nextCheckPurpose": "X casual-v03 72h is complete. Its next own checkpoint is 7d on September 18 at 11:25 KST; the shared monitor next checks the Instagram feed 72h at September 14 12:25 KST."
   },
-  "lastObservationId": "x-casual-v03-24h-delayed-check-20260912-1229",
+  "lastObservationId": "x-casual-v03-72h-check-20260914-1129",
   "lastObservation": {
-    "id": "x-casual-v03-24h-delayed-check-20260912-1229",
-    "capturedAt": "2026-09-12T12:29:00+09:00",
-    "views": 5,
+    "id": "x-casual-v03-72h-check-20260914-1129",
+    "capturedAt": "2026-09-14T11:29:00+09:00",
+    "views": 6,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "bookmarks": 0,
-    "assessment": "The local execution environment recovered. A fresh delayed observation shows 5 views and zero direct reactions, one view above the 12h snapshot. Operator inspection may contribute; this is not evidence of meaningful external response, demand or a copy effect. Preserve the post and continue to 72h."
+    "assessment": "The fresh 72h observation shows 6 views and zero direct reactions, one view above the delayed 24h observation. The tiny change may include operator inspection and does not establish meaningful external distribution, product demand or a copy effect. Preserve the post and continue to 7d."
   },
   "additionalVariants": "not-auto-authorized",
   "lastCheckAttempt": {
-    "id": "x-casual-v03-24h-delayed-check-20260912-1229",
+    "id": "x-casual-v03-72h-check-20260914-1129",
     "state": "completed",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-12T12:25:35.603+09:00",
-    "completedAt": "2026-09-12T12:29:00+09:00",
-    "observationId": "x-casual-v03-24h-delayed-check-20260912-1229",
+    "triggeredAt": "2026-09-14T11:27:14.771+09:00",
+    "completedAt": "2026-09-14T11:29:00+09:00",
+    "observationId": "x-casual-v03-72h-check-20260914-1129",
     "latestMetricsUpdated": true,
-    "retryAt": null,
-    "resolvesAttemptIds": [
-      "x-casual-v03-24h-attempt-20260912-1129"
-    ]
+    "retryAt": null
   }
 }

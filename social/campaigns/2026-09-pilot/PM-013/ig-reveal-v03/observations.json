@@ -609,6 +609,47 @@
       "externalChangesMade": false,
       "assessment": "A single fresh retry of the recorded feed-insights URL still shows the same unavailable-page message. No metrics were read and the 24h checkpoint remains unmeasured. The owner has not answered the prior archive/deletion question. Preserve the last actual observation and all failed attempts; do not restore/repost or repeat the same alert.",
       "previousAttemptId": "ig-feed-v03-24h-retry-20260912-1244"
+    },
+    {
+      "id": "ig-feed-v03-24h-retry-20260914-1129",
+      "phase": "scheduled-24h-delayed-retry-attempt",
+      "format": "feed",
+      "scheduledAt": "2026-09-12T12:25:00+09:00",
+      "retryScheduledAt": "2026-09-14T11:25:00+09:00",
+      "triggeredBy": "heartbeat-v04",
+      "triggeredAt": "2026-09-14T11:27:14.771+09:00",
+      "attemptedAt": "2026-09-14T11:29:00+09:00",
+      "timePrecision": "minute",
+      "capturedAt": null,
+      "state": "insights-still-unavailable",
+      "reason": "same-insights-page-unavailable",
+      "rootCause": null,
+      "platformUiRead": true,
+      "freshMetrics": null,
+      "metricValuesAtTarget": null,
+      "sourceUrl": "https://www.instagram.com/insights/media/3983556833621190003/",
+      "postUrl": "https://www.instagram.com/p/DdIb9WakiVz/",
+      "publishedAt": "2026-09-11T12:23:21+09:00",
+      "elapsedSincePublicationAtAttemptSeconds": 255939,
+      "diagnostics": {
+        "uiMessage": "페이지를 사용할 수 없습니다",
+        "insightsUnavailable": true,
+        "publicPostRechecked": false,
+        "profileRechecked": false,
+        "priorDiagnosticAttemptId": "ig-feed-v03-24h-attempt-20260912-1234",
+        "deletionOrArchiveConfirmed": false
+      },
+      "lastActualObservationId": "ig-feed-v03-12h-check-20260912-0028",
+      "checkpointCompleted": false,
+      "retryAt": "2026-09-14T12:25:00+09:00",
+      "ownerQuestionPreviouslyAsked": true,
+      "ownerQuestionRepeated": false,
+      "ownerAnswer": "pending",
+      "notificationDecision": "DONT_NOTIFY",
+      "notificationReason": "The same availability issue and pending owner question were already reported; no new required action.",
+      "externalChangesMade": false,
+      "assessment": "One fresh read of the known feed-insights URL again showed the same unavailable-page message. No metrics were captured and the 24h checkpoint remains unmeasured. Preserve all prior evidence, do not infer deletion or restore/repost, and make the next single attempt at the separately due 72h checkpoint.",
+      "previousAttemptId": "ig-feed-v03-24h-retry-20260913-1105"
     }
   ]
 }
