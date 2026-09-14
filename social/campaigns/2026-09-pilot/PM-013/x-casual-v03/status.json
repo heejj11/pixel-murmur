@@ -44,7 +44,7 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-14T02:34:08Z",
+  "updatedAt": "2026-09-14T03:29:44Z",
   "imageSha256": "bc6f08162166309a2642992848a828632fa8531bdf673d64fde5ad01529fe42f",
   "hypothesis": "A casual maker-thought hook may elicit more voluntary response than the explanatory caption; exploratory comparison, not a controlled causal test.",
   "comparisonBaseline": {
@@ -62,7 +62,7 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-14T02:34:08Z",
+    "savedFieldsVerifiedAt": "2026-09-14T03:29:44Z",
     "nextCheckAt": "2026-09-18T11:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
@@ -131,9 +131,9 @@
       }
     ],
     "sharedQueueIn": "../explain-v02/status.json",
-    "sharedAutomationNextAt": "2026-09-14T12:25:00+09:00",
+    "sharedAutomationNextAt": "2026-09-14T12:40:00+09:00",
     "lastTriggerObservedAt": "2026-09-14T11:27:14.771+09:00",
-    "nextCheckPurpose": "X casual-v03 72h is complete. Its next own checkpoint is 7d on September 18 at 11:25 KST; the shared monitor next checks the Instagram feed 72h at September 14 12:25 KST."
+    "nextCheckPurpose": "X casual-v03 72h is complete. Its next own checkpoint is 7d on September 18 at 11:25 KST; the shared monitor next checks the Instagram Reel72h at September 14 12:40 KST."
   },
   "lastObservationId": "x-casual-v03-72h-check-20260914-1129",
   "lastObservation": {

@@ -2,7 +2,7 @@
   "objectId": "PM-015",
   "creativeId": "planner-v01",
   "state": "published-and-site-linked-monitoring",
-  "updatedAt": "2026-09-14T01:04:27Z",
+  "updatedAt": "2026-09-14T03:29:44Z",
   "format": "instagram-carousel-3-stills-4x5",
   "publishedAt": "2026-09-14T09:59:12+09:00",
   "publishedAtSource": "live-post-time-datetime",
@@ -32,10 +32,10 @@
   "monitoring": {
     "state": "scheduled",
     "automationId": "v04",
-    "savedFieldsVerifiedAt": "2026-09-14T01:04:27Z",
+    "savedFieldsVerifiedAt": "2026-09-14T03:29:44Z",
     "futureExecutionVerified": false,
     "nextCheckAt": "2026-09-15T10:00:00+09:00",
-    "sharedAutomationNextAt": "2026-09-14T11:25:00+09:00",
+    "sharedAutomationNextAt": "2026-09-14T12:40:00+09:00",
     "sharedQueueIn": "../../PM-013/explain-v02/status.json",
     "existingAutomationChanged": true,
     "checkpoints": [

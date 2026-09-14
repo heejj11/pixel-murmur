@@ -64,12 +64,12 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-14T02:34:08Z",
+  "updatedAt": "2026-09-14T03:29:44Z",
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-14T02:34:08Z",
-    "nextCheckAt": "2026-09-14T12:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-14T03:29:44Z",
+    "nextCheckAt": "2026-09-14T12:40:00+09:00",
     "futureExecutionVerified": false,
     "sharedQueueIn": "../explain-v02/status.json",
     "checkpoints": [
@@ -109,13 +109,13 @@
       {
         "id": "pm013-ig-feed-v03-24h",
         "at": "2026-09-12T12:25:00+09:00",
-        "state": "pending-retry",
+        "state": "unmeasured",
         "format": "feed",
         "triggeredBy": "heartbeat-v04",
         "triggeredAt": "2026-09-12T12:25:35.603+09:00",
         "attemptCompletedAndRecordedAt": "2026-09-12T12:34:21+09:00",
         "attemptId": "ig-feed-v03-24h-attempt-20260912-1234",
-        "retryAt": "2026-09-14T12:25:00+09:00",
+        "retryAt": null,
         "metricValuesAtTarget": null,
         "lastTriggerObservedAt": "2026-09-14T11:27:14.771+09:00",
         "lastAttemptedAt": "2026-09-14T11:29:00+09:00",
@@ -124,8 +124,14 @@
       {
         "id": "pm013-ig-feed-v03-72h",
         "at": "2026-09-14T12:25:00+09:00",
-        "state": "queued",
-        "format": "feed"
+        "state": "unmeasured",
+        "format": "feed",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-14T12:26:16.968+09:00",
+        "attemptedAt": "2026-09-14T12:27:00+09:00",
+        "attemptId": "ig-feed-v03-72h-attempt-20260914-1227",
+        "metricValuesAtTarget": null,
+        "retryAt": null
       },
       {
         "id": "pm013-ig-feed-v03-7d",
@@ -190,9 +196,9 @@
         "format": "reel"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-14T11:27:14.771+09:00",
-    "nextCheckPurpose": "The known feed insights remained unavailable at the 11:25 retry. Make one separate 72h attempt at 12:25, followed by Reel72h at 12:40; do not restore or repost.",
-    "sharedAutomationNextAt": "2026-09-14T12:25:00+09:00"
+    "lastTriggerObservedAt": "2026-09-14T12:26:16.968+09:00",
+    "nextCheckPurpose": "The feed 72h checkpoint is explicitly unmeasured because the same insights page was unavailable. Do not retry it at the nearby Reel checkpoint. Next is Reel72h at 12:40; the next separate feed checkpoint is 7d.",
+    "sharedAutomationNextAt": "2026-09-14T12:40:00+09:00"
   },
   "lastObservationIds": {
     "feed": "ig-feed-v03-12h-check-20260912-0028",
@@ -237,22 +243,22 @@
     }
   },
   "lastCheckAttempt": {
-    "id": "ig-feed-v03-24h-retry-20260914-1129",
-    "state": "insights-still-unavailable",
+    "id": "ig-feed-v03-72h-attempt-20260914-1227",
+    "state": "insights-unavailable-at-checkpoint",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-14T11:27:14.771+09:00",
-    "attemptedAt": "2026-09-14T11:29:00+09:00",
+    "triggeredAt": "2026-09-14T12:26:16.968+09:00",
+    "attemptedAt": "2026-09-14T12:27:00+09:00",
     "capturedAt": null,
     "latestMetricsUpdated": false,
-    "retryAt": "2026-09-14T12:25:00+09:00",
+    "retryAt": null,
     "checkpointCompleted": false
   },
   "lastAvailabilityCheck": {
-    "attemptId": "ig-feed-v03-24h-retry-20260914-1129",
+    "attemptId": "ig-feed-v03-72h-attempt-20260914-1227",
     "format": "feed",
     "state": "insights-still-unavailable",
     "rootCause": null,
-    "diagnosedBy": "2026-09-14T11:29:00+09:00",
+    "diagnosedBy": "2026-09-14T12:27:00+09:00",
     "ownerClarificationPending": true,
     "priorDiagnosticAttemptId": "ig-feed-v03-24h-attempt-20260912-1234",
     "publicPostRechecked": false,

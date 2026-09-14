@@ -650,6 +650,47 @@
       "externalChangesMade": false,
       "assessment": "One fresh read of the known feed-insights URL again showed the same unavailable-page message. No metrics were captured and the 24h checkpoint remains unmeasured. Preserve all prior evidence, do not infer deletion or restore/repost, and make the next single attempt at the separately due 72h checkpoint.",
       "previousAttemptId": "ig-feed-v03-24h-retry-20260913-1105"
+    },
+    {
+      "id": "ig-feed-v03-72h-attempt-20260914-1227",
+      "phase": "scheduled-72h-check-attempt",
+      "format": "feed",
+      "scheduledAt": "2026-09-14T12:25:00+09:00",
+      "triggeredBy": "heartbeat-v04",
+      "triggeredAt": "2026-09-14T12:26:16.968+09:00",
+      "attemptedAt": "2026-09-14T12:27:00+09:00",
+      "timePrecision": "minute",
+      "capturedAt": null,
+      "state": "insights-unavailable-at-checkpoint",
+      "reason": "same-insights-page-unavailable",
+      "rootCause": null,
+      "platformUiRead": true,
+      "freshMetrics": null,
+      "metricValuesAtTarget": null,
+      "sourceUrl": "https://www.instagram.com/insights/media/3983556833621190003/",
+      "postUrl": "https://www.instagram.com/p/DdIb9WakiVz/",
+      "publishedAt": "2026-09-11T12:23:21+09:00",
+      "elapsedSincePublicationAtAttemptSeconds": 259419,
+      "diagnostics": {
+        "uiMessage": "페이지를 사용할 수 없습니다",
+        "insightsUnavailable": true,
+        "publicPostRechecked": false,
+        "profileRechecked": false,
+        "priorDiagnosticAttemptId": "ig-feed-v03-24h-attempt-20260912-1234",
+        "deletionOrArchiveConfirmed": false
+      },
+      "lastActualObservationId": "ig-feed-v03-12h-check-20260912-0028",
+      "checkpointCompleted": false,
+      "retryAt": null,
+      "nextSeparateCheckpointAt": "2026-09-18T12:25:00+09:00",
+      "ownerQuestionPreviouslyAsked": true,
+      "ownerQuestionRepeated": false,
+      "ownerAnswer": "pending",
+      "notificationDecision": "DONT_NOTIFY",
+      "notificationReason": "The same availability issue was already reported; this due checkpoint adds no new required action.",
+      "externalChangesMade": false,
+      "assessment": "The single due 72h read of the recorded feed-insights URL showed the same unavailable-page message. No metrics were captured, so the 72h checkpoint remains explicitly unmeasured rather than completed. Do not retry again at the nearby Reel checkpoint; preserve evidence and wait for the separate 7d feed checkpoint unless the owner clarifies intentional removal.",
+      "previousAttemptId": "ig-feed-v03-24h-retry-20260914-1129"
     }
   ]
 }
