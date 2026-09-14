@@ -1,0 +1,53 @@
+{
+  "campaignId": "2026-09-pilot-pm-015-planner-v01",
+  "objectId": "PM-015",
+  "platform": "instagram",
+  "publication": {
+    "url": "https://www.instagram.com/pixelmurmur/p/DdP52G0kmJv/",
+    "publishedAt": "2026-09-14T09:59:12+09:00",
+    "insightsUrl": "https://www.instagram.com/insights/media/3985658602073514607/"
+  },
+  "measurementPolicy": {
+    "unavailableValues": null,
+    "excludePaid": true,
+    "operatorViewsMayBeIncluded": true,
+    "compareSameElapsedTime": true,
+    "notControlledABTest": true,
+    "neverBackfillPastTargetValues": true
+  },
+  "observations": [
+    {
+      "id": "pm015-planner-v01-launch-qa-20260914-1002",
+      "kind": "launch-qa-not-performance-checkpoint",
+      "instagram": {
+        "capturedAt": "2026-09-14T10:02:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 168,
+        "sourceUrl": "https://www.instagram.com/insights/media/3985658602073514607/",
+        "views": null,
+        "viewsSourceLabel": "조회수 --",
+        "peopleWhoViewed": null,
+        "peopleWhoViewedSourceLabel": "조회한 사람 --",
+        "reach": null,
+        "interactions": null,
+        "interactionsSourceLabel": "반응 --",
+        "postInteractions": 0,
+        "likes": 0,
+        "comments": 0,
+        "saves": 0,
+        "shares": 0,
+        "accountsEngaged": null,
+        "accountsEngagedSourceLabel": "참여한 계정 --",
+        "profileActivity": 0,
+        "profileVisits": 0,
+        "externalLinkTaps": 0,
+        "businessAddressTaps": 0,
+        "attributedFollows": 0
+      },
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "assessment": "Initial QA only, before insights have populated. Displayed -- values remain null, not zero. No growth/failure inference and no verified external demand."
+    }
+  ],
+  "checkAttempts": []
+}

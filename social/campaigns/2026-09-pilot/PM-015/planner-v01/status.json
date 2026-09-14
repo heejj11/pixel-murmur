@@ -1,31 +1,65 @@
 {
   "objectId": "PM-015",
   "creativeId": "planner-v01",
-  "state": "qa-passed-instagram-composer-ready-admin-login-required",
-  "updatedAt": "2026-09-14T00:48:00Z",
+  "state": "published-and-site-linked-monitoring",
+  "updatedAt": "2026-09-14T01:04:27Z",
   "format": "instagram-carousel-3-stills-4x5",
-  "publishedAt": null,
-  "instagramUrl": null,
-  "sitePublicVerified": false,
-  "siteLinkSaved": false,
-  "siteObservedState": "not-public-yet",
+  "publishedAt": "2026-09-14T09:59:12+09:00",
+  "publishedAtSource": "live-post-time-datetime",
+  "instagramUrl": "https://www.instagram.com/pixelmurmur/p/DdP52G0kmJv/",
+  "insightsUrl": "https://www.instagram.com/insights/media/3985658602073514607/",
+  "sitePublicVerified": true,
+  "siteLinkSaved": true,
+  "siteObservedState": "public-and-instagram-post-linked",
+  "siteUrl": "https://pixelmurmur.com/objects/pm-015",
+  "siteAdminSurface": "external-personal-Chrome-normal-authenticated-UI",
+  "otherObjectsAndLinksPreserved": true,
+  "liveQuality": "passed-all-three-slides-profile-grid-bilingual-caption-and-alt",
   "instagramComposer": {
-    "state": "ready-not-shared",
+    "state": "published",
     "imageCount": 3,
     "crop": "original-4x5",
     "captionCharacters": 271,
     "altTextEnteredAndVerified": true,
     "aiLabelChecked": true,
-    "shareClicked": false,
-    "handoffTabId": "13",
-    "note": "Browser composer preserved; not a confirmed persistent Instagram draft. If lost, reconstruct from captions.json and rendered assets. Check duplicates before resuming."
+    "shareClicked": true,
+    "shareClickedOnce": true,
+    "note": "Previous composer was absent after turn cleanup. Reconstructed unchanged approved package, rechecked each slide and caption/ALT/AI label, then shared once. Profile increased from 9 to 10 posts."
   },
   "paidMediaAllowed": false,
   "spendKrw": 0,
-  "nextStep": "Owner handoff of the normally authenticated personal admin tab, activate PM-015, publish the prepared Instagram carousel once, append its actual URL to site social links, verify both, then add actual-time followups to existing v04. Do not bypass authentication or use company Chrome.",
+  "nextStep": "Observe the PM-015 24h/72h/7d checkpoints through existing v04, separately from PM-013. Preserve existing posts; no automatic variants or paid promotion.",
   "monitoring": {
-    "state": "not-started-not-published",
-    "proposedElapsedHoursAfterActualPublication": [24, 72, 168],
-    "existingAutomationChanged": false
+    "state": "scheduled",
+    "automationId": "v04",
+    "savedFieldsVerifiedAt": "2026-09-14T01:04:27Z",
+    "futureExecutionVerified": false,
+    "nextCheckAt": "2026-09-15T10:00:00+09:00",
+    "sharedAutomationNextAt": "2026-09-14T11:25:00+09:00",
+    "sharedQueueIn": "../../PM-013/explain-v02/status.json",
+    "existingAutomationChanged": true,
+    "checkpoints": [
+      {
+        "id": "pm015-planner-v01-24h",
+        "at": "2026-09-15T10:00:00+09:00",
+        "exactElapsedTargetAt": "2026-09-15T09:59:12+09:00",
+        "elapsedHours": 24,
+        "state": "queued"
+      },
+      {
+        "id": "pm015-planner-v01-72h",
+        "at": "2026-09-17T10:00:00+09:00",
+        "exactElapsedTargetAt": "2026-09-17T09:59:12+09:00",
+        "elapsedHours": 72,
+        "state": "queued"
+      },
+      {
+        "id": "pm015-planner-v01-7d",
+        "at": "2026-09-21T10:00:00+09:00",
+        "exactElapsedTargetAt": "2026-09-21T09:59:12+09:00",
+        "elapsedHours": 168,
+        "state": "queued"
+      }
+    ]
   }
 }

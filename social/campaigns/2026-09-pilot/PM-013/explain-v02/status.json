@@ -1,11 +1,11 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-13T02:07:43Z",
+  "updatedAt": "2026-09-14T01:04:27Z",
   "state": "published-and-site-linked-monitoring",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
-  "nextStep": "Observe the shared v04 queue for explain-v02, x-casual-v03 and ig-reveal-v03 separately; preserve all published posts. No further automatic variants.",
+  "nextStep": "Observe the shared v04 queue for explain-v02, x-casual-v03, ig-reveal-v03 and PM-015/planner-v01 separately; preserve all published posts. No further automatic variants.",
   "creative": {
     "direction": "PM-013 design intention; not a working prototype demonstration",
     "copy": "ready-bilingual",
@@ -90,7 +90,7 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-13T02:07:43Z",
+    "savedFieldsVerifiedAt": "2026-09-14T01:04:27Z",
     "nextCheckAt": "2026-09-14T11:25:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
@@ -355,6 +355,27 @@
         "state": "queued",
         "format": "reel",
         "recordIn": "../ig-reveal-v03/"
+      },
+      {
+        "id": "pm015-planner-v01-24h",
+        "at": "2026-09-15T10:00:00+09:00",
+        "exactElapsedTargetAt": "2026-09-15T09:59:12+09:00",
+        "state": "queued",
+        "recordIn": "../../PM-015/planner-v01/"
+      },
+      {
+        "id": "pm015-planner-v01-72h",
+        "at": "2026-09-17T10:00:00+09:00",
+        "exactElapsedTargetAt": "2026-09-17T09:59:12+09:00",
+        "state": "queued",
+        "recordIn": "../../PM-015/planner-v01/"
+      },
+      {
+        "id": "pm015-planner-v01-7d",
+        "at": "2026-09-21T10:00:00+09:00",
+        "exactElapsedTargetAt": "2026-09-21T09:59:12+09:00",
+        "state": "queued",
+        "recordIn": "../../PM-015/planner-v01/"
       }
     ],
     "lastTriggerObservedAt": "2026-09-13T11:02:11.071+09:00",
