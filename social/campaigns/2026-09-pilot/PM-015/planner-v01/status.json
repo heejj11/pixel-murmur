@@ -1,0 +1,31 @@
+{
+  "objectId": "PM-015",
+  "creativeId": "planner-v01",
+  "state": "qa-passed-instagram-composer-ready-admin-login-required",
+  "updatedAt": "2026-09-14T00:48:00Z",
+  "format": "instagram-carousel-3-stills-4x5",
+  "publishedAt": null,
+  "instagramUrl": null,
+  "sitePublicVerified": false,
+  "siteLinkSaved": false,
+  "siteObservedState": "not-public-yet",
+  "instagramComposer": {
+    "state": "ready-not-shared",
+    "imageCount": 3,
+    "crop": "original-4x5",
+    "captionCharacters": 271,
+    "altTextEnteredAndVerified": true,
+    "aiLabelChecked": true,
+    "shareClicked": false,
+    "handoffTabId": "13",
+    "note": "Browser composer preserved; not a confirmed persistent Instagram draft. If lost, reconstruct from captions.json and rendered assets. Check duplicates before resuming."
+  },
+  "paidMediaAllowed": false,
+  "spendKrw": 0,
+  "nextStep": "Owner handoff of the normally authenticated personal admin tab, activate PM-015, publish the prepared Instagram carousel once, append its actual URL to site social links, verify both, then add actual-time followups to existing v04. Do not bypass authentication or use company Chrome.",
+  "monitoring": {
+    "state": "not-started-not-published",
+    "proposedElapsedHoursAfterActualPublication": [24, 72, 168],
+    "existingAutomationChanged": false
+  }
+}
