@@ -64,12 +64,12 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-14T03:29:44Z",
+  "updatedAt": "2026-09-14T03:43:59Z",
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-14T03:29:44Z",
-    "nextCheckAt": "2026-09-14T12:40:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-14T03:43:59Z",
+    "nextCheckAt": "2026-09-18T12:25:00+09:00",
     "futureExecutionVerified": false,
     "sharedQueueIn": "../explain-v02/status.json",
     "checkpoints": [
@@ -186,8 +186,13 @@
       {
         "id": "pm013-ig-reel-v03-72h",
         "at": "2026-09-14T12:40:00+09:00",
-        "state": "queued",
-        "format": "reel"
+        "state": "completed",
+        "format": "reel",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-14T12:40:47.013+09:00",
+        "completedAt": "2026-09-14T12:41:00+09:00",
+        "observationId": "ig-reel-v03-72h-check-20260914-1241",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm013-ig-reel-v03-7d",
@@ -196,13 +201,13 @@
         "format": "reel"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-14T12:26:16.968+09:00",
-    "nextCheckPurpose": "The feed 72h checkpoint is explicitly unmeasured because the same insights page was unavailable. Do not retry it at the nearby Reel checkpoint. Next is Reel72h at 12:40; the next separate feed checkpoint is 7d.",
-    "sharedAutomationNextAt": "2026-09-14T12:40:00+09:00"
+    "lastTriggerObservedAt": "2026-09-14T12:40:47.013+09:00",
+    "nextCheckPurpose": "Reel72h is complete and unchanged from 24h. The package next checks feed7d at September 18 12:25 KST, followed by Reel7d at 12:40. The shared monitor next checks PM015 at September 15 10:00 KST.",
+    "sharedAutomationNextAt": "2026-09-15T10:00:00+09:00"
   },
   "lastObservationIds": {
     "feed": "ig-feed-v03-12h-check-20260912-0028",
-    "reel": "ig-reel-v03-24h-check-20260912-1244"
+    "reel": "ig-reel-v03-72h-check-20260914-1241"
   },
   "experiment": {
     "mandatoryFormatPair": false,
@@ -226,8 +231,8 @@
       "decision": "unchanged-small-follower-only-sample-preserve-feed-continue-to-24h"
     },
     "reel": {
-      "id": "ig-reel-v03-24h-check-20260912-1244",
-      "capturedAt": "2026-09-12T12:44:00+09:00",
+      "id": "ig-reel-v03-72h-check-20260914-1241",
+      "capturedAt": "2026-09-14T12:41:00+09:00",
       "views": 74,
       "peopleWhoViewed": 64,
       "nonFollowerViewSharePercent": 98.6,
@@ -238,20 +243,20 @@
       "accountsEngaged": 1,
       "profileActivity": 0,
       "attributedFollows": 0,
-      "decision": "one-unattributed-like-with-small-count-change-preserve-reel-continue-to-72h",
+      "decision": "unchanged-from-24h-preserve-reel-continue-to-7d",
       "followerViewSharePercent": 1.4
     }
   },
   "lastCheckAttempt": {
-    "id": "ig-feed-v03-72h-attempt-20260914-1227",
-    "state": "insights-unavailable-at-checkpoint",
+    "id": "ig-reel-v03-72h-check-20260914-1241",
+    "state": "completed",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-14T12:26:16.968+09:00",
-    "attemptedAt": "2026-09-14T12:27:00+09:00",
-    "capturedAt": null,
-    "latestMetricsUpdated": false,
+    "triggeredAt": "2026-09-14T12:40:47.013+09:00",
+    "completedAt": "2026-09-14T12:41:00+09:00",
+    "observationId": "ig-reel-v03-72h-check-20260914-1241",
+    "latestMetricsUpdated": true,
     "retryAt": null,
-    "checkpointCompleted": false
+    "checkpointCompleted": true
   },
   "lastAvailabilityCheck": {
     "attemptId": "ig-feed-v03-72h-attempt-20260914-1227",
