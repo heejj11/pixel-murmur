@@ -2,7 +2,7 @@
   "objectId": "PM-015",
   "creativeId": "planner-v01",
   "state": "published-and-site-linked-monitoring",
-  "updatedAt": "2026-09-14T03:43:59Z",
+  "updatedAt": "2026-09-15T01:04:45Z",
   "format": "instagram-carousel-3-stills-4x5",
   "publishedAt": "2026-09-14T09:59:12+09:00",
   "publishedAtSource": "live-post-time-datetime",
@@ -28,14 +28,14 @@
   },
   "paidMediaAllowed": false,
   "spendKrw": 0,
-  "nextStep": "Observe the PM-015 24h/72h/7d checkpoints through existing v04, separately from PM-013. Preserve existing posts; no automatic variants or paid promotion.",
+  "nextStep": "24h measured with a tiny non-diagnostic sample. Preserve carousel; next own and shared checkpoint is September17 at10:00 KST72h. No automatic repost or paid promotion.",
   "monitoring": {
     "state": "scheduled",
     "automationId": "v04",
-    "savedFieldsVerifiedAt": "2026-09-14T03:43:59Z",
+    "savedFieldsVerifiedAt": "2026-09-15T01:04:45Z",
     "futureExecutionVerified": false,
-    "nextCheckAt": "2026-09-15T10:00:00+09:00",
-    "sharedAutomationNextAt": "2026-09-15T10:00:00+09:00",
+    "nextCheckAt": "2026-09-17T10:00:00+09:00",
+    "sharedAutomationNextAt": "2026-09-17T10:00:00+09:00",
     "sharedQueueIn": "../../PM-013/explain-v02/status.json",
     "existingAutomationChanged": true,
     "checkpoints": [
@@ -44,7 +44,12 @@
         "at": "2026-09-15T10:00:00+09:00",
         "exactElapsedTargetAt": "2026-09-15T09:59:12+09:00",
         "elapsedHours": 24,
-        "state": "queued"
+        "state": "completed",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-15T10:01:52.143+09:00",
+        "completedAt": "2026-09-15T10:03:00+09:00",
+        "observationId": "pm015-planner-v01-24h-check-20260915-1003",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm015-planner-v01-72h",
@@ -60,6 +65,39 @@
         "elapsedHours": 168,
         "state": "queued"
       }
-    ]
+    ],
+    "lastTriggerObservedAt": "2026-09-15T10:01:52.143+09:00",
+    "nextCheckPurpose": "September17 at10:00 KST: PM015 planner-v01 72h; then PM013 explain-v02 7d at11:00. PM015 24h is completed with a tiny non-diagnostic sample."
+  },
+  "lastObservationId": "pm015-planner-v01-24h-check-20260915-1003",
+  "lastObservationSummary": {
+    "id": "pm015-planner-v01-24h-check-20260915-1003",
+    "capturedAt": "2026-09-15T10:03:00+09:00",
+    "views": 1,
+    "peopleWhoViewed": 1,
+    "followerViewSharePercent": 100,
+    "nonFollowerViewSharePercent": 0,
+    "postInteractions": 0,
+    "likes": 0,
+    "comments": 0,
+    "saves": 0,
+    "shares": 0,
+    "profileActivity": 0,
+    "profileVisits": 0,
+    "externalLinkTaps": 0,
+    "attributedFollows": 0,
+    "interactions": null,
+    "accountsEngaged": null,
+    "decision": "preserve-carousel-continue-to-72h-no-demand-inference"
+  },
+  "lastCheckAttempt": {
+    "id": "pm015-planner-v01-24h-check-20260915-1003",
+    "state": "completed",
+    "triggeredBy": "heartbeat-v04",
+    "triggeredAt": "2026-09-15T10:01:52.143+09:00",
+    "completedAt": "2026-09-15T10:03:00+09:00",
+    "observationId": "pm015-planner-v01-24h-check-20260915-1003",
+    "latestMetricsUpdated": true,
+    "retryAt": null
   }
 }

@@ -1,7 +1,7 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-14T03:43:59Z",
+  "updatedAt": "2026-09-15T01:04:45Z",
   "state": "published-and-site-linked-monitoring",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
@@ -90,8 +90,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-14T03:43:59Z",
-    "nextCheckAt": "2026-09-15T10:00:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-15T01:04:45Z",
+    "nextCheckAt": "2026-09-17T10:00:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -376,8 +376,13 @@
         "id": "pm015-planner-v01-24h",
         "at": "2026-09-15T10:00:00+09:00",
         "exactElapsedTargetAt": "2026-09-15T09:59:12+09:00",
-        "state": "queued",
-        "recordIn": "../../PM-015/planner-v01/"
+        "state": "completed",
+        "recordIn": "../../PM-015/planner-v01/",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-15T10:01:52.143+09:00",
+        "completedAt": "2026-09-15T10:03:00+09:00",
+        "observationId": "pm015-planner-v01-24h-check-20260915-1003",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm015-planner-v01-72h",
@@ -394,10 +399,10 @@
         "recordIn": "../../PM-015/planner-v01/"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-14T12:40:47.013+09:00",
-    "nextCheckPurpose": "September 15 at 10:00 KST: PM015 planner-v01 24h. PM013 Reel72h is complete and unchanged from 24h; Feed24h and Feed72h remain explicitly unmeasured.",
+    "lastTriggerObservedAt": "2026-09-15T10:01:52.143+09:00",
+    "nextCheckPurpose": "September17 at10:00 KST: PM015 planner-v01 72h; then PM013 explain-v02 7d at11:00. PM015 24h is completed with a tiny non-diagnostic sample.",
     "lastManualCheckAt": "2026-09-11T09:58:00+09:00",
-    "sharedAutomationNextAt": "2026-09-15T10:00:00+09:00"
+    "sharedAutomationNextAt": "2026-09-17T10:00:00+09:00"
   },
   "lastObservationId": "pm013-72h-check-20260913-1104",
   "lastObservationSummary": {

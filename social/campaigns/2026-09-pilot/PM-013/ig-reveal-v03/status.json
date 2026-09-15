@@ -64,11 +64,11 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-14T03:43:59Z",
+  "updatedAt": "2026-09-15T01:04:45Z",
   "monitoring": {
     "automationId": "v04",
     "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-14T03:43:59Z",
+    "savedFieldsVerifiedAt": "2026-09-15T01:04:45Z",
     "nextCheckAt": "2026-09-18T12:25:00+09:00",
     "futureExecutionVerified": false,
     "sharedQueueIn": "../explain-v02/status.json",
@@ -202,8 +202,8 @@
       }
     ],
     "lastTriggerObservedAt": "2026-09-14T12:40:47.013+09:00",
-    "nextCheckPurpose": "Reel72h is complete and unchanged from 24h. The package next checks feed7d at September 18 12:25 KST, followed by Reel7d at 12:40. The shared monitor next checks PM015 at September 15 10:00 KST.",
-    "sharedAutomationNextAt": "2026-09-15T10:00:00+09:00"
+    "nextCheckPurpose": "Own package checks feed7d September18 at12:25 KST and Reel7d at12:40. Shared monitor next checks PM015 72h September17 at10:00. Completed72h checks are not repeated.",
+    "sharedAutomationNextAt": "2026-09-17T10:00:00+09:00"
   },
   "lastObservationIds": {
     "feed": "ig-feed-v03-12h-check-20260912-0028",
