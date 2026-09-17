@@ -2,7 +2,7 @@
   "objectId": "PM-015",
   "creativeId": "planner-v01",
   "state": "published-and-site-linked-monitoring",
-  "updatedAt": "2026-09-15T01:04:45Z",
+  "updatedAt": "2026-09-17T02:04:47Z",
   "format": "instagram-carousel-3-stills-4x5",
   "publishedAt": "2026-09-14T09:59:12+09:00",
   "publishedAtSource": "live-post-time-datetime",
@@ -28,14 +28,14 @@
   },
   "paidMediaAllowed": false,
   "spendKrw": 0,
-  "nextStep": "24h measured with a tiny non-diagnostic sample. Preserve carousel; next own and shared checkpoint is September17 at10:00 KST72h. No automatic repost or paid promotion.",
+  "nextStep": "Already measured72h; repository record recovered without rereading. Preserve carousel and check own7d September21 10:00 KST.",
   "monitoring": {
     "state": "scheduled",
     "automationId": "v04",
-    "savedFieldsVerifiedAt": "2026-09-15T01:04:45Z",
+    "savedFieldsVerifiedAt": "2026-09-17T02:04:47Z",
     "futureExecutionVerified": false,
-    "nextCheckAt": "2026-09-17T10:00:00+09:00",
-    "sharedAutomationNextAt": "2026-09-17T10:00:00+09:00",
+    "nextCheckAt": "2026-09-21T10:00:00+09:00",
+    "sharedAutomationNextAt": "2026-09-18T11:25:00+09:00",
     "sharedQueueIn": "../../PM-013/explain-v02/status.json",
     "existingAutomationChanged": true,
     "checkpoints": [
@@ -56,7 +56,13 @@
         "at": "2026-09-17T10:00:00+09:00",
         "exactElapsedTargetAt": "2026-09-17T09:59:12+09:00",
         "elapsedHours": 72,
-        "state": "queued"
+        "state": "completed",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-17T10:00:28.509+09:00",
+        "completedAt": "2026-09-17T10:02:00+09:00",
+        "observationId": "pm015-planner-v01-72h-check-20260917-1002",
+        "metricValuesAtTarget": null,
+        "recordRecoveredAt": "2026-09-17T02:04:47Z"
       },
       {
         "id": "pm015-planner-v01-7d",
@@ -66,19 +72,19 @@
         "state": "queued"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-15T10:01:52.143+09:00",
-    "nextCheckPurpose": "September17 at10:00 KST: PM015 planner-v01 72h; then PM013 explain-v02 7d at11:00. PM015 24h is completed with a tiny non-diagnostic sample."
+    "lastTriggerObservedAt": "2026-09-17T10:00:28.509+09:00",
+    "nextCheckPurpose": "Own next: September21 10:00 KST7d. Shared next: September18 11:25 KST PM013 X casual-v037d."
   },
-  "lastObservationId": "pm015-planner-v01-24h-check-20260915-1003",
+  "lastObservationId": "pm015-planner-v01-72h-check-20260917-1002",
   "lastObservationSummary": {
-    "id": "pm015-planner-v01-24h-check-20260915-1003",
-    "capturedAt": "2026-09-15T10:03:00+09:00",
-    "views": 1,
+    "id": "pm015-planner-v01-72h-check-20260917-1002",
+    "capturedAt": "2026-09-17T10:02:00+09:00",
+    "views": 3,
     "peopleWhoViewed": 1,
     "followerViewSharePercent": 100,
     "nonFollowerViewSharePercent": 0,
-    "postInteractions": 0,
-    "likes": 0,
+    "postInteractions": 1,
+    "likes": 1,
     "comments": 0,
     "saves": 0,
     "shares": 0,
@@ -86,18 +92,32 @@
     "profileVisits": 0,
     "externalLinkTaps": 0,
     "attributedFollows": 0,
-    "interactions": null,
-    "accountsEngaged": null,
-    "decision": "preserve-carousel-continue-to-72h-no-demand-inference"
+    "interactions": 1,
+    "accountsEngaged": 1,
+    "decision": "preserve-carousel-continue-to-7d-no-demand-inference",
+    "timePrecision": "minute",
+    "elapsedSecondsApprox": 259368,
+    "sourceUrl": "https://www.instagram.com/insights/media/3985658602073514607/",
+    "viewsSourceLabel": "조회수",
+    "peopleWhoViewedSourceLabel": "조회한 사람",
+    "profileSourceViews": 2,
+    "profileSourceViewsSourceLabel": "프로필",
+    "homeViews": 1,
+    "homeViewsSourceLabel": "홈",
+    "businessAddressTaps": 0,
+    "reach": null,
+    "watchTime": null,
+    "retention": null
   },
   "lastCheckAttempt": {
-    "id": "pm015-planner-v01-24h-check-20260915-1003",
+    "id": "pm015-planner-v01-72h-check-20260917-1002",
     "state": "completed",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-15T10:01:52.143+09:00",
-    "completedAt": "2026-09-15T10:03:00+09:00",
-    "observationId": "pm015-planner-v01-24h-check-20260915-1003",
+    "triggeredAt": "2026-09-17T10:00:28.509+09:00",
+    "completedAt": "2026-09-17T10:02:00+09:00",
+    "observationId": "pm015-planner-v01-72h-check-20260917-1002",
     "latestMetricsUpdated": true,
-    "retryAt": null
+    "retryAt": null,
+    "recordRecoveredAt": "2026-09-17T02:04:47Z"
   }
 }

@@ -112,6 +112,66 @@
         "Operator checks may contribute. The later PM015 stationery-v05 Reel is a separate creative and was neither remeasured nor combined.",
         "No actions on PM013/PM001, no site/admin/account/paid/engagement changes. Only the new temporary observation tab was closed."
       ]
+    },
+    {
+      "id": "pm015-planner-v01-72h-check-20260917-1002",
+      "kind": "scheduled-72h-check",
+      "scheduledAt": "2026-09-17T10:00:00+09:00",
+      "exactElapsedTargetAt": "2026-09-17T09:59:12+09:00",
+      "triggeredBy": "heartbeat-v04",
+      "triggeredAt": "2026-09-17T10:00:28.509+09:00",
+      "metricValuesAtTarget": null,
+      "instagram": {
+        "capturedAt": "2026-09-17T10:02:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 259368,
+        "sourceUrl": "https://www.instagram.com/insights/media/3985658602073514607/",
+        "views": 3,
+        "viewsSourceLabel": "조회수",
+        "peopleWhoViewed": 1,
+        "peopleWhoViewedSourceLabel": "조회한 사람",
+        "followerViewSharePercent": 100,
+        "nonFollowerViewSharePercent": 0,
+        "profileSourceViews": 2,
+        "profileSourceViewsSourceLabel": "프로필",
+        "homeViews": 1,
+        "homeViewsSourceLabel": "홈",
+        "interactions": 1,
+        "postInteractions": 1,
+        "likes": 1,
+        "comments": 0,
+        "saves": 0,
+        "shares": 0,
+        "accountsEngaged": 1,
+        "profileActivity": 0,
+        "profileVisits": 0,
+        "externalLinkTaps": 0,
+        "businessAddressTaps": 0,
+        "attributedFollows": 0,
+        "reach": null,
+        "watchTime": null,
+        "retention": null
+      },
+      "recordRecovery": {
+        "recoveredAt": "2026-09-17T02:04:47Z",
+        "source": "Earlier 2026-09-17 10:00 heartbeat UI evidence preserved in thread context and v04 saved prompt, repeated in the incoming 11:00 heartbeat.",
+        "reason": "Prior 72h UI read and automation reschedule completed, but repository observation/checkpoint record was absent.",
+        "freshPlatformReadThisRun": false
+      },
+      "comparison": {
+        "observationId": "pm015-planner-v01-24h-check-20260915-1003",
+        "viewsChange": 2,
+        "peopleWhoViewedChange": 0,
+        "likesChange": 1,
+        "interactionsChange": null,
+        "accountsEngagedChange": null
+      },
+      "assessment": "Earlier 10:02 observation was identical to the owner-requested September16 11:31 snapshot: three views, one person, one like, follower-only views and no deeper profile/follow actions. Tiny non-diagnostic sample. This recovers an already observed snapshot; it is not a new 11:00 measurement or target-time backfill.",
+      "decision": "preserve-carousel-continue-to-7d-no-demand-inference",
+      "notificationDecision": "DONT_NOTIFY",
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "externalChangesMade": false
     }
   ],
   "checkAttempts": []
