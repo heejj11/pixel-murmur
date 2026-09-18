@@ -1,7 +1,7 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-18T02:27:32Z",
+  "updatedAt": "2026-09-18T03:29:00Z",
   "state": "published-and-site-linked-own-monitoring-complete",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
@@ -90,8 +90,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "own-checkpoints-complete-shared-monitor-scheduled",
-    "savedFieldsVerifiedAt": "2026-09-18T02:27:32Z",
-    "nextCheckAt": "2026-09-18T12:25:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-18T03:29:00Z",
+    "nextCheckAt": "2026-09-18T12:40:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -371,9 +371,15 @@
       {
         "id": "pm013-ig-feed-v03-7d",
         "at": "2026-09-18T12:25:00+09:00",
-        "state": "queued",
+        "state": "unmeasured",
         "format": "feed",
-        "recordIn": "../ig-reveal-v03/"
+        "recordIn": "../ig-reveal-v03/",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-18T12:27:12.436+09:00",
+        "attemptedAt": "2026-09-18T12:28:00+09:00",
+        "attemptId": "ig-feed-v03-7d-attempt-20260918-1228",
+        "metricValuesAtTarget": null,
+        "retryAt": null
       },
       {
         "id": "pm013-ig-reel-v03-7d",
@@ -415,10 +421,10 @@
         "recordIn": "../../PM-015/planner-v01/"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-18T11:25:12.671+09:00",
-    "nextCheckPurpose": "September18 feed7d12:25 KST, Reel7d12:40, then PM0157d September21 10:00. Completed X and explain-v02 not reread.",
+    "lastTriggerObservedAt": "2026-09-18T12:27:12.436+09:00",
+    "nextCheckPurpose": "September18 12:40 KST Reel7d, then PM0157d September21 10:00. Feed7d unmeasured; scheduled feed attempts exhausted, no retry.",
     "lastManualCheckAt": "2026-09-11T09:58:00+09:00",
-    "sharedAutomationNextAt": "2026-09-18T12:25:00+09:00",
+    "sharedAutomationNextAt": "2026-09-18T12:40:00+09:00",
     "ownNextCheckAt": null
   },
   "lastObservationId": "pm013-7d-check-20260917-1103",

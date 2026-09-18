@@ -2,7 +2,7 @@
   "objectId": "PM-015",
   "creativeId": "planner-v01",
   "state": "published-and-site-linked-monitoring",
-  "updatedAt": "2026-09-18T02:27:32Z",
+  "updatedAt": "2026-09-18T03:29:00Z",
   "format": "instagram-carousel-3-stills-4x5",
   "publishedAt": "2026-09-14T09:59:12+09:00",
   "publishedAtSource": "live-post-time-datetime",
@@ -32,10 +32,10 @@
   "monitoring": {
     "state": "scheduled",
     "automationId": "v04",
-    "savedFieldsVerifiedAt": "2026-09-18T02:27:32Z",
+    "savedFieldsVerifiedAt": "2026-09-18T03:29:00Z",
     "futureExecutionVerified": false,
     "nextCheckAt": "2026-09-21T10:00:00+09:00",
-    "sharedAutomationNextAt": "2026-09-18T12:25:00+09:00",
+    "sharedAutomationNextAt": "2026-09-18T12:40:00+09:00",
     "sharedQueueIn": "../../PM-013/explain-v02/status.json",
     "existingAutomationChanged": true,
     "checkpoints": [
@@ -73,7 +73,7 @@
       }
     ],
     "lastTriggerObservedAt": "2026-09-17T10:00:28.509+09:00",
-    "nextCheckPurpose": "Own next September21 10:00 KST7d. Shared next September18 12:25 KST PM013 feed7d."
+    "nextCheckPurpose": "Own next September21 10:00 KST7d. Shared next September18 12:40 KST PM013 Reel7d."
   },
   "lastObservationId": "pm015-planner-v01-72h-check-20260917-1002",
   "lastObservationSummary": {
