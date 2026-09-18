@@ -64,12 +64,12 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-18T03:29:00Z",
+  "updatedAt": "2026-09-18T03:42:38Z",
   "monitoring": {
     "automationId": "v04",
-    "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-18T03:29:00Z",
-    "nextCheckAt": "2026-09-18T12:40:00+09:00",
+    "state": "scheduled-attempts-finished-feed-unmeasured-shared-monitor-retained",
+    "savedFieldsVerifiedAt": "2026-09-18T03:42:38Z",
+    "nextCheckAt": null,
     "futureExecutionVerified": false,
     "sharedQueueIn": "../explain-v02/status.json",
     "checkpoints": [
@@ -203,17 +203,23 @@
       {
         "id": "pm013-ig-reel-v03-7d",
         "at": "2026-09-18T12:40:00+09:00",
-        "state": "queued",
-        "format": "reel"
+        "state": "completed",
+        "format": "reel",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-18T12:40:42.462+09:00",
+        "completedAt": "2026-09-18T12:41:00+09:00",
+        "observationId": "ig-reel-v03-7d-check-20260918-1241",
+        "metricValuesAtTarget": null
       }
     ],
-    "lastTriggerObservedAt": "2026-09-18T12:27:12.436+09:00",
-    "nextCheckPurpose": "Own/shared next September18 12:40 KST Reel7d only. Feed24h/72h/7d remain unmeasured; no further scheduled feed attempts.",
-    "sharedAutomationNextAt": "2026-09-18T12:40:00+09:00"
+    "lastTriggerObservedAt": "2026-09-18T12:40:42.462+09:00",
+    "nextCheckPurpose": "Own Reel checks complete; feed24h/72h/7d remain unmeasured with attempts exhausted. Shared next PM0157d September21 10:00 KST.",
+    "sharedAutomationNextAt": "2026-09-21T10:00:00+09:00",
+    "ownNextCheckAt": null
   },
   "lastObservationIds": {
     "feed": "ig-feed-v03-12h-check-20260912-0028",
-    "reel": "ig-reel-v03-72h-check-20260914-1241"
+    "reel": "ig-reel-v03-7d-check-20260918-1241"
   },
   "experiment": {
     "mandatoryFormatPair": false,
@@ -237,11 +243,11 @@
       "decision": "unchanged-small-follower-only-sample-preserve-feed-continue-to-24h"
     },
     "reel": {
-      "id": "ig-reel-v03-72h-check-20260914-1241",
-      "capturedAt": "2026-09-14T12:41:00+09:00",
-      "views": 74,
+      "id": "ig-reel-v03-7d-check-20260918-1241",
+      "capturedAt": "2026-09-18T12:41:00+09:00",
+      "views": 77,
       "peopleWhoViewed": 64,
-      "nonFollowerViewSharePercent": 98.6,
+      "nonFollowerViewSharePercent": 94.8,
       "likes": 1,
       "comments": 0,
       "saves": 0,
@@ -249,22 +255,20 @@
       "accountsEngaged": 1,
       "profileActivity": 0,
       "attributedFollows": 0,
-      "decision": "unchanged-from-24h-preserve-reel-continue-to-7d",
-      "followerViewSharePercent": 1.4
+      "decision": "complete-7d-no-meaningful-new-response-preserve-reel",
+      "followerViewSharePercent": 5.2
     }
   },
   "lastCheckAttempt": {
-    "id": "ig-feed-v03-7d-attempt-20260918-1228",
-    "state": "insights-unavailable-at-checkpoint",
-    "format": "feed",
+    "id": "ig-reel-v03-7d-check-20260918-1241",
+    "state": "completed",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-18T12:27:12.436+09:00",
-    "attemptedAt": "2026-09-18T12:28:00+09:00",
-    "capturedAt": null,
-    "attemptId": "ig-feed-v03-7d-attempt-20260918-1228",
-    "latestMetricsUpdated": false,
+    "triggeredAt": "2026-09-18T12:40:42.462+09:00",
+    "completedAt": "2026-09-18T12:41:00+09:00",
+    "observationId": "ig-reel-v03-7d-check-20260918-1241",
+    "latestMetricsUpdated": true,
     "retryAt": null,
-    "checkpointCompleted": false
+    "checkpointCompleted": true
   },
   "lastAvailabilityCheck": {
     "attemptId": "ig-feed-v03-7d-attempt-20260918-1228",

@@ -1,11 +1,11 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-18T03:29:00Z",
+  "updatedAt": "2026-09-18T03:42:38Z",
   "state": "published-and-site-linked-own-monitoring-complete",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
-  "nextStep": "Own explain-v02 follow-ups finished at7d; preserve posts. Retain shared v04 for remaining X casual-v03, Instagram feed/Reel v03 and PM015 planner-v017d.",
+  "nextStep": "PM013 planned observations/attempts finished. Preserve feed24h/72h/7d unmeasured history; retain v04 only for PM015 planner-v01 7d.",
   "creative": {
     "direction": "PM-013 design intention; not a working prototype demonstration",
     "copy": "ready-bilingual",
@@ -90,8 +90,8 @@
   "monitoring": {
     "automationId": "v04",
     "state": "own-checkpoints-complete-shared-monitor-scheduled",
-    "savedFieldsVerifiedAt": "2026-09-18T03:29:00Z",
-    "nextCheckAt": "2026-09-18T12:40:00+09:00",
+    "savedFieldsVerifiedAt": "2026-09-18T03:42:38Z",
+    "nextCheckAt": "2026-09-21T10:00:00+09:00",
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -384,9 +384,14 @@
       {
         "id": "pm013-ig-reel-v03-7d",
         "at": "2026-09-18T12:40:00+09:00",
-        "state": "queued",
+        "state": "completed",
         "format": "reel",
-        "recordIn": "../ig-reveal-v03/"
+        "recordIn": "../ig-reveal-v03/",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-18T12:40:42.462+09:00",
+        "completedAt": "2026-09-18T12:41:00+09:00",
+        "observationId": "ig-reel-v03-7d-check-20260918-1241",
+        "metricValuesAtTarget": null
       },
       {
         "id": "pm015-planner-v01-24h",
@@ -421,10 +426,10 @@
         "recordIn": "../../PM-015/planner-v01/"
       }
     ],
-    "lastTriggerObservedAt": "2026-09-18T12:27:12.436+09:00",
-    "nextCheckPurpose": "September18 12:40 KST Reel7d, then PM0157d September21 10:00. Feed7d unmeasured; scheduled feed attempts exhausted, no retry.",
+    "lastTriggerObservedAt": "2026-09-18T12:40:42.462+09:00",
+    "nextCheckPurpose": "Last queued shared check: PM015 planner-v01 7d September21 10:00 KST. PM013 checks finished or explicitly unmeasured; no repeat.",
     "lastManualCheckAt": "2026-09-11T09:58:00+09:00",
-    "sharedAutomationNextAt": "2026-09-18T12:40:00+09:00",
+    "sharedAutomationNextAt": "2026-09-21T10:00:00+09:00",
     "ownNextCheckAt": null
   },
   "lastObservationId": "pm013-7d-check-20260917-1103",
