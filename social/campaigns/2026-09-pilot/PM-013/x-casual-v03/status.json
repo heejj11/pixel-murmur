@@ -44,7 +44,7 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-17T02:04:47Z",
+  "updatedAt": "2026-09-18T02:27:32Z",
   "imageSha256": "bc6f08162166309a2642992848a828632fa8531bdf673d64fde5ad01529fe42f",
   "hypothesis": "A casual maker-thought hook may elicit more voluntary response than the explanatory caption; exploratory comparison, not a controlled causal test.",
   "comparisonBaseline": {
@@ -61,9 +61,9 @@
   },
   "monitoring": {
     "automationId": "v04",
-    "state": "scheduled",
-    "savedFieldsVerifiedAt": "2026-09-17T02:04:47Z",
-    "nextCheckAt": "2026-09-18T11:25:00+09:00",
+    "state": "own-checkpoints-complete-shared-monitor-scheduled",
+    "savedFieldsVerifiedAt": "2026-09-18T02:27:32Z",
+    "nextCheckAt": null,
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -127,33 +127,39 @@
       {
         "id": "pm013-x-casual-v03-7d",
         "at": "2026-09-18T11:25:00+09:00",
-        "state": "queued"
+        "state": "completed",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-18T11:25:12.671+09:00",
+        "completedAt": "2026-09-18T11:26:00+09:00",
+        "observationId": "x-casual-v03-7d-check-20260918-1126",
+        "metricValuesAtTarget": null
       }
     ],
     "sharedQueueIn": "../explain-v02/status.json",
-    "sharedAutomationNextAt": "2026-09-18T11:25:00+09:00",
-    "lastTriggerObservedAt": "2026-09-14T11:27:14.771+09:00",
-    "nextCheckPurpose": "Own/shared next: September18 11:25 KST X casual-v03 7d. Earlier checkpoints complete; no remeasurement."
+    "sharedAutomationNextAt": "2026-09-18T12:25:00+09:00",
+    "lastTriggerObservedAt": "2026-09-18T11:25:12.671+09:00",
+    "nextCheckPurpose": "Own checks complete. Shared next September18 feed7d12:25 KST; preserve post and pending site-link handoff.",
+    "ownNextCheckAt": null
   },
-  "lastObservationId": "x-casual-v03-72h-check-20260914-1129",
+  "lastObservationId": "x-casual-v03-7d-check-20260918-1126",
   "lastObservation": {
-    "id": "x-casual-v03-72h-check-20260914-1129",
-    "capturedAt": "2026-09-14T11:29:00+09:00",
-    "views": 6,
+    "id": "x-casual-v03-7d-check-20260918-1126",
+    "capturedAt": "2026-09-18T11:26:00+09:00",
+    "views": 8,
     "likes": 0,
     "replies": 0,
     "reposts": 0,
     "bookmarks": 0,
-    "assessment": "The fresh 72h observation shows 6 views and zero direct reactions, one view above the delayed 24h observation. The tiny change may include operator inspection and does not establish meaningful external distribution, product demand or a copy effect. Preserve the post and continue to 7d."
+    "assessment": "Two more displayed views than72h, with direct reactions still zero. Small non-diagnostic exposure; operator views may contribute. No established meaningful response, demand, creative failure or causal copy effect. Own final7d complete; preserve post."
   },
   "additionalVariants": "not-auto-authorized",
   "lastCheckAttempt": {
-    "id": "x-casual-v03-72h-check-20260914-1129",
+    "id": "x-casual-v03-7d-check-20260918-1126",
     "state": "completed",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-14T11:27:14.771+09:00",
-    "completedAt": "2026-09-14T11:29:00+09:00",
-    "observationId": "x-casual-v03-72h-check-20260914-1129",
+    "triggeredAt": "2026-09-18T11:25:12.671+09:00",
+    "completedAt": "2026-09-18T11:26:00+09:00",
+    "observationId": "x-casual-v03-7d-check-20260918-1126",
     "latestMetricsUpdated": true,
     "retryAt": null
   }

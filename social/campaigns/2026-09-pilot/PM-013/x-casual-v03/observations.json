@@ -249,6 +249,50 @@
         "Views may include operator checks. Unique viewers, profile visits, link clicks and website conversion remain unavailable or unmeasured.",
         "The known Instagram feed insights URL was retried separately and remained unavailable; Reel, old v02, PM001 and PM015 were not remeasured."
       ]
+    },
+    {
+      "id": "x-casual-v03-7d-check-20260918-1126",
+      "kind": "scheduled-7d-check",
+      "scheduledAt": "2026-09-18T11:25:00+09:00",
+      "triggeredBy": "heartbeat-v04",
+      "triggeredAt": "2026-09-18T11:25:12.671+09:00",
+      "metricValuesAtTarget": null,
+      "x": {
+        "capturedAt": "2026-09-18T11:26:00+09:00",
+        "timePrecision": "minute",
+        "elapsedSecondsApprox": 604979,
+        "sourceUrl": "https://x.com/pixelmurmur/status/2098235834885619956",
+        "publishedAt": "2026-09-11T11:23:01+09:00",
+        "views": 8,
+        "viewsSourceLabel": "조회수",
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "bookmarks": 0,
+        "profileVisits": null,
+        "linkClicks": null,
+        "uniqueViewers": null,
+        "observationWindow": "2026-09-18 11:26 KST"
+      },
+      "comparison": {
+        "observationId": "x-casual-v03-72h-check-20260914-1129",
+        "viewsChange": 2,
+        "likesChange": 0,
+        "repliesChange": 0,
+        "repostsChange": 0,
+        "bookmarksChange": 0
+      },
+      "accountFollowers": null,
+      "websiteConversion": null,
+      "paidMediaRun": false,
+      "externalChangesMade": false,
+      "notificationDecision": "DONT_NOTIFY",
+      "assessment": "Two more displayed views than72h, with direct reactions still zero. Small non-diagnostic exposure; operator views may contribute. No established meaningful response, demand, creative failure or causal copy effect. Own final7d complete; preserve post.",
+      "caveats": [
+        "Recorded original post read once in a new authenticated in-app tab at11:26 KST, minute precision. No refresh, paid analytics or profile check.",
+        "Exact7d target11:23:01 and scheduled11:25 values remain null; actual elapsed604979 seconds.",
+        "Other campaigns and unavailable feed were not read. Temporary tab closed. No engagement, posting, site/admin, account, payment or Obsidian actions."
+      ]
     }
   ],
   "checkAttempts": [
