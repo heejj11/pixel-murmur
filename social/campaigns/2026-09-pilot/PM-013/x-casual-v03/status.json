@@ -44,7 +44,7 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-18T03:42:38Z",
+  "updatedAt": "2026-09-21T01:10:01Z",
   "imageSha256": "bc6f08162166309a2642992848a828632fa8531bdf673d64fde5ad01529fe42f",
   "hypothesis": "A casual maker-thought hook may elicit more voluntary response than the explanatory caption; exploratory comparison, not a controlled causal test.",
   "comparisonBaseline": {
@@ -61,7 +61,7 @@
   },
   "monitoring": {
     "automationId": "v04",
-    "state": "own-checkpoints-complete-shared-monitor-scheduled",
+    "state": "scheduled-attempts-exhausted-automation-deleted",
     "savedFieldsVerifiedAt": "2026-09-18T03:42:38Z",
     "nextCheckAt": null,
     "futureExecutionVerified": false,
@@ -136,10 +136,17 @@
       }
     ],
     "sharedQueueIn": "../explain-v02/status.json",
-    "sharedAutomationNextAt": "2026-09-21T10:00:00+09:00",
+    "sharedAutomationNextAt": null,
     "lastTriggerObservedAt": "2026-09-18T11:25:12.671+09:00",
-    "nextCheckPurpose": "Own checks complete. Shared next September21 10:00 KST PM015 planner-v01 7d; preserve post and pending site link.",
-    "ownNextCheckAt": null
+    "nextCheckPurpose": "No remaining scheduled attempts. Preserve all unmeasured checkpoints and earlier actual observations.",
+    "ownNextCheckAt": null,
+    "automationDeletion": {
+      "id": "v04",
+      "deletedAt": "2026-09-21T01:10:01Z",
+      "verified": true,
+      "source": "automation_update delete response: deleteStatus=deleted",
+      "historyPreserved": true
+    }
   },
   "lastObservationId": "x-casual-v03-7d-check-20260918-1126",
   "lastObservation": {

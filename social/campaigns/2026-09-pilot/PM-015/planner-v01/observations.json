@@ -174,5 +174,31 @@
       "externalChangesMade": false
     }
   ],
-  "checkAttempts": []
+  "checkAttempts": [
+    {
+      "id": "pm015-planner-v01-7d-attempt-20260921-1007",
+      "checkpointId": "pm015-planner-v01-7d",
+      "state": "unmeasured",
+      "scheduledAt": "2026-09-21T10:00:00+09:00",
+      "exactElapsedTargetAt": "2026-09-21T09:59:12+09:00",
+      "triggeredBy": "heartbeat-v04",
+      "triggeredAt": "2026-09-21T10:02:00.703+09:00",
+      "attemptedAt": "2026-09-21T10:07:00+09:00",
+      "timePrecision": "minute",
+      "elapsedSecondsApprox": 605268,
+      "sourceUrl": "https://www.instagram.com/insights/media/3985658602073514607/",
+      "capturedAt": null,
+      "freshMetrics": null,
+      "metricValuesAtTarget": null,
+      "metricValuesAtScheduledTime": null,
+      "latestMetricsUpdated": false,
+      "evidence": "Opened the recorded insights URL once. Accessibility state remained an empty Instagram web area; screenshot showed only the Instagram/from Meta loading splash. No metrics, login prompt or unavailable-page message was displayed. Same-tab load checks did not expose metrics; no reload or alternate campaign was opened.",
+      "reason": "insights-loading-splash-no-metrics",
+      "rootCause": "unknown",
+      "retryAt": null,
+      "decision": "preserve-prior-observations-and-close-exhausted-scheduled-attempts",
+      "notificationDecision": "NOTIFY_NEW_EXECUTION_FAILURE",
+      "externalChangesMade": false
+    }
+  ]
 }

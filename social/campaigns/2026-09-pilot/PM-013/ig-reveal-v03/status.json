@@ -64,10 +64,10 @@
     "unsolicitedOutreach": "prohibited",
     "obsidian": "do-not-write"
   },
-  "updatedAt": "2026-09-18T03:42:38Z",
+  "updatedAt": "2026-09-21T01:10:01Z",
   "monitoring": {
     "automationId": "v04",
-    "state": "scheduled-attempts-finished-feed-unmeasured-shared-monitor-retained",
+    "state": "scheduled-attempts-exhausted-automation-deleted",
     "savedFieldsVerifiedAt": "2026-09-18T03:42:38Z",
     "nextCheckAt": null,
     "futureExecutionVerified": false,
@@ -213,9 +213,16 @@
       }
     ],
     "lastTriggerObservedAt": "2026-09-18T12:40:42.462+09:00",
-    "nextCheckPurpose": "Own Reel checks complete; feed24h/72h/7d remain unmeasured with attempts exhausted. Shared next PM0157d September21 10:00 KST.",
-    "sharedAutomationNextAt": "2026-09-21T10:00:00+09:00",
-    "ownNextCheckAt": null
+    "nextCheckPurpose": "No remaining scheduled attempts. Preserve all unmeasured checkpoints and earlier actual observations.",
+    "sharedAutomationNextAt": null,
+    "ownNextCheckAt": null,
+    "automationDeletion": {
+      "id": "v04",
+      "deletedAt": "2026-09-21T01:10:01Z",
+      "verified": true,
+      "source": "automation_update delete response: deleteStatus=deleted",
+      "historyPreserved": true
+    }
   },
   "lastObservationIds": {
     "feed": "ig-feed-v03-12h-check-20260912-0028",

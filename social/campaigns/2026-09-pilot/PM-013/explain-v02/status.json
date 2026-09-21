@@ -1,11 +1,11 @@
 {
   "campaignId": "2026-09-pilot-pm-013-explain-v02",
   "objectId": "PM-013",
-  "updatedAt": "2026-09-18T03:42:38Z",
+  "updatedAt": "2026-09-21T01:10:01Z",
   "state": "published-and-site-linked-own-monitoring-complete",
   "ownerInstruction": "띄웠어 — owner foregrounded the authenticated personal-Chrome admin tab, continuing the authorized publication",
   "condition": "No meaningful response growth in fresh 09:24–09:25 KST observations",
-  "nextStep": "PM013 planned observations/attempts finished. Preserve feed24h/72h/7d unmeasured history; retain v04 only for PM015 planner-v01 7d.",
+  "nextStep": "All shared scheduled attempts exhausted. PM0157d loading failure and PM013 feed24h/72h/7d remain unmeasured. Preserve posts and prior observations; v04 deleted and verified.",
   "creative": {
     "direction": "PM-013 design intention; not a working prototype demonstration",
     "copy": "ready-bilingual",
@@ -89,9 +89,9 @@
   ],
   "monitoring": {
     "automationId": "v04",
-    "state": "own-checkpoints-complete-shared-monitor-scheduled",
+    "state": "scheduled-attempts-exhausted-automation-deleted",
     "savedFieldsVerifiedAt": "2026-09-18T03:42:38Z",
-    "nextCheckAt": "2026-09-21T10:00:00+09:00",
+    "nextCheckAt": null,
     "futureExecutionVerified": false,
     "checkpoints": [
       {
@@ -422,15 +422,30 @@
         "id": "pm015-planner-v01-7d",
         "at": "2026-09-21T10:00:00+09:00",
         "exactElapsedTargetAt": "2026-09-21T09:59:12+09:00",
-        "state": "queued",
-        "recordIn": "../../PM-015/planner-v01/"
+        "state": "unmeasured",
+        "recordIn": "../../PM-015/planner-v01/",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-21T10:02:00.703+09:00",
+        "attemptedAt": "2026-09-21T10:07:00+09:00",
+        "attemptId": "pm015-planner-v01-7d-attempt-20260921-1007",
+        "capturedAt": null,
+        "freshMetrics": null,
+        "metricValuesAtTarget": null,
+        "retryAt": null
       }
     ],
-    "lastTriggerObservedAt": "2026-09-18T12:40:42.462+09:00",
-    "nextCheckPurpose": "Last queued shared check: PM015 planner-v01 7d September21 10:00 KST. PM013 checks finished or explicitly unmeasured; no repeat.",
+    "lastTriggerObservedAt": "2026-09-21T10:02:00.703+09:00",
+    "nextCheckPurpose": "No remaining scheduled attempts. Preserve all unmeasured checkpoints and earlier actual observations.",
     "lastManualCheckAt": "2026-09-11T09:58:00+09:00",
-    "sharedAutomationNextAt": "2026-09-21T10:00:00+09:00",
-    "ownNextCheckAt": null
+    "sharedAutomationNextAt": null,
+    "ownNextCheckAt": null,
+    "automationDeletion": {
+      "id": "v04",
+      "deletedAt": "2026-09-21T01:10:01Z",
+      "verified": true,
+      "source": "automation_update delete response: deleteStatus=deleted",
+      "historyPreserved": true
+    }
   },
   "lastObservationId": "pm013-7d-check-20260917-1103",
   "lastObservationSummary": {

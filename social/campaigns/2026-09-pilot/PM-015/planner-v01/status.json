@@ -1,8 +1,8 @@
 {
   "objectId": "PM-015",
   "creativeId": "planner-v01",
-  "state": "published-and-site-linked-monitoring",
-  "updatedAt": "2026-09-18T03:42:38Z",
+  "state": "published-and-site-linked-scheduled-attempts-finished-7d-unmeasured",
+  "updatedAt": "2026-09-21T01:10:01Z",
   "format": "instagram-carousel-3-stills-4x5",
   "publishedAt": "2026-09-14T09:59:12+09:00",
   "publishedAtSource": "live-post-time-datetime",
@@ -28,14 +28,14 @@
   },
   "paidMediaAllowed": false,
   "spendKrw": 0,
-  "nextStep": "Already measured72h; repository record recovered without rereading. Preserve carousel and check own7d September21 10:00 KST.",
+  "nextStep": "Final scheduled7d attempt showed only the Instagram loading splash. Preserve earlier measurements;7d remains unmeasured. No new scheduled attempts; v04 deleted after shared queue verification.",
   "monitoring": {
-    "state": "scheduled",
+    "state": "scheduled-attempts-exhausted-automation-deleted",
     "automationId": "v04",
     "savedFieldsVerifiedAt": "2026-09-18T03:42:38Z",
     "futureExecutionVerified": false,
-    "nextCheckAt": "2026-09-21T10:00:00+09:00",
-    "sharedAutomationNextAt": "2026-09-21T10:00:00+09:00",
+    "nextCheckAt": null,
+    "sharedAutomationNextAt": null,
     "sharedQueueIn": "../../PM-013/explain-v02/status.json",
     "existingAutomationChanged": true,
     "checkpoints": [
@@ -69,11 +69,26 @@
         "at": "2026-09-21T10:00:00+09:00",
         "exactElapsedTargetAt": "2026-09-21T09:59:12+09:00",
         "elapsedHours": 168,
-        "state": "queued"
+        "state": "unmeasured",
+        "triggeredBy": "heartbeat-v04",
+        "triggeredAt": "2026-09-21T10:02:00.703+09:00",
+        "attemptedAt": "2026-09-21T10:07:00+09:00",
+        "attemptId": "pm015-planner-v01-7d-attempt-20260921-1007",
+        "capturedAt": null,
+        "freshMetrics": null,
+        "metricValuesAtTarget": null,
+        "retryAt": null
       }
     ],
-    "lastTriggerObservedAt": "2026-09-17T10:00:28.509+09:00",
-    "nextCheckPurpose": "Own/shared final scheduled check September21 10:00 KST7d; do not remeasure completed PM013 or unavailable feed."
+    "lastTriggerObservedAt": "2026-09-21T10:02:00.703+09:00",
+    "nextCheckPurpose": "No remaining scheduled attempts. Preserve all unmeasured checkpoints and earlier actual observations.",
+    "automationDeletion": {
+      "id": "v04",
+      "deletedAt": "2026-09-21T01:10:01Z",
+      "verified": true,
+      "source": "automation_update delete response: deleteStatus=deleted",
+      "historyPreserved": true
+    }
   },
   "lastObservationId": "pm015-planner-v01-72h-check-20260917-1002",
   "lastObservationSummary": {
@@ -110,14 +125,16 @@
     "retention": null
   },
   "lastCheckAttempt": {
-    "id": "pm015-planner-v01-72h-check-20260917-1002",
-    "state": "completed",
+    "id": "pm015-planner-v01-7d-attempt-20260921-1007",
+    "state": "unmeasured",
     "triggeredBy": "heartbeat-v04",
-    "triggeredAt": "2026-09-17T10:00:28.509+09:00",
-    "completedAt": "2026-09-17T10:02:00+09:00",
-    "observationId": "pm015-planner-v01-72h-check-20260917-1002",
-    "latestMetricsUpdated": true,
-    "retryAt": null,
-    "recordRecoveredAt": "2026-09-17T02:04:47Z"
+    "triggeredAt": "2026-09-21T10:02:00.703+09:00",
+    "attemptedAt": "2026-09-21T10:07:00+09:00",
+    "capturedAt": null,
+    "freshMetrics": null,
+    "metricValuesAtTarget": null,
+    "reason": "insights-loading-splash-no-metrics",
+    "latestMetricsUpdated": false,
+    "retryAt": null
   }
 }

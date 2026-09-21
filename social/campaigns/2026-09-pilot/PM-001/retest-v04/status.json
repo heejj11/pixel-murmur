@@ -2,7 +2,7 @@
   "campaignId": "2026-09-pilot-pm-001-retest-v04",
   "objectId": "PM-001",
   "state": "both-published-and-site-linked",
-  "updatedAt": "2026-09-18T03:42:38Z",
+  "updatedAt": "2026-09-21T01:10:01Z",
   "additionalPublicationHold": {
     "state": "owner-approved-hold",
     "recordedAt": "2026-09-09T15:03:00+09:00",
@@ -211,14 +211,21 @@
     "nextAtUtc": null,
     "nextDateRestrictedTo": null,
     "futureExecutionVerified": false,
-    "reschedulingPolicy": "PM-001 follow-ups are complete. Retain shared v04 for all pending PM-013 explain-v02, x-casual-v03 and ig-reveal-v03 checkpoints; do not repeat PM-001 or resume its held creative.",
-    "sharedAutomationNextAt": "2026-09-21T10:00:00+09:00",
-    "sharedAutomationNextPurpose": "September21 10:00 KST PM015 planner-v01 7d. PM001 own checks remain complete; no new observation.",
+    "reschedulingPolicy": "All planned attempts exhausted; no further checks or automatic retries. Preserve measurements and unmeasured history.",
+    "sharedAutomationNextAt": null,
+    "sharedAutomationNextPurpose": "No remaining scheduled attempts. PM001 not remeasured.",
     "sharedAutomationSavedFieldsVerifiedAt": "2026-09-18T03:42:38Z",
     "lastAttemptAt": "2026-09-10T23:03:00+09:00",
     "lastAttemptId": "instagram-72h-retry-20260910-2303",
-    "state": "pm001-checkpoints-finished-shared-monitor-retained",
-    "lastManualCheckAt": "2026-09-11T09:58:00+09:00"
+    "state": "scheduled-attempts-exhausted-automation-deleted",
+    "lastManualCheckAt": "2026-09-11T09:58:00+09:00",
+    "automationDeletion": {
+      "id": "v04",
+      "deletedAt": "2026-09-21T01:10:01Z",
+      "verified": true,
+      "source": "automation_update delete response: deleteStatus=deleted",
+      "historyPreserved": true
+    }
   },
   "paidMediaAuthorized": false,
   "notes": [
